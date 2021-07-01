@@ -5,6 +5,7 @@ import { Default as SearchForm } from './SearchForm.stories';
 describe('SearchForm', () => {
   it('to match snapshot', () => {
     const { asFragment } = render(<SearchForm {...{
+        ...SearchForm.args,
         onChange: jest.fn(),
         onSubmit: jest.fn()
     }}/>);

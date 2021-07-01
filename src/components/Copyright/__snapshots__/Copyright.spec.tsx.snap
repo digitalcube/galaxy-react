@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright to match snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="mt-auto text-center"
+  >
+    <p
+      class="m-0 common-footer-copyright"
+    >
+      <small
+        class="d-flex align-items-center justify-content-center"
+      >
+        ©2010 Shifter | A Product by 
+        <a
+          href="https://www.digitalcube.jp/"
+          rel="nofollow noopener"
+          title="DigitalCube"
+        >
+          <img
+            alt=""
+            class="d-block"
+            height="15"
+            width="77"
+          />
+        </a>
+      </small>
+    </p>
+  </footer>
+</DocumentFragment>
+`;
