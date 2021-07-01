@@ -1,10 +1,11 @@
 import React, { FC, HTMLAttributes, ReactChild } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css'
-//import { Button } from 'reactstrap'
+
 import Shifter from './images/common/shifter.svg'
 import LoginInformation from './images/login/login-information.svg'
 import Digitalcube from './images/common/digitalcube.svg'
+import Button from './components/Button/Button'
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
@@ -48,7 +49,8 @@ export const Thing: FC<Props> = () => {
               <input type="checkbox" className="screen-reader-text form-check-input" id="remember"/>
               <label className="form-check-label" htmlFor="remember">Remember me</label>
             </div>
-            <button type="submit" className="mt-4 font-weight-bold btn btn-block btn-login" disabled>Log In</button>
+            <Button type="submit" block disabled>Log in</Button>
+            <Button type="submit" block >Log in</Button>
             <div className="forget-password"><a href="#" target="_blank">Forgot Password?</a></div>
           </form>
           <div className="login-information mt-4 mt-md-0 mx-3">
