@@ -1,14 +1,14 @@
 import React, {FC} from 'react'
 import { FaUser, FaSignOutAlt } from 'react-icons/fa'
 import { SearchForm } from '../../components/SearchForm/SearchForm'
-import { NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem } from '../../routings'
+import { NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem , Navbar} from '../../routings'
 
 export type TopNavigationProps = {}
 
 
 export const TopNavigation: FC<TopNavigationProps> = () => {
     return (
-        <nav className="navbar navbar-expand-lg">
+        <Navbar>
             <NavbarBrand href="/" name="shifter" />
             <SearchForm onChange={() => undefined} onSubmit={e => e.preventDefault()}/>
             <Nav>
@@ -30,6 +30,6 @@ export const TopNavigation: FC<TopNavigationProps> = () => {
                         </NavbarDropdownItem>
                     </NavbarDropdown>
                 </Nav>
-        </nav>
+        </Navbar>
     )
 }
