@@ -1,8 +1,7 @@
 import React, {FC} from 'react'
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { FaUser, FaSignOutAlt } from 'react-icons/fa'
 import { SearchForm } from '../../components/SearchForm/SearchForm'
-import { Avatar } from '../../components/Avatar/Avatar'
-import { NavLinkItem, Nav, NavbarBrand } from '../../routings'
+import { NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem } from '../../routings'
 
 export type TopNavigationProps = {}
 
@@ -16,19 +15,20 @@ export const TopNavigation: FC<TopNavigationProps> = () => {
                     <NavLinkItem active to="#">Sites</NavLinkItem>
                     <NavLinkItem to="#">Teams</NavLinkItem>
                     <NavLinkItem to="#">Guides</NavLinkItem>
-                    <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav role="button" data-toggle="dropdown" className="nav-link font-weight-bold dropdown-toggle">
-                            <Avatar size={32} email="test@example.com" rounded />
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                            <DropdownItem>
-                                <a className="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between" href="#">Account<i className="fas fa-user"></i></a>
-                            </DropdownItem>
-                            <DropdownItem>
-                                <a className="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between" href="#">Log Out<i className="fas fa-sign-out-alt"></i></a>
-                            </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
+                    <NavbarDropdown
+                        avatar={{
+                            size: 32,
+                            email: "test@example.com",
+                            rounded: true
+                        }}
+                    >
+                        <NavbarDropdownItem href="#">
+                            Account<FaUser />
+                        </NavbarDropdownItem>
+                        <NavbarDropdownItem href="#">
+                            Log out <FaSignOutAlt />
+                        </NavbarDropdownItem>
+                    </NavbarDropdown>
                 </Nav>
         </nav>
     )

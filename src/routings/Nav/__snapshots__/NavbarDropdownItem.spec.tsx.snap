@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarDropdownItem to match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="dropdown-item"
+    role="menuitem"
+    tabindex="0"
+    type="button"
+  >
+    <a
+      class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between"
+      href="#"
+      to="#"
+    >
+      Account
+    </a>
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarDropdown to match snapshot (in nav bar) 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+      type="button"
+    >
+      <span
+        class="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      class="navbar-collapse flex-grow-0 collapse"
+    >
+      <ul
+        class="ml-auto navbar-nav nav"
+      >
+        <li
+          class="nav-item"
+        >
+          <a
+            class="rounded font-weight-bold nav-link"
+            to="#"
+          >
+            Guides
+          </a>
+        </li>
+        <li
+          class="dropdown nav-item"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link font-weight-bold dropdown-toggle nav-link"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+          >
+            <img
+              alt="Gravatar for test@example.com"
+              class="react-gravatar p-0 "
+              height="32"
+              src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
+              srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
+              width="32"
+            />
+          </a>
+          <div
+            aria-hidden="true"
+            class="dropdown-menu dropdown-menu-right"
+            role="menu"
+            tabindex="-1"
+          />
+        </li>
+      </ul>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`NavbarDropdown to match snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="dropdown nav-item"
+  >
+    <a
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="nav-link font-weight-bold dropdown-toggle nav-link"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+    >
+      <img
+        alt="Gravatar for test@example.com"
+        class="react-gravatar p-0  rounded-circle"
+        height="32"
+        src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
+        srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
+        width="32"
+      />
+    </a>
+    <div
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu-right"
+      role="menu"
+      tabindex="-1"
+    >
+      item
+    </div>
+  </li>
+</DocumentFragment>
+`;
