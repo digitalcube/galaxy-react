@@ -1,12 +1,35 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { TopNavigation } from '../.';
+import { FaUser, FaSignOutAlt } from 'react-icons/fa'
+import {  SearchForm ,NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem , Navbar } from '../.';
 
 const App = () => {
   return (
     <>
-      <TopNavigation />
+    <Navbar>
+            <NavbarBrand href="/" name="shifter" />
+            <SearchForm onChange={() => undefined} onSubmit={e => e.preventDefault()}/>
+            <Nav>
+                    <NavLinkItem active to="#">Sites</NavLinkItem>
+                    <NavLinkItem to="#">Teams</NavLinkItem>
+                    <NavLinkItem to="#">Guides</NavLinkItem>
+                    <NavbarDropdown
+                        avatar={{
+                            size: 32,
+                            email: "test@example.com",
+                            rounded: true
+                        }}
+                    >
+                        <NavbarDropdownItem href="#">
+                            Account<FaUser />
+                        </NavbarDropdownItem>
+                        <NavbarDropdownItem href="#">
+                            Log out <FaSignOutAlt />
+                        </NavbarDropdownItem>
+                    </NavbarDropdown>
+                </Nav>
+        </Navbar>
     </>
   )
   return (

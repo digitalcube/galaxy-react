@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopNavigation to match snapshot 1`] = `
+exports[`Mockup/TopNavigation to match snapshot 1`] = `
 <DocumentFragment>
   <nav
     class="navbar navbar-expand-lg"

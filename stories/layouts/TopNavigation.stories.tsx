@@ -1,12 +1,10 @@
-import React, {FC} from 'react'
+import React, {FC} from 'react';
+import { Meta, Story } from '@storybook/react';
 import { FaUser, FaSignOutAlt } from 'react-icons/fa'
-import { SearchForm } from '../../components/SearchForm/SearchForm'
-import { NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem , Navbar} from '../../routings'
-
-export type TopNavigationProps = {}
+import { SearchForm ,NavLinkItem, Nav, NavbarBrand, NavbarDropdown, NavbarDropdownItem , Navbar} from '../../src'
 
 
-export const TopNavigation: FC<TopNavigationProps> = () => {
+export const TopNavigation: FC = () => {
     return (
         <Navbar>
             <NavbarBrand href="/" name="shifter" />
@@ -33,3 +31,20 @@ export const TopNavigation: FC<TopNavigationProps> = () => {
         </Navbar>
     )
 }
+
+
+const meta: Meta = {
+  title: 'Mockup/Layouts/TopNavigation',
+  component: TopNavigation,
+  parameters: {
+    controls: { expanded: true },
+  },
+};
+
+export default meta;
+
+const Template: Story = args => <TopNavigation {...args} />;
+
+// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
+// https://storybook.js.org/docs/react/workflows/unit-testing
+export const Default = Template.bind({});
