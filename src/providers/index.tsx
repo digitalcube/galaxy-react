@@ -1,1 +1,1 @@
-export * from './LinkTagProvider'
+export * from './LinkTagProvider';

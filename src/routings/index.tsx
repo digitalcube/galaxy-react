@@ -1,2 +1,2 @@
-export * from './Link/Link'
-export * from './Nav'
+export * from './Link/Link';
+export * from './Nav';

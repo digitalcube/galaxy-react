@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { NavbarDropdownItem, NavbarDropdownItemProps } from './NavbarDropdownItem'
+import {
+  NavbarDropdownItem,
+  NavbarDropdownItemProps,
+} from './NavbarDropdownItem';
 import { FaSignOutAlt, FaUser } from 'react-icons/fa';
 
 const meta: Meta = {
@@ -13,7 +16,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<NavbarDropdownItemProps> = args => (
+const Template: Story<NavbarDropdownItemProps> = (args) => (
   <>
     <NavbarDropdownItem {...args} />
   </>
@@ -23,18 +26,18 @@ const Template: Story<NavbarDropdownItemProps> = args => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    children: 'menu',
-    href: '#'
-}
+  children: 'menu',
+  href: '#',
+};
 
 const MultiItemTempalte: Story<NavbarDropdownItemProps> = () => (
-    <>
+  <>
     <NavbarDropdownItem href="#">
-        Account <FaUser />
+      Account <FaUser />
     </NavbarDropdownItem>
     <NavbarDropdownItem href="#">
-        Log out <FaSignOutAlt />
+      Log out <FaSignOutAlt />
     </NavbarDropdownItem>
-    </>
-)
-export const AccountMenu = MultiItemTempalte.bind({})
+  </>
+);
+export const AccountMenu = MultiItemTempalte.bind({});

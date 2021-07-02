@@ -1,4 +1,9 @@
-import React, { createElement, CSSProperties, FC, PropsWithChildren } from 'react';
+import React, {
+  createElement,
+  CSSProperties,
+  FC,
+  PropsWithChildren,
+} from 'react';
 import { LinkTagType, useLinkTag } from '../../providers/LinkTagProvider';
 
 export type LinkProps = PropsWithChildren<{
@@ -6,25 +11,23 @@ export type LinkProps = PropsWithChildren<{
   style?: CSSProperties;
   className?: string;
   tagOverwrite?: LinkTagType;
-}>
+}>;
 
 export const Link: FC<LinkProps> = (props) => {
-  const {tag} = useLinkTag()
-  const as = props.tagOverwrite ? props.tagOverwrite : tag
+  const { tag } = useLinkTag();
+  const as = props.tagOverwrite ? props.tagOverwrite : tag;
   /**
    * When given external link url (start from http),
    * The tag should be HTML a tag with open a new tab
    */
   if (!!props.href && /^http/.test(props.href)) {
-    return (
-      <a target="_blank" rel="noopener noreferrer" {...props} />
-    )
+    return <a target="_blank" rel="noopener noreferrer" {...props} />;
   }
   return createElement(as as any, {
     ...props,
     // Fallback for react-router
     to: props.href,
-  })
-}
+  });
+};
 
 export default Link;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Avatar, AvatarProps } from './Avatar'
+import { Avatar, AvatarProps } from './Avatar';
 
 const meta: Meta = {
   title: 'Components/Avatar',
@@ -12,7 +12,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<AvatarProps> = args => (
+const Template: Story<AvatarProps> = (args) => (
   <>
     <Avatar {...args} />
   </>
@@ -22,7 +22,7 @@ const Template: Story<AvatarProps> = args => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    size: 32,
-    rounded: true,
-    email: 'test@example.com'    
-}
+  size: 32,
+  rounded: true,
+  email: 'test@example.com',
+};

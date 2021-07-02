@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { NavLinkItem, NavLinkItemProps } from './NavLinkItem'
+import { NavLinkItem, NavLinkItemProps } from './NavLinkItem';
 import { LinkTagProvider } from '../../providers';
-import { Link, BrowserRouter } from 'react-router-dom'
+import { Link, BrowserRouter } from 'react-router-dom';
 
 const meta: Meta = {
   title: 'Routings/NavLinkItem',
@@ -14,12 +14,12 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<NavLinkItemProps> = args => (
+const Template: Story<NavLinkItemProps> = (args) => (
   <BrowserRouter>
     <LinkTagProvider linkType={Link}>
       <nav className="navbar navbar-expand-lg">
         <ul className="navbar-nav ml-auto">
-            <NavLinkItem {...args} />
+          <NavLinkItem {...args} />
         </ul>
       </nav>
     </LinkTagProvider>
@@ -30,7 +30,7 @@ const Template: Story<NavLinkItemProps> = args => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    children: 'Sites',
-    active: false,
-    to: '#'
-}
+  children: 'Sites',
+  active: false,
+  to: '#',
+};

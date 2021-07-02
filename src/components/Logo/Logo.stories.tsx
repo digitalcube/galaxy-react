@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Logo, LogoProps } from './Logo'
+import { Logo, LogoProps } from './Logo';
 
 const meta: Meta = {
   title: 'Components/Logo',
@@ -12,7 +12,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<LogoProps> = args => (
+const Template: Story<LogoProps> = (args) => (
   <>
     <Logo {...args} />
   </>
@@ -23,5 +23,5 @@ const Template: Story<LogoProps> = args => (
 export const Default = Template.bind({});
 Default.args = {
   name: 'shifter',
-  width: 50
-}
+  width: 50,
+};

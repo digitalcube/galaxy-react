@@ -4,8 +4,8 @@ import { Link as RRLink } from 'react-router-dom';
 
 export type LinkTagType =
   | 'a'
-//  | typeof GatsbyLink
-  | typeof RRLink
+  //  | typeof GatsbyLink
+  | typeof RRLink;
 const LinkTagContext = createContext<{
   tag: LinkTagType;
 }>({
@@ -13,12 +13,14 @@ const LinkTagContext = createContext<{
 });
 
 export const useLinkTag = () => useContext(LinkTagContext);
-export const LinkTagProvider: FC<PropsWithChildren<{
-  linkType: LinkTagType;
-}>> = (props) => (
+export const LinkTagProvider: FC<
+  PropsWithChildren<{
+    linkType: LinkTagType;
+  }>
+> = (props) => (
   <LinkTagContext.Provider value={{ tag: props.linkType }}>
     {props.children}
   </LinkTagContext.Provider>
 );
 
-export default LinkTagProvider
+export default LinkTagProvider;

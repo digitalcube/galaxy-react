@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Loading, LoadingProps } from './Loading'
+import { Loading, LoadingProps } from './Loading';
 import { useState } from 'react';
 
 const meta: Meta = {
@@ -13,29 +13,35 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<LoadingProps> = args => {
-    const [show, shouldShow] = useState(args.show)
+const Template: Story<LoadingProps> = (args) => {
+  const [show, shouldShow] = useState(args.show);
 
-    useEffect(() => {
-        shouldShow(args.show)
-    },[args.show, shouldShow])
+  useEffect(() => {
+    shouldShow(args.show);
+  }, [args.show, shouldShow]);
 
-    return (
-        <>
-           <Loading {...{
-               show,
-               shouldShow
-           }} />
-           <button onClick={() => {
-                shouldShow(true)
-            }}>Show</button>
-        </>
-    )
+  return (
+    <>
+      <Loading
+        {...{
+          show,
+          shouldShow,
+        }}
+      />
+      <button
+        onClick={() => {
+          shouldShow(true);
+        }}
+      >
+        Show
+      </button>
+    </>
+  );
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    show: true
-}
+  show: true,
+};
