@@ -13,9 +13,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<SearchFormProps> = args => (
-    <nav className="navbar navbar-expand-lg">
-        <SearchForm {...args} />
-    </nav>
+    <SearchForm {...args} />
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

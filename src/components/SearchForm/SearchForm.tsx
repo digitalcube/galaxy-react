@@ -1,6 +1,7 @@
 import React , { FC } from 'react'
 import { FaSearch } from 'react-icons/fa'
-import { Input, InputGroupAddon, Form, InputGroup } from 'reactstrap'
+import { Input, Form, InputGroup } from 'reactstrap'
+
 
 export type SearchFormProps = {
     placeholder?: string;
@@ -16,11 +17,9 @@ export const SearchForm: FC<SearchFormProps> = ({
     onSubmit
 }) => {
     return (
-        <Form onSubmit={onSubmit} className="form-inline my-2 my-lg-0 flex-grow-1 d-flex">
+        <Form onSubmit={onSubmit} className="form-inline my-2 my-lg-0 flex-grow-1 d-flex position-relative form-search">
             <InputGroup>
-                <InputGroupAddon addonType="prepend">
-                    <FaSearch className="fas fa-search form-search-icon" />
-                </InputGroupAddon>
+                <FaSearch className="fas fa-search form-search-icon position-absolute" />
                 <Input
                     aria-label="Search"
                     placeholder={placeholder}
