@@ -6,3 +6,4 @@ export * from './Copyright/Copyright';
 export * from './Loading/Loading';
 export * from './Logo/Logo';
 export * from './SearchForm/SearchForm';
+export * from './Footer/Footer'
