@@ -60,10 +60,11 @@ exports[`TopNavigation to match snapshot 1`] = `
         class="ml-auto navbar-nav nav"
       >
         <li
-          class="nav-item active"
+          class="active nav-item"
         >
           <a
             class="rounded font-weight-bold nav-link"
+            to="#"
           >
             Sites
           </a>
@@ -73,6 +74,7 @@ exports[`TopNavigation to match snapshot 1`] = `
         >
           <a
             class="rounded font-weight-bold nav-link"
+            to="#"
           >
             Teams
           </a>
@@ -82,6 +84,7 @@ exports[`TopNavigation to match snapshot 1`] = `
         >
           <a
             class="rounded font-weight-bold nav-link"
+            to="#"
           >
             Guides
           </a>
