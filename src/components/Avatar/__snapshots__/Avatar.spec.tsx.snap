@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar to match snapshot  1`] = `
+<DocumentFragment>
+  <img
+    alt="Gravatar for test@example.com"
+    class="react-gravatar p-0  rounded-circle"
+    height="32"
+    src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
+    srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
+    width="32"
+  />
+</DocumentFragment>
+`;
