@@ -1,9 +1,14 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import { TopNavigation } from '../.';
 
 const App = () => {
+  return (
+    <>
+      <TopNavigation />
+    </>
+  )
   return (
 <>
     <div className="d-flex flex-column min-vh-100 shifter-dashboard-login">
