@@ -1,9 +1,8 @@
 import React, {FC} from 'react'
-import { NavbarBrand,UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
-import { Logo } from '../../components/Logo/Logo'
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { SearchForm } from '../../components/SearchForm/SearchForm'
 import { Avatar } from '../../components/Avatar/Avatar'
-import { NavLinkItem, Nav } from '../../routings'
+import { NavLinkItem, Nav, NavbarBrand } from '../../routings'
 
 export type TopNavigationProps = {}
 
@@ -11,11 +10,8 @@ export type TopNavigationProps = {}
 export const TopNavigation: FC<TopNavigationProps> = () => {
     return (
         <nav className="navbar navbar-expand-lg">
-            <NavbarBrand href="/">
-                <Logo name="shifter" width={24} />
-            </NavbarBrand>
+            <NavbarBrand href="/" name="shifter" />
             <SearchForm onChange={() => undefined} onSubmit={e => e.preventDefault()}/>
-            
             <Nav>
                     <NavLinkItem active to="#">Sites</NavLinkItem>
                     <NavLinkItem to="#">Teams</NavLinkItem>

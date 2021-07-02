@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarBrand to match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="navbar-brand"
+    href="/"
+  >
+    <img
+      alt="Shifter"
+      height="32"
+      width="24"
+    />
+  </a>
+</DocumentFragment>
+`;
