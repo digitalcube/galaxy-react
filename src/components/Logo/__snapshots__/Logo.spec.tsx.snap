@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo to match snapshot ["digitalcube"] 1`] = `
+<DocumentFragment>
+  <img
+    alt="Digitalcube"
+    height="9.740259740259742"
+    width="50"
+  />
+</DocumentFragment>
+`;
+
+exports[`Logo to match snapshot ["shifter"] 1`] = `
+<DocumentFragment>
+  <img
+    alt="Shifter"
+    height="66.66666666666666"
+    width="50"
+  />
+</DocumentFragment>
+`;
