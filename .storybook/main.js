@@ -2,6 +2,7 @@ module.exports = {
   stories: [
     '../src/components/**/*.stories.@(ts|tsx|js|jsx)',
     '../src/layouts/**/*.stories.@(ts|tsx|js|jsx)',
+    '../src/routings/**/*.stories.@(ts|tsx|js|jsx)',
   ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration

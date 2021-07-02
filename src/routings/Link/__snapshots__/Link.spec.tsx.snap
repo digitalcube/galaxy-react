@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link link type is "a", should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="/"
+    to="/"
+  >
+    Home
+  </a>
+  <a
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Link link type is {"$typeof": Symbol(react.forward_ref), "propTypes": [Object], "render": [Function anonymous]}, should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="/"
+  >
+    Home
+  </a>
+  <a
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    External
+  </a>
+</DocumentFragment>
+`;

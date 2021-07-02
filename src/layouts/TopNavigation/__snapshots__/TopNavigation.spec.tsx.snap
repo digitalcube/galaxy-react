@@ -99,7 +99,7 @@ exports[`TopNavigation to match snapshot 1`] = `
           >
             <img
               alt="Gravatar for test@example.com"
-              class="react-gravatar p-0 rounded-circle"
+              class="react-gravatar p-0  rounded-circle"
               height="32"
               src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
               srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
