@@ -1,11 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { FormField, FormFieldProps } from './FormField';
-import { FaUser } from 'react-icons/fa';
+import {
+  FormAlert,
+  FormAlertProps,
+} from './Alert';
 
 const meta: Meta = {
-  title: 'Components/Forms/FormField',
-  component: FormField,
+  title: 'Components/Forms/FormAlert',
+  component: FormAlert,
   parameters: {
     controls: { expanded: true },
   },
@@ -13,9 +15,9 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<FormFieldProps> = (args) => (
+const Template: Story<FormAlertProps> = (args) => (
   <>
-    <FormField {...args} />
+    <FormAlert {...args} />
   </>
 );
 
@@ -23,10 +25,6 @@ const Template: Story<FormFieldProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  icon: <FaUser className="d-block" />,
-  id: 'password',
-  label: 'Password',
-  type: 'password',
-  onChange: () => undefined,
-  errorMessage: '',
+    errorMessage: '',
+    children: '',
 };

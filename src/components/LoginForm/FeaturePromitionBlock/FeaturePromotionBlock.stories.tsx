@@ -4,7 +4,7 @@ import {
   FeaturePromotionBlock,
   FeaturePromotionBlockProps,
 } from './FeaturePromotionBlock';
-import { ImageShifterLogo } from '../Images';
+import { ImageShifterLogo } from '../../Images';
 
 const meta: Meta = {
   title: 'Components/FeaturePromotionBlock',

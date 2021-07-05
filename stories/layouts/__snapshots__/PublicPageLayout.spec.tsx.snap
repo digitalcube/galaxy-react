@@ -52,7 +52,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             class="reverse-icon input-group"
           >
             <input
-              class="form-control undefined form-control"
+              class="form-control"
               id="email"
               placeholder="Email"
               type="text"
@@ -95,7 +95,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             class="reverse-icon input-group"
           >
             <input
-              class="form-control undefined form-control"
+              class="form-control"
               id="username"
               placeholder="Username"
               type="text"
@@ -138,7 +138,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             class="reverse-icon input-group"
           >
             <input
-              class="form-control undefined form-control"
+              class="form-control"
               id="password"
               placeholder="Choose a Password"
               type="password"
@@ -310,7 +310,7 @@ exports[`Nav to match snapshot [TwoColumns] 1`] = `
         class="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column"
       >
         <div
-          class="login mx-3 px-4 py-4 rounded"
+          class="login px-4 py-4 rounded d-flex flex-column justify-content-center"
         >
           <form
             novalidate=""
@@ -356,7 +356,7 @@ exports[`Nav to match snapshot [TwoColumns] 1`] = `
                 class="reverse-icon input-group"
               >
                 <input
-                  class="form-control undefined form-control"
+                  class="form-control"
                   id="username"
                   placeholder="Username or email"
                   type="text"
@@ -399,7 +399,7 @@ exports[`Nav to match snapshot [TwoColumns] 1`] = `
                 class="reverse-icon input-group"
               >
                 <input
-                  class="form-control undefined form-control"
+                  class="form-control"
                   id="password"
                   placeholder="Password"
                   type="password"

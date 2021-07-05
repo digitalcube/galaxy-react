@@ -20,6 +20,7 @@ export type FormFieldProps = {
   readOnly?: boolean;
   disabled?: boolean;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
+  errorMessage?: string;
   inputOptions?: Omit<
     InputProps,
     'onChange' | 'type' | 'value' | 'id' | 'required' | 'readOnly' | 'disabled'
@@ -37,6 +38,7 @@ export const FormField: FC<FormFieldProps> = ({
   required,
   readOnly,
   disabled,
+  errorMessage,
 }) => {
   const [inputType, setInputType] = useState(type);
 
@@ -47,12 +49,15 @@ export const FormField: FC<FormFieldProps> = ({
   useEffect(() => {
     setInputType(type);
   }, [type, setInputType]);
-
+  const inputClassName = [
+      inputOptions?.className,
+      !!errorMessage ? 'is-invalid': ''
+  ].filter(Boolean).join(' ')
   const inputProps: InputProps = {
     type: inputType,
     value,
     id,
-    className: `form-control ${inputOptions?.className}`,
+    className: inputClassName,
     placeholder: label,
     onChange,
     ...inputOptions,
@@ -67,6 +72,9 @@ export const FormField: FC<FormFieldProps> = ({
       </Label>
       <InputGroup className="reverse-icon">
         <Input {...inputProps} />
+        {errorMessage? (
+		    <div className="invalid-feedback">{errorMessage}</div>
+        ): null}
         {icon ? (
           <InputGroupAddon addonType="append">
             <i aria-hidden="true">{icon}</i>

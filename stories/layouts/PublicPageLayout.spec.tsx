@@ -11,7 +11,7 @@ describe('Nav', () => {
   });
   it('to match snapshot [TwoColumns]', () => {
     const { asFragment } = render(
-      <TwoColumns />
+      <TwoColumns {...TwoColumns.args as any}/>
     );
     expect(asFragment()).toMatchSnapshot();
   });
