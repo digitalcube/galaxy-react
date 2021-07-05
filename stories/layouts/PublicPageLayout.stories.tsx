@@ -1,65 +1,10 @@
 import React, { FC } from "react";
 import { Meta, Story } from '@storybook/react';
 import {
-    Footer, ImageLoginInformation, ImageShifterLogo, Checkbox,
-    AuthFormHeader, FormField, FeaturePromotionBlock, PasswordWithConfirmation, Layouts, Button,
-    LoginFormLayout, FormAlert,
+    Footer, ImageShifterLogo,
+    AuthFormHeader, FormField,PasswordWithConfirmation, Layouts, Button,
 } from "../../src";
-import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
-
-type MockTwoColumnsProps = {
-    status: '' | 'failure' | 'inprogress'
-}
-const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
-	<Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-                <LoginFormLayout status={status}>
-                        <form noValidate>
-                            <AuthFormHeader
-                                logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
-                                title="Log In"
-                                link="/signup"
-                                linkText="sign up"
-                                variant="login"       
-                            />
-                            <FormAlert errorMessage={status === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : undefined} />
-                            <FormField
-                                id="username"
-                                label="Username or email"
-                                icon={<FaUser className="d-block" />}
-                                onChange={() => undefined}
-                                type="text"
-                                value=""
-                                errorMessage={status === 'failure' ? 'We don’t recognize that email': undefined}
-                            />
-                            <FormField
-                                id="password"
-                                label="Password"
-                                icon={<FaLock  className="d-block"/>}
-                                onChange={() => undefined}
-                                type="password"
-                                value=""
-                                errorMessage={status === 'failure' ? 'We don’t recognize that password': undefined}
-                            />
-                            <Checkbox
-                                label="Remember me"
-                                id="remember"
-                                value={false}
-                                onChange={() => undefined}
-                            />
-                            <Button type="submit" block disabled>Log In</Button>
-                            <div className="forget-password"><a href="#" target="_blank">Forgot Password?</a></div>
-                        </form>
-                </LoginFormLayout>
-            <FeaturePromotionBlock
-                image={<ImageLoginInformation width="153" height="141" alt=""/>}
-                title="Faster Build Times"
-                description="Customize Shifter settings for up to 70% faster build times."
-                link="#"
-                linkText="Learn about Shifter Media CDN"
-            />
-	</Layouts>
-    
-)
+import { FaEnvelope, FaUser } from "react-icons/fa";
 
 const MockOneColumns: FC = () => (
 	<Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
@@ -87,13 +32,6 @@ const MockOneColumns: FC = () => (
                 type="text"
                 value=""
             />
-            <FormField
-                id="password"
-                label="Choose a Password"
-                onChange={() => undefined}
-                type="password"
-                value=""
-            />
             <PasswordWithConfirmation
                 label="Choose a Password"
                 id="password"
@@ -111,7 +49,7 @@ const MockOneColumns: FC = () => (
 
 const meta: Meta = {
   title: 'Mockup/Layouts/PublicPageLayout',
-  component: MockTwoColumns,
+  component: MockOneColumns,
   argTypes: {
       status: {
         options: ['default', 'inprogress','failure'],
@@ -127,14 +65,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<MockTwoColumnsProps> = args => <MockTwoColumns {...args} />;
 
-// By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
-// https://storybook.js.org/docs/react/workflows/unit-testing
-export const TwoColumns = Template.bind({});
-TwoColumns.args = {
-    status: '',
-}
 const Template2: Story = args => <MockOneColumns {...args} />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
