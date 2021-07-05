@@ -1,11 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { FormField, FormFieldProps } from './FormField';
-import { FaUser } from 'react-icons/fa';
+import {
+  Checkbox,
+  CheckboxProps,
+} from './Checkbox';
 
 const meta: Meta = {
-  title: 'Components/Forms/FormField',
-  component: FormField,
+  title: 'Components/Forms/Checkboxs',
+  component: Checkbox,
   parameters: {
     controls: { expanded: true },
   },
@@ -13,9 +15,9 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<FormFieldProps> = (args) => (
+const Template: Story<CheckboxProps> = (args) => (
   <>
-    <FormField {...args} />
+    <Checkbox {...args} />
   </>
 );
 
@@ -23,9 +25,9 @@ const Template: Story<FormFieldProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  icon: <FaUser className="d-block" />,
-  id: 'password',
-  label: 'Password',
-  type: 'password',
-  onChange: () => undefined,
+    label: 'Checkbox name',
+    id: 'remember',
+    value: false,
+    onChange: () => {},
+    disabled: false,
 };

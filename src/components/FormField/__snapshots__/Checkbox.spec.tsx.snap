@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="form-check d-flex align-items-center colored-check smaller form-group"
+  >
+    <input
+      class="screen-reader-text form-check-input"
+      id="remember"
+      label="Checkbox name"
+      type="checkbox"
+      value="false"
+    />
+    <label
+      class="form-check-label"
+      for="remember"
+    >
+      Checkbox name
+    </label>
+  </div>
+</DocumentFragment>
+`;

@@ -6,7 +6,7 @@ import {
 } from './PasswordWithConfirmation';
 
 const meta: Meta = {
-  title: 'Components/Form/PasswordWithConfirmation',
+  title: 'Components/Forms/PasswordWithConfirmation',
   component: PasswordWithConfirmation,
   parameters: {
     controls: { expanded: true },
