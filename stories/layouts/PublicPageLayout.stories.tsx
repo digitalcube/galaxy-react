@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Meta, Story } from '@storybook/react';
 import {
     Footer, ImageLoginInformation, ImageShifterLogo,
-    AuthFormHeader, FormField, FeaturePromotionBlock, PasswordWithConfirmation, Layouts
+    AuthFormHeader, FormField, FeaturePromotionBlock, PasswordWithConfirmation, Layouts, Button
 } from "../../src";
 import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 
@@ -40,7 +40,7 @@ const MockTwoColumns: FC = () => (
                         <input type="checkbox" className="screen-reader-text form-check-input" id="remember"/>
                         <label className="form-check-label" htmlFor="remember">Remember me</label>
                     </div>
-                    <button type="submit" className="mt-4 font-weight-bold btn btn-block btn-login" disabled>Log In</button>
+                    <Button type="submit" block disabled>Log In</Button>
                     <div className="forget-password"><a href="#" target="_blank">Forgot Password?</a></div>
                 </form>
 			</div>
@@ -99,7 +99,7 @@ const MockOneColumns: FC = () => (
                 onChange={() => undefined}
                 onChangeConfirm={() => undefined}
             />
-			<button type="submit" className="mt-4 font-weight-bold btn btn-block btn-signup" disabled>Create Account</button>
+            <Button type="submit" block disabled>Create Account</Button>
 		</form>
 	</Layouts>
 )

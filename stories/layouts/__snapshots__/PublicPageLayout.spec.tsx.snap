@@ -261,7 +261,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
           />
         </div>
         <button
-          class="mt-4 font-weight-bold btn btn-block btn-signup"
+          class="mt-4 btn-colored font-weight-bold undefined btn btn-secondary btn-block disabled"
           disabled=""
           type="submit"
         >
@@ -487,7 +487,7 @@ exports[`Nav to match snapshot [TwoColumns] 1`] = `
               </label>
             </div>
             <button
-              class="mt-4 font-weight-bold btn btn-block btn-login"
+              class="mt-4 btn-colored font-weight-bold undefined btn btn-secondary btn-block disabled"
               disabled=""
               type="submit"
             >

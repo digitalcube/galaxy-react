@@ -1,4 +1,3 @@
-export * from './Button';
 export * from './Icons';
 export * from './Images';
 export * from './Avatar/Avatar';
@@ -11,3 +10,4 @@ export * from './AuthForm';
 export * from './FormField';
 export * from './FeaturePromitionBlock/FeaturePromotionBlock';
 export * from './Layouts/Layouts'
+export * from './Buttons'
