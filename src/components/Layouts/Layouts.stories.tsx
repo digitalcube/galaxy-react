@@ -1,9 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  Layouts,
-  LayoutsProps,
-} from './Layouts';
+import { Layouts, LayoutsProps } from './Layouts';
 
 const meta: Meta = {
   title: 'Components/Layouts',
@@ -25,6 +22,6 @@ const Template: Story<LayoutsProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    variant: 'login',
-    footer: 'Footer'
+  variant: 'login',
+  footer: 'Footer',
 };

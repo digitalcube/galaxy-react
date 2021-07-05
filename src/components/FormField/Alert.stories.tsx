@@ -1,9 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  FormAlert,
-  FormAlertProps,
-} from './Alert';
+import { FormAlert, FormAlertProps } from './Alert';
 
 const meta: Meta = {
   title: 'Components/Forms/FormAlert',
@@ -25,6 +22,6 @@ const Template: Story<FormAlertProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    errorMessage: '',
-    children: '',
+  errorMessage: '',
+  children: '',
 };

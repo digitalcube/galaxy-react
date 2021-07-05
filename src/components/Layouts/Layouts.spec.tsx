@@ -4,9 +4,7 @@ import { Default as Layouts } from './Layouts.stories';
 
 describe('Layouts', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(
-      <Layouts {...(Layouts.args as any)} />
-    );
+    const { asFragment } = render(<Layouts {...(Layouts.args as any)} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

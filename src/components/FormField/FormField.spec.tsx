@@ -9,10 +9,11 @@ describe('FormField', () => {
   });
   it('to match snapshot (with error massage)', () => {
     const { asFragment } = render(
-        <FormField
-            {...(FormField.args as any)}
-            errorMessage="We don’t recognize that email"
-        />);
+      <FormField
+        {...(FormField.args as any)}
+        errorMessage="We don’t recognize that email"
+      />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

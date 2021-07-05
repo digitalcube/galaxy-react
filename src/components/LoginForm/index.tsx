@@ -1,2 +1,2 @@
-export * from './FeaturePromitionBlock/FeaturePromotionBlock'
-export * from './Layout/Layout'
+export * from './FeaturePromitionBlock/FeaturePromotionBlock';
+export * from './Layout/Layout';

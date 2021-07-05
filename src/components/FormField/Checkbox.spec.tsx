@@ -4,9 +4,7 @@ import { Default as Checkbox } from './Checkbox.stories';
 
 describe('Checkbox', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(
-      <Checkbox {...(Checkbox.args as any)} />
-    );
+    const { asFragment } = render(<Checkbox {...(Checkbox.args as any)} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

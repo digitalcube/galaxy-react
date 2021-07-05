@@ -1,9 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  Checkbox,
-  CheckboxProps,
-} from './Checkbox';
+import { Checkbox, CheckboxProps } from './Checkbox';
 
 const meta: Meta = {
   title: 'Components/Forms/Checkboxs',
@@ -25,9 +22,9 @@ const Template: Story<CheckboxProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    label: 'Checkbox name',
-    id: 'remember',
-    value: false,
-    onChange: () => {},
-    disabled: false,
+  label: 'Checkbox name',
+  id: 'remember',
+  value: false,
+  onChange: () => {},
+  disabled: false,
 };

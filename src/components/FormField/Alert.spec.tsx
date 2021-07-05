@@ -4,21 +4,15 @@ import { Default as Alert } from './Alert.stories';
 
 describe('Alert', () => {
   it('to match snapshot [no item]', () => {
-    const { asFragment } = render(
-      <Alert {...(Alert.args as any)} />
-    );
+    const { asFragment } = render(<Alert {...(Alert.args as any)} />);
     expect(asFragment()).toMatchSnapshot();
   });
   it('to match snapshot [error message]', () => {
-    const { asFragment } = render(
-      <Alert errorMessage='error' />
-    );
+    const { asFragment } = render(<Alert errorMessage="error" />);
     expect(asFragment()).toMatchSnapshot();
   });
   it('to match snapshot [children]', () => {
-    const { asFragment } = render(
-      <Alert>children</Alert>
-    );
+    const { asFragment } = render(<Alert>children</Alert>);
     expect(asFragment()).toMatchSnapshot();
   });
   it('to match snapshot [mixed]', () => {

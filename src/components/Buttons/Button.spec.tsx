@@ -4,9 +4,7 @@ import { Default as Button } from './Button.stories';
 
 describe('Button', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(
-      <Button {...(Button.args as any)} />
-    );
+    const { asFragment } = render(<Button {...(Button.args as any)} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

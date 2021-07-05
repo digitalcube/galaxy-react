@@ -1,9 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  Button,
-  ButtonProps,
-} from './Button';
+import { Button, ButtonProps } from './Button';
 
 const meta: Meta = {
   title: 'Components/Buttons',
@@ -25,7 +22,7 @@ const Template: Story<ButtonProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    children: 'Button name',
-    disabled: false,
-    block: true,
+  children: 'Button name',
+  disabled: false,
+  block: true,
 };

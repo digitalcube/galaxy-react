@@ -50,9 +50,11 @@ export const FormField: FC<FormFieldProps> = ({
     setInputType(type);
   }, [type, setInputType]);
   const inputClassName = [
-      inputOptions?.className,
-      !!errorMessage ? 'is-invalid': ''
-  ].filter(Boolean).join(' ')
+    inputOptions?.className,
+    !!errorMessage ? 'is-invalid' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
   const inputProps: InputProps = {
     type: inputType,
     value,
@@ -72,9 +74,9 @@ export const FormField: FC<FormFieldProps> = ({
       </Label>
       <InputGroup className="reverse-icon">
         <Input {...inputProps} />
-        {errorMessage? (
-		    <div className="invalid-feedback">{errorMessage}</div>
-        ): null}
+        {errorMessage ? (
+          <div className="invalid-feedback">{errorMessage}</div>
+        ) : null}
         {icon ? (
           <InputGroupAddon addonType="append">
             <i aria-hidden="true">{icon}</i>
