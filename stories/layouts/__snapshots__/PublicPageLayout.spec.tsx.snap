@@ -472,12 +472,14 @@ exports[`Nav to match snapshot [TwoColumns] 1`] = `
               </div>
             </div>
             <div
-              class="form-group form-check d-flex align-items-center colored-check smaller"
+              class="form-check d-flex align-items-center colored-check smaller form-group"
             >
               <input
                 class="screen-reader-text form-check-input"
                 id="remember"
+                label="Remember me"
                 type="checkbox"
+                value="false"
               />
               <label
                 class="form-check-label"
