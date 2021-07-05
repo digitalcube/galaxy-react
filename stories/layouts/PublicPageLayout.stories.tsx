@@ -9,10 +9,8 @@ import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 
 type MockTwoColumnsProps = {
     status: '' | 'failure' | 'inprogress'
-    formErrorMessage?: string;
-    inputErrorMessage?: string;
 }
-const MockTwoColumns: FC<MockTwoColumnsProps> = ({status, formErrorMessage, inputErrorMessage}) => (
+const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
 	<Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
 		<div className="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column">
                 <LoginFormLayout status={status}>
@@ -24,7 +22,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status, formErrorMessage, inpu
                                 linkText="sign up"
                                 variant="login"       
                             />
-                            <FormAlert errorMessage={formErrorMessage} />
+                            <FormAlert errorMessage={status === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : null} />
                             <FormField
                                 id="username"
                                 label="Username or email"
@@ -32,7 +30,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status, formErrorMessage, inpu
                                 onChange={() => undefined}
                                 type="text"
                                 value=""
-                                errorMessage={inputErrorMessage}
+                                errorMessage={status === 'failure' ? 'We don’t recognize that email': null}
                             />
                             <FormField
                                 id="password"
@@ -41,6 +39,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status, formErrorMessage, inpu
                                 onChange={() => undefined}
                                 type="password"
                                 value=""
+                                errorMessage={status === 'failure' ? 'We don’t recognize that password': null}
                             />
                             <Checkbox
                                 label="Remember me"
@@ -115,8 +114,16 @@ const MockOneColumns: FC = () => (
 const meta: Meta = {
   title: 'Mockup/Layouts/PublicPageLayout',
   component: MockTwoColumns,
+  argTypes: {
+      status: {
+        options: ['default', 'inprogress','failure'],
+        control: { type: 'radio' }
+      }
+  },
   parameters: {
-    controls: { expanded: true },
+    controls: {
+        expanded: true
+    },
   },
 };
 
@@ -129,8 +136,6 @@ const Template: Story<MockTwoColumnsProps> = args => <MockTwoColumns {...args} /
 export const TwoColumns = Template.bind({});
 TwoColumns.args = {
     status: '',
-    inputErrorMessage: '',
-    formErrorMessage: '',
 }
 const Template2: Story = args => <MockOneColumns {...args} />;
 
