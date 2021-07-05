@@ -12,7 +12,6 @@ type MockTwoColumnsProps = {
 }
 const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
 	<Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-		<div className="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column">
                 <LoginFormLayout status={status}>
                         <form noValidate>
                             <AuthFormHeader
@@ -22,7 +21,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
                                 linkText="sign up"
                                 variant="login"       
                             />
-                            <FormAlert errorMessage={status === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : null} />
+                            <FormAlert errorMessage={status === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : undefined} />
                             <FormField
                                 id="username"
                                 label="Username or email"
@@ -30,7 +29,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
                                 onChange={() => undefined}
                                 type="text"
                                 value=""
-                                errorMessage={status === 'failure' ? 'We don’t recognize that email': null}
+                                errorMessage={status === 'failure' ? 'We don’t recognize that email': undefined}
                             />
                             <FormField
                                 id="password"
@@ -39,7 +38,7 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
                                 onChange={() => undefined}
                                 type="password"
                                 value=""
-                                errorMessage={status === 'failure' ? 'We don’t recognize that password': null}
+                                errorMessage={status === 'failure' ? 'We don’t recognize that password': undefined}
                             />
                             <Checkbox
                                 label="Remember me"
@@ -58,7 +57,6 @@ const MockTwoColumns: FC<MockTwoColumnsProps> = ({status}) => (
                 link="#"
                 linkText="Learn about Shifter Media CDN"
             />
-		</div>
 	</Layouts>
     
 )

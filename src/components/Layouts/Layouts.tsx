@@ -23,7 +23,13 @@ export const Layouts: FC<LayoutsProps> = ({children, variant, footer}) => {
     const className = classNames.join(' ')
     return (
         <div className={className}>	        
-            <div className="mt-4 mb-4 flex-grow-1 d-flex align-items-center justify-content-center">{children}</div>
+            <div className="mt-4 mb-4 flex-grow-1 d-flex align-items-center justify-content-center">
+                {variant === 'login' ? (
+                    <div className="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column">
+                        {children}
+                    </div>
+                ): children}
+            </div>
             {footer}
         </div>
     )
