@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { FeaturePromotionBlock, FeaturePromotionBlockProps } from './FeaturePromotionBlock';
+import {
+  FeaturePromotionBlock,
+  FeaturePromotionBlockProps,
+} from './FeaturePromotionBlock';
 import { ImageShifterLogo } from '../Images';
 
 const meta: Meta = {
@@ -23,9 +26,9 @@ const Template: Story<FeaturePromotionBlockProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    image: <ImageShifterLogo width="36" height="46" alt="Shifter" />,
-    title:"Log In",
-    link:"/signup",
-    linkText:"sign up",
-    description: 'Description here'
+  image: <ImageShifterLogo width="36" height="46" alt="Shifter" />,
+  title: 'Log In',
+  link: '/signup',
+  linkText: 'sign up',
+  description: 'Description here',
 };

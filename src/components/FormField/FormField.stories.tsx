@@ -23,9 +23,9 @@ const Template: Story<FormFieldProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    icon: <FaUser className="d-block" />,
-    id: 'password',
-    label: 'Password',
-    type: "password",
-    onChange: () => undefined,
+  icon: <FaUser className="d-block" />,
+  id: 'password',
+  label: 'Password',
+  type: 'password',
+  onChange: () => undefined,
 };

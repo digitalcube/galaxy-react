@@ -11,22 +11,22 @@ export const Copyright: FC<CopyrightProps> = ({
 }) => {
   const theYear = today.getFullYear();
   return (
-      <p className="m-0 common-footer-copyright">
-        <small className="d-flex align-items-center justify-content-center">
-          {`©${theYear} ${serviceName} | A Product by `}
-          <a
-            href="https://www.digitalcube.jp/"
-            rel="nofollow noopener"
-            title="DigitalCube"
-          >
-            <ImageDigitalcubeLogo
-              className="d-block"
-              width="77"
-              height="15"
-              alt=""
-            />
-          </a>
-        </small>
-      </p>
+    <p className="m-0 common-footer-copyright">
+      <small className="d-flex align-items-center justify-content-center">
+        {`©${theYear} ${serviceName} | A Product by `}
+        <a
+          href="https://www.digitalcube.jp/"
+          rel="nofollow noopener"
+          title="DigitalCube"
+        >
+          <ImageDigitalcubeLogo
+            className="d-block"
+            width="77"
+            height="15"
+            alt=""
+          />
+        </a>
+      </small>
+    </p>
   );
 };

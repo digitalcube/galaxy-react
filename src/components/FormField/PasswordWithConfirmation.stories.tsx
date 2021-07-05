@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { PasswordWithConfirmation, PasswordWithConfirmationProps } from './PasswordWithConfirmation';
+import {
+  PasswordWithConfirmation,
+  PasswordWithConfirmationProps,
+} from './PasswordWithConfirmation';
 
 const meta: Meta = {
   title: 'Components/Form/PasswordWithConfirmation',
@@ -22,12 +25,12 @@ const Template: Story<PasswordWithConfirmationProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    label: 'Choose a Password',
-    id: 'password',
-    value: '',
-    confirmValue: '',
-    onChange: () => undefined,
-    onChangeConfirm: () => undefined,
-    placeholder: 'Password',
-    confirmPlaceholder: 'Re enter Password'
+  label: 'Choose a Password',
+  id: 'password',
+  value: '',
+  confirmValue: '',
+  onChange: () => undefined,
+  onChangeConfirm: () => undefined,
+  placeholder: 'Password',
+  confirmPlaceholder: 'Re enter Password',
 };

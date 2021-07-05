@@ -1,1 +1,1 @@
-export * from './AuthFormHeader/AuthFormHeader'
+export * from './AuthFormHeader/AuthFormHeader';

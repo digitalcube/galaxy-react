@@ -23,9 +23,9 @@ const Template: Story<AuthFormHeaderProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    logo: <ImageShifterLogo width="36" height="46" alt="Shifter" />,
-    title:"Log In",
-    link:"/signup",
-    linkText:"sign up",
-    variant:"login"
+  logo: <ImageShifterLogo width="36" height="46" alt="Shifter" />,
+  title: 'Log In',
+  link: '/signup',
+  linkText: 'sign up',
+  variant: 'login',
 };
