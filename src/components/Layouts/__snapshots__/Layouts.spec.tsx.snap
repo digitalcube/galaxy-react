@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layouts to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex flex-column min-vh-100 shifter-dashboard-login"
+  >
+    <div
+      class="mt-4 mb-4 flex-grow-1 d-flex align-items-center justify-content-center"
+    />
+    Footer
+  </div>
+</DocumentFragment>
+`;

@@ -1,43 +1,14 @@
-import React, { FC, PropsWithChildren, ReactNode, } from "react";
+import React, { FC } from "react";
 import { Meta, Story } from '@storybook/react';
 import {
     Footer, ImageLoginInformation, ImageShifterLogo,
-    AuthFormHeader, FormField, FeaturePromotionBlock, PasswordWithConfirmation,
+    AuthFormHeader, FormField, FeaturePromotionBlock, PasswordWithConfirmation, Layouts
 } from "../../src";
 import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 
-export type LayoutProps = PropsWithChildren<{
-    variant: 'login' | 'signup';
-    footer?: ReactNode
-}>
-export const Layout: FC<LayoutProps> = ({children, variant, footer}) => {
-    const classNames = [
-        "d-flex",
-        "flex-column",
-        "min-vh-100",
-    ]
-    switch(variant) {
-        case 'signup':
-            classNames.push("shifter-dashboard-signup")
-            break;
-        case 'login':
-            classNames.push('shifter-dashboard-login')
-            break;
-        default:
-            break;
-    }
-    const className = classNames.join(' ')
-    return (
-        <div className={className}>	        
-            <div className="mt-4 mb-4 flex-grow-1 d-flex align-items-center justify-content-center">{children}</div>
-            {footer}
-        </div>
-    )
-}
-
 
 const MockTwoColumns: FC = () => (
-	<Layout variant="login" footer={<Footer serviceName="Shifter" />}>
+	<Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
 		<div className="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column">
 			<div className="login mx-3 px-4 py-4 rounded">
                 <form noValidate>
@@ -81,12 +52,12 @@ const MockTwoColumns: FC = () => (
                 linkText="Learn about Shifter Media CDN"
             />
 		</div>
-	</Layout>
+	</Layouts>
     
 )
 
 const MockOneColumns: FC = () => (
-	<Layout variant="signup" footer={<Footer serviceName="Shifter" />}>
+	<Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
 		<form className="signup px-4 py-4 rounded">
             <AuthFormHeader
                 logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
@@ -130,7 +101,7 @@ const MockOneColumns: FC = () => (
             />
 			<button type="submit" className="mt-4 font-weight-bold btn btn-block btn-signup" disabled>Create Account</button>
 		</form>
-	</Layout>
+	</Layouts>
 )
 
 const meta: Meta = {

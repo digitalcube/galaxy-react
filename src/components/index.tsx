@@ -10,3 +10,4 @@ export * from './Footer/Footer';
 export * from './AuthForm';
 export * from './FormField';
 export * from './FeaturePromitionBlock/FeaturePromotionBlock';
+export * from './Layouts/Layouts'
