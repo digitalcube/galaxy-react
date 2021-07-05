@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturePromotionBlock to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="login-information mt-4 mt-md-0 mx-3"
+  >
+    <div
+      class="login-information-icon text-center"
+    >
+      <img
+        alt="Shifter"
+        height="46"
+        width="36"
+      />
+    </div>
+    <h2
+      class="login-information-title mb-0 font-weight-bold text-center"
+    >
+      Log In
+    </h2>
+    <div
+      class="login-information-description mt-4 text-center"
+    >
+      Description here
+    </div>
+    <div
+      class="login-information-anchor font-weight-bold text-center"
+    >
+      <a
+        href="/signup"
+        to="/signup"
+      >
+        sign up
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -11,7 +11,6 @@ export const Copyright: FC<CopyrightProps> = ({
 }) => {
   const theYear = today.getFullYear();
   return (
-    <footer className="mt-auto text-center">
       <p className="m-0 common-footer-copyright">
         <small className="d-flex align-items-center justify-content-center">
           {`©${theYear} ${serviceName} | A Product by `}
@@ -29,6 +28,5 @@ export const Copyright: FC<CopyrightProps> = ({
           </a>
         </small>
       </p>
-    </footer>
   );
 };
