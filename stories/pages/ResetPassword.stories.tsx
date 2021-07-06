@@ -10,9 +10,10 @@ import {
   PasswordWithConfirmation,
   AuthFormLayout,
 } from '../../src';
+import { title } from 'process';
 
 type MockResetPasswordPageProps = {
-  status: '' | 'failure';
+  status: '' | 'failure' | 'success';
 };
 const MockResetPasswordPage: FC<MockResetPasswordPageProps> = ({ status }) => {
   const [currentStatus, setCurrentStatus] = useState(status);
@@ -34,56 +35,58 @@ const MockResetPasswordPage: FC<MockResetPasswordPageProps> = ({ status }) => {
   }, [setCanSubmit, password, passwordConfirm]);
   return (
     <Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
-        <AuthFormLayout
-            variant="signup"
-            status={currentStatus}
-        >
+      <AuthFormLayout
+        variant="signup"
+        status={currentStatus}
+        success={{
+          title: 'Password has been successfully reset',
+          message: <Button block>Go to Login</Button>,
+        }}
+      >
         <form
-            noValidate
-            onSubmit={(e) => {
+          noValidate
+          onSubmit={(e) => {
             e.preventDefault();
-            alert(
-                [
-                `Password: ${password}`,
-                ].join('\n')
-            );
-            }}
+            alert([`Password: ${password}`].join('\n'));
+          }}
         >
-            <AuthFormHeader
+          <AuthFormHeader
             logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
             title="Password Reset"
             variant="signup"
-            />
-            <FormAlert
+          />
+          <FormAlert
             errorMessage={
-                currentStatus === 'failure'
+              currentStatus === 'failure'
                 ? 'We found some errors with your login info. Please correct these issues to continue'
                 : undefined
             }
-            />
-            <PasswordWithConfirmation
+          />
+          <PasswordWithConfirmation
             id="password"
             label="Choose a Password"
             onChange={({ target: { value } }) => setPassword(value)}
-            onChangeConfirm={({ target: { value } }) => setPasswordConfirm(value)}
+            onChangeConfirm={({ target: { value } }) =>
+              setPasswordConfirm(value)
+            }
             placeholder="Password"
             confirmPlaceholder="Re enter Password"
             value={password}
             confirmValue={passwordConfirm}
             errorMessage={
-                currentStatus === 'failure'
+              currentStatus === 'failure'
                 ? 'We found some errors with your login info. Please correct these issues to continue'
                 : undefined
             }
             confirmErrorMessage={
-                currentStatus === 'failure'
+              currentStatus === 'failure'
                 ? 'We found some errors with your login info. Please correct these issues to continue'
                 : undefined
             }
-            />
-            <Button type="submit" block disabled={!canSubmit}>
+          />
+          <Button type="submit" block disabled={!canSubmit}>
             Reset Password
-            </Button>
+          </Button>
         </form>
       </AuthFormLayout>
     </Layouts>
@@ -117,6 +120,11 @@ const Template: Story<MockResetPasswordPageProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   status: '',
+};
+
+export const Succeeded = Template.bind({});
+Succeeded.args = {
+  status: 'success',
 };
 
 export const Failure = Template.bind({});

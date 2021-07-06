@@ -8,10 +8,11 @@ import {
   Layouts,
   ImageSendEmail,
   DigitCodeInput,
+  AuthFormLayout,
 } from '../../src';
 
 type MockSignUpVerificationPageProps = {
-  status: '' | 'failure';
+  status: '' | 'failure' | 'success';
 };
 const MockSignUpVerificationPage: FC<MockSignUpVerificationPageProps> = ({
   status,
@@ -32,51 +33,59 @@ const MockSignUpVerificationPage: FC<MockSignUpVerificationPageProps> = ({
   }, [codes, setCanSubmit]);
   return (
     <Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
-      <form
-        className="signup px-4 py-4 rounded"
-        noValidate
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert('Code is ' + codes.join(''));
+      <AuthFormLayout
+        success={{
+          title: 'Account Activated',
+          message: 'Taking you to the Shifter Dashboard.',
         }}
+        variant="signup"
+        status={currentStatus}
       >
-        <AuthFormHeader
-          logo={<ImageSendEmail width="171" height="169" alt="" />}
-          title="Check your email"
-          variant="signup"
+        <form
+          noValidate
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert('Code is ' + codes.join(''));
+          }}
         >
-          <div className="mt-4 pb-2 text-center send-email">
-            We’ve sent a verification email to <b>username@email.com</b>.
-          </div>
-          <div className="mt-4 pb-2 font-weight-bold text-center enter-code">
-            Enter the code from the email to verify your account
-          </div>
-        </AuthFormHeader>
-        <FormAlert
-          errorMessage={
-            currentStatus === 'failure'
-              ? 'We found some errors with your login info. Please correct these issues to continue'
-              : undefined
-          }
-        />
-        <DigitCodeInput
-          loading={false}
-          onChange={setCodes}
-          values={codes}
-          errorMessage={
-            currentStatus === 'failure' ? 'code is incorrect' : undefined
-          }
-        >
-          <small id="resend-code" className="mt-2 form-text text-muted">
-            <a href="#" target="_blank">
-              Resend email
-            </a>
-          </small>
-        </DigitCodeInput>
-        <Button type="submit" block disabled={!canSubmit}>
-          Verify
-        </Button>
-      </form>
+          <AuthFormHeader
+            logo={<ImageSendEmail width="171" height="169" alt="" />}
+            title="Check your email"
+            variant="signup"
+          >
+            <div className="mt-4 pb-2 text-center send-email">
+              We’ve sent a verification email to <b>username@email.com</b>.
+            </div>
+            <div className="mt-4 pb-2 font-weight-bold text-center enter-code">
+              Enter the code from the email to verify your account
+            </div>
+          </AuthFormHeader>
+          <FormAlert
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We found some errors with your login info. Please correct these issues to continue'
+                : undefined
+            }
+          />
+          <DigitCodeInput
+            loading={false}
+            onChange={setCodes}
+            values={codes}
+            errorMessage={
+              currentStatus === 'failure' ? 'code is incorrect' : undefined
+            }
+          >
+            <small id="resend-code" className="mt-2 form-text text-muted">
+              <a href="#" target="_blank">
+                Resend email
+              </a>
+            </small>
+          </DigitCodeInput>
+          <Button type="submit" block disabled={!canSubmit}>
+            Verify
+          </Button>
+        </form>
+      </AuthFormLayout>
     </Layouts>
   );
 };
@@ -108,6 +117,11 @@ const Template: Story<MockSignUpVerificationPageProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   status: '',
+};
+
+export const Succeeded = Template.bind({});
+Succeeded.args = {
+  status: 'success',
 };
 
 export const Failure = Template.bind({});

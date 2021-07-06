@@ -12,7 +12,7 @@ export type AuthFormLayoutProps = PropsWithChildren<{
     message?: ReactNode;
   };
   variant: 'login' | 'signup';
-  className?: string,
+  className?: string;
 }>;
 
 export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
@@ -44,8 +44,10 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
   return (
     <div className={classNames.join(' ')}>
       {status === 'inprogress' ? (
-        <div className="mb-4 pb-2 login-header">
-          <div className="mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle login-success-icon">
+        <div className={`mb-4 pb-2 ${variant}-header`}>
+          <div
+            className={`mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle ${variant}-success-icon`}
+          >
             <i aria-hidden="true">
               <FaCheck className="d-block" />
             </i>
@@ -61,13 +63,15 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
         </div>
       ) : null}
       {status === 'success' ? (
-        <div className="mb-4 pb-2 login-header">
-          <div className="mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle login-success-icon">
+        <div className={`mb-4 pb-2 ${variant}-header`}>
+          <div
+            className={`mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle ${variant}-success-icon`}
+          >
             <i aria-hidden="true">
               <FaCheck className="d-block" />
             </i>
           </div>
-          <h1 className="mb-0 font-weight-bold text-center logging-text">
+          <h1 className={`pt-4 font-weight-bold text-center ${variant}-title`}>
             {succeededMessageTitle || 'Complete'}
           </h1>
           {succeededMessage ? (

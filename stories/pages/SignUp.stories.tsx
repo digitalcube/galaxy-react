@@ -9,6 +9,7 @@ import {
   ImageShifterLogo,
   Layouts,
   PasswordWithConfirmation,
+  AuthFormLayout,
 } from '../../src';
 import { FaEnvelope, FaUser } from 'react-icons/fa';
 
@@ -37,84 +38,87 @@ const MockSignUpPage: FC<MockSignUpPageProps> = ({ status }) => {
   }, [setCanSubmit, username, password, email, passwordConfirm]);
   return (
     <Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
-      <form
-        className="signup px-4 py-4 rounded"
-        noValidate
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert(
-            [
-              `Username: ${username}`,
-              `Email: ${email}`,
-              `Password: ${password}`,
-            ].join('\n')
-          );
-        }}
-      >
-        <AuthFormHeader
-          logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
-          title="Get Started"
-          link="/"
-          linkText="log in"
-          variant="signup"
-        />
-        <FormAlert
-          errorMessage={
-            currentStatus === 'failure'
-              ? 'We found some errors with your login info. Please correct these issues to continue'
-              : undefined
-          }
-        />
-        <FormField
-          id="email"
-          label="Email"
-          icon={<FaEnvelope className="d-block" />}
-          onChange={({ target: { value } }) => setEmail(value)}
-          type="email"
-          value={email}
-          errorMessage={
-            currentStatus === 'failure'
-              ? 'We don’t recognize that email'
-              : undefined
-          }
-        />
-        <FormField
-          id="username"
-          label="Choose a username"
-          icon={<FaUser className="d-block" />}
-          type="text"
-          onChange={({ target: { value } }) => setUsername(value)}
-          value={username}
-          errorMessage={
-            currentStatus === 'failure'
-              ? 'We don’t recognize that email'
-              : undefined
-          }
-        />
-        <PasswordWithConfirmation
-          id="password"
-          label="Choose a Password"
-          onChange={({ target: { value } }) => setPassword(value)}
-          onChangeConfirm={({ target: { value } }) => setPasswordConfirm(value)}
-          placeholder="Password"
-          confirmPlaceholder="Re enter Password"
-          value={password}
-          confirmValue={passwordConfirm}
-          errorMessage={
-            currentStatus === 'failure'
-              ? 'We found some errors with your login info. Please correct these issues to continue'
-              : undefined
-          }
-          confirmErrorMessage={
-            currentStatus === 'failure'
-              ? 'We found some errors with your login info. Please correct these issues to continue'
-              : undefined
-          }
-        />
-        <Button type="submit" block disabled={!canSubmit}>
-          Create Account
-        </Button>
-      </form>
+      <AuthFormLayout variant="signup" status={currentStatus}>
+        <form
+          noValidate
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert(
+              [
+                `Username: ${username}`,
+                `Email: ${email}`,
+                `Password: ${password}`,
+              ].join('\n')
+            );
+          }}
+        >
+          <AuthFormHeader
+            logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+            title="Get Started"
+            link="/"
+            linkText="log in"
+            variant="signup"
+          />
+          <FormAlert
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We found some errors with your login info. Please correct these issues to continue'
+                : undefined
+            }
+          />
+          <FormField
+            id="email"
+            label="Email"
+            icon={<FaEnvelope className="d-block" />}
+            onChange={({ target: { value } }) => setEmail(value)}
+            type="email"
+            value={email}
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We don’t recognize that email'
+                : undefined
+            }
+          />
+          <FormField
+            id="username"
+            label="Choose a username"
+            icon={<FaUser className="d-block" />}
+            type="text"
+            onChange={({ target: { value } }) => setUsername(value)}
+            value={username}
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We don’t recognize that email'
+                : undefined
+            }
+          />
+          <PasswordWithConfirmation
+            id="password"
+            label="Choose a Password"
+            onChange={({ target: { value } }) => setPassword(value)}
+            onChangeConfirm={({ target: { value } }) =>
+              setPasswordConfirm(value)
+            }
+            placeholder="Password"
+            confirmPlaceholder="Re enter Password"
+            value={password}
+            confirmValue={passwordConfirm}
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We found some errors with your login info. Please correct these issues to continue'
+                : undefined
+            }
+            confirmErrorMessage={
+              currentStatus === 'failure'
+                ? 'We found some errors with your login info. Please correct these issues to continue'
+                : undefined
+            }
+          />
+          <Button type="submit" block disabled={!canSubmit}>
+            Create Account
+          </Button>
+        </form>
+      </AuthFormLayout>
     </Layouts>
   );
 };
