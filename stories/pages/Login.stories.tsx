@@ -32,7 +32,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
   }, [setCanSubmit, username, password]);
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-      <AuthFormLayout
+      <AuthFormLayout        variant="login"
         status={status}
         inprogress={{
           title: 'Logging you in...',

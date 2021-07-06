@@ -18,7 +18,7 @@ const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({
     setCurrentStatus(status);
   }, [status, setCurrentStatus]);
   return (
-    <AuthFormLayout
+    <AuthFormLayout        variant="login"
       status={currentStatus}
       inprogress={inprogress}
       success={success}

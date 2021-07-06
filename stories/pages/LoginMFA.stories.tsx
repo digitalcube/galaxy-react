@@ -41,6 +41,7 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
       <AuthFormLayout
+        variant="login"
         status={status}
         inprogress={{
           title: 'Logging you in...',

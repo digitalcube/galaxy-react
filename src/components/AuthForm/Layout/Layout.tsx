@@ -11,6 +11,8 @@ export type AuthFormLayoutProps = PropsWithChildren<{
     title?: string;
     message?: ReactNode;
   };
+  variant: 'login' | 'signup';
+  className?: string,
 }>;
 
 export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
@@ -18,9 +20,11 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
   children,
   inprogress,
   success,
+  className,
+  variant,
 }) => {
   const classNames = [
-    'login',
+    variant,
     'px-4',
     'py-4',
     'rounded',
@@ -28,7 +32,8 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
     'flex-column',
     'justify-content-center',
     'mx-3',
-  ];
+    className,
+  ].filter(Boolean);
   if (['inprogress', 'success'].includes(status)) classNames.push('success');
   if (status === 'failure') classNames.push('error');
 

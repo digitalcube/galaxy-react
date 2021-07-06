@@ -32,7 +32,7 @@ const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({
   }, [setCanSubmit, username]);
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-      <AuthFormLayout
+      <AuthFormLayout        variant="login"
         status={status}
         success={{
           title: 'Password reset email sent',
