@@ -4,9 +4,7 @@ import { OneColumns } from './PublicPageLayout.stories';
 
 describe('Nav', () => {
   it('to match snapshot [OneColumns]', () => {
-    const { asFragment } = render(
-      <OneColumns />
-    );
+    const { asFragment } = render(<OneColumns />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

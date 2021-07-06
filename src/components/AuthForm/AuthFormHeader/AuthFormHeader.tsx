@@ -21,9 +21,11 @@ export const AuthFormHeader: FC<AuthFormHeaderProps> = ({
       {title}
     </h1>
     {link ? (
-        <div className={`mt-2 font-weight-bold text-center ${variant}-switch-way`}>
+      <div
+        className={`mt-2 font-weight-bold text-center ${variant}-switch-way`}
+      >
         or <a href={link}>{linkText}</a>
-        </div>
+      </div>
     ) : null}
     {children}
   </div>

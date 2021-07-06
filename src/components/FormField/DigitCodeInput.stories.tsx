@@ -27,15 +27,17 @@ const Template: Story<DigitCodeInputProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    loading: false,
-    values: [...Array(6)].map(() => ""),
+  loading: false,
+  values: [...Array(6)].map(() => ''),
 };
 
-const UncontrolledTemplate: Story<UncontrolledDigitCodeInputProps> = args => <UncontrolledDigitCodeInput {...args} />
-export const Uncontrolled = UncontrolledTemplate.bind({})
+const UncontrolledTemplate: Story<UncontrolledDigitCodeInputProps> = (args) => (
+  <UncontrolledDigitCodeInput {...args} />
+);
+export const Uncontrolled = UncontrolledTemplate.bind({});
 Uncontrolled.args = {
-    loading: false,
-    length: 6,
-    errorMessage: 'code is incorrect',
-    onComplete: (code) => alert('Code is ' + code)
-}
+  loading: false,
+  length: 6,
+  errorMessage: 'code is incorrect',
+  onComplete: (code) => alert('Code is ' + code),
+};
