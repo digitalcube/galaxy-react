@@ -32,7 +32,12 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
   }, [setCanSubmit, username, password]);
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-      <LoginFormLayout status={status}>
+      <LoginFormLayout
+        status={status}
+        inprogress={{
+            title: "Logging you in..."
+        }}
+        >
         <form
           noValidate
           onSubmit={(e) => {

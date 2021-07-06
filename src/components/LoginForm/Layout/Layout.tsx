@@ -3,15 +3,16 @@ import { FaCheck } from 'react-icons/fa';
 
 export type LoginFormLayoutProps = PropsWithChildren<{
   status: '' | 'inprogress' | 'failure';
-  inprogressMessageTitle?: string;
-  inprogressMessage?: string;
+  inprogress?: {
+      title?: string;
+      message?: string;
+  }
 }>;
 
 export const LoginFormLayout: FC<LoginFormLayoutProps> = ({
   status,
   children,
-  inprogressMessageTitle,
-  inprogressMessage,
+  inprogress,
 }) => {
   const classNames = [
     'login',
@@ -24,6 +25,9 @@ export const LoginFormLayout: FC<LoginFormLayoutProps> = ({
   ];
   if (status === 'inprogress') classNames.push('success');
   if (status === 'failure') classNames.push('error');
+
+  const inprogressMessageTitle = inprogress?.title || null
+  const inprogressMessage = inprogress?.message || null
   return (
     <div className={classNames.join(' ')}>
       {status === 'inprogress' ? (
@@ -34,7 +38,7 @@ export const LoginFormLayout: FC<LoginFormLayoutProps> = ({
             </i>
           </div>
           <h1 className="mb-0 font-weight-bold text-center logging-text">
-            {inprogressMessageTitle || 'Logging you in...'}
+            {inprogressMessageTitle || 'Processing...'}
           </h1>
           {inprogressMessage ? (
             <div className="mt-4 font-weight-bold text-center send-email">
