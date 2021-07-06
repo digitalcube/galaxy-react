@@ -1,0 +1,2076 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedCardColumn to match snapshot [column 0 | item 0] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeaturedCardColumn to match snapshot [column 0 | item 5] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeaturedCardColumn to match snapshot [column 1 | item 1] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeaturedCardColumn to match snapshot [column 12 | item 12] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeaturedCardColumn to match snapshot [column 13 | item 12] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FeaturedCardColumn to match snapshot [column 100 | item 12] 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-guides"
+  >
+    <div
+      class="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-1"
+        >
+          <div
+            class="pt-4 px-4 h-100 position-relative guide-list-item"
+          >
+            <div
+              class="guides-list-icon"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 384 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <h3
+              class="mt-4 font-weight-bold guide-list-title"
+            >
+              Read the docs
+            </h3>
+            <div
+              class="position-absolute guide-list-anchor"
+            >
+              <a
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                href="https://getshifter.io"
+                rel="noopener"
+                target="_blank"
+              >
+                Explore Shifter docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

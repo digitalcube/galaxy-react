@@ -10,3 +10,5 @@ export * from './AuthForm';
 export * from './FormField';
 export * from './Layouts/Layouts';
 export * from './Buttons';
+export * from './ExternalLink';
+export * from './FeaturedCard';

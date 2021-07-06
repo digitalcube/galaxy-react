@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { FaBolt, FaComment, FaFile, FaPlay, FaWrench } from 'react-icons/fa';
+import { FaBolt, FaComment, FaPlay, FaWrench } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer } from '../../../src';
+import { Footer, FeaturedCard, FeaturedCardColumn } from '../../../src';
 
 type MockGuidesPageProps = {};
 const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
@@ -28,87 +28,30 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
             </div>
           </div>
         </div>
-
-        <div className="container-fluid mb-4 pb-4 px-0 guides-list guides-list-lg">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="pt-4 px-4 h-100 position-relative guide-list-item">
-                <div className="guides-list-icon">
-                  <i aria-hidden="true">
-                    <FaFile className="d-block" />
-                  </i>
-                </div>
-                <h3 className="mt-4 font-weight-bold guide-list-title">
-                  Read the docs
-                </h3>
-                <div className="position-absolute guide-list-anchor">
-                  <a
-                    href="#"
-                    className="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
-                  >
-                    Explore Shifter docs
-                    <i className="pl-2 larger-icon" aria-hidden="true">
-                      <FaBolt className="d-block" />
-                    </i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="pt-4 px-4 h-100 position-relative guide-list-item">
-                <div className="guides-list-icon">
-                  <i aria-hidden="true">
-                    <FaPlay className="d-block" />
-                  </i>
-                </div>
-                <h3 className="mt-4 font-weight-bold guide-list-title">
-                  Watch the tutorials
-                </h3>
-                <p className="mb-0 guide-list-excerpt">
-                  Get the most from your Jamstack WordPress site
-                </p>
-                <div className="position-absolute guide-list-anchor">
-                  <a
-                    href="#"
-                    className="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
-                  >
-                    Start Watching
-                    <i className="pl-2 larger-icon" aria-hidden="true">
-                      <FaBolt className="d-block" />
-                    </i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="pt-4 px-4 h-100 position-relative guide-list-item">
-                <div className="guides-list-icon">
-                  <i aria-hidden="true">
-                    <FaWrench className="d-block" />
-                  </i>
-                </div>
-                <h3 className="mt-4 font-weight-bold guide-list-title">
-                  Explore extensions
-                </h3>
-                <p className="mb-0 guide-list-excerpt">
-                  Get the most from your Jamstack WordPress site
-                </p>
-                <div className="position-absolute guide-list-anchor">
-                  <a
-                    href="#"
-                    className="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
-                  >
-                    Explore Jamstack extensions
-                    <i className="pl-2 larger-icon" aria-hidden="true">
-                      <FaBolt className="d-block" />
-                    </i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <FeaturedCardColumn>
+          <FeaturedCard
+            title="Read the docs"
+            href="https://getshifter.io"
+            linkIcon={<FaBolt className="d-block" />}
+            linkText="Explore Shifter docs"
+          />
+          <FeaturedCard
+            title="Watch the tutorials"
+            excerpt="Get the most from your Jamstack WordPress site"
+            href="https://getshifter.io"
+            icon={<FaPlay className="d-block" />}
+            linkIcon={<FaBolt className="d-block" />}
+            linkText="Start Watching"
+          />
+          <FeaturedCard
+            title="Explore extensions"
+            excerpt="Get the most from your Jamstack WordPress site"
+            href="https://getshifter.io"
+            icon={<FaWrench className="d-block" />}
+            linkIcon={<FaBolt className="d-block" />}
+            linkText="Explore Jamstack extensions"
+          />
+        </FeaturedCardColumn>
         <h2 className="guide-heading-2 font-weight-bold">Popular articles</h2>
 
         <div className="container-fluid px-0 guides-list guides-list-md">
