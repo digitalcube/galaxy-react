@@ -27,6 +27,7 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
     'd-flex',
     'flex-column',
     'justify-content-center',
+    'mx-3'
   ];
   if (['inprogress', 'success'].includes(status)) classNames.push('success');
   if (status === 'failure') classNames.push('error');
@@ -65,11 +66,14 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
             <h1 className="mb-0 font-weight-bold text-center logging-text">
               {succeededMessageTitle || 'Complete'}
             </h1>
-            {inprogressMessage ? (
-              <div className="mt-4 font-weight-bold text-center send-email">
-                {succeededMessage}
-              </div>
-            ) : null}
+            {succeededMessage ? 
+              typeof succeededMessage === 'string' ? (
+                <div className="mt-4 font-weight-bold text-center send-email">
+                  {succeededMessage}
+                </div>
+              ) :
+              succeededMessage
+            : null}
           </div>
 
       ): null}
