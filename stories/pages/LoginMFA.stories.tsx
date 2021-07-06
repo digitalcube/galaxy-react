@@ -15,7 +15,7 @@ import {
 
 type MockLoginMFAPageProps = {
   status: '' | 'failure' | 'inprogress';
-  mfaType: 'sms' | 'totp'
+  mfaType: 'sms' | 'totp';
 };
 const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
   const [currentStatus, setCurrentStatus] = useState(status);
@@ -23,10 +23,10 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
     setCurrentStatus(status);
   }, [status, setCurrentStatus]);
 
-  const [currentMfaStatus, setCurrentMFAStatus] = useState(mfaType)
+  const [currentMfaStatus, setCurrentMFAStatus] = useState(mfaType);
   useEffect(() => {
-      setCurrentMFAStatus(mfaType)
-  } ,[mfaType, setCurrentMFAStatus])
+    setCurrentMFAStatus(mfaType);
+  }, [mfaType, setCurrentMFAStatus]);
 
   const [canSubmit, setCanSubmit] = useState(false);
   const [codes, setCodes] = useState<string[]>([...Array(6)].map(() => ''));
@@ -43,16 +43,14 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
       <AuthFormLayout
         status={status}
         inprogress={{
-            title: "Logging you in..."
+          title: 'Logging you in...',
         }}
-        >
+      >
         <form
           noValidate
           onSubmit={(e) => {
             e.preventDefault();
-            alert(
-              [`Code: ${codes.join('')}`].join('\n')
-            );
+            alert([`Code: ${codes.join('')}`].join('\n'));
           }}
         >
           <AuthFormHeader
@@ -60,10 +58,16 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
             title="Authentication"
             variant="login"
           >
-              <p className="text-center font-weight-bold">
-                  {currentMfaStatus === 'totp' ? 'Enter the 6 digit code from your authenticator app': (<>Enter the verifcation code we sent to <b>***-***-1234</b></>)}
-              </p>
-        </AuthFormHeader>
+            <p className="text-center font-weight-bold">
+              {currentMfaStatus === 'totp' ? (
+                'Enter the 6 digit code from your authenticator app'
+              ) : (
+                <>
+                  Enter the verifcation code we sent to <b>***-***-1234</b>
+                </>
+              )}
+            </p>
+          </AuthFormHeader>
           <FormAlert
             errorMessage={
               currentStatus === 'failure'
@@ -131,7 +135,7 @@ const Template: Story<MockLoginMFAPageProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   status: '',
-  mfaType: 'totp'
+  mfaType: 'totp',
 };
 
 export const Inprogress = Template.bind({});

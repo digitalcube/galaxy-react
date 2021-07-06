@@ -4,13 +4,13 @@ import { FaCheck } from 'react-icons/fa';
 export type AuthFormLayoutProps = PropsWithChildren<{
   status: '' | 'inprogress' | 'failure' | 'success';
   inprogress?: {
-      title?: string;
-      message?: ReactNode;
-  }
+    title?: string;
+    message?: ReactNode;
+  };
   success?: {
     title?: string;
-    message?: ReactNode
-  }
+    message?: ReactNode;
+  };
 }>;
 
 export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
@@ -27,15 +27,15 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
     'd-flex',
     'flex-column',
     'justify-content-center',
-    'mx-3'
+    'mx-3',
   ];
   if (['inprogress', 'success'].includes(status)) classNames.push('success');
   if (status === 'failure') classNames.push('error');
 
-  const inprogressMessageTitle = inprogress?.title || null
-  const inprogressMessage = inprogress?.message || null
-  const succeededMessageTitle = success?.title || null
-  const succeededMessage = success?.message || null
+  const inprogressMessageTitle = inprogress?.title || null;
+  const inprogressMessage = inprogress?.message || null;
+  const succeededMessageTitle = success?.title || null;
+  const succeededMessage = success?.message || null;
   return (
     <div className={classNames.join(' ')}>
       {status === 'inprogress' ? (
@@ -56,28 +56,27 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
         </div>
       ) : null}
       {status === 'success' ? (
-
-          <div className="mb-4 pb-2 login-header">
-            <div className="mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle login-success-icon">
-              <i aria-hidden="true">
-                <FaCheck className="d-block" />
-              </i>
-            </div>
-            <h1 className="mb-0 font-weight-bold text-center logging-text">
-              {succeededMessageTitle || 'Complete'}
-            </h1>
-            {succeededMessage ? 
-              typeof succeededMessage === 'string' ? (
-                <div className="mt-4 font-weight-bold text-center send-email">
-                  {succeededMessage}
-                </div>
-              ) :
-              succeededMessage
-            : null}
+        <div className="mb-4 pb-2 login-header">
+          <div className="mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle login-success-icon">
+            <i aria-hidden="true">
+              <FaCheck className="d-block" />
+            </i>
           </div>
-
-      ): null}
-      {!['inprogress', 'success'].includes(status) ? children: null}
+          <h1 className="mb-0 font-weight-bold text-center logging-text">
+            {succeededMessageTitle || 'Complete'}
+          </h1>
+          {succeededMessage ? (
+            typeof succeededMessage === 'string' ? (
+              <div className="mt-4 font-weight-bold text-center send-email">
+                {succeededMessage}
+              </div>
+            ) : (
+              succeededMessage
+            )
+          ) : null}
+        </div>
+      ) : null}
+      {!['inprogress', 'success'].includes(status) ? children : null}
     </div>
   );
 };

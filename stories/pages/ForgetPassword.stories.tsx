@@ -17,7 +17,9 @@ import { FaUser } from 'react-icons/fa';
 type MockForgetPasswordPageProps = {
   status: '' | 'failure' | 'success';
 };
-const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({ status }) => {
+const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({
+  status,
+}) => {
   const [currentStatus, setCurrentStatus] = useState(status);
   useEffect(() => {
     setCurrentStatus(status);
@@ -33,22 +35,31 @@ const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({ status }) => 
       <AuthFormLayout
         status={status}
         success={{
-            title: "Password reset email sent",
-            message: (
-                <>
-                    <div className="m-3 pb-2 text-center enter-code">An email has been sent to<br/><b>u*******@email.com</b><br/>Follow the directions in the email to reset your password. </div>
-					<button type="submit" className="mt-4 btn btn-colored btn-block font-weight-bold">Back to Login</button>
-                </>
-            )
+          title: 'Password reset email sent',
+          message: (
+            <>
+              <div className="m-3 pb-2 text-center enter-code">
+                An email has been sent to
+                <br />
+                <b>u*******@email.com</b>
+                <br />
+                Follow the directions in the email to reset your password.{' '}
+              </div>
+              <button
+                type="submit"
+                className="mt-4 btn btn-colored btn-block font-weight-bold"
+              >
+                Back to Login
+              </button>
+            </>
+          ),
         }}
-        >
+      >
         <form
           noValidate
           onSubmit={(e) => {
             e.preventDefault();
-            alert(
-              [`Username: ${username}`,].join('\n')
-            );
+            alert([`Username: ${username}`].join('\n'));
           }}
         >
           <AuthFormHeader
@@ -56,8 +67,11 @@ const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({ status }) => 
             title="Password Reset"
             variant="login"
           >
-              <div className="mt-4 pb-2 text-center enter-code">If there is an account associated width this email or username, a password reset link will be sent.</div>
-              </AuthFormHeader>
+            <div className="mt-4 pb-2 text-center enter-code">
+              If there is an account associated width this email or username, a
+              password reset link will be sent.
+            </div>
+          </AuthFormHeader>
           <FormAlert
             errorMessage={
               currentStatus === 'failure'

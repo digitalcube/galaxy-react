@@ -1,8 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-    AuthFormLayout, AuthFormLayoutProps
-} from './Layout'
+import { AuthFormLayout, AuthFormLayoutProps } from './Layout';
 import { AuthFormHeader } from '../../AuthForm';
 import { Button } from '../../Buttons';
 import { ImageShifterLogo } from '../../Images';
@@ -10,7 +8,11 @@ import { ImageShifterLogo } from '../../Images';
 type AuthFormLayoutExampleProps = {
   status: '' | 'failure' | 'inprogress';
 } & Pick<AuthFormLayoutProps, 'inprogress' | 'success'>;
-const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogress , success}) => {
+const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({
+  status,
+  inprogress,
+  success,
+}) => {
   const [currentStatus, setCurrentStatus] = useState(status);
   useEffect(() => {
     setCurrentStatus(status);
@@ -20,7 +22,7 @@ const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogr
       status={currentStatus}
       inprogress={inprogress}
       success={success}
-      >
+    >
       <form
         noValidate
         onSubmit={(e) => {
@@ -74,5 +76,5 @@ Default.args = {
   success: {
     title: '',
     message: '',
-  }
+  },
 };

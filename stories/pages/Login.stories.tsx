@@ -35,9 +35,9 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
       <AuthFormLayout
         status={status}
         inprogress={{
-            title: "Logging you in..."
+          title: 'Logging you in...',
         }}
-        >
+      >
         <form
           noValidate
           onSubmit={(e) => {
