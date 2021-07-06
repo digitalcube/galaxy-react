@@ -9,8 +9,8 @@ import { ImageShifterLogo } from '../../Images';
 
 type AuthFormLayoutExampleProps = {
   status: '' | 'failure' | 'inprogress';
-} & Pick<AuthFormLayoutProps, 'inprogress'>;
-const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogress }) => {
+} & Pick<AuthFormLayoutProps, 'inprogress' | 'success'>;
+const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogress , success}) => {
   const [currentStatus, setCurrentStatus] = useState(status);
   useEffect(() => {
     setCurrentStatus(status);
@@ -19,6 +19,7 @@ const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogr
     <AuthFormLayout
       status={currentStatus}
       inprogress={inprogress}
+      success={success}
       >
       <form
         noValidate
@@ -44,7 +45,7 @@ const meta: Meta = {
   component: AuthFormLayoutExample,
   argTypes: {
     status: {
-      options: ['default', 'inprogress', 'failure'],
+      options: ['default', 'inprogress', 'failure', 'success'],
       control: { type: 'radio' },
     },
   },
@@ -67,6 +68,10 @@ export const Default = Template.bind({});
 Default.args = {
   status: '',
   inprogress: {
+    title: '',
+    message: '',
+  },
+  success: {
     title: '',
     message: '',
   }
