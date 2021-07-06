@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DigitCodeInput to match snapshot (Uncontrolled) 1`] = `
+<DocumentFragment>
+  <div
+    class="form-row mx-0 verification-code"
+  >
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="d-block invalid-feedback"
+    >
+      code is incorrect
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DigitCodeInput to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="form-row mx-0 verification-code"
+  >
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="col-2 px-0"
+    >
+      <input
+        class="form-control px-0 text-center"
+        inputmode="numeric"
+        maxlength="1"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

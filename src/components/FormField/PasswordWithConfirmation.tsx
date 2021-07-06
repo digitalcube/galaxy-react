@@ -12,6 +12,8 @@ export type PasswordWithConfirmationProps = {
   onChangeConfirm: React.ChangeEventHandler<HTMLInputElement>;
   placeholder: string;
   confirmPlaceholder: string;
+  errorMessage?: string;
+  confirmErrorMessage?: string;
 };
 export const PasswordWithConfirmation: FC<PasswordWithConfirmationProps> = ({
   label,
@@ -22,6 +24,8 @@ export const PasswordWithConfirmation: FC<PasswordWithConfirmationProps> = ({
   onChangeConfirm,
   placeholder,
   confirmPlaceholder,
+  errorMessage,
+  confirmErrorMessage,
 }) => {
   const [inputType, setInputType] = useState<InputType>('password');
 
@@ -36,6 +40,7 @@ export const PasswordWithConfirmation: FC<PasswordWithConfirmationProps> = ({
       </Label>
       <InputGroup className="mb-4" id="password-eye">
         <Input
+          className={!!errorMessage ? 'is-invalid' : ''}
           type={inputType}
           id={id}
           placeholder={placeholder}
@@ -43,6 +48,9 @@ export const PasswordWithConfirmation: FC<PasswordWithConfirmationProps> = ({
           value={value}
           onChange={onChange}
         />
+        {errorMessage ? (
+          <div className="invalid-feedback">{errorMessage}</div>
+        ) : null}
         <div
           className={`input-group-eye ${
             inputType === 'password' ? 'password-lock' : null
@@ -58,12 +66,16 @@ export const PasswordWithConfirmation: FC<PasswordWithConfirmationProps> = ({
         </div>
       </InputGroup>
       <Input
+        className={!!confirmErrorMessage ? 'is-invalid' : ''}
         type="password"
         id={`${id}-reenter`}
         placeholder={confirmPlaceholder}
         value={confirmValue}
         onChange={onChangeConfirm}
       />
+      {confirmErrorMessage ? (
+        <div className="invalid-feedback">{confirmErrorMessage}</div>
+      ) : null}
     </FormGroup>
   );
 };

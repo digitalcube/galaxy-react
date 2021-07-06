@@ -7,7 +7,7 @@ import {
 import { FaEnvelope, FaUser } from "react-icons/fa";
 
 type MockSignUpPageProps = {
-    status: '' | 'failure' | 'inprogress'
+    status: '' | 'failure'
 }
 const MockSignUpPage: FC<MockSignUpPageProps> = ({status}) => {
     const [currentStatus, setCurrentStatus] = useState(status)
@@ -74,6 +74,8 @@ const MockSignUpPage: FC<MockSignUpPageProps> = ({status}) => {
                 confirmPlaceholder="Re enter Password"
                 value={password}
                 confirmValue={passwordConfirm}
+                errorMessage={currentStatus === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : undefined} 
+                confirmErrorMessage={currentStatus === 'failure' ? "We found some errors with your login info. Please correct these issues to continue" : undefined} 
             />
 			<Button type="submit" block disabled={!canSubmit}>Create Account</Button>
 		</form>
@@ -87,7 +89,7 @@ const meta: Meta = {
   component: MockSignUpPage,
   argTypes: {
       status: {
-        options: ['default', 'inprogress','failure'],
+        options: ['default', 'failure'],
         control: { type: 'radio' }
       }
   },
@@ -109,10 +111,6 @@ Default.args = {
     status: '',
 }
 
-export const Inprogress = Template.bind({});
-Inprogress.args = {
-    status: 'inprogress',
-}
 export const Failure = Template.bind({});
 Failure.args = {
     status: 'failure',
