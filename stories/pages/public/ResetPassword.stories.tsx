@@ -9,7 +9,7 @@ import {
   Layouts,
   PasswordWithConfirmation,
   AuthFormLayout,
-} from '../../src';
+} from '../../../src';
 import { title } from 'process';
 
 type MockResetPasswordPageProps = {

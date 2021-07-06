@@ -9,7 +9,7 @@ import {
   ImageSendEmail,
   DigitCodeInput,
   AuthFormLayout,
-} from '../../src';
+} from '../../../src';
 
 type MockSignUpVerificationPageProps = {
   status: '' | 'failure' | 'success';

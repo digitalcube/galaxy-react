@@ -11,7 +11,7 @@ import {
   AuthFormLayout,
   FormAlert,
   DigitCodeInput,
-} from '../../src';
+} from '../../../src';
 
 type MockLoginMFAPageProps = {
   status: '' | 'failure' | 'inprogress';

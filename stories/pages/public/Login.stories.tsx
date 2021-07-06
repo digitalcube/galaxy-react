@@ -4,40 +4,32 @@ import {
   Footer,
   ImageLoginInformation,
   ImageShifterLogo,
+  Checkbox,
   AuthFormHeader,
+  FormField,
   FeaturePromotionBlock,
   Layouts,
   Button,
   AuthFormLayout,
   FormAlert,
-  DigitCodeInput,
-} from '../../src';
+} from '../../../src';
+import { FaLock, FaUser } from 'react-icons/fa';
 
-type MockLoginMFAPageProps = {
+type MockLoginPageProps = {
   status: '' | 'failure' | 'inprogress';
-  mfaType: 'sms' | 'totp';
 };
-const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
+const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
   const [currentStatus, setCurrentStatus] = useState(status);
   useEffect(() => {
     setCurrentStatus(status);
   }, [status, setCurrentStatus]);
 
-  const [currentMfaStatus, setCurrentMFAStatus] = useState(mfaType);
-  useEffect(() => {
-    setCurrentMFAStatus(mfaType);
-  }, [mfaType, setCurrentMFAStatus]);
-
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [canSubmit, setCanSubmit] = useState(false);
-  const [codes, setCodes] = useState<string[]>([...Array(6)].map(() => ''));
   useEffect(() => {
-    if (codes.every((num) => num !== '')) {
-      setCanSubmit(true);
-    } else {
-      setCanSubmit(false);
-    }
-  }, [codes, setCanSubmit]);
-
+    setCanSubmit(!!username && !!password);
+  }, [setCanSubmit, username, password]);
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
       <AuthFormLayout
@@ -51,24 +43,18 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
           noValidate
           onSubmit={(e) => {
             e.preventDefault();
-            alert([`Code: ${codes.join('')}`].join('\n'));
+            alert(
+              [`Username: ${username}`, `Password: ${password}`].join('\n')
+            );
           }}
         >
           <AuthFormHeader
             logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
-            title="Authentication"
+            title="Log In"
+            link="/signup"
+            linkText="sign up"
             variant="login"
-          >
-            <p className="text-center font-weight-bold">
-              {currentMfaStatus === 'totp' ? (
-                'Enter the 6 digit code from your authenticator app'
-              ) : (
-                <>
-                  Enter the verifcation code we sent to <b>***-***-1234</b>
-                </>
-              )}
-            </p>
-          </AuthFormHeader>
+          />
           <FormAlert
             errorMessage={
               currentStatus === 'failure'
@@ -76,20 +62,44 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
                 : undefined
             }
           />
-          <DigitCodeInput
-            loading={false}
-            onChange={setCodes}
-            values={codes}
+          <FormField
+            id="username"
+            label="Username or email"
+            icon={<FaUser className="d-block" />}
+            onChange={({ target: { value } }) => setUsername(value)}
+            type="text"
+            value={username}
             errorMessage={
-              currentStatus === 'failure' ? 'code is incorrect' : undefined
+              currentStatus === 'failure'
+                ? 'We don’t recognize that email'
+                : undefined
             }
+          />
+          <FormField
+            id="password"
+            label="Password"
+            icon={<FaLock className="d-block" />}
+            onChange={({ target: { value } }) => setPassword(value)}
+            type="password"
+            value={password}
+            errorMessage={
+              currentStatus === 'failure'
+                ? 'We don’t recognize that password'
+                : undefined
+            }
+          />
+          <Checkbox
+            label="Remember me"
+            id="remember"
+            value={false}
+            onChange={() => undefined}
           />
           <Button type="submit" block disabled={!canSubmit}>
             Log In
           </Button>
-          <div className="mt-4 py-3 font-weight-bold text-center back2login">
+          <div className="forget-password">
             <a href="#" target="_blank">
-              Back to login
+              Forgot Password?
             </a>
           </div>
         </form>
@@ -106,13 +116,9 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
 };
 
 const meta: Meta = {
-  title: 'Mockup/Pages/Public/LoginMFA',
-  component: MockLoginMFAPage,
+  title: 'Mockup/Pages/Public/Login',
+  component: MockLoginPage,
   argTypes: {
-    mfaType: {
-      options: ['sms', 'totp'],
-      control: { type: 'radio' },
-    },
     status: {
       options: ['default', 'inprogress', 'failure'],
       control: { type: 'radio' },
@@ -127,8 +133,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<MockLoginMFAPageProps> = (args) => (
-  <MockLoginMFAPage {...args} />
+const Template: Story<MockLoginPageProps> = (args) => (
+  <MockLoginPage {...args} />
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -136,7 +142,6 @@ const Template: Story<MockLoginMFAPageProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   status: '',
-  mfaType: 'totp',
 };
 
 export const Inprogress = Template.bind({});

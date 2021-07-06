@@ -115,7 +115,7 @@ const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({
 };
 
 const meta: Meta = {
-  title: 'Mockup/Pages/ForgetPassword',
+  title: 'Mockup/Pages/Public/ForgetPassword',
   component: MockForgetPasswordPage,
   argTypes: {
     status: {

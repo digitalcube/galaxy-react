@@ -10,7 +10,7 @@ import {
   Layouts,
   PasswordWithConfirmation,
   AuthFormLayout,
-} from '../../src';
+} from '../../../src';
 import { FaEnvelope, FaUser } from 'react-icons/fa';
 
 type MockSignUpPageProps = {
@@ -124,7 +124,7 @@ const MockSignUpPage: FC<MockSignUpPageProps> = ({ status }) => {
 };
 
 const meta: Meta = {
-  title: 'Mockup/Pages/SignUp',
+  title: 'Mockup/Pages/Public/SignUp',
   component: MockSignUpPage,
   argTypes: {
     status: {

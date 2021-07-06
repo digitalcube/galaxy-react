@@ -116,7 +116,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
 };
 
 const meta: Meta = {
-  title: 'Mockup/Pages/Login',
+  title: 'Mockup/Pages/Public/Login',
   component: MockLoginPage,
   argTypes: {
     status: {
