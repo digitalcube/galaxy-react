@@ -1,7 +1,7 @@
 import React, { FC, PropsWithChildren } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
-export type LoginFormLayoutProps = PropsWithChildren<{
+export type AuthFormLayoutProps = PropsWithChildren<{
   status: '' | 'inprogress' | 'failure';
   inprogress?: {
       title?: string;
@@ -9,7 +9,7 @@ export type LoginFormLayoutProps = PropsWithChildren<{
   }
 }>;
 
-export const LoginFormLayout: FC<LoginFormLayoutProps> = ({
+export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
   status,
   children,
   inprogress,

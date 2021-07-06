@@ -10,7 +10,7 @@ import {
   FeaturePromotionBlock,
   Layouts,
   Button,
-  LoginFormLayout,
+  AuthFormLayout,
   FormAlert,
 } from '../../src';
 import { FaLock, FaUser } from 'react-icons/fa';
@@ -32,7 +32,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
   }, [setCanSubmit, username, password]);
   return (
     <Layouts variant="login" footer={<Footer serviceName="Shifter" />}>
-      <LoginFormLayout
+      <AuthFormLayout
         status={status}
         inprogress={{
             title: "Logging you in..."
@@ -102,7 +102,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
             </a>
           </div>
         </form>
-      </LoginFormLayout>
+      </AuthFormLayout>
       <FeaturePromotionBlock
         image={<ImageLoginInformation width="153" height="141" alt="" />}
         title="Faster Build Times"

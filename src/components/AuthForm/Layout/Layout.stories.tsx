@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import {
-    LoginFormLayout
+    AuthFormLayout
 } from './Layout'
 import { AuthFormHeader } from '../../AuthForm';
 import { Button } from '../../Buttons';
@@ -16,7 +16,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
     setCurrentStatus(status);
   }, [status, setCurrentStatus]);
   return (
-    <LoginFormLayout
+    <AuthFormLayout
       status={currentStatus}
       >
       <form
@@ -34,7 +34,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
           Log In
         </Button>
       </form>
-    </LoginFormLayout>
+    </AuthFormLayout>
   );
 };
 
