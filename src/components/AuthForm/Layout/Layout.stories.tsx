@@ -1,16 +1,16 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import {
-    AuthFormLayout
+    AuthFormLayout, AuthFormLayoutProps
 } from './Layout'
 import { AuthFormHeader } from '../../AuthForm';
 import { Button } from '../../Buttons';
 import { ImageShifterLogo } from '../../Images';
 
-type MockLoginPageProps = {
+type AuthFormLayoutExampleProps = {
   status: '' | 'failure' | 'inprogress';
-};
-const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
+} & Pick<AuthFormLayoutProps, 'inprogress'>;
+const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({ status, inprogress }) => {
   const [currentStatus, setCurrentStatus] = useState(status);
   useEffect(() => {
     setCurrentStatus(status);
@@ -18,6 +18,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
   return (
     <AuthFormLayout
       status={currentStatus}
+      inprogress={inprogress}
       >
       <form
         noValidate
@@ -40,7 +41,7 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
 
 const meta: Meta = {
   title: 'Components/AuthForm/Layouts',
-  component: MockLoginPage,
+  component: AuthFormLayoutExample,
   argTypes: {
     status: {
       options: ['default', 'inprogress', 'failure'],
@@ -56,8 +57,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<MockLoginPageProps> = (args) => (
-  <MockLoginPage {...args} />
+const Template: Story<AuthFormLayoutExampleProps> = (args) => (
+  <AuthFormLayoutExample {...args} />
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -65,4 +66,8 @@ const Template: Story<MockLoginPageProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   status: '',
+  inprogress: {
+    title: '',
+    message: '',
+  }
 };

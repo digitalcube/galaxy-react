@@ -7,7 +7,7 @@ import {
 import { ImageShifterLogo } from '../../Images';
 
 const meta: Meta = {
-  title: 'Components/FeaturePromotionBlock',
+  title: 'Components/AuthForm/FeaturePromotionBlock',
   component: FeaturePromotionBlock,
   parameters: {
     controls: { expanded: true },

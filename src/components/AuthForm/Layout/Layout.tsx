@@ -1,11 +1,11 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
 export type AuthFormLayoutProps = PropsWithChildren<{
   status: '' | 'inprogress' | 'failure';
   inprogress?: {
       title?: string;
-      message?: string;
+      message?: ReactNode;
   }
 }>;
 

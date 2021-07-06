@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="login px-4 py-4 rounded d-flex flex-column justify-content-center"
+  >
+    <form
+      novalidate=""
+    >
+      <div
+        class="mb-4 pb-2 login-header"
+      >
+        <div
+          class="mb-4 text-center login-icon"
+        >
+          <img
+            alt="Shifter"
+            height="46"
+            width="36"
+          />
+        </div>
+        <h1
+          class="mb-0 font-weight-bold text-center login-title"
+        >
+          Log In
+        </h1>
+      </div>
+      <button
+        class="mt-4 btn-colored font-weight-bold undefined btn btn-secondary btn-block disabled"
+        disabled=""
+        type="submit"
+      >
+        Log In
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
