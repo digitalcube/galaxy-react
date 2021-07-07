@@ -200,7 +200,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               <a
                 class="d-block"
                 href="#"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <img

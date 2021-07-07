@@ -10,12 +10,12 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer } from '../../../src';
+import { Footer, Layouts } from '../../../src';
 
 type MockSiteSettingProps = {};
 const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
   return (
-    <div className="d-flex flex-column min-vh-100 shifter-dashboard">
+    <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
       <div className="d-flex flex-md-row-reverse flex-column flex-grow-1 shifter-dashboard-columns site-settings">
         <main
@@ -378,8 +378,7 @@ const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
           </nav>
         </div>
       </div>
-      <Footer serviceName="Shifter" />
-    </div>
+    </Layouts>
   );
 };
 

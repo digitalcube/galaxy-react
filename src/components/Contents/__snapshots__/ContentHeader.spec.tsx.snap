@@ -22,7 +22,7 @@ exports[`ContentHeader to match snapshot [column %p | item %p] 1`] = `
           <a
             class="d-block"
             href="#"
-            rel="noopener"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <img

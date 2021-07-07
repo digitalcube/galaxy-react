@@ -8,12 +8,12 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer } from '../../../src';
+import { Footer, Layouts } from '../../../src';
 
 type MockListSitesProps = {};
 const MockListSites: FC<MockListSitesProps> = ({}) => {
   return (
-    <div className="d-flex flex-column min-vh-100 shifter-dashboard">
+    <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
 
       <main className="px-4 sites-list">
@@ -402,8 +402,7 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
           </div>
         </section>
       </main>
-      <Footer serviceName="Shifter" />
-    </div>
+    </Layouts>
   );
 };
 

@@ -9,12 +9,13 @@ import {
   ContentHeader,
   ContentCard,
   ContentCardColumn,
+  Layouts,
 } from '../../../src';
 
 type MockGuidesPageProps = {};
 const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
   return (
-    <div className="d-flex flex-column min-vh-100 shifter-dashboard">
+    <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
 
       <div className="mx-auto w-100 shifter-guides">
@@ -29,8 +30,7 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
         <MockFeaturedContents />
         <MockArticles />
       </div>
-      <Footer serviceName="Shifter" />
-    </div>
+    </Layouts>
   );
 };
 

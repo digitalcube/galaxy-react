@@ -11,9 +11,9 @@ const meta: Meta = {
   argTypes: {
     variant: {
       options: ['default', 'login', 'signup'],
-      control: {type: 'radio'}
-    }
-  }
+      control: { type: 'radio' },
+    },
+  },
 };
 
 export default meta;
