@@ -222,7 +222,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
           class="ml-auto list-add"
         >
           <button
-            class="px-3 py-0 rounded d-flex align-items-center font-weight-bold btn btn-colored btn-smaller"
+            class="px-3 py-0 d-flex align-items-center btn-colored font-weight-bold rounded btn-smaller btn btn-secondary"
             type="button"
           >
             <i
@@ -255,21 +255,22 @@ exports[`ListSites to match snapshot(default) 1`] = `
           class="mb-3 rounded d-md-flex align-items-start site-list-item"
         >
           <div
-            class="progress"
+            class="progress undefined"
           >
             <div
               aria-valuemax="100"
-              aria-valuemin="0"
-              aria-valuenow="0"
+              aria-valuemin="1"
+              aria-valuenow="10"
               class="progress-bar"
               role="progressbar"
+              style="width: 10.1010101010101%;"
             />
           </div>
           <div
             class="site-thumbnail rounded-left"
           >
             <img
-              alt=""
+              alt="Site"
               height="111"
               src="/images/site-a.png"
               width="167"
@@ -281,7 +282,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
             <h2
               class="mb-0 font-weight-bold site-name"
             >
-              Stable Value Investments Ltd.
+              Stable Value Investment Ltd.
             </h2>
             <div
               class="mt-3 d-flex align-items-center site-info"
@@ -290,9 +291,9 @@ exports[`ListSites to match snapshot(default) 1`] = `
                 class="d-inline-block align-middle site-url"
               >
                 <a
-                  href="stablevalueinvstment.org"
+                  href="stablevalueinvestment.org"
                 >
-                  stablevalueinvstment.org
+                  stablevalueinvestment.org
                 </a>
               </span>
               <span
@@ -306,7 +307,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
                 <p
                   class="mb-0 d-inline site-description"
                 >
-                  Super long name to show a line break super long names work
+                  super log name toshow a line break super long names work
                 </p>
               </span>
             </div>

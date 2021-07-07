@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer, Layouts } from '../../../src';
+import { Button, Footer, Layouts, SiteCard } from '../../../src';
 
 type MockListSitesProps = {};
 const MockListSites: FC<MockListSitesProps> = ({}) => {
@@ -36,107 +36,37 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
             </select>
           </div>
           <div className="ml-auto list-add">
-            <button
+            <Button
               type="button"
-              className="px-3 py-0 rounded d-flex align-items-center font-weight-bold btn btn-colored btn-smaller"
+              className="px-3 py-0 d-flex align-items-center"
+              rounded
+              fontWeight="bold"
+              smaller
             >
               <i className="mr-2" aria-hidden="true">
                 <FaPlus className="d-block" />
               </i>
               Create a new site
-            </button>
+            </Button>
           </div>
         </header>
         <section className="d-flex flex-column site-list-body">
-          <div className="mb-3 rounded d-md-flex align-items-start site-list-item">
-            <div className="progress">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuenow={0}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              ></div>
-            </div>
-            <div className="site-thumbnail rounded-left">
-              <img src="/images/site-a.png" width="167" height="111" alt="" />
-            </div>
-            <div className="pl-3 py-3 site-data">
-              <h2 className="mb-0 font-weight-bold site-name">
-                Stable Value Investments Ltd.
-              </h2>
-              <div className="mt-3 d-flex align-items-center site-info">
-                <span className="d-inline-block align-middle site-url">
-                  <a href="stablevalueinvstment.org">
-                    stablevalueinvstment.org
-                  </a>
-                </span>
-                <span className="d-inline-block align-middle text-truncate site-description">
-                  <span className="mr-2 d-inline-block rounded-circle font-weight-bold text-center site-initial">
-                    D
-                  </span>
-                  <p className="mb-0 d-inline site-description">
-                    Super long name to show a line break super long names work
-                  </p>
-                </span>
-              </div>
-            </div>
-            <div className="ml-auto pt-4 pr-3 d-flex align-items-center flex-shrink-0 site-setting">
-              <div className="ml-4 site-status">
-                <div className="rounded font-weight-bold c-site-status c-is-site-running">
-                  WordPress Running
-                </div>
-              </div>
-              <div className="ml-4 site-panel">
-                <a href="#" title="管理画面">
-                  <i aria-hidden="true">
-                    <FaWordpressSimple className="d-block" />
-                  </i>
-                </a>
-              </div>
-              <div className="ml-4 font-weight-bold site-manage">
-                <a href="#">Manage site</a>
-              </div>
-              <div className="ml-4 site-control">
-                <a
-                  className="dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i aria-hidden="true">
-                    <FaEllipsisH className="d-block" />
-                  </i>
-                </a>
-                <div
-                  className="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a
-                    className="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between"
-                    href="#"
-                  >
-                    Start WordPress
-                    <i aria-hidden="true">
-                      <FaPlay className="d-block" />
-                    </i>
-                  </a>
-                  <a
-                    className="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between"
-                    href="#"
-                  >
-                    Restart WordPress
-                    <i aria-hidden="true">
-                      <FaStop className="d-block" />
-                    </i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <SiteCard
+            image={{
+              src: '/images/site-a.png',
+              alt: 'Site'
+            }}
+            site={{
+              id: 'site_xxx',
+              name: 'Stable Value Investment Ltd.',
+              domain: 'stablevalueinvestment.org',
+              team: {
+                name: 'super log name toshow a line break super long names work',
+                id: 'team_xxx'
+              }
+            }}
+          />
+          
           <div className="mb-3 rounded d-md-flex align-items-start site-list-item">
             <div className="progress">
               <div

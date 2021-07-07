@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar to match snapshot [column %p | item %p] 1`] = `
+<DocumentFragment>
+  <div
+    class="progress "
+  >
+    <div
+      aria-valuemax="100"
+      aria-valuemin="1"
+      aria-valuenow="100"
+      class="progress-bar"
+      role="progressbar"
+      style="width: 101.01010101010101%;"
+    />
+  </div>
+</DocumentFragment>
+`;
