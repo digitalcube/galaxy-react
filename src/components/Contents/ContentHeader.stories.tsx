@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { ContentHeader, ContentHeaderProps } from './ContentHeader';
 
 const meta: Meta = {
-  title: 'Components/ContentHeader',
+  title: 'Components/Contents/ContentHeader',
   component: ContentHeader,
   parameters: {
     controls: { expanded: true },

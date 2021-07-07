@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentCardCategories to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-2 guide-list-genre"
+  >
+    <a
+      href="https://example.com"
+    >
+      domain
+    </a>
+     / test
+  </div>
+</DocumentFragment>
+`;
