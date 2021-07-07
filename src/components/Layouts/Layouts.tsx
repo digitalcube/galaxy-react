@@ -1,7 +1,7 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 
 export type LayoutsProps = PropsWithChildren<{
-  variant: 'login' | 'signup';
+  variant?: 'login' | 'signup';
   footer?: ReactNode;
 }>;
 export const Layouts: FC<LayoutsProps> = ({ children, variant, footer }) => {
@@ -14,6 +14,7 @@ export const Layouts: FC<LayoutsProps> = ({ children, variant, footer }) => {
       classNames.push('shifter-dashboard-login');
       break;
     default:
+      classNames.push('shifter-dashboard')
       break;
   }
   const className = classNames.join(' ');

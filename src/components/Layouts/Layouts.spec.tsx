@@ -1,10 +1,19 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Default as Layouts } from './Layouts.stories';
+import { Layouts } from './Layouts';
+import { Default as LayoutsStory } from './Layouts.stories';
 
 describe('Layouts', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(<Layouts {...(Layouts.args as any)} />);
+    const { asFragment } = render(<LayoutsStory {...(LayoutsStory.args as any)} />);
     expect(asFragment()).toMatchSnapshot();
   });
+  it.each([
+    [undefined, 'shifter-dashboard'],
+    ['login' as const, 'shifter-dashboard-login'],
+    ['signup' as const, 'shifter-dashboard-signup'],
+  ])('variant is %p, should add the %p class name', (variant, expectedClassName) => {
+    const {container} = render(<Layouts variant={variant}>Dummy content</Layouts>)
+    expect(container.firstChild).toHaveClass(expectedClassName)
+  })
 });

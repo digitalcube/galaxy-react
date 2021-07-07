@@ -8,6 +8,12 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  argTypes: {
+    variant: {
+      options: ['default', 'login', 'signup'],
+      control: {type: 'radio'}
+    }
+  }
 };
 
 export default meta;
