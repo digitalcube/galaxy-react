@@ -47,7 +47,7 @@ const MockOneColumns: FC = () => (
         onChange={() => undefined}
         onChangeConfirm={() => undefined}
       />
-      <Button type="submit" block disabled>
+      <Button type="submit" className="mt-4" fontWeight="bold" block disabled>
         Create Account
       </Button>
     </form>

@@ -94,7 +94,13 @@ const MockLoginPage: FC<MockLoginPageProps> = ({ status }) => {
             value={false}
             onChange={() => undefined}
           />
-          <Button type="submit" block disabled={!canSubmit}>
+          <Button
+            type="submit"
+            block
+            className="mt-4"
+            fontWeight="bold"
+            disabled={!canSubmit}
+          >
             Log In
           </Button>
           <div className="forget-password">

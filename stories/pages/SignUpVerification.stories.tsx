@@ -81,7 +81,13 @@ const MockSignUpVerificationPage: FC<MockSignUpVerificationPageProps> = ({
               </a>
             </small>
           </DigitCodeInput>
-          <Button type="submit" block disabled={!canSubmit}>
+          <Button
+            type="submit"
+            block
+            className="mt-4"
+            fontWeight="bold"
+            disabled={!canSubmit}
+          >
             Verify
           </Button>
         </form>

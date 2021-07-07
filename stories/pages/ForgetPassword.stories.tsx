@@ -93,7 +93,13 @@ const MockForgetPasswordPage: FC<MockForgetPasswordPageProps> = ({
                 : undefined
             }
           />
-          <Button type="submit" block disabled={!canSubmit}>
+          <Button
+            type="submit"
+            block
+            className="mt-4"
+            fontWeight="bold"
+            disabled={!canSubmit}
+          >
             Send Password Reset Lik
           </Button>
           <div className="mt-4 py-3 font-weight-bold text-center back2login">

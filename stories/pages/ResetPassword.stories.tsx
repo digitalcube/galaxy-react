@@ -84,7 +84,13 @@ const MockResetPasswordPage: FC<MockResetPasswordPageProps> = ({ status }) => {
                 : undefined
             }
           />
-          <Button type="submit" block disabled={!canSubmit}>
+          <Button
+            type="submit"
+            block
+            className="mt-4"
+            fontWeight="bold"
+            disabled={!canSubmit}
+          >
             Reset Password
           </Button>
         </form>

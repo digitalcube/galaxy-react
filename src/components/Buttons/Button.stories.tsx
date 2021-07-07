@@ -8,6 +8,16 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  argTypes: {
+    textAlign: {
+      options: ['right', 'center', 'left'],
+      control: {type: 'radio'}
+    },
+    fontWeight: {
+      options: ['light', 'normal', 'bold'],
+      control: {type: 'radio'}
+    }
+  }
 };
 
 export default meta;
@@ -25,4 +35,7 @@ Default.args = {
   children: 'Button name',
   disabled: false,
   block: true,
+  textAlign: undefined,
+  rounded: false,
+  fontWeight: undefined,
 };

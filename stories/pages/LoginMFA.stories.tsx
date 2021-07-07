@@ -84,7 +84,13 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
               currentStatus === 'failure' ? 'code is incorrect' : undefined
             }
           />
-          <Button type="submit" block disabled={!canSubmit}>
+          <Button
+            type="submit"
+            block
+            className="mt-4"
+            fontWeight="bold"
+            disabled={!canSubmit}
+          >
             Log In
           </Button>
           <div className="mt-4 py-3 font-weight-bold text-center back2login">
