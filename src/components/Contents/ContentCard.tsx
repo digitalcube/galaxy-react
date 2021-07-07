@@ -6,32 +6,28 @@ export type ContentCardProps = PropsWithChildren<{
   categories?: Array<{
     name: string;
     link?: string;
-  }>
+  }>;
   title: string;
   href?: string;
   linkText?: string;
-  linkIcon?: ReactNode
-}>
+  linkIcon?: ReactNode;
+}>;
 
-const ContentCardExcerpt: FC<Pick<ContentCardProps, 'children'>> = ({children}) => {
+const ContentCardExcerpt: FC<Pick<ContentCardProps, 'children'>> = ({
+  children,
+}) => {
   if (!children) return null;
   if (typeof children === 'string') {
-    return (
-      <p className="mb-0 guide-list-excerpt">
-        {children}
-      </p>
-    )
+    return <p className="mb-0 guide-list-excerpt">{children}</p>;
   }
-  return <>{children}</>
-}
+  return <>{children}</>;
+};
 
-export const ContentCard: FC<ContentCardProps> =(props) => {
+export const ContentCard: FC<ContentCardProps> = (props) => {
   return (
     <div className="pt-4 px-4 h-100 position-relative guide-list-item">
       <ContentCardCategories {...props} />
-      <h3 className="mb-2 guide-list-title font-weight-bold">
-        {props.title}
-      </h3>
+      <h3 className="mb-2 guide-list-title font-weight-bold">{props.title}</h3>
       <ContentCardExcerpt {...props} />
       <div className="position-absolute guide-list-anchor">
         <a
@@ -45,5 +41,5 @@ export const ContentCard: FC<ContentCardProps> =(props) => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};

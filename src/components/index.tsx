@@ -12,4 +12,4 @@ export * from './Layouts/Layouts';
 export * from './Buttons';
 export * from './ExternalLink';
 export * from './FeaturedCard';
-export * from './Contents'
+export * from './Contents';

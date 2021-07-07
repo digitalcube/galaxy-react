@@ -2,7 +2,7 @@ import React, { FC, PropsWithChildren, ReactNode, useMemo } from 'react';
 
 export type ContentCardColumnProps = PropsWithChildren<{
   column?: number;
-  title?: ReactNode
+  title?: ReactNode;
 }>;
 
 export const ContentCardColumn: FC<ContentCardColumnProps> = ({
@@ -17,25 +17,27 @@ export const ContentCardColumn: FC<ContentCardColumnProps> = ({
     return result;
   }, [column]);
   return (
-      <>
-        {title ? <h2 className="guide-heading-2 font-weight-bold">{title}</h2>: null}
-        <div className="shifter-guides">
+    <>
+      {title ? (
+        <h2 className="guide-heading-2 font-weight-bold">{title}</h2>
+      ) : null}
+      <div className="shifter-guides">
         <div className="container-fluid px-0 guides-list guides-list-md">
-            <div className="row">
+          <div className="row">
             {Array.isArray(children) ? (
-                <>
+              <>
                 {children.flat().map((child, index) => (
-                    <div className={`col-md-${colWidth}`} key={index}>
+                  <div className={`col-md-${colWidth}`} key={index}>
                     {child}
-                    </div>
+                  </div>
                 ))}
-                </>
+              </>
             ) : (
-                <div className={`col-md-${colWidth}`}>{children}</div>
+              <div className={`col-md-${colWidth}`}>{children}</div>
             )}
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </>
   );
 };

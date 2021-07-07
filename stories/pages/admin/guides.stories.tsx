@@ -2,11 +2,14 @@ import React, { FC } from 'react';
 import { FaBolt, FaComment, FaPlay, FaWrench } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer, FeaturedCard, FeaturedCardColumn, ContentHeader,
+import {
+  Footer,
+  FeaturedCard,
+  FeaturedCardColumn,
+  ContentHeader,
   ContentCard,
   ContentCardColumn,
 } from '../../../src';
-
 
 type MockGuidesPageProps = {};
 const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
@@ -24,7 +27,7 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
           href="#"
         />
         <MockFeaturedContents />
-        <MockArticles/>
+        <MockArticles />
       </div>
       <Footer serviceName="Shifter" />
     </div>
@@ -33,82 +36,91 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
 
 const MockArticles: FC = () => {
   return (
-  
     <ContentCardColumn column={3} title="Popular articles">
-    <ContentCard
-      title="Custom domains on Shifter"
-      categories={[{
-        name: "Developers"
-      }, {
-        name: 'Domain'
-      }]}
-      linkText="Read this article"
-      href="#"
-    >
-      This article contains step by step guide for adding and
-      assigning your custom domain to your Shifter site.
-    </ContentCard>
-    <ContentCard
-      title="Custom domains on Shifter"
-      categories={[{
-        name: "Developers"
-      }, {
-        name: 'Domain'
-      }]}
-      linkText="Read this article"
-      href="#"
-    >
-      This article contains step by step guide for adding and
-      assigning your custom domain to your Shifter site.
-    </ContentCard>
-    <ContentCard
-      title="Custom domains on Shifter"
-      categories={[{
-        name: "Developers"
-      }, {
-        name: 'Domain'
-      }]}
-      linkText="Read this article"
-      href="#"
-    >
-      This article contains step by step guide for adding and
-      assigning your custom domain to your Shifter site.
-    </ContentCard>
-    <ContentCard
-      title="Custom domains on Shifter"
-      categories={[{
-        name: "Developers"
-      }, {
-        name: 'Domain'
-      }]}
-      linkText="Read this article"
-      href="#"
-    >
-      This article contains step by step guide for adding and
-      assigning your custom domain to your Shifter site.
-    </ContentCard>
-    <div className="px-4 py-4 d-flex flex-column justify-content-center h-100 question">
-      <h3 className="mb-0 font-weight-bold question-title">
-        Questions?
-      </h3>
-      <div className="mt-2 question-description">
-        Our team is happy to help
+      <ContentCard
+        title="Custom domains on Shifter"
+        categories={[
+          {
+            name: 'Developers',
+          },
+          {
+            name: 'Domain',
+          },
+        ]}
+        linkText="Read this article"
+        href="#"
+      >
+        This article contains step by step guide for adding and assigning your
+        custom domain to your Shifter site.
+      </ContentCard>
+      <ContentCard
+        title="Custom domains on Shifter"
+        categories={[
+          {
+            name: 'Developers',
+          },
+          {
+            name: 'Domain',
+          },
+        ]}
+        linkText="Read this article"
+        href="#"
+      >
+        This article contains step by step guide for adding and assigning your
+        custom domain to your Shifter site.
+      </ContentCard>
+      <ContentCard
+        title="Custom domains on Shifter"
+        categories={[
+          {
+            name: 'Developers',
+          },
+          {
+            name: 'Domain',
+          },
+        ]}
+        linkText="Read this article"
+        href="#"
+      >
+        This article contains step by step guide for adding and assigning your
+        custom domain to your Shifter site.
+      </ContentCard>
+      <ContentCard
+        title="Custom domains on Shifter"
+        categories={[
+          {
+            name: 'Developers',
+          },
+          {
+            name: 'Domain',
+          },
+        ]}
+        linkText="Read this article"
+        href="#"
+      >
+        This article contains step by step guide for adding and assigning your
+        custom domain to your Shifter site.
+      </ContentCard>
+      <div className="px-4 py-4 d-flex flex-column justify-content-center h-100 question">
+        <h3 className="mb-0 font-weight-bold question-title">Questions?</h3>
+        <div className="mt-2 question-description">
+          Our team is happy to help
+        </div>
+        <div className="mt-4 question-anchor">
+          <a
+            href="#"
+            className="px-3 py-0 rounded btn btn-bordered btn-smaller border-0 d-inline-flex align-items-center font-weight-bold"
+          >
+            Contact Support
+            <i className="pl-2 larger-icon" aria-hidden="true">
+              <FaComment className="d-block" />
+            </i>
+          </a>
+        </div>
       </div>
-      <div className="mt-4 question-anchor">
-        <a
-          href="#"
-          className="px-3 py-0 rounded btn btn-bordered btn-smaller border-0 d-inline-flex align-items-center font-weight-bold"
-        >
-          Contact Support
-          <i className="pl-2 larger-icon" aria-hidden="true">
-            <FaComment className="d-block" />
-          </i>
-        </a>
-      </div>
-    </div>
-</ContentCardColumn>
-  )
-}
+    </ContentCardColumn>
+  );
+};
 
 const MockFeaturedContents: FC = () => (
   <FeaturedCardColumn>
@@ -135,7 +147,7 @@ const MockFeaturedContents: FC = () => (
       linkText="Explore Jamstack extensions"
     />
   </FeaturedCardColumn>
-)
+);
 
 const meta: Meta = {
   title: 'Mockup/Pages/Admin/Guides',

@@ -1,9 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import {
-  ContentCardColumn,
-  ContentCardColumnProps,
-} from './ContentCardColumn';
+import { ContentCardColumn, ContentCardColumnProps } from './ContentCardColumn';
 import { ContentCard } from './ContentCard';
 
 const meta: Meta = {
@@ -42,7 +39,7 @@ const Template: Story<
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    title: 'Popular articles',
+  title: 'Popular articles',
   column: 3,
   items: 3,
 };
