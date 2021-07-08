@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
-import { Link } from '../../../routings';
+import { Link } from '../../../routings/Link/Link';
 
 export type SidebarBackToProps = {
   to?: string;
