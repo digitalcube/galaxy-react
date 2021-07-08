@@ -22,6 +22,6 @@ const Template: Story<SidebarBackToProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    to: '#',
-    label: 'back to'
+  to: '#',
+  label: 'back to',
 };

@@ -14,12 +14,12 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<SidebarMenuItemProps> = (args) => (
-    <div className="shifter-dashboard-columns ">
+  <div className="shifter-dashboard-columns ">
     <nav className={`sidebar-nav`}>
       <ul>
-    <SidebarMenuItem {...args} />
-  </ul>
-  </nav>
+        <SidebarMenuItem {...args} />
+      </ul>
+    </nav>
   </div>
 );
 
@@ -27,14 +27,16 @@ const Template: Story<SidebarMenuItemProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    to: '#',
-    active: true,
-    deactive: false,
-    children: 'Menu',
-    icon: <FaCog className="d-block" />,
-    shouldShowSubmenus: false,
-    submenus: [{
-        to: "#",
-        label: 'Sub item'
-    }]
+  to: '#',
+  active: true,
+  deactive: false,
+  children: 'Menu',
+  icon: <FaCog className="d-block" />,
+  shouldShowSubmenus: false,
+  submenus: [
+    {
+      to: '#',
+      label: 'Sub item',
+    },
+  ],
 };

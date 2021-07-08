@@ -6,7 +6,7 @@ export type ProgressBarProps = {
   now: number;
   min?: number;
   max?: number;
-}
+};
 export const ProgressBar: FC<ProgressBarProps> = ({
   className,
   now,
@@ -14,9 +14,9 @@ export const ProgressBar: FC<ProgressBarProps> = ({
   max = 100,
 }) => {
   const width = useMemo(() => {
-    const current = now / (max - min)
-    return `${current * 100}%`
-  }, [min, max, now])
+    const current = now / (max - min);
+    return `${current * 100}%`;
+  }, [min, max, now]);
   return (
     <div className={`progress ${className}`}>
       <div
@@ -26,9 +26,9 @@ export const ProgressBar: FC<ProgressBarProps> = ({
         aria-valuemin={min}
         aria-valuemax={max}
         style={{
-          width
+          width,
         }}
       ></div>
     </div>
-  )
-}
+  );
+};

@@ -4,7 +4,9 @@ import { Default as SidebarSubMenu } from './SidebarSubMenu.stories';
 
 describe('SidebarSubMenu', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(<SidebarSubMenu {...SidebarSubMenu.args as any} />);
+    const { asFragment } = render(
+      <SidebarSubMenu {...(SidebarSubMenu.args as any)} />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

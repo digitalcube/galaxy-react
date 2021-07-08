@@ -35,7 +35,7 @@ const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({
           title="Log In"
           variant="login"
         />
-      <Button type="submit" className="mt-4" fontWeight="bold" block disabled>
+        <Button type="submit" className="mt-4" fontWeight="bold" block disabled>
           Log In
         </Button>
       </form>

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { AdminLayoutSidebar, AdminLayoutSidebarProps } from './AdminLayoutSidebar';
+import {
+  AdminLayoutSidebar,
+  AdminLayoutSidebarProps,
+} from './AdminLayoutSidebar';
 
 const meta: Meta = {
   title: 'Components/AdminLayout/Sidebar/AdminLayoutSidebar',
@@ -22,10 +25,10 @@ const Template: Story<AdminLayoutSidebarProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    children: 'hello world',
-    header: 'Header',
-    backTo: {
-        to: '#',
-        label: 'back to'
-    }
+  children: 'hello world',
+  header: 'Header',
+  backTo: {
+    to: '#',
+    label: 'back to',
+  },
 };

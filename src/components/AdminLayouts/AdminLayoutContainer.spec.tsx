@@ -4,7 +4,9 @@ import { Default as AdminLayoutContainerStory } from './AdminLayoutContainer.sto
 
 describe('AdminLayoutContainer', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(<AdminLayoutContainerStory {...(AdminLayoutContainerStory.args as any)} />);
+    const { asFragment } = render(
+      <AdminLayoutContainerStory {...(AdminLayoutContainerStory.args as any)} />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

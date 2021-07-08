@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { AdminLayoutContainer, AdminLayoutContainerProps } from './AdminLayoutContainer';
+import {
+  AdminLayoutContainer,
+  AdminLayoutContainerProps,
+} from './AdminLayoutContainer';
 import { AdminLayoutMain } from './AdminLayoutMain';
 
 const meta: Meta = {
@@ -15,10 +18,10 @@ export default meta;
 
 const Template: Story<AdminLayoutContainerProps> = (args) => {
   return (
-      <AdminLayoutContainer {...args}>
-          <AdminLayoutMain>
-            <h1>Hello</h1>
-          </AdminLayoutMain>
+    <AdminLayoutContainer {...args}>
+      <AdminLayoutMain>
+        <h1>Hello</h1>
+      </AdminLayoutMain>
     </AdminLayoutContainer>
   );
 };

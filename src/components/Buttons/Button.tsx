@@ -12,24 +12,27 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
 };
 
 export const Button: FC<ButtonProps> = ({
-  fontWeight, rounded, textAlign, smaller,
-   ...props}) => {
-
-  const classNames = [props.className, 'btn-colored']
+  fontWeight,
+  rounded,
+  textAlign,
+  smaller,
+  ...props
+}) => {
+  const classNames = [props.className, 'btn-colored'];
   if (fontWeight) {
-    classNames.push(`font-weight-${fontWeight}`)
+    classNames.push(`font-weight-${fontWeight}`);
   }
   if (textAlign) {
-    classNames.push(`text-${textAlign}`)
+    classNames.push(`text-${textAlign}`);
   }
   if (rounded === true) {
-    classNames.push('rounded')
+    classNames.push('rounded');
   }
   if (smaller) {
-    classNames.push('btn-smaller')
+    classNames.push('btn-smaller');
   }
 
-  const className = classNames.filter(Boolean).join(' ')
+  const className = classNames.filter(Boolean).join(' ');
 
   return <ReactstrapButton {...props} className={className} />;
 };

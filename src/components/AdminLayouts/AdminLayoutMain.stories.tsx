@@ -22,5 +22,5 @@ const Template: Story<AdminLayoutMainProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-    children: 'hello world'
+  children: 'hello world',
 };

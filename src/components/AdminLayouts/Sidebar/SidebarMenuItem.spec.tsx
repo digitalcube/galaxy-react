@@ -4,7 +4,9 @@ import { Default as SidebarMenuItem } from './SidebarMenuItem.stories';
 
 describe('SidebarMenuItem', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(<SidebarMenuItem {...SidebarMenuItem.args as any} />);
+    const { asFragment } = render(
+      <SidebarMenuItem {...(SidebarMenuItem.args as any)} />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });

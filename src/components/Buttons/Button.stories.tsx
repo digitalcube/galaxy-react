@@ -11,13 +11,13 @@ const meta: Meta = {
   argTypes: {
     textAlign: {
       options: ['right', 'center', 'left'],
-      control: {type: 'radio'}
+      control: { type: 'radio' },
     },
     fontWeight: {
       options: ['light', 'normal', 'bold'],
-      control: {type: 'radio'}
-    }
-  }
+      control: { type: 'radio' },
+    },
+  },
 };
 
 export default meta;
