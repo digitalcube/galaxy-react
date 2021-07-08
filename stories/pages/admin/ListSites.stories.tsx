@@ -8,14 +8,20 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { AdminLayoutContainer, Button, Footer, Layouts, SiteCard } from '../../../src';
+import {
+  AdminLayoutContainer,
+  Button,
+  Footer,
+  Layouts,
+  SiteCard,
+} from '../../../src';
 
 type MockListSitesProps = {};
 const MockListSites: FC<MockListSitesProps> = ({}) => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
-    <AdminLayoutContainer className="sites-list">
+      <AdminLayoutContainer className="sites-list">
         <header className="d-flex align-items-center justify-content-start sites-list-header">
           <h1 className="mb-0 font-weight-bold sites-list-title">Sites</h1>
           <div className="ml-3 list-sorter">
@@ -53,19 +59,20 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
           <SiteCard
             image={{
               src: '/images/site-a.png',
-              alt: 'Site'
+              alt: 'Site',
             }}
             site={{
               id: 'site_xxx',
               name: 'Stable Value Investment Ltd.',
               domain: 'stablevalueinvestment.org',
               team: {
-                name: 'super log name toshow a line break super long names work',
-                id: 'team_xxx'
-              }
+                name:
+                  'super log name toshow a line break super long names work',
+                id: 'team_xxx',
+              },
             }}
           />
-          
+
           <div className="mb-3 rounded d-md-flex align-items-start site-list-item">
             <div className="progress">
               <div
@@ -330,7 +337,7 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
             </div>
           </div>
         </section>
-        </AdminLayoutContainer>
+      </AdminLayoutContainer>
     </Layouts>
   );
 };

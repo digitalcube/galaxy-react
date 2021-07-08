@@ -9,7 +9,14 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { AdminLayoutContainer, Footer, Layouts, AdminLayoutMain, AdminLayoutSidebar, SidebarMenuItem } from '../../../src';
+import {
+  AdminLayoutContainer,
+  Footer,
+  Layouts,
+  AdminLayoutMain,
+  AdminLayoutSidebar,
+  SidebarMenuItem,
+} from '../../../src';
 
 type MockSiteSettingProps = {};
 const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
@@ -283,44 +290,50 @@ const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
         <AdminLayoutSidebar
           backTo={{
             to: '/',
-            label: 'All Sites'
+            label: 'All Sites',
           }}
-          header={(
+          header={
             <>
               <div className="mt-4 sidebar-sitename font-weight-bold">
-                  Site Name
+                Site Name
               </div>
-      
+
               <div className="mt-2 rounded d-inline-block font-weight-bold c-site-status c-is-site-stopped">
-                  WordPress Stopped
+                WordPress Stopped
               </div>
             </>
-          )}
+          }
         >
-          <SidebarMenuItem to="#" icon={<FaHome className="d-block"/>}>
+          <SidebarMenuItem to="#" icon={<FaHome className="d-block" />}>
             Home
           </SidebarMenuItem>
-          <SidebarMenuItem to="#" icon={<FaBolt className="d-block"/>}>
+          <SidebarMenuItem to="#" icon={<FaBolt className="d-block" />}>
             Live
           </SidebarMenuItem>
-          <SidebarMenuItem to="#" icon={<FaCodeBranch className="d-block"/>}>
+          <SidebarMenuItem to="#" icon={<FaCodeBranch className="d-block" />}>
             Staging
           </SidebarMenuItem>
           <SidebarMenuItem
             to="#"
-            icon={<FaCode className="d-block"/>}
+            icon={<FaCode className="d-block" />}
             shouldShowSubmenus={false}
-            submenus={[{
-              to: '#',
-              label: 'Sub'
-            }]}
+            submenus={[
+              {
+                to: '#',
+                label: 'Sub',
+              },
+            ]}
           >
             Dev
           </SidebarMenuItem>
-          <SidebarMenuItem to="#" icon={<FaUserFriends className="d-block"/>} deactive>
+          <SidebarMenuItem
+            to="#"
+            icon={<FaUserFriends className="d-block" />}
+            deactive
+          >
             Team
           </SidebarMenuItem>
-          <SidebarMenuItem to="#" icon={<FaCog className="d-block"/>} active>
+          <SidebarMenuItem to="#" icon={<FaCog className="d-block" />} active>
             Settings
           </SidebarMenuItem>
         </AdminLayoutSidebar>
