@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import { Link } from '../../../routings';
+import { Link } from '../../../routings/Link/Link';
 
 export type FeaturePromotionBlockProps = {
   image: ReactNode;

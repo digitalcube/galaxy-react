@@ -29,23 +29,26 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "dashboard-mock-react",
+  "name": "@galaxy/shifter",
   "author": "Hidetaka Okamoto",
-  "module": "dist/dashboard-mock-react.esm.js",
+  "module": "dist/shifter.esm.js",
   "size-limit": [
     {
-      "path": "dist/dashboard-mock-react.cjs.production.min.js",
-      "limit": "10 KB"
+      "path": "dist/shifter.cjs.production.min.js",
+      "limit": "1000 KB"
     },
     {
-      "path": "dist/dashboard-mock-react.esm.js",
-      "limit": "10 KB"
+      "path": "dist/shifter.esm.js",
+      "limit": "500 KB"
     }
   ],
   "devDependencies": {

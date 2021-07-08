@@ -1,0 +1,9 @@
+node_modules/
+.github/
+example/
+src/
+stories/
+static/
+jest*
+tsdx.config.js
+.storybook/
