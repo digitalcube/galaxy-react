@@ -13,6 +13,7 @@ module.exports = {
                   "src/assets",
                   // You can also include files
                   "src/css",
+                  "src/images"
                 ],
             })
         )
