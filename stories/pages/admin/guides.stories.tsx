@@ -13,8 +13,7 @@ import {
   AdminLayoutContainer,
 } from '../../../src';
 
-type MockGuidesPageProps = {};
-const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
+const MockGuidesPage: FC = () => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />

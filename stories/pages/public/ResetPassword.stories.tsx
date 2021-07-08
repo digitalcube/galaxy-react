@@ -10,7 +10,6 @@ import {
   PasswordWithConfirmation,
   AuthFormLayout,
 } from '../../../src';
-import { title } from 'process';
 
 type MockResetPasswordPageProps = {
   status: '' | 'failure' | 'success';

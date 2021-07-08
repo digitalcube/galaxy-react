@@ -18,7 +18,9 @@ const Template: Story<SidebarMenuItemProps> = (args) => (
     <nav className={`sidebar-nav`}>
       <ul>
     <SidebarMenuItem {...args} />
-  </ul></nav></div>
+  </ul>
+  </nav>
+  </div>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test

@@ -18,8 +18,7 @@ import {
   SidebarMenuItem,
 } from '../../../src';
 
-type MockSiteSettingProps = {};
-const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
+const MockSiteSetting: FC = () => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
