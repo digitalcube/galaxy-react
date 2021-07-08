@@ -10,6 +10,7 @@ import {
   ContentCard,
   ContentCardColumn,
   Layouts,
+  AdminLayoutContainer,
 } from '../../../src';
 
 type MockGuidesPageProps = {};
@@ -17,8 +18,7 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
-
-      <div className="mx-auto w-100 shifter-guides">
+      <AdminLayoutContainer className="shifter-guides">
         <ContentHeader
           title="Guides"
           src="/images/guide-banner.png"
@@ -29,7 +29,7 @@ const MockGuidesPage: FC<MockGuidesPageProps> = ({}) => {
         />
         <MockFeaturedContents />
         <MockArticles />
-      </div>
+      </AdminLayoutContainer>
     </Layouts>
   );
 };

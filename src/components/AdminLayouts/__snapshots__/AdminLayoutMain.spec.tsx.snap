@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminLayoutMain to match snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="mb-4 pt-3 px-4 flex-grow-1 shifter-dashboard-main"
+    role="main"
+  >
+    <h1>
+      hello
+    </h1>
+  </main>
+</DocumentFragment>
+`;

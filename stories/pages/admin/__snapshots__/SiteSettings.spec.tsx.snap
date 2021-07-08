@@ -570,7 +570,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
         >
           <a
             class="d-inline-flex align-items-center"
-            href="./sites-home-all-sites.html"
+            href="/"
+            to="/"
           >
             <i
               aria-hidden="true"
@@ -611,7 +612,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                href="./sites-home-all-sites.html"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"
@@ -638,7 +640,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                href="./sites-live.html"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"
@@ -665,7 +668,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                href="./sites-staging.html"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"
@@ -692,7 +696,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                href="./sites-dev"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"
@@ -719,7 +724,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center deactive"
-                href="./sites-team.html"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"
@@ -746,7 +752,8 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             <li>
               <a
                 class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center active"
-                href="./sites-settings.html"
+                href="#"
+                to="#"
               >
                 <i
                   aria-hidden="true"

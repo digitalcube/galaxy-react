@@ -178,7 +178,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
       </div>
     </nav>
     <main
-      class="px-4 sites-list"
+      class="px-4 mx-auto w-100 sites-list"
     >
       <header
         class="d-flex align-items-center justify-content-start sites-list-header"

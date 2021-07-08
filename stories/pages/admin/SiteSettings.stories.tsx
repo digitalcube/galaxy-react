@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import {
-  FaArrowLeft,
   FaBolt,
   FaCode,
   FaCodeBranch,
@@ -10,18 +9,15 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Footer, Layouts } from '../../../src';
+import { AdminLayoutContainer, Footer, Layouts, AdminLayoutMain, AdminLayoutSidebar, SidebarMenuItem } from '../../../src';
 
 type MockSiteSettingProps = {};
 const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
-      <div className="d-flex flex-md-row-reverse flex-column flex-grow-1 shifter-dashboard-columns site-settings">
-        <main
-          role="main"
-          className="mb-4 pt-3 px-4 flex-grow-1 shifter-dashboard-main"
-        >
+      <AdminLayoutContainer column className="site-settings">
+        <AdminLayoutMain>
           <h1 className="mb-4 font-weight-bold setting-headding">
             Site Settings
           </h1>
@@ -283,101 +279,52 @@ const MockSiteSetting: FC<MockSiteSettingProps> = ({}) => {
               </button>
             </div>
           </section>
-        </main>
-
-        <div className="pt-4 shifter-dashboard-sidebar">
-          <div className="return2sites">
-            <a
-              className="d-inline-flex align-items-center"
-              href="./sites-home-all-sites.html"
-            >
-              <i className="mr-2" aria-hidden="true">
-                <FaArrowLeft className="d-block" />
-              </i>
-              All Sites
-            </a>
-          </div>
-
-          <div className="mt-4 sidebar-sitename font-weight-bold">
-            Site Name
-          </div>
-
-          <div className="mt-2 rounded d-inline-block font-weight-bold c-site-status c-is-site-stopped">
-            WordPress Stopped
-          </div>
-
-          <nav className="mt-4 sidebar-nav">
-            <ul>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                  href="./sites-home-all-sites.html"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaHome className="d-block" />
-                  </i>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                  href="./sites-live.html"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaBolt className="d-block" />
-                  </i>
-                  Live
-                </a>
-              </li>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                  href="./sites-staging.html"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaCodeBranch className="d-block" />
-                  </i>
-                  Staging
-                </a>
-              </li>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
-                  href="./sites-dev"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaCode className="d-block" />
-                  </i>
-                  Dev
-                </a>
-              </li>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center deactive"
-                  href="./sites-team.html"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaUserFriends className="d-block" />
-                  </i>
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
-                  className="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center active"
-                  href="./sites-settings.html"
-                >
-                  <i className="mr-2" aria-hidden="true">
-                    <FaCog className="d-block" />
-                  </i>
-                  Settings
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+        </AdminLayoutMain>
+        <AdminLayoutSidebar
+          backTo={{
+            to: '/',
+            label: 'All Sites'
+          }}
+          header={(
+            <>
+              <div className="mt-4 sidebar-sitename font-weight-bold">
+                  Site Name
+              </div>
+      
+              <div className="mt-2 rounded d-inline-block font-weight-bold c-site-status c-is-site-stopped">
+                  WordPress Stopped
+              </div>
+            </>
+          )}
+        >
+          <SidebarMenuItem to="#" icon={<FaHome className="d-block"/>}>
+            Home
+          </SidebarMenuItem>
+          <SidebarMenuItem to="#" icon={<FaBolt className="d-block"/>}>
+            Live
+          </SidebarMenuItem>
+          <SidebarMenuItem to="#" icon={<FaCodeBranch className="d-block"/>}>
+            Staging
+          </SidebarMenuItem>
+          <SidebarMenuItem
+            to="#"
+            icon={<FaCode className="d-block"/>}
+            shouldShowSubmenus={false}
+            submenus={[{
+              to: '#',
+              label: 'Sub'
+            }]}
+          >
+            Dev
+          </SidebarMenuItem>
+          <SidebarMenuItem to="#" icon={<FaUserFriends className="d-block"/>} deactive>
+            Team
+          </SidebarMenuItem>
+          <SidebarMenuItem to="#" icon={<FaCog className="d-block"/>} active>
+            Settings
+          </SidebarMenuItem>
+        </AdminLayoutSidebar>
+      </AdminLayoutContainer>
     </Layouts>
   );
 };

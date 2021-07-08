@@ -8,15 +8,14 @@ import {
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
-import { Button, Footer, Layouts, SiteCard } from '../../../src';
+import { AdminLayoutContainer, Button, Footer, Layouts, SiteCard } from '../../../src';
 
 type MockListSitesProps = {};
 const MockListSites: FC<MockListSitesProps> = ({}) => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
       <TopNavigation />
-
-      <main className="px-4 sites-list">
+    <AdminLayoutContainer className="sites-list">
         <header className="d-flex align-items-center justify-content-start sites-list-header">
           <h1 className="mb-0 font-weight-bold sites-list-title">Sites</h1>
           <div className="ml-3 list-sorter">
@@ -331,7 +330,7 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
             </div>
           </div>
         </section>
-      </main>
+        </AdminLayoutContainer>
     </Layouts>
   );
 };

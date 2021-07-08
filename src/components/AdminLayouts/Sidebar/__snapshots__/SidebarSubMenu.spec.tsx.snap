@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarSubMenu to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-dashboard-columns "
+  >
+    <nav
+      class="sidebar-nav"
+    >
+      <ul>
+        <li>
+          <a
+            class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
+          >
+            test
+          </a>
+          <ul
+            class="sub-menu"
+          >
+            <a
+              class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
+            />
+            <li>
+              <a
+                class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
+              />
+              <a
+                class=""
+                href="#"
+                to="#"
+              >
+                submenu
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</DocumentFragment>
+`;

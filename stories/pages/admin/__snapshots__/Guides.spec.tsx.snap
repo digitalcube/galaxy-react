@@ -177,8 +177,8 @@ exports[`Guides to match snapshot(default) 1`] = `
         </ul>
       </div>
     </nav>
-    <div
-      class="mx-auto w-100 shifter-guides"
+    <main
+      class="px-4 mx-auto w-100 shifter-guides"
     >
       <div
         class="shifter-guides"
@@ -707,7 +707,7 @@ exports[`Guides to match snapshot(default) 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer
       class="text-center"
     >
