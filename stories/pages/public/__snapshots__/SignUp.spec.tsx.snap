@@ -37,6 +37,7 @@ exports[`SignUp to match snapshot (failure) 1`] = `
               or 
               <a
                 href="/"
+                to="/"
               >
                 log in
               </a>
@@ -332,6 +333,7 @@ exports[`SignUp to match snapshot(default) 1`] = `
               or 
               <a
                 href="/"
+                to="/"
               >
                 log in
               </a>

@@ -34,6 +34,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             or 
             <a
               href="/"
+              to="/"
             >
               log in
             </a>

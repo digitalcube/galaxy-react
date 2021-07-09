@@ -25,6 +25,7 @@ exports[`AuthFormHeader to match snapshot 1`] = `
       or 
       <a
         href="/signup"
+        to="/signup"
       >
         sign up
       </a>

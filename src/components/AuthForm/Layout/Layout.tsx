@@ -18,7 +18,7 @@ export type AuthFormLayoutProps = PropsWithChildren<{
 export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
   status,
   children,
-  inprogress,
+  //inprogress,
   success,
   className,
   variant,
@@ -37,13 +37,13 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
   if (['inprogress', 'success'].includes(status)) classNames.push('success');
   if (status === 'failure') classNames.push('error');
 
-  const inprogressMessageTitle = inprogress?.title || null;
-  const inprogressMessage = inprogress?.message || null;
+  //const inprogressMessageTitle = inprogress?.title || null;
+  //const inprogressMessage = inprogress?.message || null;
   const succeededMessageTitle = success?.title || null;
   const succeededMessage = success?.message || null;
   return (
     <div className={classNames.join(' ')}>
-      {status === 'inprogress' ? (
+      {/*status === 'inprogress' ? (
         <div className={`mb-4 pb-2 ${variant}-header`}>
           <div
             className={`mx-auto mb-3 pt-2 d-flex align-items-center justify-content-center rounded-circle ${variant}-success-icon`}
@@ -61,7 +61,7 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
             </div>
           ) : null}
         </div>
-      ) : null}
+          ) : null*/}
       {status === 'success' ? (
         <div className={`mb-4 pb-2 ${variant}-header`}>
           <div
@@ -85,7 +85,7 @@ export const AuthFormLayout: FC<AuthFormLayoutProps> = ({
           ) : null}
         </div>
       ) : null}
-      {!['inprogress', 'success'].includes(status) ? children : null}
+      {!['success'].includes(status) ? children : null}
     </div>
   );
 };
