@@ -35,7 +35,7 @@ const MultiItemTempalte: Story<NavbarDropdownItemProps> = () => (
     <NavbarDropdownItem href="#">
       Account <FaUser />
     </NavbarDropdownItem>
-    <NavbarDropdownItem href="#">
+    <NavbarDropdownItem onClick={() => alert('hello')}>
       Log out <FaSignOutAlt />
     </NavbarDropdownItem>
   </>
