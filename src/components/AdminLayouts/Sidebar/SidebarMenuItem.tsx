@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
-import { Link } from '../../../routings';
+import { Link } from '../../../routings/Link/Link';
 import { SidebarSubMenu, SidebarSubMenuItemProps } from './SidebarSubMenu';
 
 export type SidebarMenuItemProps = PropsWithChildren<{
