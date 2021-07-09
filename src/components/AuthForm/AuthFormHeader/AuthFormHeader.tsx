@@ -1,4 +1,5 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
+import { Link } from '../../../routings/Link/Link';
 
 export type AuthFormHeaderProps = PropsWithChildren<{
   logo: ReactNode;
@@ -24,7 +25,7 @@ export const AuthFormHeader: FC<AuthFormHeaderProps> = ({
       <div
         className={`mt-2 font-weight-bold text-center ${variant}-switch-way`}
       >
-        or <a href={link}>{linkText}</a>
+        or <Link href={link}>{linkText}</Link>
       </div>
     ) : null}
     {children}
