@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { FaEllipsisH, FaPlay, FaStop, FaWordpressSimple } from 'react-icons/fa';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
+import { SiteCardThumbnail } from './SiteCardThumbnail';
 
 export type SiteCardProps = {
   image?: {
@@ -22,11 +23,7 @@ export const SiteCard: FC<SiteCardProps> = ({ image, site }) => {
   return (
     <div className="mb-3 rounded d-md-flex align-items-start site-list-item">
       <ProgressBar now={10} />
-      {image ? (
-        <div className="site-thumbnail rounded-left">
-          <img src={image.src} width="167" height="111" alt={image.alt} />
-        </div>
-      ) : null}
+      <SiteCardThumbnail {...image} />
       <div className="pl-3 py-3 site-data">
         <h2 className="mb-0 font-weight-bold site-name">{site.name}</h2>
         <div className="mt-3 d-flex align-items-center site-info">
