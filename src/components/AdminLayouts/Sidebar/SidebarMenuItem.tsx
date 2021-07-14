@@ -9,6 +9,7 @@ export type SidebarMenuItemProps = PropsWithChildren<{
   deactive?: boolean;
   submenus?: Array<SidebarSubMenuItemProps>;
   shouldShowSubmenus?: boolean;
+  pathname?: string;
 }>;
 export const SidebarMenuItem: FC<SidebarMenuItemProps> = ({
   children,
@@ -18,6 +19,7 @@ export const SidebarMenuItem: FC<SidebarMenuItemProps> = ({
   deactive,
   submenus,
   shouldShowSubmenus = false,
+  pathname,
 }) => {
   const classNames = [
     'px-3 py-2 rounded d-inline-flex align-items-center justify-content-center',
@@ -35,7 +37,7 @@ export const SidebarMenuItem: FC<SidebarMenuItemProps> = ({
         {children}
       </Link>
       {shouldShowSubmenus && submenus ? (
-        <SidebarSubMenu items={submenus} />
+        <SidebarSubMenu items={submenus} pathname={pathname} />
       ) : null}
     </li>
   );

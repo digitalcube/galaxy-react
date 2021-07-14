@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Default as SiteCardThumbnail } from './SiteCardThumbnail.stories';
+import { Default as SiteCardDropdownMenu } from './SiteCardDropdownMenu.stories';
 
-describe('SiteCardThumbnail', () => {
+describe('SiteCardDropdownMenu', () => {
   it('to match snapshot [column %p | item %p]', () => {
     const { asFragment } = render(
-      <SiteCardThumbnail {...(SiteCardThumbnail.args as any)} />
+      <SiteCardDropdownMenu {...(SiteCardDropdownMenu.args as any)} />
     );
     expect(asFragment()).toMatchSnapshot();
   });

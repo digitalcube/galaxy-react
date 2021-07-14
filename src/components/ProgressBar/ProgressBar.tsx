@@ -17,8 +17,12 @@ export const ProgressBar: FC<ProgressBarProps> = ({
     const current = now / (max - min);
     return `${current * 100}%`;
   }, [min, max, now]);
+  const classNames = useMemo(() => {
+    return ['progress', 'd-block', className].filter(Boolean);
+  }, [className]);
+  if (now === undefined || now < 0) return null;
   return (
-    <div className={`progress ${className}`}>
+    <div className={`${classNames.join(' ')}`}>
       <div
         className="progress-bar"
         role="progressbar"

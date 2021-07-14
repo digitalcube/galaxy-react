@@ -255,7 +255,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
           class="mb-3 rounded d-md-flex align-items-start site-list-item"
         >
           <div
-            class="progress undefined"
+            class="progress d-block"
           >
             <div
               aria-valuemax="100"
@@ -270,9 +270,9 @@ exports[`ListSites to match snapshot(default) 1`] = `
             class="site-thumbnail rounded-left"
           >
             <img
-              alt="Site"
+              alt="website screenshot Site"
               height="111"
-              src="/images/site-a.png"
+              src="//s.wordpress.com/mshots/v1/https://getshifter.io/?w=300"
               width="167"
             />
           </div>
@@ -282,7 +282,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
             <h2
               class="mb-0 font-weight-bold site-name"
             >
-              Stable Value Investment Ltd.
+              site name
             </h2>
             <div
               class="mt-3 d-flex align-items-center site-info"
@@ -291,9 +291,11 @@ exports[`ListSites to match snapshot(default) 1`] = `
                 class="d-inline-block align-middle site-url"
               >
                 <a
-                  href="stablevalueinvestment.org"
+                  href="https://getfhiter.io"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  stablevalueinvestment.org
+                  getshifter.io
                 </a>
               </span>
               <span
@@ -307,7 +309,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
                 <p
                   class="mb-0 d-inline site-description"
                 >
-                  super log name toshow a line break super long names work
+                  Team member name
                 </p>
               </span>
             </div>
@@ -325,51 +327,23 @@ exports[`ListSites to match snapshot(default) 1`] = `
               </div>
             </div>
             <div
-              class="ml-4 site-panel"
-            >
-              <a
-                href="#"
-                title="管理画面"
-              >
-                <i
-                  aria-hidden="true"
-                >
-                  <svg
-                    class="d-block"
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 512 512"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z"
-                    />
-                  </svg>
-                </i>
-              </a>
-            </div>
-            <div
               class="ml-4 font-weight-bold site-manage"
             >
               <a
                 href="#"
+                to="#"
               >
                 Manage site
               </a>
             </div>
             <div
-              class="ml-4 site-control"
+              class="ml-4 site-control dropdown"
             >
-              <a
+              <span
                 aria-expanded="false"
                 aria-haspopup="true"
                 class="dropdown-toggle"
                 data-toggle="dropdown"
-                href="#"
-                id="navbarDropdown"
                 role="button"
               >
                 <i
@@ -390,14 +364,18 @@ exports[`ListSites to match snapshot(default) 1`] = `
                     />
                   </svg>
                 </i>
-              </a>
+              </span>
               <div
-                aria-labelledby="navbarDropdown"
+                aria-hidden="true"
                 class="dropdown-menu dropdown-menu-right"
+                role="menu"
+                tabindex="-1"
               >
-                <a
-                  class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between"
-                  href="#"
+                <button
+                  class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between dropdown-item"
+                  role="menuitem"
+                  tabindex="0"
+                  type="button"
                 >
                   Start WordPress
                   <i
@@ -418,10 +396,12 @@ exports[`ListSites to match snapshot(default) 1`] = `
                       />
                     </svg>
                   </i>
-                </a>
-                <a
-                  class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between"
-                  href="#"
+                </button>
+                <button
+                  class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between dropdown-item"
+                  role="menuitem"
+                  tabindex="0"
+                  type="button"
                 >
                   Restart WordPress
                   <i
@@ -442,7 +422,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
                       />
                     </svg>
                   </i>
-                </a>
+                </button>
               </div>
             </div>
           </div>

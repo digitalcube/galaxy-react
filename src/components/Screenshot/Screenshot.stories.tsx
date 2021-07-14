@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { SiteCardThumbnail, SiteCardThumbnailProps } from './SiteCardThumbnail';
+import { Screenshot, ScreenshotProps } from './Screenshot';
 
 const meta: Meta = {
-  title: 'Components/SiteCard/SiteCardThumbnail',
-  component: SiteCardThumbnail,
+  title: 'Components/Screenshot',
+  component: Screenshot,
   parameters: {
     controls: { expanded: true },
   },
@@ -12,18 +12,13 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<SiteCardThumbnailProps> = (args) => {
-  return <SiteCardThumbnail {...args} />;
+const Template: Story<ScreenshotProps> = (args) => {
+  return <Screenshot {...args} />;
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  src: '/images/site-a.png',
-};
-
-export const Screenshot = Template.bind({});
-Screenshot.args = {
-  src: 'getshifter.io',
+  url: 'getshifter.io',
 };

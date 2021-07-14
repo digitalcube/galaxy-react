@@ -3,7 +3,7 @@
 exports[`ProgressBar to match snapshot [column %p | item %p] 1`] = `
 <DocumentFragment>
   <div
-    class="progress "
+    class="progress d-block"
   >
     <div
       aria-valuemax="100"

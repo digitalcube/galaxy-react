@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteCardThumbnail to match snapshot [column %p | item %p] 1`] = `
+<DocumentFragment>
+  <div
+    class="site-thumbnail rounded-left"
+  >
+    <img
+      height="111"
+      src="/images/site-a.png"
+      width="167"
+    />
+  </div>
+</DocumentFragment>
+`;

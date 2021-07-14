@@ -14,9 +14,18 @@ import {
   Footer,
   Layouts,
   SiteCard,
+  SiteCardData,
+  SiteCardDropdownMenu,
+  SiteCardThumbnail,
+  SiteCardSettings,
+  SiteCardDropdownItem,
+  WordPressContainerStatusBadge,
+  Link,
+  ProgressBar,
 } from '../../../src';
 
 type MockListSitesProps = {};
+
 const MockListSites: FC<MockListSitesProps> = ({}) => {
   return (
     <Layouts variant="admin" footer={<Footer serviceName="Shifter" />}>
@@ -56,22 +65,41 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
           </div>
         </header>
         <section className="d-flex flex-column site-list-body">
-          <SiteCard
-            image={{
-              src: '/images/site-a.png',
-              alt: 'Site',
-            }}
-            site={{
-              id: 'site_xxx',
-              name: 'Stable Value Investment Ltd.',
-              domain: 'stablevalueinvestment.org',
-              team: {
-                name:
-                  'super log name toshow a line break super long names work',
-                id: 'team_xxx',
-              },
-            }}
-          />
+          <SiteCard>
+            <ProgressBar now={10} />
+            <SiteCardThumbnail
+              {...{
+                src: 'https://getshifter.io',
+                alt: 'Site',
+              }}
+            />
+            <SiteCardData name="site name">
+              <span className="d-inline-block align-middle site-url">
+                <Link href={`https://getfhiter.io`}>getshifter.io</Link>
+              </span>
+              <span className="d-inline-block align-middle text-truncate site-description">
+                <span className="mr-2 d-inline-block rounded-circle font-weight-bold text-center site-initial">
+                  D
+                </span>
+                <p className="mb-0 d-inline site-description">
+                  Team member name
+                </p>
+              </span>
+            </SiteCardData>
+            <SiteCardSettings
+              statusBadge={<WordPressContainerStatusBadge status="running" />}
+              href="#"
+            >
+              <SiteCardDropdownMenu>
+                <SiteCardDropdownItem icon={<FaPlay className="d-block" />}>
+                  Start WordPress
+                </SiteCardDropdownItem>
+                <SiteCardDropdownItem icon={<FaStop className="d-block" />}>
+                  Restart WordPress
+                </SiteCardDropdownItem>
+              </SiteCardDropdownMenu>
+            </SiteCardSettings>
+          </SiteCard>
 
           <div className="mb-3 rounded d-md-flex align-items-start site-list-item">
             <div className="progress">

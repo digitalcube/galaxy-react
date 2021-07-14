@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteCardData to match snapshot [column %p | item %p] 1`] = `
+<DocumentFragment>
+  <div
+    class="sites-list"
+  >
+    <section
+      class="d-flex flex-column site-list-body"
+    >
+      <div
+        class="pl-3 py-3 site-data"
+      >
+        <h2
+          class="mb-0 font-weight-bold site-name"
+        >
+          Site
+        </h2>
+        <div
+          class="mt-3 d-flex align-items-center site-info"
+        >
+          <span
+            class="d-inline-block align-middle site-url"
+          >
+            <a
+              href="getshifter.io"
+              to="getshifter.io"
+            >
+              getshifter.io
+            </a>
+          </span>
+          <span
+            class="d-inline-block align-middle text-truncate site-description"
+          >
+            <span
+              class="mr-2 d-inline-block rounded-circle font-weight-bold text-center site-initial"
+            >
+              D
+            </span>
+            <p
+              class="mb-0 d-inline site-description"
+            >
+              Team name
+            </p>
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;
