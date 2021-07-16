@@ -5,7 +5,9 @@ export type NavbarProps = PropsWithChildren<{
 }>;
 export const Navbar: FC<NavbarProps> = ({ children, fixed }) => {
   const style: CSSProperties = fixed ? {
-    position: 'fixed',
+    position: 'sticky',
+    top: 0,
+    marginBottom: '1.5rem',
     zIndex: 999,
     background: '#fff',
     width: '100%',
