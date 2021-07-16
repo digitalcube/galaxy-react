@@ -7,3 +7,6 @@ static/
 jest*
 tsdx.config.js
 .storybook/
+*.snap
+__snapshots__/
+src/assets/
