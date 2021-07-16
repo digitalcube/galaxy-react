@@ -8,9 +8,7 @@ tsdx.config.js
 .storybook/
 *.snap
 __snapshots__/
-src/assets/
-src/images/
-src/components/
+src/
 *.stories.tsx
 *.spec.tsx
 *.stories.d.ts
