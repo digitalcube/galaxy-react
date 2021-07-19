@@ -852,6 +852,28 @@ body {
   color: #d1cfd0;
 }
 
+.setting-card {
+  border: 1px solid #d1cfd0;
+}
+.setting-card .setting-card-title {
+  line-height: 1.5;
+  color: #363032;
+  font-size: 1.375rem;
+}
+.setting-card .setting-card-title i svg {
+  fill: #892885;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.setting-card .setting-card-description {
+  line-height: 1.3928571429;
+  color: #363032;
+  font-size: 0.875rem;
+}
+.content-max-width {
+  max-width: 535px;
+}
+
 .shifter-dashboard-columns {
   border-top: 1px solid #d1cfd0;
   width: 100%;
@@ -2364,147 +2386,74 @@ body {
   color: #521848;
   font-size: 1.375rem;
 }
-.shifter-dashboard-columns .notification-setting .base-notification {
+.shifter-dashboard-columns .base-notification-box {
   border: 1px solid #d1cfd0;
 }
-.shifter-dashboard-columns .notification-setting .base-notification .base-notification-title {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .notification-setting .base-notification .form-control {
-  color: #363032;
-}
-.shifter-dashboard-columns .notification-setting .base-notification .base-notification-box {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .notification-setting .base-notification .base-notification-box .notification + .notification {
+.shifter-dashboard-columns .base-notification-box .notification + .notification {
   border-top: 1px solid #d1cfd0;
 }
-.shifter-dashboard-columns .notification-setting .site-notification {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .notification-setting .site-notification .site-notification-header .site-notification-title {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .notification-setting .site-notification .site-notification-header .site-notification-description {
-  line-height: 1.3928571429;
-  color: #363032;
-  font-size: 0.875rem;
-}
-.shifter-dashboard-columns .notification-setting .site-notification .notification-item .notification-item-header .notification-item-title {
+.shifter-dashboard-columns .notification-item .notification-item-header .notification-item-title {
   line-height: 1.5;
   color: #363032;
   font-size: 1.125rem;
 }
-.shifter-dashboard-columns .notification-setting .site-notification .notification-item .notification-item-header .notification-item-url {
+.shifter-dashboard-columns .notification-item .notification-item-header .notification-item-url {
   line-height: 1.25;
   color: #892885;
   font-size: 0.75rem;
 }
-.shifter-dashboard-columns .notification-setting .site-notification .notification-item .notification-item-general {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .notification-setting .site-notification .notification-item .notification-item-detail {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .security-setting .update-password {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .security-setting .base-notification-title {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .security-setting .security-item {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .security-setting .security-item .security-item-title {
-  line-height: 1;
-  color: #363032;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .security-setting .security-item .security-description {
-  line-height: 1.3928571429;
-  color: #363032;
-  font-size: 0.875rem;
-}
-.shifter-dashboard-columns .authentication {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .authentication .authentication-title {
-  line-height: 1;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .authentication .authentication-description {
-  max-width: 535px;
-  line-height: 1.3928571429;
-  color: #363032;
-  font-size: 0.875rem;
-}
-.shifter-dashboard-columns .authentication .authentication-method {
+.shifter-dashboard-columns .authentication-method {
   border: 1px solid #d1cfd0;
   line-height: 1.375;
   color: #363032;
   font-size: 1rem;
   letter-spacing: 0.35px;
 }
-.shifter-dashboard-columns .authentication .authentication-method .authentication-method-configured {
+.shifter-dashboard-columns .authentication-method .authentication-method-configured {
   border-top: 1px solid #d1cfd0;
 }
 .shifter-dashboard-columns .billing-info {
   max-width: 936px;
 }
-.shifter-dashboard-columns .billing-info .payment-information {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .billing-info .payment-information .payment-information-title {
-  line-height: 1.5;
-  color: #521850;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .billing-info .payment-information .payment-information-form label {
+.shifter-dashboard-columns .billing-info .payment-information-form label {
   line-height: 1.375;
   color: #521850;
   font-size: 1rem;
   letter-spacing: 0.35px;
 }
-.shifter-dashboard-columns .billing-info .payment-information .card-number .form-control,
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control {
+.shifter-dashboard-columns .billing-info .payment-information-form .card-number .form-control,
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control {
   width: 15.1875em;
 }
-.shifter-dashboard-columns .billing-info .payment-information .exp-date .form-control {
+.shifter-dashboard-columns .billing-info .payment-information-form .exp-date .form-control {
   width: 5.75em;
 }
-.shifter-dashboard-columns .billing-info .payment-information .cvc .form-control {
+.shifter-dashboard-columns .billing-info .payment-information-form .cvc .form-control {
   width: 4.5em;
 }
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control-select-wrapper {
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control-select-wrapper {
   z-index: 1;
 }
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control-select-wrapper i {
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control-select-wrapper i {
   top: 50%;
   right: 1rem;
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control-select-wrapper i svg {
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control-select-wrapper i svg {
   fill: #b6b3b4;
   width: 0.875rem;
   height: 0.875rem;
 }
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control-select-wrapper select {
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control-select-wrapper select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   z-index: 2;
   background-color: transparent;
 }
-.shifter-dashboard-columns .billing-info .payment-information .country .form-control-select-wrapper select::-ms-expand {
+.shifter-dashboard-columns .billing-info .payment-information-form .country .form-control-select-wrapper select::-ms-expand {
   display: none;
 }
 .shifter-dashboard-columns .billing-info .card-info {
@@ -2519,15 +2468,7 @@ body {
   color: #892885;
   font-size: 0.875rem;
 }
-.shifter-dashboard-columns .billing-info .billing-coupon {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .billing-info .billing-coupon .billing-coupon-title {
-  line-height: 1.5;
-  color: #363032;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .billing-info .billing-coupon .btn.btn-bordered {
+.shifter-dashboard-columns .billing-info .btn.btn-coupon {
   border: 2px solid #edecec;
 }
 .shifter-dashboard-columns .billing-info .billing-coupon table th, .shifter-dashboard-columns .billing-info .billing-coupon table td {
@@ -2556,123 +2497,107 @@ body {
 .shifter-dashboard-columns .billing-info .billing-coupon .coupon-edit .btn {
   line-height: 1.375;
 }
-.shifter-dashboard-columns .billing-info .billing-history {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-title {
-  line-height: 1.5;
-  color: #363032;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table {
+.shifter-dashboard-columns .billing-info .billing-history-table {
   color: #363032;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .period {
+.shifter-dashboard-columns .billing-info .billing-history-table .period {
   width: 28.09734513%;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .plan {
+.shifter-dashboard-columns .billing-info .billing-history-table .plan {
   width: 14.82300885%;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .date {
+.shifter-dashboard-columns .billing-info .billing-history-table .date {
   width: 15.04424779%;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .amount {
+.shifter-dashboard-columns .billing-info .billing-history-table .amount {
   width: 15.81858407%;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .pdf {
+.shifter-dashboard-columns .billing-info .billing-history-table .pdf {
   width: 1%;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table .pdf svg {
+.shifter-dashboard-columns .billing-info .billing-history-table .pdf svg {
   fill: #892885;
   width: 0.875rem;
   height: 0.875rem;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table table {
+.shifter-dashboard-columns .billing-info .billing-history-table table {
   border-collapse: separate;
   border-spacing: 0 0.5rem;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table thead th {
+.shifter-dashboard-columns .billing-info .billing-history-table thead th {
   line-height: 1.25;
   font-size: 0.75rem;
 }
-.shifter-dashboard-columns .billing-info .billing-history .billing-history-table tbody td {
+.shifter-dashboard-columns .billing-info .billing-history-table tbody td {
   line-height: 1.3928571429;
   font-size: 0.875rem;
 }
-.shifter-dashboard-columns .subscriptions-list {
-  border: 1px solid #d1cfd0;
-  color: #363032;
-}
-.shifter-dashboard-columns .subscriptions-list .subscriptions-title {
-  line-height: 1.5;
-  font-size: 1.375rem;
-}
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item {
+.shifter-dashboard-columns .subscriptions-item {
   border: 1px solid #d1cfd0;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-header .subscriptions-name {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-header .subscriptions-name {
   line-height: 1.5;
   font-size: 1.125rem;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-header .subscriptions-type {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-header .subscriptions-type {
   line-height: 1.5;
   color: #756b6e;
   font-size: 1.125rem;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-buttons .btn.btn-gray-border {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-buttons .btn.btn-gray-border {
   border: 2px solid #edecec;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-data {
   border-top: 1px solid #d1cfd0;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data dl dt {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-data dl dt {
   line-height: 1.25;
   font-size: 0.75rem;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data dl dd {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-data dl dd {
   line-height: 1.4285714286;
   font-size: 0.875rem;
 }
-.shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-id {
+.shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-id {
   word-break: break-all;
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-site .subscription-id {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-site .subscription-id {
     width: 28.66972477%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-site .billing-period {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-site .billing-period {
     width: 44.49541284%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-site-legacy .subscription-id {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-site-legacy .subscription-id {
     width: 18.80733945%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-site-legacy .billing-period {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-site-legacy .billing-period {
     width: 43.57798165%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-site-legacy .sites-remaining {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-site-legacy .sites-remaining {
     width: 15.82568807%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-plan .subscription-id {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-plan .subscription-id {
     width: 29.58715596%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-plan .billing-period {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-plan .billing-period {
     width: 32.45412844%;
   }
 }
 @media (min-width: 992px) {
-  .shifter-dashboard-columns .subscriptions-list .subscriptions-item .subscriptions-data .subscription-plan .sites-using {
+  .shifter-dashboard-columns .subscriptions-item .subscriptions-data .subscription-plan .sites-using {
     width: 23.96788991%;
   }
 }
@@ -2776,18 +2701,10 @@ body {
   height: 2rem;
   background-color: #d1cfd0;
 }
-.dev .container-info {
-  border: 1px solid #d1cfd0;
-}
-.dev .container-info .container-info-title {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.dev .container-info .info-list li {
+.dev .container-info-list li {
   min-width: 32.5203252%;
 }
-.dev .container-info .info-list li i svg {
+.dev .container-info-list li i svg {
   fill: currentColor;
   width: 0.875rem;
   height: 0.875rem;
@@ -2930,20 +2847,6 @@ body {
   width: 0.6875rem;
   height: 0.6875rem;
 }
-.dev .emergency-section .emergencyuser {
-  border: 1px solid #d1cfd0;
-  overflow: hidden;
-}
-.dev .emergency-section .emergencyuser .emergencyuser-title {
-  line-height: 1.5;
-  color: #363032;
-  font-size: 1.375rem;
-}
-.dev .emergency-section .emergencyuser .emergencyuser-title i svg {
-  fill: #892885;
-  width: 0.75rem;
-  height: 0.75rem;
-}
 .dev .emergency-section .emergencyuser .form-group {
   max-width: 440px;
 }
@@ -3002,19 +2905,6 @@ body {
   color: #7f797b;
   font-size: 0.75rem;
   letter-spacing: 0.25px;
-}
-.dev .emergency-section .safemode {
-  border: 1px solid #d1cfd0;
-}
-.dev .emergency-section .safemode .safemode-title {
-  line-height: 1.5;
-  color: #363032;
-  font-size: 1.375rem;
-}
-.dev .emergency-section .safemode .safemode-title i svg {
-  fill: #892885;
-  width: 0.75rem;
-  height: 0.75rem;
 }
 .dev .emergency-section .safemode .c-toggle-switch .custom-control-label {
   line-height: 1.3928571429;
@@ -3682,7 +3572,6 @@ body {
 }
 .site-settings .general-setting .general-setting-item {
   border: 1px solid #d1cfd0;
-  border-radius: 0.25rem;
 }
 .site-settings .general-setting .general-setting-heading {
   font-size: 1rem;
@@ -3693,51 +3582,22 @@ body {
   color: #413a3c;
   font-size: 0.875rem;
 }
-.site-settings .notification-setting {
-  border: 1px solid #d1cfd0;
-  border-radius: 0.25rem;
-}
-.site-settings .notification-setting .notification-setting-heading {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.site-settings .notification-setting .notification-base-setting {
+.site-settings .notification-base-setting {
   border-top: 1px solid #d1cfd0;
   border-bottom: 1px solid #d1cfd0;
 }
-.site-settings .notification-setting .notification-base-setting .notification-base-title {
+.site-settings .notification-base-setting .notification-base-title {
   line-height: 1.375;
   color: #413a3c;
   font-size: 1rem;
   letter-spacing: 0.35px;
 }
-.site-settings .notification-setting .notification-setting-list ul {
+.site-settings .notification-setting-list ul {
   list-style: none;
   border-bottom: 1px solid #d1cfd0;
 }
-.site-settings .notification-setting .notification-setting-list li {
+.site-settings .notification-setting-list li {
   border-top: 1px solid #d1cfd0;
-}
-.site-settings .delete-setting {
-  border: 1px solid #d1cfd0;
-  border-radius: 0.25rem;
-}
-.site-settings .delete-setting .delete-setting-heading {
-  line-height: 1.5;
-  color: #2b2628;
-  font-size: 1.375rem;
-}
-.site-settings .delete-setting .delete-setting-description {
-  max-width: 535px;
-  line-height: 1.39285714;
-  font-size: 0.875rem;
-}
-.site-settings .delete-setting .delete-setting-button .btn {
-  background-color: #ce1616;
-}
-.site-settings .delete-setting .delete-setting-button .btn:disabled {
-  background-color: #edecec;
 }
 
 .site-staging .staging-header-nav {
