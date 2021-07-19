@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { SettingCard, SettingCardProps} from './SettingCard'
-import { SettingCardButtons } from "./SettingCardButton";
+import { SettingCard, SettingCardProps } from './SettingCard';
+import { SettingCardButtons } from './SettingCardButton';
+import { Button as ButtonComponent } from '../Buttons/Button';
 
 const meta: Meta = {
   title: 'Components/SettingCard/SettingCard',
@@ -13,42 +14,40 @@ const meta: Meta = {
   },
 };
 export default meta;
-const Template: Story<SettingCardProps> = (args) => (
-  <SettingCard {...args} />
-);
+const Template: Story<SettingCardProps> = (args) => <SettingCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    title: 'Title',
-    description: 'Description',
-    children: 'Content'
+  title: 'Title',
+  description: 'Description',
+  children: 'Content',
 };
 
 const ButtonTemplate: Story<SettingCardProps> = (args) => (
-    <SettingCard {...args}>
-        <SettingCardButtons>
-            <button onClick={e => e.preventDefault()}>Button 1</button>
-        </SettingCardButtons>
-    </SettingCard>
-  );
-  
+  <SettingCard {...args}>
+    <SettingCardButtons>
+      <ButtonComponent>Button 1</ButtonComponent>
+    </SettingCardButtons>
+  </SettingCard>
+);
+
 export const Button = ButtonTemplate.bind({});
 Button.args = {
-    title: 'Title',
-    description: 'Description'
+  title: 'Title',
+  description: 'Description',
 };
 
 const ButtonsTemplate: Story<SettingCardProps> = (args) => (
-    <SettingCard {...args}>
-        <SettingCardButtons>
-            <button onClick={e => e.preventDefault()}>Button 1</button>
-            <button onClick={e => e.preventDefault()}>Button 2</button>
-        </SettingCardButtons>
-    </SettingCard>
-  );
-  
+  <SettingCard {...args}>
+    <SettingCardButtons>
+      <button onClick={(e) => e.preventDefault()}>Button 1</button>
+      <button onClick={(e) => e.preventDefault()}>Button 2</button>
+    </SettingCardButtons>
+  </SettingCard>
+);
+
 export const Buttons = ButtonsTemplate.bind({});
 Button.args = {
-    title: 'Title',
-    description: 'Description'
+  title: 'Title',
+  description: 'Description',
 };

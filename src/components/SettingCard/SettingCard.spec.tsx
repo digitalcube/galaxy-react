@@ -4,7 +4,9 @@ import { Default as SettingCard, Button, Buttons } from './SettingCard.stories';
 
 describe('SettingCard', () => {
   it('to match snapshot(default)', () => {
-    const { asFragment } = render(<SettingCard {...(SettingCard.args as any)} />);
+    const { asFragment } = render(
+      <SettingCard {...(SettingCard.args as any)} />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
   it('to match snapshot(button)', () => {

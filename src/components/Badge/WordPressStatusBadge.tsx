@@ -12,11 +12,11 @@ export const WordPressStatusBadge: FC<WordPressStatusBadgeProps> = ({
 }) => {
   return (
     <div className="ml-4 site-status">
-    <StatusBadge
-      status={status}
-      className={className}
-      labelPrefix="WordPress"
-    />
+      <StatusBadge
+        status={status}
+        className={className}
+        labelPrefix="WordPress"
+      />
     </div>
   );
 };

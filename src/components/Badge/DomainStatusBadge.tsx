@@ -12,10 +12,7 @@ export const DomainStatusBadge: FC<DomainStatusBadgeProps> = ({
 }) => {
   return (
     <div className="ml-4 site-status">
-        <StatusBadge
-            status={status}
-            className={className}
-        />
+      <StatusBadge status={status} className={className} />
     </div>
   );
 };

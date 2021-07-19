@@ -1,20 +1,24 @@
-import React, { FC, PropsWithChildren } from "react";
+import React, { FC, PropsWithChildren } from 'react';
 
 export type SettingCardButtonsProps = PropsWithChildren<{
-    className?: string;
-}>
+  className?: string;
+}>;
 export const SettingCardButtons: FC<SettingCardButtonsProps> = ({
-    children,
+  children,
 }) => {
-    if (Array.isArray(children))
+  if (Array.isArray(children))
     return (
-        <div className={`d-flex justify-content-end setting-card-buttons${children ? ` ${children}` : ''}`}>
-            {children}
-        </div>
-    )
-    return (
-        <div className={`setting-card-button${children ? ` ${children}` : ''}`}>
-            {children}
-        </div>
-    )
-}
+      <div
+        className={`d-flex justify-content-end setting-card-buttons${
+          children ? ` ${children}` : ''
+        }`}
+      >
+        {children}
+      </div>
+    );
+  return (
+    <div className={`setting-card-button${children ? ` ${children}` : ''}`}>
+      {children}
+    </div>
+  );
+};

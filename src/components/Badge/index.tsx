@@ -1,3 +1,3 @@
 export * from './WordPressStatusBadge';
-export * from './StatusBadge'
-export * from './DomainStatusBadge'
+export * from './StatusBadge';
+export * from './DomainStatusBadge';

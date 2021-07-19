@@ -48,12 +48,10 @@ export const StatusBadge: FC<StatusBadgeProps> = ({
     return [
       labelPrefix ? `${labelPrefix} ` : '',
       status.charAt(0).toUpperCase() + status.slice(1),
-      labelSuffix ? ` ${labelSuffix}`: ''
+      labelSuffix ? ` ${labelSuffix}` : '',
     ].filter(Boolean);
   }, [status, labelPrefix, labelSuffix]);
 
   if (!status) return null;
-  return (
-    <div className={classNames.join(' ')}>{label}</div>
-  );
+  return <div className={classNames.join(' ')}>{label}</div>;
 };
