@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DomainRow to match snapshot [full props] 1`] = `
+<DocumentFragment>
+  <div
+    class="live-domain test"
+  >
+    <a
+      href="#"
+    >
+      Item
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DomainRow to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="live-domain"
+  >
+    <a
+      href="#"
+    >
+      Item
+    </a>
+  </div>
+</DocumentFragment>
+`;

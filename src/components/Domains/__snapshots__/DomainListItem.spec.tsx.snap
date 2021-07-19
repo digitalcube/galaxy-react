@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DomainListItem to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="domain-list-item mt-2 px-3 py-3 rounded d-flex align-items-center justify-content-between"
+  >
+    <div
+      class="domain-name font-weight-bold"
+    >
+      example.com
+    </div>
+    <div
+      class="domain-misc d-flex align-items-center"
+    >
+      <a
+        href="#"
+      >
+        Item
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

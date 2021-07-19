@@ -106,6 +106,5 @@ const Template: Story<MockDomainListsProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  status: 'ready',
-  className: '',
+  status: 'attached',
 };

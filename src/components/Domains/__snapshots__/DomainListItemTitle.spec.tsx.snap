@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DomainListItemTitle to match snapshot [full props] 1`] = `
+<DocumentFragment>
+  <div
+    class="domain-name font-weight-bold test"
+  >
+    <a
+      href="#"
+    >
+      Item
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DomainListItemTitle to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="domain-name font-weight-bold"
+  >
+    <a
+      href="#"
+    >
+      Item
+    </a>
+  </div>
+</DocumentFragment>
+`;

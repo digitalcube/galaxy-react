@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Domain to match snapshot(default) 1`] = `
+<DocumentFragment>
+  <div
+    class="live-domain"
+  >
+    <div
+      class="domain-list"
+    >
+      <div
+        class="domain-list-item mt-2 px-3 py-3 rounded d-flex align-items-center justify-content-between"
+      >
+        <div
+          class="domain-name font-weight-bold"
+        >
+          example.com
+        </div>
+        <div
+          class="domain-misc d-flex align-items-center"
+        >
+          <div
+            class="ml-4 site-status"
+          >
+            <div
+              class="rounded font-weight-bold c-site-status c-is-attached"
+            >
+              Attached
+            </div>
+          </div>
+          <div
+            class="ml-3 domain-action dropdown"
+          >
+            <span
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                  />
+                </svg>
+              </i>
+            </span>
+            <div
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu-right"
+              role="menu"
+              tabindex="-1"
+            >
+              <button
+                class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between make-primary dropdown-item"
+                role="menuitem"
+                tabindex="0"
+                type="button"
+              >
+                Make Primary
+              </button>
+              <button
+                class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between view-dns-record dropdown-item"
+                data-target="#dns-record-modal"
+                data-toggle="modal"
+                role="menuitem"
+                tabindex="0"
+                type="button"
+              >
+                View DNS Records
+              </button>
+              <button
+                class="dropdown-item px-3 py-2 d-flex align-items-center justify-content-between delete dropdown-item"
+                data-target="#delete-modal"
+                data-toggle="modal"
+                role="menuitem"
+                tabindex="0"
+                type="button"
+              >
+                Delete
+                <i
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="d-block"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="domain-list-item mt-2 px-3 py-3 rounded d-flex align-items-center justify-content-between"
+      >
+        <div
+          class="domain-name font-weight-bold"
+        >
+          example.com
+        </div>
+        <div
+          class="domain-misc d-flex align-items-center"
+        >
+          <div
+            class="ml-4 site-status"
+          >
+            <div
+              class="rounded font-weight-bold c-site-status c-is-attached"
+            >
+              Attached
+            </div>
+          </div>
+          <div
+            class="ml-3 domain-action"
+          >
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                  />
+                </svg>
+              </i>
+            </a>
+            <div
+              aria-labelledby="navbarDropdown"
+              class="dropdown-menu dropdown-menu-right"
+            >
+              <a
+                class="dropdown-item make-primary px-3 py-2 d-flex align-items-center justify-content-between"
+                href="#"
+              >
+                Make Primary
+              </a>
+              <a
+                class="dropdown-item view-dns-record px-3 py-2 d-flex align-items-center justify-content-between"
+                data-target="#dns-record-modal"
+                data-toggle="modal"
+                href="#"
+              >
+                View DNS Records
+              </a>
+              <a
+                class="dropdown-item delete px-3 py-2 d-flex align-items-center justify-content-between"
+                data-target="#delete-modal"
+                data-toggle="modal"
+                href="#"
+              >
+                Delete
+                <i
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="d-block"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    />
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="domain-list-item mt-2 px-3 py-3 rounded d-flex align-items-center justify-content-between"
+      >
+        <div
+          class="domain-name font-weight-bold"
+        >
+          testdomaintwo.com
+        </div>
+        <div
+          class="domain-misc d-flex align-items-center"
+        >
+          <div
+            class="domain-status"
+          >
+            <div
+              class="rounded font-weight-bold c-site-status c-is-pending"
+            >
+              Verification Pending
+            </div>
+          </div>
+          <div
+            class="ml-3 domain-action"
+          >
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+            >
+              <i
+                aria-hidden="true"
+              >
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                  />
+                </svg>
+              </i>
+            </a>
+            <div
+              aria-labelledby="navbarDropdown"
+              class="dropdown-menu dropdown-menu-right"
+            >
+              <a
+                class="dropdown-item make-primary px-3 py-2 d-flex align-items-center justify-content-between"
+                href="#"
+              >
+                Make Primary
+              </a>
+              <a
+                class="dropdown-item view-dns-record px-3 py-2 d-flex align-items-center justify-content-between"
+                data-target="#dns-record-modal"
+                data-toggle="modal"
+                href="#"
+              >
+                View DNS Records
+              </a>
+              <a
+                class="dropdown-item delete px-3 py-2 d-flex align-items-center justify-content-between"
+                data-target="#delete-modal"
+                data-toggle="modal"
+                href="#"
+              >
+                Delete
+                <i
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="d-block"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                    />
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
