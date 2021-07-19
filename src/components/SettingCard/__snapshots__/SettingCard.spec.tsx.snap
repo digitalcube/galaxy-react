@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingCard to match snapshot(button) 1`] = `
+<DocumentFragment>
+  <div
+    class="mt-3 px-3 py-3 rounded setting-card"
+  >
+    <h1
+      class="mb-0 font-weight-bold setting-card-title"
+    >
+      Title
+    </h1>
+    <p
+      class="mb-0 pt-2 setting-card-description"
+    >
+      Description
+    </p>
+    <div
+      class="setting-card-button [object Object]"
+    >
+      <button
+        class="btn-colored btn btn-secondary"
+      >
+        Button 1
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SettingCard to match snapshot(buttons) 1`] = `
+<DocumentFragment>
+  <div
+    class="mt-3 px-3 py-3 rounded setting-card"
+  >
+    <div
+      class="d-flex justify-content-end setting-card-buttons [object Object],[object Object]"
+    >
+      <button>
+        Button 1
+      </button>
+      <button>
+        Button 2
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SettingCard to match snapshot(default) 1`] = `
+<DocumentFragment>
+  <div
+    class="mt-3 px-3 py-3 rounded setting-card"
+  >
+    <h1
+      class="mb-0 font-weight-bold setting-card-title"
+    >
+      Title
+    </h1>
+    <p
+      class="mb-0 pt-2 setting-card-description"
+    >
+      Description
+    </p>
+    Content
+  </div>
+</DocumentFragment>
+`;
