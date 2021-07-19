@@ -19,7 +19,7 @@ import {
   SiteCardThumbnail,
   SiteCardSettings,
   SiteCardDropdownItem,
-  WordPressContainerStatusBadge,
+  WordPressStatusBadge,
   Link,
   ProgressBar,
 } from '../../../src';
@@ -87,7 +87,7 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
               </span>
             </SiteCardData>
             <SiteCardSettings
-              statusBadge={<WordPressContainerStatusBadge status="running" />}
+              statusBadge={<WordPressStatusBadge status="running" />}
               href="#"
             >
               <SiteCardDropdownMenu>

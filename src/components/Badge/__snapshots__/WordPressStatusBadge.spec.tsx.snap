@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WordPressStatusBadge snapshot testing per status status is "attached" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "building" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "deployed" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "disabled" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "enabled" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "failed" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "onteam" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "pending" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "published" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "ready" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "running" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "scheduled" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "starting" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "starting-static" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "stopped" 1`] = `[Function]`;
+
+exports[`WordPressStatusBadge snapshot testing per status status is "verified" 1`] = `[Function]`;

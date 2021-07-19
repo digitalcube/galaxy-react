@@ -8,14 +8,15 @@ import {
   SiteCardThumbnail,
   SiteCardSettings,
   SiteCardDropdownItem,
-  // tmp
-  WordPressContainerStatusBadge,
 } from '../../../src/components/SiteCard';
 import { Link } from '../../routings/Link/Link';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
+import { WordPressStatusBadge } from '../Badge';
+import { StatusLabelName } from '../../interfaces';
 
 type MockSiteCardProps = {
   progress: number;
+  containerStatus: StatusLabelName;
 };
 
 const mockProps = {
@@ -37,7 +38,7 @@ const mockProps = {
   wordpressAdminURL: undefined,
 };
 
-const MockSiteCard: FC<MockSiteCardProps> = ({ progress }) => {
+const MockSiteCard: FC<MockSiteCardProps> = ({ progress, containerStatus }) => {
   return (
     <div className="sites-list">
       <section className="d-flex flex-column site-list-body">
@@ -60,11 +61,7 @@ const MockSiteCard: FC<MockSiteCardProps> = ({ progress }) => {
             </span>
           </SiteCardData>
           <SiteCardSettings
-            statusBadge={
-              <WordPressContainerStatusBadge
-                status={mockProps.site.container_state}
-              />
-            }
+            statusBadge={<WordPressStatusBadge status={containerStatus} />}
             wordpressAdminURL={mockProps.wordpressAdminURL}
             href={mockProps.siteDetailURL}
           >
@@ -89,6 +86,29 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  argTypes: {
+    containerStatus: {
+      options: [
+        'stopped',
+        'disabled',
+        'running',
+        'attached',
+        'deployed',
+        'enabled',
+        'pending',
+        'starting',
+        'building',
+        'starting-static',
+        'failed',
+        'verified',
+        'published',
+        'onteam',
+        'scheduled',
+        'ready',
+      ],
+      control: { type: 'select' },
+    },
+  },
 };
 
 export default meta;
@@ -100,4 +120,5 @@ const Template: Story<MockSiteCardProps> = (args) => <MockSiteCard {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   progress: 0,
+  containerStatus: 'ready',
 };
