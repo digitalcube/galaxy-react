@@ -54,8 +54,6 @@ export const StatusBadge: FC<StatusBadgeProps> = ({
 
   if (!status) return null;
   return (
-    <div className="ml-4 site-status">
-      <div className={classNames.join(' ')}>{label}</div>
-    </div>
+    <div className={classNames.join(' ')}>{label}</div>
   );
 };

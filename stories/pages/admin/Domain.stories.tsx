@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import { Meta, Story } from '@storybook/react';
 import { FaEllipsisH, FaTrash } from 'react-icons/fa';
-import { StatusBadge } from '../../../src/components/Badge/StatusBadge';
+import { DomainStatusBadge } from '../../../src/components/Badge/DomainStatusBadge';
 import {
     DomainListRow,
     DomainRow,
@@ -25,7 +25,7 @@ const MockDomainLists: FC<MockDomainListsProps> =({status}) => {
         <DomainRow>
             <DomainListRow>
                 <DomainListItem domainName="example.com">
-                    <StatusBadge status={status} />
+                    <DomainStatusBadge status={status} />
                     <DomainDropdownMenu right>
                         <DomainDropdownMenuItem className="make-primary">Make Primary</DomainDropdownMenuItem>
                         <DomainDropdownMenuItem className="view-dns-record" data-toggle="modal" data-target="#dns-record-modal">View DNS Records</DomainDropdownMenuItem>
@@ -36,7 +36,7 @@ const MockDomainLists: FC<MockDomainListsProps> =({status}) => {
                     </DomainDropdownMenu>                    
                 </DomainListItem>
                 <DomainListItem domainName="example.com">
-                    <StatusBadge status={status} />
+                    <DomainStatusBadge status={status} />
                     <div className="ml-3 domain-action">
                         <a className="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i aria-hidden="true"><FaEllipsisH className="d-block"/></i>
