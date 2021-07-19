@@ -78,9 +78,9 @@ exports[`SiteCard to match snapshot [column %p | item %p] 1`] = `
             class="ml-4 site-status"
           >
             <div
-              class="rounded font-weight-bold c-site-status c-is-site-running"
+              class="rounded font-weight-bold c-site-status c-ready"
             >
-              WordPress Running
+              WordPress Ready
             </div>
           </div>
           <div
