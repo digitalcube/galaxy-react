@@ -17,3 +17,4 @@ export * from './SiteCard';
 export * from './ProgressBar/ProgressBar';
 export * from './AdminLayouts';
 export * from './Badge';
+export * from './Domains';

@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { DropdownMenu, DropdownMenuProps } from '../Dropdown/DropdownMenu';
 
-export type SiteCardDropdownMenuProps = DropdownMenuProps;
-export const SiteCardDropdownMenu: FC<SiteCardDropdownMenuProps> = (props) => {
-  const className = `ml-4 site-control${
+export type DomainDropdownMenuProps = DropdownMenuProps;
+export const DomainDropdownMenu: FC<DomainDropdownMenuProps> = (props) => {
+  const className = `ml-3 domain-action${
     props.className ? ` ${props.className}` : ''
   }`;
   return <DropdownMenu {...props} className={className} />;

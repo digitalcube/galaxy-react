@@ -65,7 +65,7 @@ const MockSiteCard: FC<MockSiteCardProps> = ({ progress, containerStatus }) => {
             wordpressAdminURL={mockProps.wordpressAdminURL}
             href={mockProps.siteDetailURL}
           >
-            <SiteCardDropdownMenu>
+            <SiteCardDropdownMenu right>
               <SiteCardDropdownItem icon={<FaPlay className="d-block" />}>
                 Start WordPress
               </SiteCardDropdownItem>

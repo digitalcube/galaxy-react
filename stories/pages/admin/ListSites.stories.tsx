@@ -90,7 +90,7 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
               statusBadge={<WordPressStatusBadge status="running" />}
               href="#"
             >
-              <SiteCardDropdownMenu>
+              <SiteCardDropdownMenu right>
                 <SiteCardDropdownItem icon={<FaPlay className="d-block" />}>
                   Start WordPress
                 </SiteCardDropdownItem>

@@ -14,7 +14,7 @@ const MockSiteCard: FC<MockSiteCardProps> = (args) => {
   return (
     <div className="sites-list">
       <section className="d-flex flex-column site-list-body" {...args}>
-        <SiteCardDropdownMenu>
+        <SiteCardDropdownMenu right>
           <SiteCardDropdownItem icon={<FaPlay className="d-block" />}>
             Start WordPress
           </SiteCardDropdownItem>
