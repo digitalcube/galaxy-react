@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusBadge prefix prefix is "Domain" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-ready"
+    >
+      Domain Ready
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge prefix prefix is "WordPress" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-ready"
+    >
+      WordPress Ready
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge prefix prefix is undefined 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-ready"
+    >
+      Ready
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "attached" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-attached"
+    >
+      Attached
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "building" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-building"
+    >
+      Building
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "deployed" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-deployed"
+    >
+      Deployed
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "disabled" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-disabled"
+    >
+      Disabled
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "enabled" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-enabled"
+    >
+      Enabled
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "failed" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-failed"
+    >
+      Failed
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "onteam" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-onteam"
+    >
+      Onteam
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "pending" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-pending"
+    >
+      Pending
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "published" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-published"
+    >
+      Published
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "ready" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-ready"
+    >
+      Ready
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "running" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-site-running"
+    >
+      Running
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "scheduled" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-scheduled"
+    >
+      Scheduled
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "starting" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-site-starting"
+    >
+      Starting
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "starting-static" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-site-starting-static"
+    >
+      Starting-static
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "stopped" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-site-stopped"
+    >
+      Stopped
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadge snapshot testing per status status is "verified" 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-4 site-status"
+  >
+    <div
+      class="rounded font-weight-bold c-site-status c-is-verified"
+    >
+      Verified
+    </div>
+  </div>
+</DocumentFragment>
+`;
