@@ -6,11 +6,13 @@ export type StatusBadgeProps = {
   status?: StatusLabelName | '';
   className?: string;
   labelPrefix?: string;
+  labelSuffix?: string;
 };
 export const StatusBadge: FC<StatusBadgeProps> = ({
   status,
   className,
   labelPrefix,
+  labelSuffix,
 }) => {
   const statusClassName = useMemo(() => {
     switch (status) {
@@ -46,8 +48,9 @@ export const StatusBadge: FC<StatusBadgeProps> = ({
     return [
       labelPrefix ? `${labelPrefix} ` : '',
       status.charAt(0).toUpperCase() + status.slice(1),
+      labelSuffix ? ` ${labelSuffix}`: ''
     ].filter(Boolean);
-  }, [status, labelPrefix]);
+  }, [status, labelPrefix, labelSuffix]);
 
   if (!status) return null;
   return (

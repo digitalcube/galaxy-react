@@ -34,4 +34,12 @@ describe('StatusBadge', () => {
       expect(asFragment()).toMatchSnapshot();
     });
   });
+  describe('suffix', () => {
+    it.each([undefined, 'WordPress', 'Domain'])('suffix is %p', (suffix) => {
+      const { asFragment } = render(
+        <StatusBadge status="ready" labelSuffix={suffix} />
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
 });
