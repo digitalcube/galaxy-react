@@ -9,6 +9,7 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
   textAlign?: 'left' | 'center' | 'right';
   rounded?: boolean;
   smaller?: boolean;
+  caution?: boolean;
 };
 
 export const Button: FC<ButtonProps> = ({
@@ -16,6 +17,7 @@ export const Button: FC<ButtonProps> = ({
   rounded,
   textAlign,
   smaller,
+  caution,
   ...props
 }) => {
   const classNames = [props.className, 'btn-colored'];
@@ -30,6 +32,9 @@ export const Button: FC<ButtonProps> = ({
   }
   if (smaller) {
     classNames.push('btn-smaller');
+  }
+  if (caution) {
+    classNames.push('btn-caution')
   }
 
   const className = classNames.filter(Boolean).join(' ');
