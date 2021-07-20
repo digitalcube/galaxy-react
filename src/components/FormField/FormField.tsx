@@ -72,7 +72,7 @@ export const FormField: FC<FormFieldProps> = ({
       <Label className="font-weight-bold" htmlFor={id}>
         {label}
       </Label>
-      <InputGroup className="reverse-icon">
+      <InputGroup className={icon ? 'reverse-icon' : ''}>
         <Input {...inputProps} />
         {errorMessage ? (
           <div className="invalid-feedback">{errorMessage}</div>

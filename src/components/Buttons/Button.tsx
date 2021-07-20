@@ -10,6 +10,8 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
   rounded?: boolean;
   smaller?: boolean;
   caution?: boolean;
+  outline?: boolean;
+  bordered?: boolean;
 };
 
 export const Button: FC<ButtonProps> = ({
@@ -18,9 +20,20 @@ export const Button: FC<ButtonProps> = ({
   textAlign,
   smaller,
   caution,
+  outline,
+  bordered,
   ...props
 }) => {
-  const classNames = [props.className, 'btn-colored'];
+  const classNames = [props.className];
+  if (outline) {
+    if (bordered) {
+      classNames.push('btn-bordered');
+    } else {
+      classNames.push('border-0');
+    }
+  } else {
+    classNames.push('btn-colored');
+  }
   if (fontWeight) {
     classNames.push(`font-weight-${fontWeight}`);
   }
@@ -34,10 +47,12 @@ export const Button: FC<ButtonProps> = ({
     classNames.push('btn-smaller');
   }
   if (caution) {
-    classNames.push('btn-caution')
+    classNames.push('btn-caution');
   }
 
   const className = classNames.filter(Boolean).join(' ');
 
-  return <ReactstrapButton {...props} className={className} />;
+  return (
+    <ReactstrapButton {...props} className={className} outline={outline} />
+  );
 };
