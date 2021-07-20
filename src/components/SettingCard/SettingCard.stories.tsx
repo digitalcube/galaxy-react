@@ -39,7 +39,7 @@ Button.args = {
 
 const ButtonsTemplate: Story<SettingCardProps> = (args) => (
   <SettingCard {...args}>
-    <SettingCardButtons>
+    <SettingCardButtons justifyContent="end" display="flex">
       <button onClick={(e) => e.preventDefault()}>Button 1</button>
       <button onClick={(e) => e.preventDefault()}>Button 2</button>
     </SettingCardButtons>
