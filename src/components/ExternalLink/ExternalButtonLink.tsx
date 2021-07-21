@@ -22,7 +22,7 @@ export const ExternalButtonLink: FC<ExternalButtonLinkProps> = ({
     /getshifter.io/.test(buttonProps.href) ? '' : 'noreferrer',
   ]
     .filter(Boolean)
-    .join('');
+    .join(' ');
   return (
     <Button
       {...buttonProps}

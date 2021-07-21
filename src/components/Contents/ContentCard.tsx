@@ -1,8 +1,8 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { FaBolt } from 'react-icons/fa';
-import { Link } from '../../routings';
 import { ContentCardCategories } from './ContentCardCategories';
 
+import { ExternalButtonLink } from '../ExternalLink/ExternalButtonLink';
 export type ContentCardProps = PropsWithChildren<{
   categories?: Array<{
     name: string;
@@ -31,17 +31,12 @@ export const ContentCard: FC<ContentCardProps> = (props) => {
       <h3 className="mb-2 guide-list-title font-weight-bold">{props.title}</h3>
       <ContentCardExcerpt {...props} />
       <div className="position-absolute guide-list-anchor">
-        <a
-          target="_blank"
-          rel="noopener noreferrer" 
+        <ExternalButtonLink
+          icon={props.linkIcon || <FaBolt className="d-block" />}
           href={props.href}
-          className="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
         >
           {props.linkText}
-          <i className="pl-2 larger-icon" aria-hidden="true">
-            {props.linkIcon || <FaBolt className="d-block" />}
-          </i>
-        </a>
+        </ExternalButtonLink>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ exports[`ExternalButtonLink given { href: 'https://example.com', children: 'Link
   <a
     class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
     href="https://example.com"
-    rel="noopenernoreferrer"
+    rel="noopener noreferrer"
     target="_blank"
   >
     Link

@@ -32,8 +32,10 @@ exports[`ContentCard to match snapshot 1`] = `
       class="position-absolute guide-list-anchor"
     >
       <a
-        class="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
+        class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
         href="#"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         Read this article
         <i

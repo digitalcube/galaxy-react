@@ -55,14 +55,12 @@ export const Button: FC<ButtonProps> = ({
   const buttonProps: ReactstrapButtonProps = {
     ...props,
     className,
-    outline
-  }
+    outline,
+  };
 
   if (props.disable) {
-    buttonProps.disabled = true
+    buttonProps.disabled = true;
   }
 
-  return (
-    <ReactstrapButton {...buttonProps} />
-  );
+  return <ReactstrapButton {...buttonProps} />;
 };
