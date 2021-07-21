@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSelect to match snapshot (with error massage) 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-4 form-group"
+  >
+    <label
+      class="font-weight-bold"
+      for="password"
+    >
+      Password
+    </label>
+    <div
+      class="input-group"
+    >
+      <select
+        class="is-invalid form-control"
+        id="password"
+        placeholder="Password"
+      >
+        <option
+          value="jp"
+        >
+          Japanese
+        </option>
+        <option
+          value="en"
+        >
+          English
+        </option>
+      </select>
+      <div
+        class="invalid-feedback"
+      >
+        We don’t recognize that email
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormSelect to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-4 form-group"
+  >
+    <label
+      class="font-weight-bold"
+      for="password"
+    >
+      Password
+    </label>
+    <div
+      class="input-group"
+    >
+      <select
+        class="form-control"
+        id="password"
+        placeholder="Password"
+      >
+        <option
+          value="jp"
+        >
+          Japanese
+        </option>
+        <option
+          value="en"
+        >
+          English
+        </option>
+      </select>
+    </div>
+  </div>
+</DocumentFragment>
+`;
