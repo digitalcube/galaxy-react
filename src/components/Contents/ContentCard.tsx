@@ -1,5 +1,6 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { FaBolt } from 'react-icons/fa';
+import { Link } from '../../routings';
 import { ContentCardCategories } from './ContentCardCategories';
 
 export type ContentCardProps = PropsWithChildren<{
@@ -31,6 +32,8 @@ export const ContentCard: FC<ContentCardProps> = (props) => {
       <ContentCardExcerpt {...props} />
       <div className="position-absolute guide-list-anchor">
         <a
+          target="_blank"
+          rel="noopener noreferrer" 
           href={props.href}
           className="px-3 py-0 rounded btn btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold"
         >
