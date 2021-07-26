@@ -3,5 +3,5 @@ import Image from './plan-tier1.svg';
 import { ImageProps } from './interfaces';
 
 export const ImagePlanTier1: FC<ImageProps> = (props) => {
-  return <img {...props} src={Image} />;
+  return <img {...props} src={Image} alt="plan tier1 icon" />;
 };

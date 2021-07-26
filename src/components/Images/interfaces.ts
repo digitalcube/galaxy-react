@@ -3,5 +3,5 @@ export type ImageProps = Omit<
     React.ImgHTMLAttributes<HTMLImageElement>,
     HTMLImageElement
   >,
-  'src'
+  'src' | 'alt'
 >;

@@ -21,7 +21,11 @@ export const Link: FC<LinkProps> = (props) => {
    * The tag should be HTML a tag with open a new tab
    */
   if (!!props.href && /^http/.test(props.href)) {
-    return <a target="_blank" rel="noopener noreferrer" {...props} />;
+    return (
+      <a target="_blank" rel="noopener noreferrer" {...props}>
+        {props.children}
+      </a>
+    );
   }
   return createElement(as as any, {
     ...props,

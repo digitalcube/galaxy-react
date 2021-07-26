@@ -3,5 +3,5 @@ import Image from './shifter.svg';
 import { ImageProps } from './../interfaces';
 
 export const ImageShifterLogo: FC<ImageProps> = (props) => {
-  return <img {...props} src={Image} />;
+  return <img {...props} src={Image} alt="shifter" />;
 };

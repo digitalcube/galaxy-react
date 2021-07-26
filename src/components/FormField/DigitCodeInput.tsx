@@ -95,6 +95,6 @@ export const UncontrolledDigitCodeInput: FC<UncontrolledDigitCodeInputProps> = (
     if (values.every((num) => num !== '')) {
       onComplete(values.join(''));
     }
-  }, [values]);
+  }, [values, onComplete]);
   return <DigitCodeInput {...props} onChange={setValues} values={values} />;
 };

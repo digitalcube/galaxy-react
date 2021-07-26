@@ -14,7 +14,13 @@ export const SiteCardThumbnail: FC<SiteCardThumbnailProps> = ({
   return (
     <div className="site-thumbnail rounded-left">
       {/(png|jpg|jpeg|svg)$/.test(src) ? (
-        <img src={src} {...imageProps} width="167" height="111" />
+        <img
+          src={src}
+          {...imageProps}
+          width="167"
+          height="111"
+          alt="site thumbnail"
+        />
       ) : (
         <Screenshot url={src} {...imageProps} width="167" height="111" />
       )}
