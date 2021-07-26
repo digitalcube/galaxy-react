@@ -874,6 +874,24 @@ body {
   max-width: 535px;
 }
 
+.base-notification-box {
+  border: 1px solid #d1cfd0;
+}
+.base-notification-box .notification + .notification {
+  border-top: 1px solid #d1cfd0;
+}
+
+.notification-item .notification-item-header .notification-item-title {
+  line-height: 1.5;
+  color: #363032;
+  font-size: 1.125rem;
+}
+.notification-item .notification-item-header .notification-item-url {
+  line-height: 1.25;
+  color: #892885;
+  font-size: 0.75rem;
+}
+
 .shifter-dashboard-columns {
   border-top: 1px solid #d1cfd0;
   width: 100%;
@@ -2385,22 +2403,6 @@ body {
   line-height: 1.5;
   color: #521848;
   font-size: 1.375rem;
-}
-.shifter-dashboard-columns .base-notification-box {
-  border: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .base-notification-box .notification + .notification {
-  border-top: 1px solid #d1cfd0;
-}
-.shifter-dashboard-columns .notification-item .notification-item-header .notification-item-title {
-  line-height: 1.5;
-  color: #363032;
-  font-size: 1.125rem;
-}
-.shifter-dashboard-columns .notification-item .notification-item-header .notification-item-url {
-  line-height: 1.25;
-  color: #892885;
-  font-size: 0.75rem;
 }
 .shifter-dashboard-columns .authentication-method {
   border: 1px solid #d1cfd0;

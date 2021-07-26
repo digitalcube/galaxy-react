@@ -21,7 +21,7 @@ exports[`SignUpVerification to match snapshot (failure) 1`] = `
               class="mb-4 text-center signup-icon"
             >
               <img
-                alt=""
+                alt="send email"
                 height="169"
                 width="171"
               />
@@ -194,7 +194,7 @@ exports[`SignUpVerification to match snapshot (failure) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"
@@ -228,7 +228,7 @@ exports[`SignUpVerification to match snapshot(default) 1`] = `
               class="mb-4 text-center signup-icon"
             >
               <img
-                alt=""
+                alt="send email"
                 height="169"
                 width="171"
               />
@@ -360,7 +360,7 @@ exports[`SignUpVerification to match snapshot(default) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"

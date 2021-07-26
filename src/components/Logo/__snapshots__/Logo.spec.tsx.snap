@@ -3,7 +3,7 @@
 exports[`Logo to match snapshot ["digitalcube"] 1`] = `
 <DocumentFragment>
   <img
-    alt="Digitalcube"
+    alt="digitalcube"
     height="9.740259740259742"
     width="50"
   />
@@ -13,7 +13,7 @@ exports[`Logo to match snapshot ["digitalcube"] 1`] = `
 exports[`Logo to match snapshot ["shifter"] 1`] = `
 <DocumentFragment>
   <img
-    alt="Shifter"
+    alt="shifter"
     height="66.66666666666666"
     width="50"
   />

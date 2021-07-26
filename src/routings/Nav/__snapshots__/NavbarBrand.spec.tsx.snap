@@ -7,7 +7,7 @@ exports[`NavbarBrand to match snapshot 1`] = `
     href="/"
   >
     <img
-      alt="Shifter"
+      alt="shifter"
       height="32"
       width="24"
     />

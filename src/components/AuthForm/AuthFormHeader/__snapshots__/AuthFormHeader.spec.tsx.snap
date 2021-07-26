@@ -9,7 +9,7 @@ exports[`AuthFormHeader to match snapshot 1`] = `
       class="mb-4 text-center login-icon"
     >
       <img
-        alt="Shifter"
+        alt="shifter"
         height="46"
         width="36"
       />

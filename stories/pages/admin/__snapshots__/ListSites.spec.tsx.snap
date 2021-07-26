@@ -13,7 +13,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
         href="/"
       >
         <img
-          alt="Shifter"
+          alt="shifter"
           height="32"
           width="24"
         />
@@ -1030,7 +1030,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"

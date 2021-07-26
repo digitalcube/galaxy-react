@@ -3,81 +3,95 @@
 exports[`List to match snapshot(default) 1`] = `
 <DocumentFragment>
   <div
-    class="shifter-dashboard-columns pt-3"
+    class="base-notification-box rounded"
   >
     <div
-      class="base-notification-box rounded"
+      class="notification d-flex flex-wrap px-4 py-3 rounded align-items-center justify-content-between"
     >
       <div
-        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+        class="notification-status"
       >
-        <div
-          class="notification-status"
+        test 
+        <span
+          class="c-toggle-switch-status active font-weight-bold"
         >
-          test 
-        </div>
-        <div
-          class="custom-control custom-switch c-toggle-switch"
-        >
-          <input
-            checked=""
-            class="custom-control-input"
-            id="dummy-toggle"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="dummy-toggle"
-          >
-            <span
-              class="d-none"
-            >
-              dummy
-            </span>
-          </label>
-        </div>
+          on
+        </span>
       </div>
       <div
-        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+        class="custom-control custom-switch c-toggle-switch"
       >
-        <div
-          class="notification-status"
+        <input
+          checked=""
+          class="custom-control-input"
+          id="dummy-toggle"
+          type="checkbox"
+        />
+        <label
+          class="custom-control-label"
+          for="dummy-toggle"
         >
-          test 
-        </div>
-        <button
-          class="btn-colored btn-smaller btn btn-secondary"
-        >
-          Button
-        </button>
-      </div>
-      <div
-        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
-      >
-        <div
-          class="notification-status"
-        >
-          test 
           <span
-            class="c-toggle-switch-status active font-weight-bold"
+            class="d-none"
           >
-            on
+            dummy
           </span>
-        </div>
+        </label>
       </div>
       <div
-        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+        class="mt-2 w-100"
       >
-        <div
-          class="notification-status"
+        <p
+          class="mb-0 small"
         >
-          test 
-          <span
-            class="c-toggle-switch-status inactive font-weight-bold"
-          >
-            disabled
-          </span>
-        </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis vero beatae sed maxime, commodi doloremque tempore aliquid dolor quidem iste nihil facilis eveniet temporibus, earum repellat odio numquam voluptatem quo!
+        </p>
+      </div>
+    </div>
+    <div
+      class="notification d-flex flex-wrap px-4 py-3 rounded align-items-center justify-content-between"
+    >
+      <div
+        class="notification-status"
+      >
+        test 
+      </div>
+      <button
+        class="btn-colored btn-smaller btn btn-secondary"
+      >
+        Button
+      </button>
+    </div>
+    <div
+      class="notification d-flex flex-wrap px-4 py-3 rounded align-items-center justify-content-between"
+    >
+      <div
+        class="notification-status"
+      >
+        test 
+      </div>
+    </div>
+    <div
+      class="notification d-flex flex-wrap px-4 py-3 rounded align-items-center justify-content-between"
+    >
+      <div
+        class="notification-status"
+      >
+        test 
+        <span
+          class="c-toggle-switch-status inactive font-weight-bold"
+        >
+          disabled
+        </span>
+      </div>
+      <div
+        class="mt-2 w-100"
+      >
+        <p>
+          <b>
+            Hello world
+          </b>
+        </p>
       </div>
     </div>
   </div>

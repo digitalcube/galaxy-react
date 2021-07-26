@@ -3,21 +3,17 @@
 exports[`ListItem to match snapshot(default) 1`] = `
 <DocumentFragment>
   <div
-    class="shifter-dashboard-columns pt-3"
+    class="base-notification-box rounded"
   >
     <div
-      class="base-notification-box rounded"
+      class="notification d-flex flex-wrap px-4 py-3 align-items-center justify-content-between"
     >
       <div
-        class="notification d-flex px-4 py-3 align-items-center justify-content-between"
+        class="notification-status"
       >
-        <div
-          class="notification-status"
-        >
-          Title 
-        </div>
-        children
+        Title 
       </div>
+      children
     </div>
   </div>
 </DocumentFragment>

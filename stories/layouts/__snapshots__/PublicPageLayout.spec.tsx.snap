@@ -18,7 +18,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             class="mb-4 text-center signup-icon"
           >
             <img
-              alt="Shifter"
+              alt="shifter"
               height="46"
               width="36"
             />
@@ -223,7 +223,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"

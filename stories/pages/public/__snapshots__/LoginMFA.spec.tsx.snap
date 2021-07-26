@@ -24,7 +24,7 @@ exports[`LoginMFA to match snapshot (failure) 1`] = `
                 class="mb-4 text-center login-icon"
               >
                 <img
-                  alt="Shifter"
+                  alt="shifter"
                   height="46"
                   width="36"
                 />
@@ -180,7 +180,7 @@ exports[`LoginMFA to match snapshot (failure) 1`] = `
             class="login-information-icon text-center"
           >
             <img
-              alt=""
+              alt="login information"
               height="141"
               width="153"
             />
@@ -224,7 +224,7 @@ exports[`LoginMFA to match snapshot (failure) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"
@@ -261,7 +261,7 @@ exports[`LoginMFA to match snapshot (inprogress) 1`] = `
                 class="mb-4 text-center login-icon"
               >
                 <img
-                  alt="Shifter"
+                  alt="shifter"
                   height="46"
                   width="36"
                 />
@@ -376,7 +376,7 @@ exports[`LoginMFA to match snapshot (inprogress) 1`] = `
             class="login-information-icon text-center"
           >
             <img
-              alt=""
+              alt="login information"
               height="141"
               width="153"
             />
@@ -420,7 +420,7 @@ exports[`LoginMFA to match snapshot (inprogress) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"
@@ -457,7 +457,7 @@ exports[`LoginMFA to match snapshot(default) 1`] = `
                 class="mb-4 text-center login-icon"
               >
                 <img
-                  alt="Shifter"
+                  alt="shifter"
                   height="46"
                   width="36"
                 />
@@ -569,7 +569,7 @@ exports[`LoginMFA to match snapshot(default) 1`] = `
             class="login-information-icon text-center"
           >
             <img
-              alt=""
+              alt="login information"
               height="141"
               width="153"
             />
@@ -613,7 +613,7 @@ exports[`LoginMFA to match snapshot(default) 1`] = `
             title="DigitalCube"
           >
             <img
-              alt=""
+              alt="digitalcube"
               class="d-block"
               height="15"
               width="77"

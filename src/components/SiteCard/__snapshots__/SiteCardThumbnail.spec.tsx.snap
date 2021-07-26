@@ -6,6 +6,7 @@ exports[`SiteCardThumbnail to match snapshot [column %p | item %p] 1`] = `
     class="site-thumbnail rounded-left"
   >
     <img
+      alt="site thumbnail"
       height="111"
       src="/images/site-a.png"
       width="167"
