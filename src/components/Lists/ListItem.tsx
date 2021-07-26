@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { StatusLabel, StatusLabelProps } from '../StatusLabel/StatusLabel';
 
 export type ListItemProps = PropsWithChildren<{
-  title: string;
+  title: ReactNode;
   status?: StatusLabelProps;
   className?: string;
   rounded?: boolean;
