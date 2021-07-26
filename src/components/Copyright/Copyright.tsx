@@ -23,7 +23,6 @@ export const Copyright: FC<CopyrightProps> = ({
             className="d-block"
             width="77"
             height="15"
-            alt=""
           />
         </a>
       </small>
