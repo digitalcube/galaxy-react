@@ -15,7 +15,7 @@ export const Loading: FC<LoadingProps> = (props) => {
 
   useEffect(() => {
     shouldShow(show);
-  }, [props.show, shouldShow]);
+  }, [show, shouldShow]);
 
   if (!show) return null;
 
