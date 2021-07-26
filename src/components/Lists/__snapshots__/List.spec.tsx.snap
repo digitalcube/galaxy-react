@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List to match snapshot(default) 1`] = `
+<DocumentFragment>
+  <div
+    class="shifter-dashboard-columns pt-3"
+  >
+    <div
+      class="base-notification-box rounded"
+    >
+      <div
+        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+      >
+        <div
+          class="notification-status"
+        >
+          test 
+        </div>
+        <div
+          class="custom-control custom-switch c-toggle-switch"
+        >
+          <input
+            checked=""
+            class="custom-control-input"
+            id="dummy-toggle"
+            type="checkbox"
+          />
+          <label
+            class="custom-control-label"
+            for="dummy-toggle"
+          >
+            <span
+              class="d-none"
+            >
+              dummy
+            </span>
+          </label>
+        </div>
+      </div>
+      <div
+        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+      >
+        <div
+          class="notification-status"
+        >
+          test 
+        </div>
+        <button
+          class="btn-colored btn-smaller btn btn-secondary"
+        >
+          Button
+        </button>
+      </div>
+      <div
+        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+      >
+        <div
+          class="notification-status"
+        >
+          test 
+          <span
+            class="c-toggle-switch-status active font-weight-bold"
+          >
+            on
+          </span>
+        </div>
+      </div>
+      <div
+        class="notification d-flex px-4 py-3 rounded align-items-center justify-content-between"
+      >
+        <div
+          class="notification-status"
+        >
+          test 
+          <span
+            class="c-toggle-switch-status inactive font-weight-bold"
+          >
+            disabled
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

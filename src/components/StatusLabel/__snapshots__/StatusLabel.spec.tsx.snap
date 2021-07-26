@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusLabel to match snapshot(default) 1`] = `
+<DocumentFragment>
+  <span
+    class="c-toggle-switch-status active font-weight-bold"
+  >
+    on
+  </span>
+</DocumentFragment>
+`;
