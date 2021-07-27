@@ -22,5 +22,5 @@ export * from './SettingCard';
 export * from './Toggle';
 export * from './Lists';
 export * from './StatusLabel';
-export * from './Modals'
-export * from './Alert/Alert'
+export * from './Modals';
+export * from './Alert/Alert';
