@@ -20,6 +20,7 @@ export type ModalProps = PropsWithChildren<{
   title?: ReactNode;
   dismiss?: boolean;
   onSubmit?: React.FormEventHandler<HTMLFormElement>;
+  onModalStateChange?: (willOpen: boolean) => void;
 }>;
 export const Modal: FC<ModalProps> = ({
   id,
@@ -31,10 +32,12 @@ export const Modal: FC<ModalProps> = ({
   title,
   dismiss = false,
   onSubmit,
+  onModalStateChange,
 }) => {
-  const [isOpen, setIsOpen] = useState(open);
+  const [isOpen, setIsOpen] = useState(open || false);
 
   useEffect(() => {
+      if (open === undefined) return;
     setIsOpen(open);
   }, [open, setIsOpen]);
 
@@ -45,6 +48,14 @@ export const Modal: FC<ModalProps> = ({
     },
     [dismiss]
   );
+
+  /**
+   * If modal state has been changed, will put the status
+   */
+  useEffect(() => {
+    if (!onModalStateChange) return
+    onModalStateChange(isOpen)
+  }, [onModalStateChange, isOpen])
 
   const modalClassName = useMemo(() => {
     const items = ['modal', className];
