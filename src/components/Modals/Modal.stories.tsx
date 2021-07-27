@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Modal, ModalProps } from './Modal';
+import { useState } from 'react';
 
 const meta: Meta = {
   title: 'Components/Modals/Modal',
@@ -35,3 +36,22 @@ Default.args = {
   dismiss: true,
   children: 'Content',
 };
+
+const ControlledModalTemplate: Story = () => {
+  const [open, isOpen] = useState(false);
+  return (
+    <>
+      <button onClick={() => isOpen(!open)}>toggle</button>
+      <Modal
+        id="controlled-modal"
+        title="Controlled Modal"
+        open={open}
+        setOpen={isOpen}
+        dismiss
+      >
+        children
+      </Modal>
+    </>
+  );
+};
+export const Controlled = ControlledModalTemplate.bind({});
