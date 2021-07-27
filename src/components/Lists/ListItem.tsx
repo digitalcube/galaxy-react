@@ -9,17 +9,21 @@ export type ListItemProps = PropsWithChildren<{
   rounded?: boolean;
   alignItem?: 'start' | 'center' | 'end' | 'baseline' | 'stretch';
   justifyContent?: 'start' | 'end' | 'center' | 'between' | 'around';
-  description?: ReactNode
+  description?: ReactNode;
 }>;
 
-export const ListItemDescription: FC = ({children}) => {
-    if (!children) return null;
-    return (
-        <div className="mt-2 w-100">
-            {typeof children === 'string' ? <p className="mb-0 small">{children}</p>: children}
-        </div>
-    )
-}
+export const ListItemDescription: FC = ({ children }) => {
+  if (!children) return null;
+  return (
+    <div className="mt-2 w-100">
+      {typeof children === 'string' ? (
+        <p className="mb-0 small">{children}</p>
+      ) : (
+        children
+      )}
+    </div>
+  );
+};
 
 export const ListItem: FC<ListItemProps> = ({
   children,

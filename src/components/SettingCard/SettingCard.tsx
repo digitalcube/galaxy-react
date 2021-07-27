@@ -14,7 +14,11 @@ export const SettingCard: FC<SettingCardProps> = ({
   className,
 }) => {
   return (
-    <div className={["mt-3 px-3 py-3 rounded setting-card", className].filter(Boolean).join(' ')}>
+    <div
+      className={['mt-3 px-3 py-3 rounded setting-card', className]
+        .filter(Boolean)
+        .join(' ')}
+    >
       {title ? <SettingCardTitle>{title}</SettingCardTitle> : null}
       {description ? (
         <SettingCardDescription>{description}</SettingCardDescription>

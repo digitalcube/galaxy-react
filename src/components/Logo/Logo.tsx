@@ -23,9 +23,7 @@ export const Logo: FC<LogoProps> = ({ name, width = 24 }) => {
   }, [name]);
   const height = width * aspectRatio;
   if (name === 'digitalcube') {
-    return (
-      <ImageDigitalcubeLogo width={width} height={height} />
-    );
+    return <ImageDigitalcubeLogo width={width} height={height} />;
   }
   return <ImageShifterLogo width={width} height={height} />;
 };

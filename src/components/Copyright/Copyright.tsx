@@ -19,11 +19,7 @@ export const Copyright: FC<CopyrightProps> = ({
           rel="nofollow noopener"
           title="DigitalCube"
         >
-          <ImageDigitalcubeLogo
-            className="d-block"
-            width="77"
-            height="15"
-          />
+          <ImageDigitalcubeLogo className="d-block" width="77" height="15" />
         </a>
       </small>
     </p>

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalBody to match snapshot [no submit handler] 1`] = `
+<DocumentFragment>
+  <div
+    class="modal-body px-4 py-4"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ModalBody to match snapshot [with submit event] 1`] = `
+<DocumentFragment>
+  <form
+    class="modal-body px-4 py-4"
+  >
+    Title
+  </form>
+</DocumentFragment>
+`;

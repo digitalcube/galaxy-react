@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { List } from './List';
-import { ListItem, ListItemProps } from './ListItem';
+import { ModalButtons, ModalButtonsProps } from './ModalButtons';
+import { Modal } from './Modal';
 
 const meta: Meta = {
-  title: 'Components/List/ListItem',
-  component: ListItem,
+  title: 'Components/Modals/ModalButtons',
+  component: ModalButtons,
   parameters: {
     controls: { expanded: true },
   },
@@ -13,17 +13,17 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ListItemProps> = (args) => (
-  <List rounded>
-    <ListItem {...args} />
-  </List>
+const Template: Story<ModalButtonsProps> = (args) => (
+  <Modal open={true} dismiss={true}>
+    <ModalButtons {...args} />
+  </Modal>
 );
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Title',
-  className: 'px-4 py-3',
-  children: 'children',
+  cancelButtonLabel: 'Cancel',
+  showCancel: true,
+  className: '',
 };
