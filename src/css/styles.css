@@ -717,6 +717,18 @@ body {
 .c-alert .alert-body p a {
   color: #892885;
 }
+.c-alert.alert-info .alert-icon {
+  background-color: #004085;
+}
+.c-alert.alert-info .alert-body {
+  background-color: #cce5ff;
+}
+.c-alert.alert-success .alert-icon {
+  background-color: #23ba7b;
+}
+.c-alert.alert-success .alert-body {
+  background-color: #d4edda;
+}
 .c-alert.alert-danger .alert-icon {
   background-color: #ce1616;
 }
