@@ -15,4 +15,6 @@ export type StatusLabelName =
   | 'published'
   | 'onteam'
   | 'scheduled'
-  | 'ready';
+  | 'ready'
+  | 'loading'
+  | 'inprogress';

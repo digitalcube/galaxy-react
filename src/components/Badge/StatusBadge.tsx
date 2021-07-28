@@ -29,6 +29,9 @@ export const StatusBadge: FC<StatusBadgeProps> = ({
       case 'pending':
       case 'disabled':
         return `c-is-${status}`;
+      case 'loading':
+      case 'inprogress':
+        return 'c-is-pending'
       case 'building':
       case 'published':
       case 'onteam':
