@@ -38,4 +38,5 @@ Default.args = {
   textAlign: undefined,
   rounded: false,
   fontWeight: undefined,
+  loading: false,
 };

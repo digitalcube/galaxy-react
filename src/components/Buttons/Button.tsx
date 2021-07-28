@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import {
   Button as ReactstrapButton,
   ButtonProps as ReactstrapButtonProps,
+  Spinner,
 } from 'reactstrap';
 
 export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
@@ -12,6 +13,7 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
   caution?: boolean;
   outline?: boolean;
   bordered?: boolean;
+  loading?: boolean;
 };
 
 export const Button: FC<ButtonProps> = ({
@@ -22,6 +24,9 @@ export const Button: FC<ButtonProps> = ({
   caution,
   outline,
   bordered,
+  children,
+  loading,
+  disable,
   ...props
 }) => {
   const classNames = [props.className];
@@ -58,9 +63,14 @@ export const Button: FC<ButtonProps> = ({
     outline,
   };
 
-  if (props.disable) {
+  if (disable || loading) {
     buttonProps.disabled = true;
   }
 
-  return <ReactstrapButton {...buttonProps} />;
+  return (
+  <ReactstrapButton {...buttonProps}>
+    {loading ? <Spinner size="sm mr-2" />: null}
+    {children}
+    </ReactstrapButton>
+  );
 };
