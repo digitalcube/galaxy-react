@@ -5,6 +5,7 @@ export * from './Avatar/Avatar';
 export * from './Badge';
 export * from './Buttons';
 export * from './Contents';
+export * from './CopyClipboard/CopyClipboard'
 export * from './Copyright/Copyright';
 export * from './Domains';
 export * from './Dropdown';
