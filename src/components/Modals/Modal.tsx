@@ -67,6 +67,7 @@ export const Modal: FC<ModalProps> = ({
         dismiss,
       }}
     >
+      <div className={open ? 'modal-open' : ''}>
       <div
         className={modalClassName}
         id={id}
@@ -91,6 +92,8 @@ export const Modal: FC<ModalProps> = ({
               <ModalBody onSubmit={onSubmit}>{children}</ModalBody>
             ) : null}
           </div>
+        </div>
+        
         </div>
       </div>
       <div className="modal-backdrop show"></div>
