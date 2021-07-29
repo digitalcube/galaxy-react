@@ -5,6 +5,7 @@ import React, {
   useMemo,
   useState,
   useCallback,
+  CSSProperties,
 } from 'react';
 import { ModalBody } from './ModalBody';
 import { ModalContext } from './ModalContext';
@@ -20,6 +21,7 @@ export type ModalProps = PropsWithChildren<{
   dismiss?: boolean;
   onSubmit?: React.FormEventHandler<HTMLFormElement>;
   setOpen?: (flag: boolean) => void;
+  style?: CSSProperties
 }>;
 export const Modal: FC<ModalProps> = ({
   id,
@@ -32,6 +34,7 @@ export const Modal: FC<ModalProps> = ({
   dismiss = false,
   onSubmit,
   setOpen,
+  style,
 }) => {
   const [_isOpen, _setIsOpen] = useState(open || false);
 
@@ -73,6 +76,7 @@ export const Modal: FC<ModalProps> = ({
         aria-hidden="false"
         aria-modal="true"
         onClick={() => isOpenHandler(false)}
+        style={style}
       >
         <div
           className="modal-dialog"
