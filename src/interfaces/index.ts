@@ -17,4 +17,5 @@ export type StatusLabelName =
   | 'scheduled'
   | 'ready'
   | 'loading'
-  | 'inprogress';
+  | 'inprogress'
+  | 'generating';
