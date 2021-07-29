@@ -8,12 +8,28 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  argTypes: {
+    rowClassName: {
+      options: [
+        "sites-list", "shifter-dashboard-main", "deploy-history-item", 'default'
+      ],
+      control: {
+        type: 'radio'
+      }
+    }
+  }
 };
 
 export default meta;
 
-const Template: Story<ProgressBarProps> = (args) => {
-  return <ProgressBar {...args} />;
+const Template: Story<ProgressBarProps & {
+  rowClassName: string;
+}> = (args) => {
+  return (
+    <div className={args.rowClassName}>
+      <ProgressBar {...args} />
+    </div>
+  );
 };
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
@@ -24,4 +40,5 @@ Default.args = {
   min: 1,
   max: 100,
   className: '',
+  rowClassName: '',
 };
