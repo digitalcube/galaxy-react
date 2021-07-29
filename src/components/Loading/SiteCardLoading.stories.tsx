@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Loading, LoadingProps } from './Loading';
+import { SiteCardLoading, SiteCardLoadingProps } from './SiteCardLoading';
 const meta: Meta = {
-  title: 'Components/Loading/Loading',
-  component: Loading,
+  title: 'Components/Loading/SiteCardLoading',
+  component: SiteCardLoading,
   parameters: {
     controls: { expanded: true },
   },
@@ -11,11 +11,13 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<LoadingProps> = (args) => {
+const Template: Story<SiteCardLoadingProps> = (args) => {
   return (
-    <>
-      <Loading {...args} />
-    </>
+    <div className="sites-list">
+      <section className="d-flex flex-column site-list-body">
+        <SiteCardLoading {...args} />
+      </section>
+    </div>
   );
 };
 

@@ -58,7 +58,7 @@ export const FormSelect: FC<FormSelectProps> = ({
   if (disabled) inputProps.disabled = disabled;
   if (readOnly) inputProps.readOnly = readOnly;
   return (
-    <FormGroup className={`mb-4${className ? ` ${className}`: ''}`}>
+    <FormGroup className={`mb-4${className ? ` ${className}` : ''}`}>
       <Label className="font-weight-bold" htmlFor={id}>
         {label}
       </Label>
@@ -68,9 +68,9 @@ export const FormSelect: FC<FormSelectProps> = ({
             <option key={`${id}-option-${i}`} {...optionProps} />
           ))}
         </Input>
-          <i className="position-absolute" aria-hidden="true">
-            <FaAngleDown className="d-block" />
-          </i>
+        <i className="position-absolute" aria-hidden="true">
+          <FaAngleDown className="d-block" />
+        </i>
         {errorMessage ? (
           <div className="invalid-feedback">{errorMessage}</div>
         ) : null}

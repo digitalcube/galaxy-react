@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullPageLoading to match snapshot (hidden) 1`] = `
+<DocumentFragment>
+  <button>
+    Show
+  </button>
+</DocumentFragment>
+`;
+
+exports[`FullPageLoading to match snapshot (open) 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex flex-column align-items-center justify-content-center c-loading"
+  >
+    <div
+      class="c-loading-spinner"
+    />
+    <div
+      class="text-center c-loading-text font-weight-bold"
+    >
+      Loading...
+    </div>
+  </div>
+  <button>
+    Show
+  </button>
+</DocumentFragment>
+`;

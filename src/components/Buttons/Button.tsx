@@ -71,9 +71,9 @@ export const Button: FC<ButtonProps> = ({
   }
 
   return (
-  <ReactstrapButton {...buttonProps}>
-    {loading ? <Spinner size="sm mr-2" />: null}
-    {children}
+    <ReactstrapButton {...buttonProps}>
+      {loading ? <Spinner size="sm mr-2" /> : null}
+      {children}
     </ReactstrapButton>
   );
 };

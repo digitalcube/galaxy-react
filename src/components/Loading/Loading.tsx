@@ -1,33 +1,25 @@
 import React, { FC } from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { Spinner, SpinnerProps } from 'reactstrap';
 
 export type LoadingProps = {
   show: boolean;
-  shouldShow?: (flag: boolean) => void;
-};
+  loadingText?: string;
+} & SpinnerProps;
 
-export const Loading: FC<LoadingProps> = (props) => {
-  const [_show, _shouldShow] = useState(false);
-
-  const shouldShow = props.shouldShow || _shouldShow;
-  const show = typeof props.show === 'undefined' ? _show : props.show;
-
-  useEffect(() => {
-    shouldShow(show);
-  }, [show, shouldShow]);
-
+export const Loading: FC<LoadingProps> = ({
+  show,
+  loadingText = 'Loading...',
+  ...spinnerProps
+}) => {
   if (!show) return null;
 
+  const props: SpinnerProps = spinnerProps;
+  if (props.sizes) props.sizes = 'sm';
+  props.className = props.className || 'mr-2';
   return (
-    <div
-      onClick={() => shouldShow(false)}
-      className="d-flex flex-column align-items-center justify-content-center c-loading"
-    >
-      <div className="c-loading-spinner"></div>
-      <div className="text-center c-loading-text font-weight-bold">
-        Loading...
-      </div>
-    </div>
+    <>
+      <Spinner {...props}></Spinner>
+      {loadingText}
+    </>
   );
 };
