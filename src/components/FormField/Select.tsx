@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import { FaAngleDown } from 'react-icons/fa';
 import { FormGroup, InputGroup, Label, Input, InputProps } from 'reactstrap';
 
 export type FormSelectProps = {
@@ -61,12 +62,15 @@ export const FormSelect: FC<FormSelectProps> = ({
       <Label className="font-weight-bold" htmlFor={id}>
         {label}
       </Label>
-      <InputGroup>
+      <InputGroup className="position-relative select-wrapper">
         <Input {...inputProps}>
           {options.map((optionProps, i) => (
             <option key={`${id}-option-${i}`} {...optionProps} />
           ))}
         </Input>
+          <i className="position-absolute" aria-hidden="true">
+            <FaAngleDown className="d-block" />
+          </i>
         {errorMessage ? (
           <div className="invalid-feedback">{errorMessage}</div>
         ) : null}
