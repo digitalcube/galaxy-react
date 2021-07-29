@@ -23,6 +23,7 @@ export type FormSelectProps = {
     | 'disabled'
     | 'children'
   >;
+  className?: string;
 };
 export const FormSelect: FC<FormSelectProps> = ({
   id,
@@ -35,6 +36,7 @@ export const FormSelect: FC<FormSelectProps> = ({
   disabled,
   errorMessage,
   inputOptions,
+  className,
 }) => {
   const inputClassName = [
     inputOptions?.className,
@@ -55,7 +57,7 @@ export const FormSelect: FC<FormSelectProps> = ({
   if (disabled) inputProps.disabled = disabled;
   if (readOnly) inputProps.readOnly = readOnly;
   return (
-    <FormGroup className="mb-4">
+    <FormGroup className={`mb-4${className ? ` ${className}`: ''}`}>
       <Label className="font-weight-bold" htmlFor={id}>
         {label}
       </Label>

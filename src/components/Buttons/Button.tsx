@@ -37,6 +37,9 @@ export const Button: FC<ButtonProps> = ({
       classNames.push('border-0');
     }
   } else {
+    if (bordered) {
+      classNames.push('btn-bordered');
+    }
     classNames.push('btn-colored');
   }
   if (fontWeight) {
