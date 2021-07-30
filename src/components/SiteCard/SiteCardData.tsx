@@ -3,9 +3,13 @@ import { PropsWithChildren } from 'react';
 
 export type SiteCardDataProps = PropsWithChildren<{
   name: string;
-  tips?: ReactNode
+  tips?: ReactNode;
 }>;
-export const SiteCardData: FC<SiteCardDataProps> = ({ children, name, tips }) => {
+export const SiteCardData: FC<SiteCardDataProps> = ({
+  children,
+  name,
+  tips,
+}) => {
   return (
     <div className="pl-3 py-3 site-data">
       <h2 className="mb-0 font-weight-bold site-name">

@@ -21,7 +21,7 @@ export type ModalProps = PropsWithChildren<{
   dismiss?: boolean;
   onSubmit?: React.FormEventHandler<HTMLFormElement>;
   setOpen?: (flag: boolean) => void;
-  style?: CSSProperties
+  style?: CSSProperties;
 }>;
 export const Modal: FC<ModalProps> = ({
   id,
@@ -68,32 +68,31 @@ export const Modal: FC<ModalProps> = ({
       }}
     >
       <div className={open ? 'modal-open' : ''}>
-      <div
-        className={modalClassName}
-        id={id}
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="modal-label"
-        aria-hidden="false"
-        aria-modal="true"
-        onClick={() => isOpenHandler(false)}
-        style={style}
-      >
         <div
-          className="modal-dialog"
-          role="document"
-          onClick={(e) => e.stopPropagation()}
+          className={modalClassName}
+          id={id}
+          tabIndex={-1}
+          role="dialog"
+          aria-labelledby="modal-label"
+          aria-hidden="false"
+          aria-modal="true"
+          onClick={() => isOpenHandler(false)}
+          style={style}
         >
-          <div className={`modal-content ${rounded ? ' rounded' : ''}`}>
-            {title ? (
-              <ModalHeader closeIcon={dismiss}>{title}</ModalHeader>
-            ) : null}
-            {children ? (
-              <ModalBody onSubmit={onSubmit}>{children}</ModalBody>
-            ) : null}
+          <div
+            className="modal-dialog"
+            role="document"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className={`modal-content ${rounded ? ' rounded' : ''}`}>
+              {title ? (
+                <ModalHeader closeIcon={dismiss}>{title}</ModalHeader>
+              ) : null}
+              {children ? (
+                <ModalBody onSubmit={onSubmit}>{children}</ModalBody>
+              ) : null}
+            </div>
           </div>
-        </div>
-        
         </div>
       </div>
       <div className="modal-backdrop show"></div>

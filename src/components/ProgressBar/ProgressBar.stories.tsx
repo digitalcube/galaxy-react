@@ -11,20 +11,25 @@ const meta: Meta = {
   argTypes: {
     rowClassName: {
       options: [
-        "sites-list", "shifter-dashboard-main", "deploy-history-item", 'default'
+        'sites-list',
+        'shifter-dashboard-main',
+        'deploy-history-item',
+        'default',
       ],
       control: {
-        type: 'radio'
-      }
-    }
-  }
+        type: 'radio',
+      },
+    },
+  },
 };
 
 export default meta;
 
-const Template: Story<ProgressBarProps & {
-  rowClassName: string;
-}> = (args) => {
+const Template: Story<
+  ProgressBarProps & {
+    rowClassName: string;
+  }
+> = (args) => {
   return (
     <div className={args.rowClassName}>
       <ProgressBar {...args} />
