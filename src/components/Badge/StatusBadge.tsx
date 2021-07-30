@@ -1,21 +1,31 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
+import { memo } from 'react';
 import { useMemo } from 'react';
 import { StatusLabelName } from '../../interfaces';
 
-export type StatusBadgeProps = {
+export type StatusBadgeProps = PropsWithChildren<{
   status?: StatusLabelName | '';
   className?: string;
   labelPrefix?: string;
   labelSuffix?: string;
-};
-export const StatusBadge: FC<StatusBadgeProps> = ({
+}>;
+export const StatusBadge: FC<StatusBadgeProps> = memo(({
   status,
   className,
   labelPrefix,
   labelSuffix,
+  children,
 }) => {
   const statusClassName = useMemo(() => {
     switch (status) {
+      case 'info':
+        return 'c-ready'
+      case 'warning':
+        return 'c-is-pending'
+      case 'danger':
+        return 'c-is-failed'
+      case 'success':
+        return 'c-is-enabled'
       case 'stopped':
       case 'running':
       case 'starting':
@@ -59,5 +69,5 @@ export const StatusBadge: FC<StatusBadgeProps> = ({
   }, [status, labelPrefix, labelSuffix]);
 
   if (!status) return null;
-  return <div className={classNames.join(' ')}>{label}</div>;
-};
+  return <div className={classNames.join(' ')}>{children || label}</div>;
+});
