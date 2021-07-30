@@ -1,4 +1,5 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
+import { CSSProperties } from 'react';
 import { useMemo } from 'react';
 import { FaExclamationTriangle, FaExclamationCircle } from 'react-icons/fa';
 
@@ -9,6 +10,7 @@ export type AlertProps = PropsWithChildren<{
   icon?: ReactNode;
   title?: string;
   className?: string;
+  style?: CSSProperties;
 }>;
 
 const AlertIcon: FC<Pick<AlertProps, 'type' | 'icon'>> = ({ type, icon }) => {
@@ -31,6 +33,7 @@ export const Alert: FC<AlertProps> = ({
   showIcon = true,
   title,
   className,
+  style,
 }) => {
   const classNames = useMemo(() => {
     const items = [
@@ -39,9 +42,11 @@ export const Alert: FC<AlertProps> = ({
     ];
     return items.filter(Boolean);
   }, [type, className]);
+
+
   if (!title && !children) return null;
   return (
-    <div className={classNames.join(' ')} role="alert">
+    <div className={classNames.join(' ')} role="alert" style={style}>
       {showIcon ? (
         <div className="alert-icon px-1 d-flex align-items-center">
           <i aria-hidden="true">
