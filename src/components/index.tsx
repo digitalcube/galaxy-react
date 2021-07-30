@@ -17,7 +17,7 @@ export * from './Icons';
 export * from './Images';
 export * from './Layouts/Layouts';
 export * from './Lists';
-export * from './Loading/Loading';
+export * from './Loading';
 export * from './Logo/Logo';
 export * from './Modals';
 export * from './ProgressBar/ProgressBar';
