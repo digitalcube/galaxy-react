@@ -53,7 +53,7 @@ const MockSignUpPage: FC<MockSignUpPageProps> = ({ status }) => {
           }}
         >
           <AuthFormHeader
-            logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+            logo={<ImageShifterLogo width="36" height="46" />}
             title="Get Started"
             link="/"
             linkText="log in"
@@ -134,7 +134,7 @@ const meta: Meta = {
   component: MockSignUpPage,
   argTypes: {
     status: {
-      options: ['default', 'failure'],
+      options: ['default', 'failure', 'inprogress', 'success'],
       control: { type: 'radio' },
     },
   },
