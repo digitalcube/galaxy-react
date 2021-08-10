@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
+import { ReactNode } from 'react';
 import { FormGroup, Input, InputProps, Label } from 'reactstrap';
 
 export type CheckboxProps = {
-  label: string;
+  label: ReactNode;
   id: string;
 } & Omit<InputProps, 'type'>;
 export const Checkbox: FC<CheckboxProps> = (props) => {

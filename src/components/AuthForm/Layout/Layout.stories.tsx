@@ -31,7 +31,7 @@ const AuthFormLayoutExample: FC<AuthFormLayoutExampleProps> = ({
         }}
       >
         <AuthFormHeader
-          logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+          logo={<ImageShifterLogo width="36" height="46" />}
           title="Log In"
           variant="login"
         />

@@ -1,1 +1,1 @@
-export * from './CopyClipboardIcon';
+export * from './CopyClipboard';

@@ -43,7 +43,6 @@ export const Alert: FC<AlertProps> = ({
     return items.filter(Boolean);
   }, [type, className]);
 
-
   if (!title && !children) return null;
   return (
     <div className={classNames.join(' ')} role="alert" style={style}>

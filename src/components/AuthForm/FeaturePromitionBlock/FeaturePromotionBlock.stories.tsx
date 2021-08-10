@@ -26,7 +26,7 @@ const Template: Story<FeaturePromotionBlockProps> = (args) => (
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  image: <ImageShifterLogo width="36" height="46" alt="Shifter" />,
+  image: <ImageShifterLogo width="36" height="46" />,
   title: 'Log In',
   link: '/signup',
   linkText: 'sign up',

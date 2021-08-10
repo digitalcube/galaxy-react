@@ -12,7 +12,8 @@ import { InputType } from 'reactstrap/es/Input';
 
 export type FormFieldProps = {
   id: string;
-  label: string;
+  label: ReactNode;
+  placeholder?: string;
   icon?: ReactNode;
   type: InputType;
   value: string;
@@ -39,6 +40,7 @@ export const FormField: FC<FormFieldProps> = ({
   readOnly,
   disabled,
   errorMessage,
+  placeholder,
 }) => {
   const [inputType, setInputType] = useState(type);
 
@@ -60,7 +62,7 @@ export const FormField: FC<FormFieldProps> = ({
     value,
     id,
     className: inputClassName,
-    placeholder: label,
+    placeholder: placeholder || typeof label === 'string' ? `${label}` : '',
     onChange,
     ...inputOptions,
   };
