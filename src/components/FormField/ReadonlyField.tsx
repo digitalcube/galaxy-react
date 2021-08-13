@@ -5,7 +5,7 @@ import { FormGroup, Input } from 'reactstrap';
 
 export type ReadOnlyFormFieldProps = PropsWithChildren<{
   value: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   handleCopy: (value: string) => void;
   smaller?: boolean;
   className?: string;
@@ -34,9 +34,11 @@ export const ReadOnlyFormField: FC<ReadOnlyFormFieldProps> = ({
           readOnly
           onClick={() => handleCopy(value)}
         />
-        <span className="icon position-absolute">
-          <i aria-hidden="true">{icon}</i>
-        </span>
+        {icon ? (
+          <span className="icon position-absolute">
+            <i aria-hidden="true">{icon}</i>
+          </span>
+        ) : null}
         <span
           className="copy position-absolute js-copy-record"
           role="button"

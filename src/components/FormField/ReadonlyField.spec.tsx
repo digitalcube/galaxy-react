@@ -4,7 +4,9 @@ import { Default as ReadOnlyFormField } from './ReadonlyField.stories';
 
 describe('ReadOnlyFormField', () => {
   it('to match snapshot', () => {
-    const { asFragment } = render(<ReadOnlyFormField {...(ReadOnlyFormField.args as any)} />);
+    const { asFragment } = render(
+      <ReadOnlyFormField {...(ReadOnlyFormField.args as any)} />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
   it('to match snapshot (with error massage)', () => {
