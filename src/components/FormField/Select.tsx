@@ -5,7 +5,7 @@ import { FormGroup, InputGroup, Label, Input, InputProps } from 'reactstrap';
 export type FormSelectProps = {
   options: React.OptionHTMLAttributes<HTMLOptionElement>[];
   id: string;
-  label: string;
+  label?: string;
   icon?: ReactNode;
   value: string;
   required?: boolean;
@@ -59,9 +59,11 @@ export const FormSelect: FC<FormSelectProps> = ({
   if (readOnly) inputProps.readOnly = readOnly;
   return (
     <FormGroup className={`mb-4${className ? ` ${className}` : ''}`}>
-      <Label className="font-weight-bold" htmlFor={id}>
-        {label}
-      </Label>
+      {label ? (
+        <Label className="font-weight-bold" htmlFor={id}>
+          {label}
+        </Label>
+      ) : null}
       <InputGroup className="position-relative select-wrapper">
         <Input {...inputProps}>
           {options.map((optionProps, i) => (

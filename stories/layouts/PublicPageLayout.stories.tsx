@@ -15,7 +15,7 @@ const MockOneColumns: FC = () => (
   <Layouts variant="signup" footer={<Footer serviceName="Shifter" />}>
     <form className="signup px-4 py-4 rounded">
       <AuthFormHeader
-        logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+        logo={<ImageShifterLogo width="36" height="46" />}
         title="Get Started"
         link="/"
         linkText="log in"

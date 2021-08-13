@@ -1,10 +1,8 @@
 import React, { FC } from 'react';
 import {
-  FaEllipsisH,
   FaPlay,
   FaPlus,
   FaStop,
-  FaWordpressSimple,
 } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';

@@ -51,7 +51,7 @@ const MockResetPasswordPage: FC<MockResetPasswordPageProps> = ({ status }) => {
           }}
         >
           <AuthFormHeader
-            logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+            logo={<ImageShifterLogo width="36" height="46" />}
             title="Password Reset"
             variant="signup"
           />

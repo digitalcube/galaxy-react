@@ -6,6 +6,10 @@ export type DomainStatusBadgeProps = {
   status?: StatusLabelName | '';
   className?: string;
 };
+
+/**
+ * @deprecated
+ */
 export const DomainStatusBadge: FC<DomainStatusBadgeProps> = ({
   status,
   className,

@@ -55,7 +55,7 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
           }}
         >
           <AuthFormHeader
-            logo={<ImageShifterLogo width="36" height="46" alt="Shifter" />}
+            logo={<ImageShifterLogo width="36" height="46" />}
             title="Authentication"
             variant="login"
           >
@@ -101,7 +101,7 @@ const MockLoginMFAPage: FC<MockLoginMFAPageProps> = ({ status, mfaType }) => {
         </form>
       </AuthFormLayout>
       <FeaturePromotionBlock
-        image={<ImageLoginInformation width="153" height="141" alt="" />}
+        image={<ImageLoginInformation width="153" height="141" />}
         title="Faster Build Times"
         description="Customize Shifter settings for up to 70% faster build times."
         link="#"

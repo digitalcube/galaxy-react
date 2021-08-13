@@ -3,7 +3,7 @@
 exports[`Mockup/TopNavigation to match snapshot 1`] = `
 <DocumentFragment>
   <nav
-    class="navbar navbar-expand-lg"
+    class="navbar navbar-expand-lg navbar-light"
   >
     <a
       class="navbar-brand"

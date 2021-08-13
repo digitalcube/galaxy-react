@@ -4,6 +4,7 @@ import React, {
   FC,
   PropsWithChildren,
 } from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import { LinkTagType, useLinkTag } from '../../providers/LinkTagProvider';
 
 export type LinkProps = PropsWithChildren<{
@@ -11,6 +12,7 @@ export type LinkProps = PropsWithChildren<{
   style?: CSSProperties;
   className?: string;
   tagOverwrite?: LinkTagType;
+  withExternalLinkIcon?: boolean;
 }>;
 
 export const Link: FC<LinkProps> = (props) => {
@@ -24,6 +26,11 @@ export const Link: FC<LinkProps> = (props) => {
     return (
       <a target="_blank" rel="noopener noreferrer" {...props}>
         {props.children}
+        {props.withExternalLinkIcon ? (
+          <i className="ml-2" aria-hidden="true">
+            <FaExternalLinkAlt />
+          </i>
+        ) : null}
       </a>
     );
   }

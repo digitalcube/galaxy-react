@@ -9,61 +9,65 @@ exports[`Modal to match snapshot [small / un-dismissable] 1`] = `<DocumentFragme
 exports[`Modal to match snapshot [story] 1`] = `
 <DocumentFragment>
   <div
-    aria-hidden="false"
-    aria-labelledby="modal-label"
-    aria-modal="true"
-    class="modal show d-block"
-    id="modal"
-    role="dialog"
-    tabindex="-1"
+    class="modal-open"
   >
     <div
-      class="modal-dialog"
-      role="document"
+      aria-hidden="false"
+      aria-labelledby="modal-label"
+      aria-modal="true"
+      class="modal show d-block"
+      id="modal"
+      role="dialog"
+      tabindex="-1"
     >
       <div
-        class="modal-content  rounded"
+        class="modal-dialog"
+        role="document"
       >
         <div
-          class="modal-header px-4 pt-4 pb-0 border-bottom-0 justify-content-center"
+          class="modal-content  rounded"
         >
           <div
-            class="modal-title font-weight-bold"
-            id="modal-label"
+            class="modal-header px-4 pt-4 pb-0 border-bottom-0 justify-content-center"
           >
-            Modal title
-          </div>
-          <button
-            aria-label="Close"
-            class="close m-0 p-0"
-            data-dismiss="modal"
-            type="button"
-          >
-            <i
-              aria-hidden="true"
+            <div
+              class="modal-title font-weight-bold"
+              id="modal-label"
             >
-              <svg
-                class="d-block"
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 352 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              Modal title
+            </div>
+            <button
+              aria-label="Close"
+              class="close m-0 p-0"
+              data-dismiss="modal"
+              type="button"
+            >
+              <i
+                aria-hidden="true"
               >
-                <path
-                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-                />
-              </svg>
-            </i>
-          </button>
+                <svg
+                  class="d-block"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 352 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                  />
+                </svg>
+              </i>
+            </button>
+          </div>
+          <form
+            class="modal-body px-4 py-4"
+          >
+            Content
+          </form>
         </div>
-        <form
-          class="modal-body px-4 py-4"
-        >
-          Content
-        </form>
       </div>
     </div>
   </div>

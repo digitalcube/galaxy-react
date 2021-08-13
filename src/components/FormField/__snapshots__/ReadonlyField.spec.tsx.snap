@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadOnlyFormField to match snapshot (with error massage) 1`] = `
+<DocumentFragment>
+  <div
+    class="readonly form-group"
+  >
+    <div
+      class="form-group-inner position-relative"
+    >
+      <input
+        class="py-0\\" form-control"
+        readonly=""
+        type="text"
+        value="readonlyData"
+      />
+      <span
+        class="icon position-absolute"
+      >
+        <i
+          aria-hidden="true"
+        >
+          <svg
+            class="d-block"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            />
+          </svg>
+        </i>
+      </span>
+      <span
+        class="copy position-absolute js-copy-record"
+        role="button"
+      >
+        <i
+          aria-hidden="true"
+        >
+          <svg
+            class="d-block"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+            />
+          </svg>
+        </i>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ReadOnlyFormField to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="readonly form-group"
+  >
+    <div
+      class="form-group-inner position-relative"
+    >
+      <input
+        class="py-0\\" form-control"
+        readonly=""
+        type="text"
+        value="readonlyData"
+      />
+      <span
+        class="icon position-absolute"
+      >
+        <i
+          aria-hidden="true"
+        >
+          <svg
+            class="d-block"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+            />
+          </svg>
+        </i>
+      </span>
+      <span
+        class="copy position-absolute js-copy-record"
+        role="button"
+      >
+        <i
+          aria-hidden="true"
+        >
+          <svg
+            class="d-block"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+            />
+          </svg>
+        </i>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

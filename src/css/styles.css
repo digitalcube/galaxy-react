@@ -199,6 +199,68 @@ body {
   font-size: 0.875rem;
 }
 
+.form-group.readonly {
+  max-width: 440px;
+}
+.form-group.readonly.no-icon .form-control {
+  padding-left: 0.75rem;
+}
+.form-group.readonly .form-control {
+  padding-left: 2.4375rem;
+  background-color: transparent;
+  color: #892885;
+  z-index: 2;
+}
+.form-group.readonly .form-control:-moz-read-only {
+  color: #892885;
+  background-color: #f9f4f9;
+}
+.form-group.readonly .form-control:read-only {
+  color: #892885;
+  background-color: #f9f4f9;
+}
+.form-group.readonly .form-control:-moz-read-only ~ .copy i svg {
+  fill: #b6b3b4;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.form-group.readonly .form-control:read-only ~ .copy i svg {
+  fill: #b6b3b4;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.form-group.readonly .icon {
+  top: 50%;
+  left: 1rem;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1.4375rem;
+}
+.form-group.readonly .icon i svg {
+  fill: #b6b3b4;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.form-group.readonly .copy {
+  top: 50%;
+  right: 1rem;
+  z-index: 3;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+.form-group.readonly .copy i svg {
+  fill: #892885;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.form-group.readonly .form-text.text-muted {
+  line-height: 1.25;
+  color: #7f797b;
+  font-size: 0.75rem;
+  letter-spacing: 0.25px;
+}
 .form-group label {
   line-height: 1.375;
   color: #431441;
@@ -2924,65 +2986,6 @@ body {
   fill: currentColor;
   width: 0.6875rem;
   height: 0.6875rem;
-}
-.dev .emergency-section .emergencyuser .form-group {
-  max-width: 440px;
-}
-.dev .emergency-section .emergencyuser .form-group .form-control {
-  padding-left: 2.4375rem;
-  background-color: transparent;
-  color: #892885;
-  z-index: 2;
-}
-.dev .emergency-section .emergencyuser .form-group .form-control:-moz-read-only {
-  color: #892885;
-  background-color: #f9f4f9;
-}
-.dev .emergency-section .emergencyuser .form-group .form-control:read-only {
-  color: #892885;
-  background-color: #f9f4f9;
-}
-.dev .emergency-section .emergencyuser .form-group .form-control:-moz-read-only ~ .copy i svg {
-  fill: #b6b3b4;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-.dev .emergency-section .emergencyuser .form-group .form-control:read-only ~ .copy i svg {
-  fill: #b6b3b4;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-.dev .emergency-section .emergencyuser .form-group .icon {
-  top: 50%;
-  left: 1rem;
-  z-index: 1;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 1.4375rem;
-}
-.dev .emergency-section .emergencyuser .form-group .icon i svg {
-  fill: #b6b3b4;
-  width: 0.875rem;
-  height: 0.875rem;
-}
-.dev .emergency-section .emergencyuser .form-group .copy {
-  top: 50%;
-  right: 1rem;
-  z-index: 3;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  cursor: pointer;
-}
-.dev .emergency-section .emergencyuser .form-group .copy i svg {
-  fill: #892885;
-  width: 0.875rem;
-  height: 0.875rem;
-}
-.dev .emergency-section .emergencyuser .form-group .form-text.text-muted {
-  line-height: 1.25;
-  color: #7f797b;
-  font-size: 0.75rem;
-  letter-spacing: 0.25px;
 }
 .dev .emergency-section .safemode .c-toggle-switch .custom-control-label {
   line-height: 1.3928571429;

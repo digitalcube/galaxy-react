@@ -6,7 +6,7 @@ exports[`Guides to match snapshot(default) 1`] = `
     class="d-flex flex-column min-vh-100 shifter-dashboard"
   >
     <nav
-      class="navbar navbar-expand-lg"
+      class="navbar navbar-expand-lg navbar-light"
     >
       <a
         class="navbar-brand"

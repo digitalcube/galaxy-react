@@ -39,7 +39,7 @@ const App = () => {
         <div className="mx-auto d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between login-column">
           <form className="login mx-3 px-4 py-4 rounded">
             <div className="mb-4 pb-2 login-header">
-              <div className="mb-4 text-center login-icon"><img src="http://localhost:6006/static/media/src/images/common/shifter.svg" width="36" height="46" alt="Shifter"/></div>
+              <div className="mb-4 text-center login-icon"><img src="http://localhost:6006/static/media/src/images/common/shifter.svg" width="36" height="46"/></div>
               <h1 className="mb-0 font-weight-bold text-center login-title">Log In</h1>
               <div className="mt-2 font-weight-bold text-center login-switch-way">or <a href="./signup-zero.html">sign up</a></div>
             </div>

@@ -49,7 +49,7 @@ const MockSignUpVerificationPage: FC<MockSignUpVerificationPageProps> = ({
           }}
         >
           <AuthFormHeader
-            logo={<ImageSendEmail width="171" height="169" alt="" />}
+            logo={<ImageSendEmail width="171" height="169" />}
             title="Check your email"
             variant="signup"
           >

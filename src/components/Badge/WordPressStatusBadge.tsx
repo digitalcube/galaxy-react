@@ -6,6 +6,9 @@ export type WordPressStatusBadgeProps = {
   status?: StatusLabelName | '';
   className?: string;
 };
+/**
+ * @deprecated
+ */
 export const WordPressStatusBadge: FC<WordPressStatusBadgeProps> = ({
   status,
   className,
