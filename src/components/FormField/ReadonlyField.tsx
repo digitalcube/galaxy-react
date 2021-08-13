@@ -1,21 +1,22 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { useMemo } from 'react';
 import { FaCopy } from 'react-icons/fa';
 import { FormGroup, Input } from 'reactstrap';
 
-export type ReadOnlyFormFieldProps = {
+export type ReadOnlyFormFieldProps = PropsWithChildren<{
   value: string;
   icon: ReactNode;
   handleCopy: (value: string) => void;
   smaller?: boolean;
   className?: string;
-};
+}>;
 export const ReadOnlyFormField: FC<ReadOnlyFormFieldProps> = ({
   value,
   icon,
   smaller,
   handleCopy,
   className: _className,
+  children,
 }) => {
   const className = useMemo(() => {
     const items = ['readonly'];
@@ -46,6 +47,7 @@ export const ReadOnlyFormField: FC<ReadOnlyFormFieldProps> = ({
           </i>
         </span>
       </div>
+      {children}
     </FormGroup>
   );
 };
