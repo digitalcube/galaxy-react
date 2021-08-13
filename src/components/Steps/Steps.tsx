@@ -38,6 +38,7 @@ export const Steps: FC<StepsProps> = ({
               className={`col-sm mx-1 text-center${
                 currentStep === i + 1 ? ` is-current` : ''
               }${step.className ? ` ${step.className}` : ''}`}
+              key={`step-${i}`}
             >
               {step.title ? (
                 step.title
