@@ -1129,6 +1129,68 @@ body {
   background: linear-gradient(90deg, #892885 0%, #F80A5B 100%);
 }
 
+.steps {
+  margin-bottom: 0.75rem;
+  border: 1px solid #edecec;
+}
+.steps .steps-header .steps-title {
+  line-height: 1.375;
+  color: #521850;
+  font-size: 1rem;
+}
+.steps .steps-header .close {
+  color: #892885;
+  opacity: 1;
+}
+.steps .steps-header .close i svg {
+  fill: currentColor;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.steps > .container {
+  max-width: none;
+  background-color: #f9f4f9;
+}
+.steps > .container > .row > * {
+  padding-top: 0.8125rem;
+  padding-bottom: 0.8125rem;
+}
+.steps > .container > .row > *.is-current .step-num {
+  color: #892885;
+}
+.steps > .container > .row > *.is-current .step-name {
+  color: #892885;
+}
+.steps > .container > .row > *.is-current .step-description {
+  color: #363032;
+}
+.steps > .container .step-num {
+  line-height: 1.2;
+  color: #e2c9e1;
+  font-size: 3.125rem;
+}
+.steps > .container .step-name {
+  line-height: 1.3928571429;
+  color: #ac69aa;
+  font-size: 0.875rem;
+}
+.steps > .container .step-description {
+  line-height: 1.3928571429;
+  color: #d0a9ce;
+  font-size: 0.875rem;
+}
+.steps .steps-footer a {
+  line-height: 1.375;
+  color: #892885;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+}
+.steps .steps-footer a i svg {
+  fill: currentColor;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
 .shifter-dashboard-login {
   background-image: url("../images/login/bg-login.svg");
   background-size: cover;
