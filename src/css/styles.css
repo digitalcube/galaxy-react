@@ -4302,11 +4302,11 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.3px;
 }
-.teams-detail .member-list .member-list-body .member-misc .delete a {
+.teams-detail .member-list .member-list-body .member-misc .delete a, .teams-detail .member-list .member-list-body .member-misc .delete button {
   color: #892885;
   font-size: 0.6875rem;
 }
-.teams-detail .member-list .member-list-body .member-misc .delete a i svg {
+.teams-detail .member-list .member-list-body .member-misc .delete a i svg, .teams-detail .member-list .member-list-body .member-misc .delete button i svg {
   fill: currentColor;
   width: 0.6875rem;
   height: 0.6875rem;
@@ -4332,11 +4332,17 @@ body {
   color: #892885;
   font-size: 0.875rem;
 }
-.teams-detail .site-list .site-misc .delete a {
+.teams-detail .site-list .site-misc .delete button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.teams-detail .site-list .site-misc .delete a, .teams-detail .site-list .site-misc .delete button {
   color: #892885;
   font-size: 0.875rem;
 }
-.teams-detail .site-list .site-misc .delete a i svg {
+.teams-detail .site-list .site-misc .delete a i svg, .teams-detail .site-list .site-misc .delete button i svg {
   fill: currentColor;
   width: 0.875rem;
   height: 0.875rem;
