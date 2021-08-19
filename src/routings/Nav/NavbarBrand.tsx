@@ -16,7 +16,7 @@ export const NavbarBrand: FC<NavbarBrandProps> = ({
 }) => {
   const { tag } = useLinkTag();
   return (
-    <ReactstrapNavbarBrand tag={tag} href={href}>
+    <ReactstrapNavbarBrand tag={tag} href={href} to={href}>
       <Logo name={name} width={width} />
     </ReactstrapNavbarBrand>
   );
