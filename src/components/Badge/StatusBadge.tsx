@@ -37,6 +37,8 @@ export const StatusBadge: FC<StatusBadgeProps> = memo(
           return `c-is-${status}`;
         case 'loading':
           return 'c-is-pending';
+        case 'updating':
+        case 'provisioning':
         case 'inprogress':
           return 'c-is-site-starting';
         case 'generating':

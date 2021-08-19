@@ -18,6 +18,8 @@ export type StatusLabelName =
   | 'ready'
   | 'loading'
   | 'inprogress'
+  | 'updating'
+  | 'provisioning'
   | 'generating'
   | 'info'
   | 'warning'
