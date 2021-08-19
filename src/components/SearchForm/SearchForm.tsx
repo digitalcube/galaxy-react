@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { Input, Form, InputGroup } from 'reactstrap';
+import { SearchSuggestionList, SuggestionItem } from './Suggestions';
 
 export type SearchFormProps = {
   placeholder?: string;
   value?: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   onSubmit: React.FormEventHandler<HTMLFormElement>;
+  suggestions?: SuggestionItem[];
 };
 
 export const SearchForm: FC<SearchFormProps> = ({
@@ -14,6 +16,7 @@ export const SearchForm: FC<SearchFormProps> = ({
   value,
   onChange,
   onSubmit,
+  suggestions,
 }) => {
   return (
     <Form
@@ -29,6 +32,7 @@ export const SearchForm: FC<SearchFormProps> = ({
           onChange={onChange}
         />
       </InputGroup>
+      {suggestions ? <SearchSuggestionList suggestions={suggestions} /> : null}
     </Form>
   );
 };

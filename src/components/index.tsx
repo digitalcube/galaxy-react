@@ -23,6 +23,7 @@ export * from './Modals';
 export * from './ProgressBar/ProgressBar';
 export * from './Screenshot/Screenshot';
 export * from './SearchForm/SearchForm';
+export * from './SearchForm/Suggestions';
 export * from './SettingCard';
 export * from './SiteCard';
 export * from './StatusLabel';
