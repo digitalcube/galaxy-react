@@ -22,6 +22,7 @@ export type ModalProps = PropsWithChildren<{
   onSubmit?: React.FormEventHandler<HTMLFormElement>;
   setOpen?: (flag: boolean) => void;
   style?: CSSProperties;
+  noPadding?: boolean;
 }>;
 export const Modal: FC<ModalProps> = ({
   id,
@@ -35,6 +36,7 @@ export const Modal: FC<ModalProps> = ({
   onSubmit,
   setOpen,
   style,
+  noPadding = false,
 }) => {
   const [_isOpen, _setIsOpen] = useState(open || false);
 
@@ -86,10 +88,10 @@ export const Modal: FC<ModalProps> = ({
           >
             <div className={`modal-content ${rounded ? ' rounded' : ''}`}>
               {title ? (
-                <ModalHeader closeIcon={dismiss}>{title}</ModalHeader>
+                <ModalHeader closeIcon={dismiss} noPadding={noPadding}>{title}</ModalHeader>
               ) : null}
               {children ? (
-                <ModalBody onSubmit={onSubmit}>{children}</ModalBody>
+                <ModalBody onSubmit={onSubmit} noPadding={noPadding}>{children}</ModalBody>
               ) : null}
             </div>
           </div>

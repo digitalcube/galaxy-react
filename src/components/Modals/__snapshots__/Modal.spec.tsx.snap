@@ -28,10 +28,10 @@ exports[`Modal to match snapshot [story] 1`] = `
           class="modal-content  rounded"
         >
           <div
-            class="modal-header px-4 pt-4 pb-0 border-bottom-0 justify-content-center"
+            class="modal-header border-bottom-0 justify-content-center pb-0 px-4 pt-4"
           >
             <div
-              class="modal-title font-weight-bold"
+              class="modal-title font-weight-bold colored"
               id="modal-label"
             >
               Modal title

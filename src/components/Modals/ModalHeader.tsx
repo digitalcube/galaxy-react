@@ -4,16 +4,18 @@ import { useModal } from './ModalContext';
 
 export type ModalHeaderProps = PropsWithChildren<{
   closeIcon?: boolean;
+  noPadding?: boolean;
 }>;
 
 export const ModalHeader: FC<ModalHeaderProps> = ({
   children,
+  noPadding  = false,
   closeIcon = false,
 }) => {
   const { isOpen, dismiss } = useModal();
   return (
-    <div className="modal-header px-4 pt-4 pb-0 border-bottom-0 justify-content-center">
-      <div className="modal-title font-weight-bold" id="modal-label">
+    <div className={`modal-header border-bottom-0 justify-content-center pb-0${noPadding ? '': ' px-4 pt-4'}`}>
+      <div className="modal-title font-weight-bold colored" id="modal-label">
         {children}
       </div>
       {closeIcon && dismiss ? (

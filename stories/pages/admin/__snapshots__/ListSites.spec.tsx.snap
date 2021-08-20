@@ -11,6 +11,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
       <a
         class="navbar-brand"
         href="/"
+        to="/"
       >
         <img
           alt="shifter"

@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps to match snapshot (with error massage) 1`] = `
+<DocumentFragment>
+  <div
+    class="px-3 py-3 rounded steps fade show"
+    role="alert"
+  >
+    <header
+      class="steps-header mb-4 d-flex align-items-center justify-content-between"
+    >
+      <h2
+        class="mb-0 font-weight-bold steps-title"
+      >
+        Title
+      </h2>
+    </header>
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-sm mx-1 text-center is-current"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            1
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 1
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+        <div
+          class="col-sm mx-1 text-center"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            2
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 2
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+        <div
+          class="col-sm mx-1 text-center"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            3
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 3
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="steps-footer mt-3 px-3 align-items-center font-weight-bold"
+    >
+      Footer
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Steps to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="px-3 py-3 rounded steps fade show"
+    role="alert"
+  >
+    <header
+      class="steps-header mb-4 d-flex align-items-center justify-content-between"
+    >
+      <h2
+        class="mb-0 font-weight-bold steps-title"
+      >
+        Title
+      </h2>
+    </header>
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-sm mx-1 text-center is-current"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            1
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 1
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+        <div
+          class="col-sm mx-1 text-center"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            2
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 2
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+        <div
+          class="col-sm mx-1 text-center"
+        >
+          <div
+            class="step-num font-weight-bold"
+          >
+            3
+          </div>
+          <div
+            class="mt-2 font-weight-bold step-name"
+          >
+            Step name 3
+          </div>
+          <div
+            class="mt-2 step-description"
+          >
+            Step Descriptions
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="steps-footer mt-3 px-3 align-items-center font-weight-bold"
+    >
+      Footer
+    </div>
+  </div>
+</DocumentFragment>
+`;
