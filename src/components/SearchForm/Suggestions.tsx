@@ -15,7 +15,7 @@ export const SearchSuggestionList: FC<SearchSuggestionListProps> = ({
   className,
   suggestions,
 }) => {
-  if (!suggestions) return null;
+  if (!suggestions || suggestions.length < 1) return null;
   return (
     <div className={`form-search${className ? ` ${className}` : ''}`}>
       <div
