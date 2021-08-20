@@ -6,7 +6,7 @@ export type ModalBodyProps = PropsWithChildren<{
 }>;
 
 export const ModalBody: FC<ModalBodyProps> = ({ children, onSubmit, noPadding  = false }) => {
-  const className = `modal-body${noPadding ? 'px-0': ' px-4 py-4'}`;
+  const className = `modal-body ${noPadding ? 'px-0': 'px-4 py-4'}`;
   if (onSubmit) {
     return (
       <form className={className} onSubmit={onSubmit}>
