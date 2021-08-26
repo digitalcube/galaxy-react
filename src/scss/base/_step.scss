@@ -1,0 +1,76 @@
+
+@use "sass:math";
+@use "../import/mixin" as f;
+	.steps {
+        margin-bottom: 0.75rem;
+        border: 1px solid #edecec;
+        .steps-header {
+            .steps-title {
+                line-height: f.f-line-height(16, 22);
+                color: #521850;
+                font-size: f.f-rem(16);
+            }
+            .close {
+                color: #892885;
+                opacity: 1;
+                i {
+                    svg {
+                        fill: currentColor;
+                        width: f.f-rem(14);
+                        height: f.f-rem(14);
+                    }
+                }
+            }
+        }
+        & > .container {
+            max-width: none;
+            background-color: #f9f4f9;
+            & > .row {
+                & > * {
+                    padding-top: 0.8125rem;
+                    padding-bottom: 0.8125rem;
+                    &.is-current {
+                        .step-num {
+                            color: #892885;
+                        }
+                        .step-name {
+                            color: #892885;
+                        }
+                        .step-description {
+                            color: #363032;
+                        }
+                    }
+                }
+            }
+            .step-num {
+                line-height: f.f-line-height(50, 60);
+                color: #e2c9e1;
+                font-size: f.f-rem(50);
+            }
+            .step-name {
+                line-height: f.f-line-height(14, 19.5);
+                color: #ac69aa;
+                font-size: f.f-rem(14);
+            }
+            .step-description {
+                line-height: f.f-line-height(14, 19.5);
+                color: #d0a9ce;
+                font-size: f.f-rem(14);
+            }
+        }
+        .steps-footer {
+            a {
+                line-height: f.f-line-height(16, 22);
+                color: #892885;
+                font-size: f.f-rem(16);
+                letter-spacing: 0.35px;
+                i {
+                    svg {
+                        fill: currentColor;
+                        width: f.f-rem(14);
+                        height: f.f-rem(14);
+                    }
+                }
+            }
+        }
+	}

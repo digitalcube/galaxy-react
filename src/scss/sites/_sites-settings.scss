@@ -1,0 +1,52 @@
+@use "sass:math";
+@use "../import/mixin" as f;
+
+.site-settings {
+	.setting-headding {
+		line-height: f.f-line-height(22, 33);
+		color: #2b2628;
+		font-size: f.f-rem(22);
+	}
+
+
+	.general-setting {
+		.general-setting-item {
+			border: 1px solid #d1cfd0;
+		}
+		.general-setting-item-header {
+		}
+		.general-setting-heading {
+			font-size: f.f-rem(16);
+		}
+
+		.general-setting-item-body {
+			p {
+				max-width: 535px;
+				line-height: f.f-line-height(14, 19.5);
+				color: #413a3c;
+				font-size: f.f-rem(14);
+			}
+		}
+	}
+
+
+	.notification-base-setting {
+		border-top: 1px solid #d1cfd0;
+		border-bottom: 1px solid #d1cfd0;
+		.notification-base-title {
+			line-height: f.f-line-height(16, 22);
+			color: #413a3c;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+		}
+	}
+	.notification-setting-list {
+		ul {
+			list-style: none;
+			border-bottom: 1px solid #d1cfd0;
+		}
+		li {
+			border-top: 1px solid #d1cfd0;
+		}
+	}
+}

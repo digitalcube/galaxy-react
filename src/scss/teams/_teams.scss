@@ -1,0 +1,97 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+@charset "utf-8";
+
+.teams {
+	border-top: 1px solid #d1cfd0;
+	.teams-title {
+		line-height: f.f-line-height(30, 37.5);
+		font-size: f.f-rem(30);
+	}
+
+	.team-list-body {
+		border-collapse: separate;
+		border-spacing: 0 0.5rem;
+		tr {
+			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
+		}
+		tbody {
+			th, td {
+				padding-top: 28px;
+				padding-bottom: 28px;
+			}
+		}
+		.team-name {
+			width: 38.21362799%;
+			line-height: f.f-line-height(16, 22);
+			color: #363032;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+		}
+		.site-num {
+			width: 23.75690608%;
+		}
+
+		.members {
+			.member-icons {
+				& > * {
+					margin-right: .5rem;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.member-icon {
+				border: 2px solid transparent;
+				overflow: hidden;
+				&.colored-border {
+					border-color: #e2c9e1;
+				}
+				img {
+					display: block;
+					width: 20px;
+					height: 20px;
+					object-fit: cover;
+				}
+			}
+			.member-more {
+				line-height: f.f-line-height(12, 15);
+				color: #892885;
+				font-size: f.f-rem(12);
+				letter-spacing: 0.3px;
+			}
+		}
+		.manage {
+			a {
+				width: 6em;
+				line-height: f.f-line-height(16, 22);
+				color: #892885;
+				font-size: f.f-rem(16);
+				letter-spacing: 0.35px;
+			}
+		}
+	}
+}
+
+
+.no-teams {
+	padding-top: 6rem;
+	border-top: 1px solid #d1cfd0;
+	.no-teams-header {
+	}
+	.no-teams-header-icon {
+	}
+	.no-teams-title {
+		line-height: f.f-line-height(22, 33);
+		color: #7b2478;
+		font-size: f.f-rem(22);
+	}
+	.no-teams-body {
+	}
+	a {
+		line-height: f.f-line-height(14, 19.5);
+		color: #7b2478;
+		font-size: f.f-rem(14);
+	}
+}

@@ -1,0 +1,126 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+@charset "utf-8";
+
+.add-domain {
+	margin-top: 5.3125rem;
+	max-width: 984px;
+
+	.add-domain-steps {
+		margin-bottom: 0.75rem;
+		line-height: f.f-line-height(14, 19.5);
+		color: #7f797b;
+		font-size: f.f-rem(14);
+	}
+	.add-domain-title {
+		line-height: f.f-line-height(30, 37.5);
+		color: #671e64;
+		font-size: f.f-rem(30);
+		letter-spacing: 1px;
+	}
+	.add-domain-description {
+		margin-top: 1.25rem;
+		max-width: 750px;
+		line-height: f.f-line-height(16, 22);
+		color: #363032;
+		font-size: f.f-rem(16);
+		letter-spacing: 0.35px;
+		&.smaller {
+			line-height: f.f-line-height(14, 19.5);
+			font-size: f.f-rem(14);
+			letter-spacing: 0;
+		}
+	}
+
+	.add-domain-body {
+		.record-table {
+			border: 1px solid #d1cfd0;
+			.record-table-title {
+				padding: 0.625rem 1rem;
+				line-height: f.f-line-height(16, 22);
+				color: #671e64;
+				font-size: f.f-rem(16);
+				letter-spacing: 0.35px;
+				i {
+					svg {
+						fill: currentColor;
+						width: f.f-rem(14);
+						height: f.f-rem(14);
+					}
+				}
+			}
+			table {
+				th, td {
+					border-top: 1px solid #d1cfd0;
+					line-height: f.f-line-height(14, 19.5);
+					font-size: f.f-rem(14);
+				}
+				thead {
+					th {
+						color: #413a3c;
+					}
+				}
+				tbody {
+					td {
+						color: #484043;
+						input {
+							padding: 10px;
+							width: 100%;
+							max-width: 100%;
+							line-height: f.f-line-height(14, 19.5);
+							font-size: f.f-rem(14);
+							&:read-only {
+								color: #892885;
+								background-color: #f6f5f6;
+							}
+						}
+						&.data {
+							width: 42.73504274%;
+						}
+					}
+				}
+			}
+		}
+
+		.paging-buttons {
+			.form-note {
+				a {
+					line-height: f.f-line-height(16, 22);
+					color: #892885;
+					font-size: f.f-rem(16);
+					letter-spacing: 0.35px;
+					svg {
+						fill: currentColor;
+						width: f.f-rem(14);
+						height: f.f-rem(14);
+					}
+				}
+			}
+		}
+	}
+
+
+	&.added {
+		margin-top: 4.3125rem;
+		max-width: 348px;
+		.added-message {
+			.added-message-image {
+			}
+			.added-message-title {
+				line-height: f.f-line-height(38, 47.5);
+				color: #521850;
+				font-size: f.f-rem(38);
+				letter-spacing: 1px;
+			}
+			.added-message-text {
+				line-height: f.f-line-height(16, 22);
+				font-size: f.f-rem(16);
+				letter-spacing: 0.35px;
+			}
+			.added-message-button {
+			}
+		}
+
+	}
+}

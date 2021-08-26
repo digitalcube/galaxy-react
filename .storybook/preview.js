@@ -1,5 +1,7 @@
+
+//import '../src/css/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/css/styles.css'
+import '../src/scss/styles.scss'
 
 // https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
 export const parameters = {

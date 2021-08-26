@@ -1,0 +1,108 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+.shifter-dashboard-columns {
+	border-top: 1px solid #d1cfd0;
+	width: 100%;
+	&.no-border {
+		border-top: 0;
+	}
+	.shifter-dashboard-main {
+		border-left: 1px solid #d1cfd0;
+	}
+	.shifter-dashboard-sidebar {
+		padding-left: 60px;
+		width: 100%;
+		max-width: 304px;
+	}
+	.return2sites {
+		a {
+			line-height: f.f-line-height(16, 22);
+			color: #892885;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+			i {
+				svg {
+					fill: currentColor;
+					width: f.f-rem(16);
+					height: f.f-rem(16);
+				}
+			}
+		}
+	}
+	.sidebar-sitename {
+		padding-right: 2rem;
+		line-height: f.f-line-height(22, 33);
+		font-size: f.f-rem(22);
+	}
+	.sidebar-nav {
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: -60px;
+			z-index: 1;
+			height: 1px;
+			background-color: #d1cfd0;
+		}
+		ul {
+			margin: 0;
+			padding: 12px 0 0;
+			list-style: none;
+		}
+		& > ul {
+			& > li {
+				margin-top: 12px;
+				& > a {
+					line-height: f.f-line-height(16, 22);
+					color: #521850;
+					font-size: f.f-rem(16);
+					letter-spacing: 0.35px;
+					text-decoration: none;
+					i {
+						svg {
+							fill: #892885;
+							width: f.f-rem(16);
+							height: f.f-rem(16);
+						}
+					}
+					&.deactive {
+						pointer-events: none;
+						i {
+							svg {
+								fill: #d0a9ce;
+							}
+						}
+					}
+					&.active {
+						font-weight: 800;
+						background-color: #f3eaf3;
+					}
+				}
+			}
+		}
+		.sub-menu {
+			padding: 16px 32px;
+			& > li {
+				& + li {
+					margin-top: 0.75rem;
+				}
+				& > a {
+					line-height: f.f-line-height(16, 22);
+					color: #7f7679;
+					font-size: f.f-rem(16);
+					&.deactive {
+					}
+					&.active {
+						font-weight: 800;
+						color: #892885;
+					}
+				}
+			}
+		}
+	}
+}
+
