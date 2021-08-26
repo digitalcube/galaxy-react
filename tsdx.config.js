@@ -12,8 +12,6 @@ module.exports = {
                 assets: [
                   // You can include directories
                   "src/assets",
-                  // You can also include files
-                  "src/css",
                   "src/images"
                 ],
             })
