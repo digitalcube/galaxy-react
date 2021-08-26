@@ -7,6 +7,7 @@ export type SiteCardSettingsProps = PropsWithChildren<{
   wordpressAdminURL?: string;
   href?: string;
   statusBadge?: ReactNode;
+  buttonText?: ReactNode;
 }>;
 
 export const SiteCardSettings: FC<SiteCardSettingsProps> = ({
@@ -14,6 +15,7 @@ export const SiteCardSettings: FC<SiteCardSettingsProps> = ({
   wordpressAdminURL,
   href,
   statusBadge,
+  buttonText = 'Manage Site',
 }) => {
   return (
     <div className="ml-auto pt-4 pr-3 d-flex align-items-center flex-shrink-0 site-setting">
@@ -28,7 +30,7 @@ export const SiteCardSettings: FC<SiteCardSettingsProps> = ({
         </div>
       ) : null}
       <div className="ml-4 font-weight-bold site-manage">
-        <Link href={href}>Manage site</Link>
+        <Link className="btn btn-bordered py-1 btn-smaller" href={href}>{buttonText}</Link>
       </div>
       {children}
     </div>
