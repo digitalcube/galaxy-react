@@ -1,0 +1,249 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+@charset "utf-8";
+.add-member-form {
+	border: 1px solid #d1cfd0;
+	.add-member-form-header {
+		.add-member-form-title {
+			line-height: f.f-line-height(22, 33);
+			color: #671e64;
+			font-size: f.f-rem(22);
+		}
+		.icon-close {
+			a {
+				i {
+					svg {
+						fill: #892885;
+						width: f.f-rem(18);
+						height: f.f-rem(18);
+					}
+				}
+			}
+		}
+	}
+	dl {
+		dt {
+			line-height: f.f-line-height(16, 22);
+			color: #671e64;
+			font-size: f.f-rem(16);
+		}
+		dd {
+			.form-check {
+				&.radio {
+					.form-check-input {
+						margin: 0;
+						position: absolute;
+						clip: rect(1px, 1px, 1px, 1px);
+						overflow: hidden;
+						&:checked {
+							& + .form-check-label {
+								&::before {
+									border-width: 4px;
+								}
+							}
+						}
+					}
+					.form-check-label {
+						padding-left: 1.25rem;
+						line-height: f.f-line-height(16, 22);
+						color: #671e64;
+						font-size: f.f-rem(16);
+						&::before {
+							content: '';
+							margin-left: -1.25rem;
+							border: 1px solid #892885;
+							border-radius: 100%;
+							width: 0.75rem;
+							height: 0.75rem;
+							position: absolute;
+							top: f.f-line-height(16, 11) + 'rem';
+							transform: translateY(-50%);
+						}
+					}
+
+					.form-text {
+						&.text-muted {
+							line-height: f.f-line-height(14, 19.5);
+							color: #413a3c;
+							font-size: f.f-rem(14);
+						}
+					}
+				}
+			}
+		}
+	}
+	.invite-button {
+	}
+
+}
+
+.add-team {
+	margin-top: 4rem;
+	max-width: 793px;
+
+	.add-team-steps {
+		margin-bottom: 0.75rem;
+		line-height: f.f-line-height(14, 19.5);
+		color: #7f797b;
+		font-size: f.f-rem(14);
+	}
+	.add-team-title-shoulder {
+		line-height: f.f-line-height(18, 27);
+		color: #892885;
+		font-size: f.f-rem(18);
+	}
+	.add-team-title {
+		line-height: f.f-line-height(30, 37.5);
+		color: #671e64;
+		font-size: f.f-rem(30);
+		letter-spacing: 1px;
+	}
+	.add-team-description {
+		line-height: f.f-line-height(14, 19.5);
+		color: #413A3C;
+		font-size: f.f-rem(14);
+	}
+
+	.add-team-body {
+		.team-inputs {
+			border: 1px solid #d1cfd0;
+			width: 100%;
+			max-width: 554px;
+			dt {
+				line-height: f.f-line-height(16, 22);
+				color: #431441;
+				font-size: f.f-rem(16);
+				letter-spacing: 0.35px;
+			}
+			dd {
+			}
+		}
+
+		.team-member-setting {
+			border: 1px solid #d1cfd0;
+			.team-member-setting-title {
+				line-height: f.f-line-height(16, 22);
+				color: #363032;
+				font-size: f.f-rem(16);
+			}
+			.team-member-setting-buttons {
+				.btn {
+					margin-right: 0.75rem;
+					margin-left: 0.75rem;
+				}
+			}
+		}
+
+
+		
+
+		.add-csv-form {
+			border: 1px solid #d1cfd0;
+			height: 19.6875rem;
+			.add-csv-form-title {
+				line-height: f.f-line-height(22, 22);
+				color: #521850;
+				font-size: f.f-rem(22);
+			}
+		}
+
+
+		.added-member-list {
+			border: 1px solid #d1cfd0;
+			.added-member-list-title {
+				line-height: f.f-line-height(22, 22);
+				color: #521850;
+				font-size: f.f-rem(22);
+			}
+			.added-member-list-table {
+				table {
+					border-collapse: separate;
+					border-spacing: 0 0.5rem;
+					th, td {
+					}
+					.name {
+						padding-left: 3.75rem;
+					}
+					.role {
+						width: 14.86676017%;
+					}
+					.misc {
+						width: 14.1654979%;
+					}
+					thead {
+						th {
+							line-height: f.f-line-height(12, 15);
+							color: #413a3c;
+							font-size: f.f-rem(12);
+						}
+					}
+					tbody {
+						tr {
+							& > *:first-child {
+								border-left: 1px solid #d1cfd0;
+							}
+							& > *:last-child {
+								border-right: 1px solid #d1cfd0;
+							}
+						}
+						th, td {
+							border-top: 1px solid #d1cfd0;
+							border-bottom: 1px solid #d1cfd0;
+						}
+						td {
+							line-height: f.f-line-height(14, 19.5);
+							font-size: f.f-rem(14);
+						}
+						.name {
+							color: #521850;
+							.usericon {
+								width: 1.25rem;
+								height: 1.25rem;
+								overflow: hidden;
+							}
+						}
+						.role {
+							color: #413a3c;
+						}
+						.misc {
+							.btn {
+								&.btn-icon {
+									height: auto;
+									color: #892885;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.add-member-button {
+			}
+		}
+
+
+		.new-team-complete {
+			margin-top: 2.4375rem;
+			.new-team-complete-image {
+			}
+			.new-team-complete-title {
+				line-height: f.f-line-height(38, 47.5);
+				color: #892885;
+				font-size: f.f-rem(38);
+			}
+			.new-team-complete-description {
+				line-height: f.f-line-height(18, 27);
+				color: #892885;
+				font-size: f.f-rem(18);
+			}
+			.new-team-complete-buttons {
+			}
+		}
+
+
+		.add-member-buttons {
+			margin-top: 4.25rem;
+		}
+	}
+}

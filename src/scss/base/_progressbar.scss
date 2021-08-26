@@ -1,0 +1,61 @@
+
+.progress {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    left: 1.5rem;
+    z-index: 1;
+    height: 0.25rem;
+    background-color: #d1cfd0;
+    .progress-bar {
+        height: 0.25rem;
+        background: linear-gradient(90deg, #892885 0%, #F80A5B 102.17%);
+    }
+}
+.sites-list {
+    .progress {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 0.25rem 0.25rem 0 0;
+        height: 0.25rem;
+        .progress-bar {
+            height: 0.25rem;
+            background: linear-gradient(90deg, #892885 0%, #F80A5B 100%);
+        }
+    }
+}
+.shifter-dashboard-main {
+    position: relative;
+    z-index: 1;
+    .progress {
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+        left: 1.5rem;
+        z-index: 1;
+        height: 0.25rem;
+        background-color: #d1cfd0;
+        .progress-bar {
+            height: 0.25rem;
+            background: linear-gradient(90deg, #892885 0%, #F80A5B 102.17%);
+        }
+    }
+}
+.deploy-history-item {
+    .progress {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-radius: 0.25rem 0.25rem 0 0;
+        height: 0.25rem;
+        background-color: #d1cfd0;
+        .progress-bar {
+            height: 0.25rem;
+            background: linear-gradient(90deg, #892885 0%, #F80A5B 100%);
+        }
+    }
+}

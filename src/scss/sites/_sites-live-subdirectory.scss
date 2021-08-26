@@ -1,0 +1,44 @@
+@use "sass:math";
+@use "../import/mixin" as f;
+
+.live-subdirectory {
+	.subdirectory-container {
+		border: 1px solid #edecec;
+	}
+
+	.subdirectory-heading {
+		line-height: f.f-line-height(22, 33);
+		color: #521850;
+		font-size: f.f-rem(22);
+	}
+
+	.subdirectory-description {
+		p {
+			line-height: f.f-line-height(14, 19.5);
+			color: #363032;
+			font-size: f.f-rem(14);
+		}
+	}
+
+	.deploy-setting {
+		border: 1px solid #edecec;
+		.deploy-setting-status {
+			line-height: f.f-line-height(16, 22);
+			color: #363032;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+		}
+	}
+
+	.subdirectory-path {
+		border-top: 1px solid #edecec;
+		.subdirectory-path-title {
+			line-height: f.f-line-height(16, 22);
+			color: #521850;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+		}
+		.subdirectory-path-setting {
+		}
+	}
+}

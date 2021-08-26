@@ -1,0 +1,27 @@
+@use "sass:math";
+
+// Convert pixels to line-height
+// eg. When the font size is 18 px and the line feed is 28 px write f-line-height( 18, 28 )
+@function f-line-height( $fontSize: '', $lineFeed: '' ) {
+
+	$lineHeight: 1;
+	@if $fontSize != '' and $lineFeed != '' {
+		$lineHeight: math.div( $lineFeed, $fontSize );
+	}
+	@return #{$lineHeight};
+}
+
+
+// Convert pixels to rems
+// eg. for a relational value of 12px write f-rem(12)
+// Assumes $em-base is the font-size of 10px
+@function f-rem( $pxval ) {
+
+	@if not unitless($pxval) {
+		$pxval: math.div( $pxval, ($pxval * 0 + 1) );
+	}
+
+	$base: 16;
+
+	@return math.div( $pxval, $base ) * 1rem;
+}

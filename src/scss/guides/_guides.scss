@@ -1,0 +1,104 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+.shifter-guides {
+	max-width: 1134px;
+	.guide-heading-1 {
+		line-height: f.f-line-height(30, 37.5);
+		font-size: f.f-rem(30);
+		letter-spacing: 1px;
+	}
+
+	.guide-heading-2 {
+		line-height: f.f-line-height(22, 33);
+		font-size: f.f-rem(22);
+	}
+
+	.guides-list {
+		& > .row {
+			margin-right: -0.75rem;
+			margin-left: -0.75rem;
+			& > * {
+				padding: 1.5rem 0.75rem 0;
+			}
+		}
+
+		.guide-list-item {
+			padding-bottom: 84px;
+			box-shadow: 0 1px 8px 0 rgba(#451D39, .1);
+			z-index: 1;
+			.guide-list-anchor {
+				left: 24px;
+				bottom: 24px;
+				z-index: 1;
+			}
+		}
+
+		.question {
+			background-image: url('../images/guides/bg-guide-list-question.png');
+			background-size: cover;
+			.question-title {
+				line-height: f.f-line-height(22, 33);
+				color: #fff;
+				font-size: f.f-rem(22);
+			}
+			.question-description {
+				line-height: f.f-line-height(16, 22);
+				color: #e2c9e1;
+				font-size: f.f-rem(16);
+			}
+			.question-anchor {
+			}
+		}
+
+		&.guides-list-lg {
+			.guide-list-item {
+				padding-bottom: 90px;
+			}
+			.guides-list-icon {
+				i {
+					svg {
+						fill: #892885;
+						width: f.f-rem(14);
+						height: f.f-rem(14);
+					}
+				}
+			}
+			.guide-list-title {
+				line-height: f.f-line-height(30, 37.5);
+				color: #363032;
+				font-size: f.f-rem(30);
+			}
+			.guide-list-excerpt {
+				line-height: f.f-line-height(18, 24);
+				color: #413a3c;
+				font-size: f.f-rem(18);
+			}
+			.guide-list-anchor {
+				bottom: 30px;
+			}
+		}
+		&.guides-list-md {
+			margin-bottom: 11px;
+			.guide-list-item {
+			}
+			.guide-list-genre {
+				line-height: f.f-line-height(14, 19.5);
+				color: #413a3c;
+				font-size: f.f-rem(14);
+			}
+			.guide-list-title {
+				line-height: f.f-line-height(22, 33);
+				color: #363032;
+				font-size: f.f-rem(22);
+			}
+			.guide-list-excerpt {
+				line-height: f.f-line-height(16, 22);
+				color: #413a3c;
+				font-size: f.f-rem(16);
+				letter-spacing: .35px;
+			}
+		}
+	}
+}
+

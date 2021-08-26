@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "../import/mixin" as f;
+
+.live-analytics {
+	.analytics-heading {
+		margin-bottom: 3.875rem;
+		line-height: f.f-line-height(30, 37.5);
+		color: #671e64;
+		font-size: f.f-rem(30);
+		letter-spacing: 1px;
+	}
+
+	.analytic-datas {
+		border: 1px solid #edecec;
+		.analytic-datas-title {
+			line-height: f.f-line-height(22, 33);
+			color: #7b2478;
+			font-size: f.f-rem(22);
+		}
+		.analytic-item {
+			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
+		}
+		.analytic-item-title {
+			line-height: f.f-line-height(16, 22);
+			color: #671e64;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+		}
+		.analytic-data {
+		}
+	}
+}

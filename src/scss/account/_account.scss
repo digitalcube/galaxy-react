@@ -1,0 +1,453 @@
+@use "sass:math";
+@use "import/mixin" as f;
+
+.shifter-dashboard-columns {
+	&.account {
+		.shifter-dashboard-sidebar {
+			padding-left: 2.5rem;
+		}
+		.sidebar-nav {
+			&::before {
+				display: none;
+			}
+			& > ul {
+				& > li {
+					& > a {
+						line-height: f.f-line-height(16, 24);
+						position: relative;
+						i {
+							width: 1.5rem;
+							fill: #d0a9ce;
+							svg {
+								display: block;
+							}
+						}
+						&.active {
+							i {
+								svg {
+									fill: #892885;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.profile-box {
+		max-width: 756px;
+		.profile-header {
+			.profile-header-image {
+				img {
+					width: 5rem;
+					height: 5rem;
+					object-fit: cover;
+				}
+			}
+			.edit-profile-image {
+				.dropdown-toggle {
+					padding: 0.625rem;
+					line-height: f.f-line-height(14, 19.5);
+					color: #892885;
+					font-size: f.f-rem(14);
+					&::after {
+						display: none;
+					}
+				}
+				.dropdown-menu {
+					box-shadow: 0px 0px 10px rgba(69, 29, 57, 0.2);
+					border: 2px solid #d1cfd0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.dropdown-item {
+					min-width: 224px;
+					line-height: f.f-line-height(16, 22);
+					color: #484043;
+					font-size: f.f-rem(16);
+					letter-spacing: 0.35px;
+					i {
+						svg {
+							fill: #bdb6b8;
+							width: f.f-rem(11);
+							height: f.f-rem(11);
+						}
+					}
+					&.remove {
+						color: #ce1616;
+						i {
+							svg {
+								fill: currentColor;
+							}
+						}
+					}
+				}
+			}
+			.profile-name {
+				line-height: f.f-line-height(22, 33);
+				color: #000;
+				font-size: f.f-rem(22);
+			}
+		}
+		.form-group {
+			.form-control {
+				line-height: f.f-line-height(14, 18);
+				font-size: f.f-rem(14);
+			}
+			label {
+				color: #363032;
+				&.colored {
+					color: #521850;
+				}
+			}
+		}
+		.input-group {
+			.input-group-prepend {
+				&.country-flag {
+					.dropdown {
+						&.bootstrap-select {
+							display: block;
+							width: auto;
+							.dropdown-toggle {
+								padding: 0 0.625rem 0 1rem;
+								border: 1px solid #b6b3b4;
+								border-right: 0;
+								border-radius: 0.25rem 0 0 0.25rem;
+								height: 3rem;
+								background-color: transparent;
+								&::after {
+									margin-left: 0.625rem;
+									color: #892885;
+								}
+								&.dropup {
+									&::after {
+									}
+								}
+							}
+							.filter-option {
+							}
+							.filter-option-inner {
+								display: flex;
+								height: 100%;
+							}
+							.filter-option-inner-inner {
+								display: flex;
+								align-items: center;
+								color: #363032;
+								line-height: f.f-line-height(16, 16);
+								font-size: f.f-rem(16);
+							}
+							.icon-flag {
+								margin-right: 0.625rem;
+							}
+
+							.dropdown-item {
+								.text {
+									display: flex;
+									align-items: center;
+								}
+							}
+						}
+					}
+					& + .form-control {
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 0;
+					}
+				}
+			}
+		}
+
+		.profile-contacts {
+			.profile-contacts-title {
+				line-height: f.f-line-height(22, 33);
+				color: #521848;
+				font-size: f.f-rem(22);
+			}
+		}
+	}
+
+
+
+	.security-setting {
+	}
+
+	.authentication-method {
+		border: 1px solid #d1cfd0;
+		line-height: f.f-line-height(16, 22);
+		color: #363032;
+		font-size: f.f-rem(16);
+		letter-spacing: 0.35px;
+		.authentication-method-status {
+		}
+		.authentication-status {
+		}
+		.authentication-method-configured {
+			border-top: 1px solid #d1cfd0;
+		}
+		.authentication-method-update {
+		}
+	}
+
+
+	.billing-info {
+		max-width: 936px;
+		.payment-information-form {
+			label {
+				line-height: f.f-line-height(16, 22);
+				color: #521850;
+				font-size: f.f-rem(16);
+				letter-spacing: 0.35px;
+			}
+			.card-number,
+			.country {
+				.form-control {
+					width: 15.1875em;
+				}
+			}
+			.exp-date {
+				.form-control {
+					width: 5.75em;
+				}
+			}
+			.cvc {
+				.form-control {
+					width: 4.5em;
+				}
+			}
+			.country {
+				.form-control-select-wrapper {
+					z-index: 1;
+					i {
+						top: 50%;
+						right: 1rem;
+						z-index: 1;
+						transform: translateY(-50%);
+						svg {
+							fill: #b6b3b4;
+							width: f.f-rem(14);
+							height: f.f-rem(14);
+						}
+					}
+					select {
+						appearance: none;
+						z-index: 2;
+						background-color: transparent;
+						&::-ms-expand {
+							display: none;
+						}
+					}
+				}
+			}
+			.postalcode {
+				.form-control {
+				}
+			}
+		}
+
+		.card-info {
+			border: 1px solid #d1cfd0;
+			line-height: f.f-line-height(16, 22);
+			color: #363032;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+			.card-icon {
+			}
+			.card-number {
+			}
+			.card-data {
+				.card-expire {
+				}
+				.update-card {
+					a {
+						line-height: f.f-line-height(14, 19.5);
+						color: #892885;
+						font-size: f.f-rem(14);
+					}
+				}
+			}
+		}
+
+		.btn {
+			&.btn-coupon {
+				border: 2px solid #edecec;
+			}
+		}
+
+		.billing-coupon {
+			table {
+				th, td {
+					padding: 12px 0 12px 12px;
+				}
+				thead {
+					th {
+						line-height: f.f-line-height(12, 15);
+						color: #363032;
+						font-size: f.f-rem(12);
+						letter-spacing: 0.3px;
+					}
+				}
+				tbody {
+					td {
+						border-top: 1px solid #edecec;
+						border-bottom: 1px solid #edecec;
+						line-height: f.f-line-height(16, 22);
+						color: #2b2628;
+						font-size: f.f-rem(16);
+						letter-spacing: 0.35px;
+						&:first-child {
+							border-left: 1px solid #edecec;
+						}
+						&:last-child {
+							border-right: 1px solid #edecec;
+						}
+					}
+				}
+			}
+			.coupon-edit {
+				.btn {
+					line-height: f.f-line-height(16, 22);
+				}
+			}
+		}
+
+		.billing-history-table {
+			color: #363032;
+			.period {
+				width: 28.09734513%;
+			}
+			.name {
+			}
+			.plan {
+				width: 14.82300885%;
+			}
+			.date {
+				width: 15.04424779%;
+			}
+			.amount {
+				width: 15.81858407%;
+			}
+			.pdf {
+				width: 1%;
+				svg {
+					fill: #892885;
+					width: f.f-rem(14);
+					height: f.f-rem(14);
+				}
+			}
+			table {
+				border-collapse: separate;
+				border-spacing: 0 0.5rem;
+			}
+			thead {
+				th {
+					line-height: f.f-line-height(12, 15);
+					font-size: f.f-rem(12);
+				}
+			}
+			tbody {
+				td {
+					line-height: f.f-line-height(14, 19.5);
+					font-size: f.f-rem(14);
+				}
+			}
+		}
+	}
+
+	.subscriptions-item {
+		border: 1px solid #d1cfd0;
+		.subscriptions-header {
+			.subscriptions-name {
+				line-height: f.f-line-height(18, 27);
+				font-size: f.f-rem(18);
+			}
+			.subscriptions-type {
+				line-height: f.f-line-height(18, 27);
+				color: #756b6e;
+				font-size: f.f-rem(18);
+			}
+		}
+		.subscriptions-buttons {
+			.btn {
+				&.btn-colored {
+				}
+				&.btn-bordered {
+				}
+				&.btn-gray-border {
+					border: 2px solid #edecec;
+				}
+			}
+		}
+		.subscriptions-data {
+			border-top: 1px solid #d1cfd0;
+			dl {
+				dt {
+					line-height: f.f-line-height(12, 15);
+					font-size: f.f-rem(12);
+				}
+				dd {
+					line-height: f.f-line-height(14, 20);
+					font-size: f.f-rem(14);
+				}
+			}
+			.subscription-id {
+				word-break: break-all;
+			}
+
+			.subscription-site {
+				.subscription-id {
+					@media (min-width: 992px) {
+						width: 28.66972477%;
+					}
+				}
+				.billing-period {
+					@media (min-width: 992px) {
+						width: 44.49541284%;
+					}
+				}
+				.total-amount {
+				}
+			}
+			.subscription-site-legacy {
+				.subscription-id {
+					@media (min-width: 992px) {
+						width: 18.80733945%;
+					}
+				}
+				.billing-period {
+					@media (min-width: 992px) {
+						width: 43.57798165%;
+					}
+				}
+				.sites-remaining {
+					@media (min-width: 992px) {
+						width: 15.82568807%;
+					}
+				}
+				.total-amount {
+				}
+			}
+			.subscription-plan {
+				.subscription-id {
+					@media (min-width: 992px) {
+						width: 29.58715596%;
+					}
+				}
+				.billing-period {
+					@media (min-width: 992px) {
+						width: 32.45412844%;
+					}
+				}
+				.sites-using {
+					@media (min-width: 992px) {
+						width: 23.96788991%;
+					}
+				}
+				.total-amount {
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,102 @@
+@use "sass:math";
+@use "../import/mixin" as f;
+
+.sites-list {
+	.sites-list-header {
+		margin-bottom: 2.5rem;
+		.sites-list-title {
+			font-size: f.f-rem(30);
+		}
+	}
+	.site-list-item {
+		box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
+		border: 1px solid #edecec;
+		position: relative;
+	}
+	.site-thumbnail {
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+	.site-data {
+		overflow: hidden;
+	}
+	.site-name {
+		line-height: f.f-line-height(22, 33);
+		color: #2b2628;
+		font-size: f.f-rem(22);
+	}
+	.site-info {
+		margin-top: 1rem;
+		font-size: f.f-rem(14);
+		.site-url {
+			margin-right: 1.5rem;
+			a {
+				color: #892885;
+			}
+		}
+		.site-initial {
+			width: f.f-rem(22);
+			height: f.f-rem(22);
+			line-height: f.f-rem(22);
+			background-color: #e2c9e1;
+			font-size: f.f-rem(12);
+		}
+		.site-description {
+			line-height: f.f-line-height(14, 19.5);
+		}
+	}
+	.site-setting {
+	}
+	.site-status {
+	}
+	.site-panel {
+		a {
+			i {
+				svg {
+					fill: #892885;
+					width: f.f-rem(20);
+					height: f.f-rem(20);
+				}
+			}
+		}
+	}
+	.site-manage {
+		a {
+			line-height: f.f-line-height(14, 19.5);
+			color: #892885;
+			font-size: f.f-rem(14);
+		}
+	}
+	.site-control {
+		.dropdown-toggle {
+			&::after {
+				display: none;
+			}
+			i {
+				svg {
+					fill: #892885;
+					width: f.f-rem(21);
+					height: f.f-rem(21);
+				}
+			}
+		}
+		.dropdown-menu {
+			box-shadow: 0 0 10px rgba(69, 29, 57, 0.2);
+		}
+		.dropdown-item {
+			line-height: f.f-line-height(16, 22);
+			min-width: 224px;
+			color: #484043;
+			font-size: f.f-rem(16);
+			letter-spacing: 0.35px;
+			i {
+				svg {
+					fill: #bdb6b8;
+					width: f.f-rem(11);
+					height: f.f-rem(11);
+				}
+			}
+		}
+	}
+}
