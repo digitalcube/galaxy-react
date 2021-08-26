@@ -331,10 +331,11 @@ exports[`ListSites to match snapshot(default) 1`] = `
               class="ml-4 font-weight-bold site-manage"
             >
               <a
+                class="btn btn-bordered py-1 btn-smaller"
                 href="#"
                 to="#"
               >
-                Manage site
+                Manage Site
               </a>
             </div>
             <div
@@ -512,10 +513,11 @@ exports[`ListSites to match snapshot(default) 1`] = `
               class="ml-4 font-weight-bold site-manage"
             >
               <a
+                class="btn btn-bordered py-1 btn-smaller"
                 href="#"
                 to="#"
               >
-                Manage site
+                Manage Site
               </a>
             </div>
             <div

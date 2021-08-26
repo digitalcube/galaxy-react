@@ -1,4 +1,85 @@
-# TSDX React w/ Storybook User Guide
+# [@galaxy/shifter] React Component for Shifter (beta)
+
+## Getting started
+
+### Install
+
+```bash
+$ npm install @galaxy/shifter bootstrap@4
+
+or
+
+$ yarn add @galaxy/shifter bootstrap@4
+```
+
+### Import css
+
+```jsx:src/index.jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@galaxy/shifter/dist/css/styles.css';
+
+import App from './app';
+
+ReactDOM.render(
+  <React.StrictMode>
+      <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+## Development
+
+### Setup
+
+```bash
+$ git clone git@github.com:digitalcube/galaxy-react-shifter.git
+$ cd galaxy-react-shifter
+
+$ npm install
+
+or
+
+$ yarn
+```
+
+### Development commands
+
+```bash
+# Preview Component by Stroybook [Recommended]
+$ yarn storybook
+
+# Just watch and build files
+$ yarn start
+
+# Unit test by Jest
+$ yarn test
+
+# Build package
+$ yarn build
+```
+
+### Make a Pull Request
+
+```bash
+$ git checkout -b [feat|fix|chore|breaking-change]/[TOPIC]
+$ git add ./
+$ git commit -m "[feat|fix|chore|breaking-change] WHAT DID YOU DO"
+$ git push [YOUR_ORIGIN] [feat|fix|chore|breaking-change]/[TOPIC]
+```
+
+## For Maintainers
+
+### Publish to npm
+
+```bah
+$ npm version [patch|minor|major]
+$ npm publish .
+```
+
+# [Appendix] TSDX React w/ Storybook User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
 

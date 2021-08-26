@@ -7,6 +7,7 @@ const {paths} = require('tsdx/dist/constants');
  */
 const config = createJestConfig(undefined, paths.appRoot)
 config.transform["^.+\\.svg$"] = "jest-svg-transformer"
+config.transform['^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$'] = 'jest-transform-stub';
 
 /**
  * For @testing-library/react
