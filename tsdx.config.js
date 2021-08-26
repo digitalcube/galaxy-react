@@ -18,7 +18,7 @@ module.exports = {
         )
         config.plugins.push(
             scss({
-                output: 'dist/styles.css',
+                output: 'dist/css/styles.css',
                 sass: require('sass')
             })
         )
