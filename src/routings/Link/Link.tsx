@@ -13,7 +13,7 @@ export type LinkProps = PropsWithChildren<{
   className?: string;
   tagOverwrite?: LinkTagType;
   withExternalLinkIcon?: boolean;
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }>;
 
 export const Link: FC<LinkProps> = (props) => {
