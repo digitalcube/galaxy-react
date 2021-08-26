@@ -13,6 +13,7 @@ export type LinkProps = PropsWithChildren<{
   className?: string;
   tagOverwrite?: LinkTagType;
   withExternalLinkIcon?: boolean;
+  onClick?: () => void;
 }>;
 
 export const Link: FC<LinkProps> = (props) => {
