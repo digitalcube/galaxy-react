@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { Link } from '../../routings';
+import { Link } from '../../routings/Link/Link';
 export type SuggestionItem = PropsWithChildren<{
   category?: ReactNode;
   icon?: ReactNode;
