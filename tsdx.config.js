@@ -11,8 +11,7 @@ module.exports = {
             copy({
                 assets: [
                   // You can include directories
-                  "src/assets",
-                  "src/images"
+                  "src/assets"
                 ],
             })
         )
