@@ -1,9 +1,5 @@
 import React, { FC } from 'react';
-import {
-  FaPlay,
-  FaPlus,
-  FaStop,
-} from 'react-icons/fa';
+import { FaPlay, FaPlus, FaStop } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
 import {
@@ -109,14 +105,11 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
             />
             <SiteCardData
               name="site name"
-              tips={(
-                <StatusBadge
-                  className="ml-2 d-inline-block"
-                  status="danger"
-                >
+              tips={
+                <StatusBadge className="ml-2 d-inline-block" status="danger">
                   Trial
                 </StatusBadge>
-              )}
+              }
             >
               <span className="d-inline-block align-middle site-url">
                 <Link href={`https://getfhiter.io`}>getshifter.io</Link>
