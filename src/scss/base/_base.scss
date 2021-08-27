@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 body {
 	font-family: "sofia-pro", sans-serif;
@@ -33,7 +35,7 @@ body {
 			.nav-link {
 				padding: 0.625rem 1rem;
 				line-height: f.f-line-height(16, 22);
-				color: #521850;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(16);
 				letter-spacing: .35px;
 				&.dropdown-toggle {
@@ -81,7 +83,7 @@ body {
 			z-index: 2;
 			&:focus {
 				box-shadow: none;
-				border-bottom-color: #892885;
+				border-bottom-color: f.f-primary-color('default');
 				outline: 0;
 			}
 			&::-webkit-search-cancel-button {
@@ -96,7 +98,7 @@ body {
 			svg {
 				width: f.f-rem(15);
 				height: f.f-rem(15);
-				fill: #892885;
+				fill: f.f-primary-color('default');
 			}
 		}
 	}
@@ -114,11 +116,11 @@ body {
 				&:hover, &:active {
 					background-color: #f3eaf3;
 					.icon {
-						background-color: #e2c9e1;
+						background-color: f.f-primary-color('200');
 					}
 					.suggest-list-external-icon {
 						svg {
-							fill: #892885;
+							fill: f.f-primary-color('default');
 						}
 					}
 				}
@@ -129,13 +131,13 @@ body {
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 				.colored {
-					color: #892885;
+					color: f.f-primary-color('default');
 				}
 				.divider {
 					svg {
 						width: f.f-rem(14);
 						height: f.f-rem(14);
-						fill: #892885;
+						fill: f.f-primary-color('default');
 					}
 				}
 			}
@@ -146,7 +148,7 @@ body {
 				svg {
 					width: f.f-rem(9);
 					height: f.f-rem(9);
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					&.larger {
 						width: f.f-rem(11);
 						height: f.f-rem(11);
@@ -159,7 +161,7 @@ body {
 				svg {
 					width: f.f-rem(11);
 					height: f.f-rem(11);
-					fill: #b6b3b4;
+					fill: f.f-gray-color('300');
 				}
 			}
 			.category {
@@ -176,7 +178,7 @@ body {
 
 .common-footer-copyright {
 	padding-bottom: 44px;
-	color: #7f797b;
+	color: f.f-gray-color('400');
 	font-size: f.f-rem(14);
 	small {
 		font-size: 100%;

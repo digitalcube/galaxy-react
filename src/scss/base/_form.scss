@@ -1,11 +1,13 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .form-control {
-	border-color: #b6b3b4;
+	border-color: f.f-gray-color('300');
 	height: 3rem;
 	line-height: f.f-line-height(16, 22);
-	color: #431441;
+	color: f.f-primary-color('900');
 	font-size: f.f-rem(16);
 	&:focus {
 		box-shadow: none;
@@ -22,22 +24,22 @@
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
-	border-color: #b6b3b4;
+	border-color: f.f-gray-color('300');
 	background-image: none;
 }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
-	border: 2px solid #ce1616;
+	border: 2px solid var.$red-primary;
 	background-image: none;
 }
 .form-check-input.is-valid~.form-check-label,
 .was-validated .form-check-input:valid~.form-check-label {
-	color: #413a3c;
+	color: f.f-gray-color('600');
 }
 .invalid-feedback {
 	line-height: f.f-line-height(14, 19.5);
-	color: #ce1616;
+	color: var.$red-primary;
 	font-size: f.f-rem(14);
 }
 
@@ -54,15 +56,15 @@
 		.form-control {
 			padding-left: 2.4375rem;
 			background-color: transparent;
-			color: #892885;
+			color: f.f-primary-color('default');
 			z-index: 2;
 			&:read-only {
-				color: #892885;
+				color: f.f-primary-color('default');
 				background-color: #f9f4f9;
 				& ~ .copy {
 					i {
 						svg {
-							fill: #b6b3b4;
+							fill: f.f-gray-color('300');
 							width: f.f-rem(12);
 							height: f.f-rem(12);
 						}
@@ -78,7 +80,7 @@
 			width: 1.4375rem;
 			i {
 				svg {
-					fill: #b6b3b4;
+					fill: f.f-gray-color('300');
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -97,7 +99,7 @@
 			cursor: pointer;
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -107,7 +109,7 @@
 		.form-text {
 			&.text-muted {
 				line-height: f.f-line-height(12, 15);
-				color: #7f797b;
+				color: f.f-gray-color('400');
 				font-size: f.f-rem(12);
 				letter-spacing: 0.25px;
 			}
@@ -116,7 +118,7 @@
 	}
 	label {
 		line-height: f.f-line-height(16, 22);
-		color: #431441;
+		color: f.f-primary-color('900');
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 	}
@@ -135,7 +137,7 @@
 		}
 		i {
 			svg {
-				fill: #b6b3b4;
+				fill: f.f-gray-color('300');
 				width: f.f-rem(14);
 				height: f.f-rem(14);
 			}
@@ -200,17 +202,17 @@
 		.form-control {
 			width: 2.458125rem;
 			height: 3.875rem;
-			color: #363032;
+			color: f.f-gray-color('700');
 			line-height: f.f-line-height(30, 37.5);
 			font-size: f.f-rem(30);
 			.was-validated & {
 				&.is-valid,
 				&:valid {
-					border-color: #892885;
+					border-color: f.f-primary-color('default');
 				}
 				&.is-invalid,
 				&:invalid {
-					border-color: #ce1616;
+					border-color: var.$red-primary;
 				}
 			}
 		}
@@ -228,7 +230,7 @@
 	.form-text {
 		a {
 			line-height: f.f-line-height(14, 19.5);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(14);
 			letter-spacing: 0.35px;
 		}
@@ -241,8 +243,8 @@
 		.dropdown-toggle {
 			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
 			padding: 0 1rem;
-			border: 1px solid #892885;
-			color: #431441;
+			border: 1px solid f.f-primary-color('default');
+			color: f.f-primary-color('900');
 			background-color: #fff;
 			width: auto;
 			&::after {
@@ -254,7 +256,7 @@
 				&::after {
 					content: '\f107';
 					margin-left: 0.625rem;
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-family: 'Font Awesome 5 Pro';
 					font-weight: 900;
 					font-size: f.f-rem(14);
@@ -262,7 +264,7 @@
 				.filter-option-inner {
 				}
 				.filter-option-inner-inner {
-					color: #431441;
+					color: f.f-primary-color('900');
 					.option-item {
 						&::before {
 							content: '\f160';
@@ -270,7 +272,7 @@
 							-moz-osx-font-smoothing:grayscale;
 							-webkit-font-smoothing:antialiased;
 							display: inline-block;
-							color: #b6b3b4;
+							color: f.f-gray-color('300');
 							font-family: "Font Awesome 5 Pro";
 							font-weight: 900;
 							font-style: normal;
@@ -286,7 +288,7 @@
 			padding: 0;
 			box-shadow: 0px 8px 15px rgba(69, 29, 57, 0.2), 0px 8px 20px 4px rgba(69, 29, 57, 0.15);
 			&.show {
-				border: 2px solid #892885;
+				border: 2px solid f.f-primary-color('default');
 			}
 			&.inner {
 				padding: 0.5rem 0;
@@ -317,7 +319,7 @@
 							&::after {
 								content: '\f00c';
 								border: 0;
-								color: #892885;
+								color: f.f-primary-color('default');
 								width: auto;
 								height: auto;
 								font-family: 'Font Awesome 5 Pro';
@@ -328,7 +330,7 @@
 						}
 					}
 					.text {
-						color: #671e64;
+						color: f.f-primary-color('700');;
 					}
 				}
 			}
@@ -355,8 +357,8 @@
 		&:checked {
 			& + label {
 				&::before {
-					border-color: #892885;
-					background-color: #892885;
+					border-color: f.f-primary-color('default');
+					background-color: f.f-primary-color('default');
 				}
 				&::after {
 					color: #fff;
@@ -412,7 +414,7 @@
 		transform: translateY(-50%);
 		width: 1em;
 		svg {
-			fill: #892885;
+			fill: f.f-primary-color('default');
 			width: f.f-rem(14);
 			height: f.f-rem(14);
 		}

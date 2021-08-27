@@ -1,17 +1,19 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .site-settings {
 	.setting-headding {
 		line-height: f.f-line-height(22, 33);
-		color: #2b2628;
+		color: f.f-gray-color('800');
 		font-size: f.f-rem(22);
 	}
 
 
 	.general-setting {
 		.general-setting-item {
-			border: 1px solid #d1cfd0;
+			border: 1px solid f.f-gray-color('200');
 		}
 		.general-setting-item-header {
 		}
@@ -23,7 +25,7 @@
 			p {
 				max-width: 535px;
 				line-height: f.f-line-height(14, 19.5);
-				color: #413a3c;
+				color: f.f-gray-color('600');
 				font-size: f.f-rem(14);
 			}
 		}
@@ -31,11 +33,11 @@
 
 
 	.notification-base-setting {
-		border-top: 1px solid #d1cfd0;
-		border-bottom: 1px solid #d1cfd0;
+		border-top: 1px solid f.f-gray-color('200');
+		border-bottom: 1px solid f.f-gray-color('200');
 		.notification-base-title {
 			line-height: f.f-line-height(16, 22);
-			color: #413a3c;
+			color: f.f-gray-color('600');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
@@ -43,10 +45,10 @@
 	.notification-setting-list {
 		ul {
 			list-style: none;
-			border-bottom: 1px solid #d1cfd0;
+			border-bottom: 1px solid f.f-gray-color('200');
 		}
 		li {
-			border-top: 1px solid #d1cfd0;
+			border-top: 1px solid f.f-gray-color('200');
 		}
 	}
 }

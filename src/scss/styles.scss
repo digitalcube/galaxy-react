@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@forward 'color.scss';
 @forward 'base/_index.scss';
 @forward 'signup-login/_index.scss';
 @forward 'modal/_index.scss';

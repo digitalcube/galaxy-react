@@ -1,7 +1,8 @@
+@charset "utf-8";
 @use "sass:math";
 @use "import/mixin" as f;
-
-@charset "utf-8";
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .add-domain {
 	margin-top: 5.3125rem;
@@ -10,12 +11,12 @@
 	.add-domain-steps {
 		margin-bottom: 0.75rem;
 		line-height: f.f-line-height(14, 19.5);
-		color: #7f797b;
+		color: f.f-gray-color('400');
 		font-size: f.f-rem(14);
 	}
 	.add-domain-title {
 		line-height: f.f-line-height(30, 37.5);
-		color: #671e64;
+		color: f.f-primary-color('700');;
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
@@ -23,7 +24,7 @@
 		margin-top: 1.25rem;
 		max-width: 750px;
 		line-height: f.f-line-height(16, 22);
-		color: #363032;
+		color: f.f-gray-color('700');
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 		&.smaller {
@@ -35,11 +36,11 @@
 
 	.add-domain-body {
 		.record-table {
-			border: 1px solid #d1cfd0;
+			border: 1px solid f.f-gray-color('200');
 			.record-table-title {
 				padding: 0.625rem 1rem;
 				line-height: f.f-line-height(16, 22);
-				color: #671e64;
+				color: f.f-primary-color('700');;
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 				i {
@@ -52,13 +53,13 @@
 			}
 			table {
 				th, td {
-					border-top: 1px solid #d1cfd0;
+					border-top: 1px solid f.f-gray-color('200');
 					line-height: f.f-line-height(14, 19.5);
 					font-size: f.f-rem(14);
 				}
 				thead {
 					th {
-						color: #413a3c;
+						color: f.f-gray-color('600');
 					}
 				}
 				tbody {
@@ -71,8 +72,8 @@
 							line-height: f.f-line-height(14, 19.5);
 							font-size: f.f-rem(14);
 							&:read-only {
-								color: #892885;
-								background-color: #f6f5f6;
+								color: f.f-primary-color('default');
+								background-color: f.f-gray-color('50');
 							}
 						}
 						&.data {
@@ -87,7 +88,7 @@
 			.form-note {
 				a {
 					line-height: f.f-line-height(16, 22);
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					svg {
@@ -109,7 +110,7 @@
 			}
 			.added-message-title {
 				line-height: f.f-line-height(38, 47.5);
-				color: #521850;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(38);
 				letter-spacing: 1px;
 			}

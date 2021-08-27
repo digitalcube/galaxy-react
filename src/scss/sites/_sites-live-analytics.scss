@@ -1,20 +1,22 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .live-analytics {
 	.analytics-heading {
 		margin-bottom: 3.875rem;
 		line-height: f.f-line-height(30, 37.5);
-		color: #671e64;
+		color: f.f-primary-color('700');;
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
 
 	.analytic-datas {
-		border: 1px solid #edecec;
+		border: 1px solid f.f-gray-color('100');
 		.analytic-datas-title {
 			line-height: f.f-line-height(22, 33);
-			color: #7b2478;
+			color: f.f-primary-color('600');
 			font-size: f.f-rem(22);
 		}
 		.analytic-item {
@@ -22,7 +24,7 @@
 		}
 		.analytic-item-title {
 			line-height: f.f-line-height(16, 22);
-			color: #671e64;
+			color: f.f-primary-color('700');;
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}

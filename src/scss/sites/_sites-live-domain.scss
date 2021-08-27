@@ -1,10 +1,12 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .live-domain {
 	.domains-heading {
 		line-height: f.f-line-height(30, 37.5);
-		color: #671e64;
+		color: f.f-primary-color('700');;
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
@@ -12,15 +14,15 @@
 	.alert {
 		&.domain-steps {
 			margin-bottom: 0.75rem;
-			border: 1px solid #edecec;
+			border: 1px solid f.f-gray-color('100');
 			.domain-steps-header {
 				.domain-steps-title {
 					line-height: f.f-line-height(16, 22);
-					color: #521850;
+					color: f.f-primary-color('800');
 					font-size: f.f-rem(16);
 				}
 				.close {
-					color: #892885;
+					color: f.f-primary-color('default');
 					opacity: 1;
 					i {
 						svg {
@@ -40,37 +42,37 @@
 						padding-bottom: 0.8125rem;
 						&.is-current {
 							.step-num {
-								color: #892885;
+								color: f.f-primary-color('default');
 							}
 							.step-name {
-								color: #892885;
+								color: f.f-primary-color('default');
 							}
 							.step-description {
-								color: #363032;
+								color: f.f-gray-color('700');
 							}
 						}
 					}
 				}
 				.step-num {
 					line-height: f.f-line-height(50, 60);
-					color: #e2c9e1;
+					color: f.f-primary-color('200');
 					font-size: f.f-rem(50);
 				}
 				.step-name {
 					line-height: f.f-line-height(14, 19.5);
-					color: #ac69aa;
+					color: f.f-primary-color('400');
 					font-size: f.f-rem(14);
 				}
 				.step-description {
 					line-height: f.f-line-height(14, 19.5);
-					color: #d0a9ce;
+					color: f.f-primary-color('300');
 					font-size: f.f-rem(14);
 				}
 			}
 			.domain-steps-footer {
 				a {
 					line-height: f.f-line-height(16, 22);
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					i {
@@ -88,11 +90,11 @@
 
 	.domain-list {
 		.domain-list-item {
-			border: 1px solid #edecec;
+			border: 1px solid f.f-gray-color('100');
 		}
 		.domain-name {
 			line-height: f.f-line-height(16, 22);
-			color: #671e64;
+			color: f.f-primary-color('700');;
 			font-size: f.f-rem(16);
 		}
 		.dropdown-toggle {
@@ -101,7 +103,7 @@
 			}
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(21);
 					height: f.f-rem(21);
 				}

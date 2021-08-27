@@ -1,3 +1,6 @@
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
+@use "../import/mixin" as f;
 
 .progress {
     position: absolute;
@@ -6,10 +9,10 @@
     left: 1.5rem;
     z-index: 1;
     height: 0.25rem;
-    background-color: #d1cfd0;
+    background-color: f.f-gray-color('200');
     .progress-bar {
         height: 0.25rem;
-        background: linear-gradient(90deg, #892885 0%, #F80A5B 102.17%);
+        background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 102.17%);
     }
 }
 .sites-list {
@@ -23,7 +26,7 @@
         height: 0.25rem;
         .progress-bar {
             height: 0.25rem;
-            background: linear-gradient(90deg, #892885 0%, #F80A5B 100%);
+            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 100%);
         }
     }
 }
@@ -37,10 +40,10 @@
         left: 1.5rem;
         z-index: 1;
         height: 0.25rem;
-        background-color: #d1cfd0;
+        background-color: f.f-gray-color('200');
         .progress-bar {
             height: 0.25rem;
-            background: linear-gradient(90deg, #892885 0%, #F80A5B 102.17%);
+            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 102.17%);
         }
     }
 }
@@ -52,10 +55,10 @@
         left: 0;
         border-radius: 0.25rem 0.25rem 0 0;
         height: 0.25rem;
-        background-color: #d1cfd0;
+        background-color: f.f-gray-color('200');
         .progress-bar {
             height: 0.25rem;
-            background: linear-gradient(90deg, #892885 0%, #F80A5B 100%);
+            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 100%);
         }
     }
 }

@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .shifter-dashboard-columns {
 	&.account {
@@ -17,7 +19,7 @@
 						position: relative;
 						i {
 							width: 1.5rem;
-							fill: #d0a9ce;
+							fill: f.f-primary-color('300');
 							svg {
 								display: block;
 							}
@@ -25,7 +27,7 @@
 						&.active {
 							i {
 								svg {
-									fill: #892885;
+									fill: f.f-primary-color('default');
 								}
 							}
 						}
@@ -49,7 +51,7 @@
 				.dropdown-toggle {
 					padding: 0.625rem;
 					line-height: f.f-line-height(14, 19.5);
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-size: f.f-rem(14);
 					&::after {
 						display: none;
@@ -57,7 +59,7 @@
 				}
 				.dropdown-menu {
 					box-shadow: 0px 0px 10px rgba(69, 29, 57, 0.2);
-					border: 2px solid #d1cfd0;
+					border: 2px solid f.f-gray-color("200");
 					left: 50%;
 					transform: translateX(-50%);
 				}
@@ -96,9 +98,9 @@
 				font-size: f.f-rem(14);
 			}
 			label {
-				color: #363032;
+				color: f.f-gray-color('700');
 				&.colored {
-					color: #521850;
+					color: f.f-primary-color('800');
 				}
 			}
 		}
@@ -111,14 +113,14 @@
 							width: auto;
 							.dropdown-toggle {
 								padding: 0 0.625rem 0 1rem;
-								border: 1px solid #b6b3b4;
+								border: 1px solid f.f-gray-color("300");
 								border-right: 0;
 								border-radius: 0.25rem 0 0 0.25rem;
 								height: 3rem;
 								background-color: transparent;
 								&::after {
 									margin-left: 0.625rem;
-									color: #892885;
+									color: f.f-primary-color('default');
 								}
 								&.dropup {
 									&::after {
@@ -134,7 +136,7 @@
 							.filter-option-inner-inner {
 								display: flex;
 								align-items: center;
-								color: #363032;
+								color: f.f-gray-color('700');
 								line-height: f.f-line-height(16, 16);
 								font-size: f.f-rem(16);
 							}
@@ -161,7 +163,7 @@
 		.profile-contacts {
 			.profile-contacts-title {
 				line-height: f.f-line-height(22, 33);
-				color: #521848;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(22);
 			}
 		}
@@ -173,9 +175,9 @@
 	}
 
 	.authentication-method {
-		border: 1px solid #d1cfd0;
+		border: 1px solid f.f-gray-color("200");
 		line-height: f.f-line-height(16, 22);
-		color: #363032;
+		color: f.f-gray-color('700');
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 		.authentication-method-status {
@@ -183,7 +185,7 @@
 		.authentication-status {
 		}
 		.authentication-method-configured {
-			border-top: 1px solid #d1cfd0;
+			border-top: 1px solid f.f-gray-color("200");
 		}
 		.authentication-method-update {
 		}
@@ -195,7 +197,7 @@
 		.payment-information-form {
 			label {
 				line-height: f.f-line-height(16, 22);
-				color: #521850;
+				color: f.f-primary-color("700");
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
@@ -224,7 +226,7 @@
 						z-index: 1;
 						transform: translateY(-50%);
 						svg {
-							fill: #b6b3b4;
+							fill: f.f-gray-color("300");
 							width: f.f-rem(14);
 							height: f.f-rem(14);
 						}
@@ -246,9 +248,9 @@
 		}
 
 		.card-info {
-			border: 1px solid #d1cfd0;
+			border: 1px solid f.f-gray-color("200");
 			line-height: f.f-line-height(16, 22);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 			.card-icon {
@@ -261,7 +263,7 @@
 				.update-card {
 					a {
 						line-height: f.f-line-height(14, 19.5);
-						color: #892885;
+						color: f.f-primary-color('default');
 						font-size: f.f-rem(14);
 					}
 				}
@@ -270,7 +272,7 @@
 
 		.btn {
 			&.btn-coupon {
-				border: 2px solid #edecec;
+				border: 2px solid f.f-gray-color('100');
 			}
 		}
 
@@ -282,24 +284,24 @@
 				thead {
 					th {
 						line-height: f.f-line-height(12, 15);
-						color: #363032;
+						color: f.f-gray-color('700');
 						font-size: f.f-rem(12);
 						letter-spacing: 0.3px;
 					}
 				}
 				tbody {
 					td {
-						border-top: 1px solid #edecec;
-						border-bottom: 1px solid #edecec;
+						border-top: 1px solid f.f-gray-color('100');
+						border-bottom: 1px solid f.f-gray-color('100');
 						line-height: f.f-line-height(16, 22);
-						color: #2b2628;
+						color: f.f-gray-color('800');
 						font-size: f.f-rem(16);
 						letter-spacing: 0.35px;
 						&:first-child {
-							border-left: 1px solid #edecec;
+							border-left: 1px solid f.f-gray-color('100');
 						}
 						&:last-child {
-							border-right: 1px solid #edecec;
+							border-right: 1px solid f.f-gray-color('100');
 						}
 					}
 				}
@@ -312,7 +314,7 @@
 		}
 
 		.billing-history-table {
-			color: #363032;
+			color: f.f-gray-color('700');
 			.period {
 				width: 28.09734513%;
 			}
@@ -330,7 +332,7 @@
 			.pdf {
 				width: 1%;
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -355,7 +357,7 @@
 	}
 
 	.subscriptions-item {
-		border: 1px solid #d1cfd0;
+		border: 1px solid f.f-gray-color("200");
 		.subscriptions-header {
 			.subscriptions-name {
 				line-height: f.f-line-height(18, 27);
@@ -363,7 +365,7 @@
 			}
 			.subscriptions-type {
 				line-height: f.f-line-height(18, 27);
-				color: #756b6e;
+				color: f.f-gray-color('500');
 				font-size: f.f-rem(18);
 			}
 		}
@@ -374,12 +376,12 @@
 				&.btn-bordered {
 				}
 				&.btn-gray-border {
-					border: 2px solid #edecec;
+					border: 2px solid f.f-gray-color('100');
 				}
 			}
 		}
 		.subscriptions-data {
-			border-top: 1px solid #d1cfd0;
+			border-top: 1px solid f.f-gray-color("200");
 			dl {
 				dt {
 					line-height: f.f-line-height(12, 15);

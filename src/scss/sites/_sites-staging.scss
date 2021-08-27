@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .site-staging {
 	.staging-header-nav {
@@ -10,7 +12,7 @@
 		.wordpress-status {
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -22,17 +24,17 @@
 				margin-right: 0.75rem;
 				width: 2px;
 				height: 2rem;
-				background-color: #d1cfd0;
+				background-color: f.f-gray-color('200');
 			}
 		}
 	}
 
 
 	.deploy-list-header {
-		border-top: 1px solid #d1cfd0;
+		border-top: 1px solid f.f-gray-color('200');
 		.deploy-list-heading {
 			line-height: f.f-line-height(18, 27);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(18);
 		}
 
@@ -40,7 +42,7 @@
 			.publish-setting-status {
 				margin-right: 0.75rem;
 				line-height: f.f-line-height(14, 19.5);
-				color: #363032;
+				color: f.f-gray-color('700');
 				font-size: f.f-rem(14);
 			}
 		}
@@ -49,7 +51,7 @@
 			.delete-buttons-selected {
 				margin-right: 0.75rem;
 				line-height: f.f-line-height(14, 19.5);
-				color: #363032;
+				color: f.f-gray-color('700');
 				font-size: f.f-rem(14);
 			}
 		}
@@ -58,7 +60,7 @@
 
 	.deploy-list-body {
 		.deploy-list-item {
-			border: 1px solid #d1cfd0;
+			border: 1px solid f.f-gray-color('200');
 			&:hover, &.checked-item {
 				background-color: #f9f4f9;
 			}
@@ -66,7 +68,7 @@
 				margin-right: 2.375rem;
 				padding-left: 0;
 				label {
-					border: 1px solid #d1cfd0;
+					border: 1px solid f.f-gray-color('200');
 					width: 2.125rem;
 					height: 2.125rem;
 					&::before, &::after {
@@ -87,14 +89,14 @@
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					&.colored {
-						color: #892885;
+						color: f.f-primary-color('default');
 					}
 				}
 				.btn-edit {
 					height: auto;
 					i {
 						svg {
-							fill: #b6b3b4;
+							fill: f.f-gray-color('300');
 							width: f.f-rem(11);
 							height: f.f-rem(11);
 						}
@@ -102,7 +104,7 @@
 				}
 				.list-item-date {
 					line-height: f.f-line-height(12, 15);
-					color: #413a3c;
+					color: f.f-gray-color('600');
 					font-size: f.f-rem(12);
 					letter-spacing: 0.25px;
 				}
@@ -119,7 +121,7 @@
 						}
 						i {
 							svg {
-								fill: #892885;
+								fill: f.f-primary-color('default');
 								width: f.f-rem(21);
 								height: f.f-rem(21);
 							}
@@ -159,16 +161,16 @@
 		}
 		.no-artifact-state {
 			line-height: f.f-line-height(16, 22);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
 		.no-artifact-description {
 			line-height: f.f-line-height(14, 19.5);
-			color: #671e64;
+			color: f.f-primary-color('700');;
 			font-size: f.f-rem(14);
 			a {
-				color: #671e64;
+				color: f.f-primary-color('700');;
 			}
 		}
 	}

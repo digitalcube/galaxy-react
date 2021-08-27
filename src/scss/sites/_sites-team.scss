@@ -1,21 +1,23 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .team-headding {
 	line-height: f.f-line-height(30, 37.5);
-	color: #2b2628;
+	color: f.f-gray-color('800');
 	font-size: f.f-rem(30);
 	letter-spacing: 1px;
 }
 
 .team-content {
 	margin-top: 3rem;
-	border: 2px solid #edecec;
+	border: 2px solid f.f-gray-color('100');
 	.team-content-header {
 	}
 	.team-content-heading {
 		line-height: f.f-line-height(22, 33);
-		color: #2b2628;
+		color: f.f-gray-color('800');
 		font-size: f.f-rem(22);
 	}
 	.team-content-misc {
@@ -30,7 +32,7 @@
 	thead {
 		th {
 			line-height: f.f-line-height(12, 15);
-			color: #671e64;
+			color: f.f-primary-color('700');;
 			font-size: f.f-rem(12);
 			&.member-table-name {
 				padding-left: 3.75rem;
@@ -47,19 +49,19 @@
 	tbody {
 		tr {
 			& > *:first-child {
-				border-left: 1px solid #edecec;
+				border-left: 1px solid f.f-gray-color('100');
 			}
 			& > *:last-child {
-				border-right: 1px solid #edecec;
+				border-right: 1px solid f.f-gray-color('100');
 			}
 		}
 		th, td {
-			border-top: 1px solid #edecec;
-			border-bottom: 1px solid #edecec;
+			border-top: 1px solid f.f-gray-color('100');
+			border-bottom: 1px solid f.f-gray-color('100');
 		}
 		.member-name {
 			line-height: f.f-line-height(14, 19.5);
-			color: #2b2628;
+			color: f.f-gray-color('800');
 			font-size: f.f-rem(14);
 			.usericon {
 				width: 1.25rem;
@@ -69,8 +71,8 @@
 					width: 1.25rem;
 					height: 1.25rem;
 					line-height: 1.25rem;
-					color: #671e64;
-					background-color: #e2c9e1;
+					color: f.f-primary-color('700');;
+					background-color: f.f-primary-color('200');
 					font-size: f.f-rem(12);
 					letter-spacing: 0.3px;
 				}
@@ -80,13 +82,13 @@
 		}
 		.member-role {
 			line-height: f.f-line-height(14, 19.5);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(14);
 		}
 		.member-action {
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(11);
 					height: f.f-rem(11);
 				}

@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .shifter-dashboard-login {
 	background-image: url('../assets/images/background/bg-login.svg');
@@ -32,7 +34,7 @@
 			background-color: #fdf5ff;
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(48);
 					height: f.f-rem(48);
 				}
@@ -40,14 +42,14 @@
 		}
 		.login-title {
 			line-height: f.f-line-height(22, 33);
-			color: #7b2478;
+			color: f.f-primary-color('600');
 			font-size: f.f-rem(22);
 		}
 		.login-switch-way {
 			line-height: f.f-line-height(14, 19.5);
 			font-size: f.f-rem(14);
 			a {
-				color: #892885;
+				color: f.f-primary-color('default');
 			}
 		}
 		.send-email {
@@ -55,25 +57,25 @@
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 			b {
-				color: #892885;
+				color: f.f-primary-color('default');
 			}
 		}
 		.enter-code {
 			line-height: f.f-line-height(16, 22);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
 		.loading-text {
 			line-height: f.f-line-height(16, 22);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
 		.logging-text {
 			margin-top: 4rem;
 			line-height: f.f-line-height(16, 22);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
@@ -83,7 +85,7 @@
 		margin-top: 2rem;
 		a {
 			line-height: f.f-line-height(14, 19.5);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(14);
 		}
 	}
@@ -91,7 +93,7 @@
 	.back2login {
 		a {
 			line-height: f.f-line-height(16, 22);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
@@ -110,7 +112,7 @@
 	}
 	.login-information-title {
 		line-height: f.f-line-height(30, 37.5);
-		color: #521850;
+		color: f.f-primary-color('500');
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
@@ -122,7 +124,7 @@
 		margin-top: 2.625rem;
 		a {
 			line-height: f.f-line-height(16, 22);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}

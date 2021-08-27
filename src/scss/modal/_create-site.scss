@@ -1,7 +1,8 @@
+@charset "utf-8";
 @use "sass:math";
 @use "import/mixin" as f;
-
-@charset "utf-8";
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .create-site {
 	.create-site-header {
@@ -9,19 +10,19 @@
 	.create-site-steps {
 		margin-bottom: 0.75rem;
 		line-height: f.f-line-height(14, 19.5);
-		color: #7f797b;
+		color: f.f-gray-color('400');
 		font-size: f.f-rem(14);
 	}
 	.create-site-title {
 		line-height: f.f-line-height(30, 37.5);
-		color: #671e64;
+		color: f.f-primary-color('700');;
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
 	.create-site-description {
 		margin-top: 1.25rem;
 		line-height: f.f-line-height(16, 22);
-		color: #363032;
+		color: f.f-gray-color('700');
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 	}
@@ -53,7 +54,7 @@
 				}
 				label {
 					line-height: f.f-line-height(16, 22);
-					color: #521850;
+					color: f.f-primary-color('800');
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
@@ -70,7 +71,7 @@
 			&.btn-bordered {
 				&:hover, &:active {
 					color: #fff;
-					background-color: #892885;
+					background-color: var.$purple-500;
 				}
 			}
 		}
@@ -81,9 +82,9 @@
 				.nav-item {
 				}
 				.nav-link {
-					color: #521850;
+					color: f.f-primary-color('800');
 					&.active {
-						background-color: #f3eaf3;
+						background-color: f.f-primary-color("100");
 					}
 				}
 			}
@@ -96,7 +97,7 @@
 						padding-right: 12px;
 						padding-left: 12px;
 						& > .col-inner {
-							border: 1px solid #d1cfd0;
+							border: 1px solid f.f-gray-color('200');
 						}
 					}
 				}
@@ -105,7 +106,7 @@
 			}
 			.plan-name {
 				line-height: f.f-line-height(22, 33);
-				color: #521850;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(22);
 			}
 			.plan-description {
@@ -118,7 +119,7 @@
 			}
 			.plan-price {
 				line-height: f.f-line-height(50, 62.5);
-				color: #521850;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(50);
 				.per-unit {
 					line-height: f.f-line-height(12, 15);
@@ -139,7 +140,7 @@
 			.view-all-features {
 				a {
 					line-height: f.f-line-height(14, 36);
-					color: #892885;
+					color: var.$purple-500;
 					font-size: f.f-rem(14);
 					svg {
 						fill: currentColor;
@@ -153,7 +154,7 @@
 			.static-plan-compare {
 				.btn {
 					&.btn-compare-toggle {
-						color: #892885;
+						color: var.$purple-500;
 						background-color: #fff;
 						i {
 							svg {
@@ -170,7 +171,7 @@
 					}
 				}
 				.static-plan-compare-inner {
-					border: 1px solid #d1cfd0;
+					border: 1px solid f.f-gray-color('200');
 				}
 			}
 		}
@@ -179,13 +180,13 @@
 			margin-top: 4.5rem;
 			.headless-plan-header {
 				.headless-plan-title {
-					color: #671e64;
+					color: f.f-primary-color('700');;
 					line-height: f.f-line-height(22, 33);
 					font-size: f.f-rem(22);
 				}
 				.btn {
 					&.btn-headless-toggle {
-						border: 2px solid #892885;
+						border: 2px solid var.$purple-500;
 						i {
 							svg {
 								width: f.f-rem(14);
@@ -200,7 +201,7 @@
 							}
 						}
 						&:hover, &:active {
-							color: #892885;
+							color: var.$purple-500;
 							background-color: #fff;
 						}
 					}
@@ -214,7 +215,7 @@
 					padding-top: 0.625rem;
 					padding-bottom: 0.625rem;
 					line-height: f.f-line-height(18, 27);
-					color: #671e64;
+					color: f.f-primary-color('700');;
 					font-size: f.f-rem(18);
 					&.plan-table-name {
 						line-height: f.f-line-height(22, 33);
@@ -233,18 +234,18 @@
 				th, td {
 					padding-top: 0.625rem;
 					padding-bottom: 0.625rem;
-					border-top: 1px solid #d1cfd0;
+					border-top: 1px solid f.f-gray-color('200');
 					line-height: f.f-line-height(16, 22);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
 				th {
-					color: #671e64;
+					color: f.f-primary-color('700');;
 				}
 				td {
-					color: #413a3c;
+					color: f.f-gray-color('600');
 					svg {
-						fill: #892885;
+						fill: var.$purple-500;
 						width: f.f-rem(14);
 						height: f.f-rem(14);
 					}
@@ -271,7 +272,7 @@
 			}
 			.payment-info-title {
 				line-height: f.f-line-height(16, 22);
-				color: #671e64;
+				color: f.f-primary-color('700');;
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
@@ -302,7 +303,7 @@
 					}
 					i {
 						right: 1rem;
-						color: #b6b3b4;
+						color: f.f-gray-color('300');
 					}
 				}
 			}
@@ -319,7 +320,7 @@
 			}
 			.btn {
 				&.btn-apply {
-					border: 2px solid #edecec;
+					border: 2px solid f.f-gray-color('100');
 				}
 			}
 		}
@@ -327,51 +328,51 @@
 
 
 		.payment-summary {
-			border: 1px solid #d1cfd0;
+			border: 1px solid f.f-gray-color('200');
 			@media (min-width: 768px) {
 				width: 40.49382716%;
 			}
 			.payment-summary-title {
 				line-height: f.f-line-height(16, 22);
-				color: #671e64;
+				color: f.f-primary-color('700');;
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 
 			.site-name {
 				line-height: f.f-line-height(16, 22);
-				color: #892885;
+				color: var.$purple-500;
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			.plan-name {
 				line-height: f.f-line-height(22, 33);
-				color: #671e64;
+				color: f.f-primary-color('700');;
 				font-size: f.f-rem(22);
 			}
 			.subtotal {
 				.plan-type {
 					line-height: f.f-line-height(14, 19.5);
-					color: #413a3c;
+					color: f.f-gray-color('600');
 					font-size: f.f-rem(14);
 				}
 				.plan-price {
 					line-height: f.f-line-height(16, 22);
-					color: #671e64;
+					color: f.f-primary-color('700');;
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
 			}
 			.total {
-				border-top: 1px solid #d1cfd0;
+				border-top: 1px solid f.f-gray-color('200');
 				.total-name {
 					line-height: f.f-line-height(14, 19.5);
-					color: #413a3c;
+					color: f.f-gray-color('600');
 					font-size: f.f-rem(14);
 				}
 				.total-price {
 					line-height: f.f-line-height(30, 37.5);
-					color: #892885;
+					color: var.$purple-500;
 					font-size: f.f-rem(30);
 					letter-spacing: 1px;
 				}
@@ -390,9 +391,9 @@
 					width: 51.81623932%;
 				}
 				.card-info {
-					border: 1px solid #d1cfd0;
+					border: 1px solid f.f-gray-color('200');
 					line-height: f.f-line-height(16, 22);
-					color: #363032;
+					color: f.f-gray-color('700');
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					.card-icon {
@@ -405,7 +406,7 @@
 						.update-card {
 							a {
 								line-height: f.f-line-height(14, 19.5);
-								color: #892885;
+								color: var.$purple-500;
 								font-size: f.f-rem(14);
 							}
 						}
@@ -416,7 +417,7 @@
 					.coupon-code-input {
 						label {
 							line-height: f.f-line-height(16, 22);
-							color: #2b2628;
+							color: f.f-gray-color('800');
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -424,7 +425,7 @@
 					.coupon-code-apply {
 						.btn {
 							&.btn-apply {
-								border: 2px solid #edecec;
+								border: 2px solid f.f-gray-color('100');
 							}
 						}
 					}
@@ -434,7 +435,7 @@
 					margin-top: 3rem;
 					.coupon-info-title {
 						line-height: f.f-line-height(16, 22);
-						color: #521850;
+						color: f.f-primary-color('800');
 						font-size: f.f-rem(16);
 						letter-spacing: 0.35px;
 					}
@@ -443,14 +444,14 @@
 						.name {
 							padding: 0.75rem;
 							line-height: f.f-line-height(12, 15);
-							color: #363032;
+							color: f.f-gray-color('700');
 							font-size: f.f-rem(12);
 							letter-spacing: 0.3px;
 						}
 						.data {
 							padding: 0.75rem;
 							line-height: f.f-line-height(16, 22);
-							color: #2b2628;
+							color: f.f-gray-color('800');
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -458,7 +459,7 @@
 						.code {
 							width: 38.1443299%;
 							.data {
-								border: 1px solid #edecec;
+								border: 1px solid f.f-gray-color('100');
 								border-right: 0;
 								border-top-left-radius: .25rem;
 								border-bottom-left-radius: .25rem;
@@ -467,13 +468,13 @@
 						.discount {
 							width: 38.1443299%;
 							.data {
-								border-top: 1px solid #edecec;
-								border-bottom: 1px solid #edecec;
+								border-top: 1px solid f.f-gray-color('100');
+								border-bottom: 1px solid f.f-gray-color('100');
 							}
 						}
 						.expiration {
 							.data {
-								border: 1px solid #edecec;
+								border: 1px solid f.f-gray-color('100');
 								border-left: 0;
 								border-top-right-radius: .25rem;
 								border-bottom-right-radius: .25rem;
@@ -484,7 +485,7 @@
 					.coupon-edit {
 						a {
 							line-height: f.f-line-height(16, 22);
-							color: #892885;
+							color: var.$purple-500;
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -508,13 +509,13 @@
 			}
 			.create-site-created-title {
 				line-height: f.f-line-height(38, 47.5);
-				color: #892885;
+				color: var.$purple-500;
 				font-size: f.f-rem(38);
 				letter-spacing: 1px;
 			}
 			.create-site-created-state {
 				line-height: f.f-line-height(18, 27);
-				color: #892885;
+				color: var.$purple-500;
 				font-size: f.f-rem(18);
 			}
 			.create-site-created-buttons {

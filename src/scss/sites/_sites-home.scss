@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .sites-list {
 	.sites-list-header {
@@ -10,7 +12,7 @@
 	}
 	.site-list-item {
 		box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
-		border: 1px solid #edecec;
+		border: 1px solid f.f-gray-color('100');
 		position: relative;
 	}
 	.site-thumbnail {
@@ -23,7 +25,7 @@
 	}
 	.site-name {
 		line-height: f.f-line-height(22, 33);
-		color: #2b2628;
+		color: f.f-gray-color('800');
 		font-size: f.f-rem(22);
 	}
 	.site-info {
@@ -32,14 +34,14 @@
 		.site-url {
 			margin-right: 1.5rem;
 			a {
-				color: #892885;
+				color: f.f-primary-color('default');
 			}
 		}
 		.site-initial {
 			width: f.f-rem(22);
 			height: f.f-rem(22);
 			line-height: f.f-rem(22);
-			background-color: #e2c9e1;
+			background-color: f.f-primary-color('200');
 			font-size: f.f-rem(12);
 		}
 		.site-description {
@@ -54,7 +56,7 @@
 		a {
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(20);
 					height: f.f-rem(20);
 				}
@@ -64,7 +66,7 @@
 	.site-manage {
 		a {
 			line-height: f.f-line-height(14, 19.5);
-			color: #892885;
+			color: f.f-primary-color('default');
 			font-size: f.f-rem(14);
 		}
 	}
@@ -75,7 +77,7 @@
 			}
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(21);
 					height: f.f-rem(21);
 				}

@@ -1,20 +1,21 @@
+@charset "utf-8";
 @use "sass:math";
 @use "import/mixin" as f;
-
-@charset "utf-8";
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .teams-detail {
 	width: 100%;
 	max-width: 1172px;
 	.teams-title {
 		line-height: f.f-line-height(30, 38);
-		color: #521850;
+		color: f.f-primary-color('800');
 		font-size: f.f-rem(30);
 	}
 
 
 	.team-section {
-		border: 1px solid #d1cfd0;
+		border: 1px solid f.f-gray-color('200');
 		&.site-managed {
 			padding-right: 1.125rem;
 			padding-left: 1.125rem;
@@ -25,7 +26,7 @@
 	.section-header {
 		.section-title {
 			line-height: f.f-line-height(22, 33);
-			color: #521850;
+			color: f.f-primary-color('800');
 			font-size: f.f-rem(22);
 		}
 		.section-buttons {
@@ -43,7 +44,7 @@
 		}
 		.no-items-text {
 			line-height: f.f-line-height(16, 22);
-			color: #7b2478;
+			color: f.f-primary-color('600');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
@@ -53,7 +54,7 @@
 	.member-list {
 		.member-list-header {
 			line-height: f.f-line-height(12, 15);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(12);
 			.member-icon {
 				width: 1.25rem;
@@ -72,7 +73,7 @@
 			.member-list-body-item {
 				padding-top: 0.4375rem;
 				padding-bottom: 0.4375rem;
-				border: 1px solid #D1cfd0;
+				border: 1px solid f.f-gray-color('200');
 			}
 
 			.member-icon {
@@ -82,15 +83,15 @@
 				span {
 					width: 1.25rem;
 					height: 1.25rem;
-					color: #671e64;
-					background-color: #e2c9e1;
+					color: f.f-primary-color('700');;
+					background-color: f.f-primary-color('200');
 					font-size: f.f-rem(12);
 				}
 			}
 			.member-name {
 				width: 25.83643123%;
 				line-height: f.f-line-height(14, 19.5);
-				color: #2b2628;
+				color: f.f-gray-color('800');
 				font-size: f.f-rem(14);
 				word-break: break-all;
 			}
@@ -100,7 +101,7 @@
 			.member-role {
 				width: 31.59851301%;
 				line-height: f.f-line-height(12, 15);
-				color: #363032;
+				color: f.f-gray-color('700');
 				font-size: f.f-rem(12);
 				letter-spacing: 0.3px;
 			}
@@ -116,7 +117,7 @@
 						padding: 0;
 					}
 					a,button {
-						color: #892885;
+						color: f.f-primary-color('default');
 						font-size: f.f-rem(11);
 						i {
 							svg {
@@ -142,13 +143,13 @@
 		.site-data {
 			.site-name {
 				line-height: f.f-line-height(22, 33);
-				color: #521850;
+				color: f.f-primary-color('800');
 				font-size: f.f-rem(22);
 			}
 			.site-url {
 				margin-top: 0.625rem;
 				line-height: f.f-line-height(14, 19.5);
-				color: #892885;
+				color: f.f-primary-color('default');
 				font-size: f.f-rem(14);
 			}
 		}
@@ -157,7 +158,7 @@
 				.btn {
 					&.btn-edit-detail {
 						line-height: f.f-line-height(14, 18);
-						color: #892885;
+						color: f.f-primary-color('default');
 						font-size: f.f-rem(14);
 					}
 				}
@@ -170,7 +171,7 @@
 					padding: 0;
 				}
 				a,button {
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-size: f.f-rem(14);
 					i {
 						svg {

@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .shifter-dashboard-signup {
 	background-image: url('../assets/images/background/bg-signup.svg');
@@ -24,7 +26,7 @@
 			background-color: #fdf5ff;
 			i {
 				svg {
-					fill: #892885;
+					fill: f.f-primary-color('default');
 					width: f.f-rem(48);
 					height: f.f-rem(48);
 				}
@@ -32,14 +34,14 @@
 		}
 		.signup-title {
 			line-height: f.f-line-height(22, 33);
-			color: #7b2478;
+			color: f.f-primary-color('600');
 			font-size: f.f-rem(22);
 		}
 		.signup-switch-way {
 			line-height: f.f-line-height(14, 19.5);
 			font-size: f.f-rem(14);
 			a {
-				color: #892885;
+				color: f.f-primary-color('default');
 			}
 		}
 		.send-email {
@@ -47,12 +49,12 @@
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 			b {
-				color: #892885;
+				color: f.f-primary-color('default');
 			}
 		}
 		.enter-code {
 			line-height: f.f-line-height(16, 22);
-			color: #363032;
+			color: f.f-gray-color('700');
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}

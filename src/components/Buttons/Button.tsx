@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { useMemo } from 'react';
 import {
   Button as ReactstrapButton,
   ButtonProps as ReactstrapButtonProps,
@@ -27,6 +28,7 @@ export const Button: FC<ButtonProps> = ({
   children,
   loading,
   disable,
+  color,
   ...props
 }) => {
   const classNames = [props.className];
@@ -54,9 +56,14 @@ export const Button: FC<ButtonProps> = ({
   if (smaller) {
     classNames.push('btn-smaller');
   }
-  if (caution) {
-    classNames.push('btn-caution');
-  }
+  /**
+   * By default, will the button as a primary
+   */
+  const btnColor = useMemo(() => {
+    if (color) return color
+    if (caution) return 'danger'
+    return 'primary'
+  },[caution,color])
 
   const className = classNames.filter(Boolean).join(' ');
 
@@ -64,6 +71,7 @@ export const Button: FC<ButtonProps> = ({
     ...props,
     className,
     outline,
+    color: btnColor,
   };
 
   if (disable || loading) {

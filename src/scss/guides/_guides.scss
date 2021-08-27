@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .shifter-guides {
 	max-width: 1134px;
@@ -44,7 +46,7 @@
 			}
 			.question-description {
 				line-height: f.f-line-height(16, 22);
-				color: #e2c9e1;
+				color: f.f-primary-color('200');
 				font-size: f.f-rem(16);
 			}
 			.question-anchor {
@@ -58,7 +60,7 @@
 			.guides-list-icon {
 				i {
 					svg {
-						fill: #892885;
+						fill: f.f-primary-color('default');
 						width: f.f-rem(14);
 						height: f.f-rem(14);
 					}
@@ -66,12 +68,12 @@
 			}
 			.guide-list-title {
 				line-height: f.f-line-height(30, 37.5);
-				color: #363032;
+				color: f.f-gray-color('700');
 				font-size: f.f-rem(30);
 			}
 			.guide-list-excerpt {
 				line-height: f.f-line-height(18, 24);
-				color: #413a3c;
+				color: f.f-gray-color('600');
 				font-size: f.f-rem(18);
 			}
 			.guide-list-anchor {
@@ -84,17 +86,17 @@
 			}
 			.guide-list-genre {
 				line-height: f.f-line-height(14, 19.5);
-				color: #413a3c;
+				color: f.f-gray-color('600');
 				font-size: f.f-rem(14);
 			}
 			.guide-list-title {
 				line-height: f.f-line-height(22, 33);
-				color: #363032;
+				color: f.f-gray-color('700');
 				font-size: f.f-rem(22);
 			}
 			.guide-list-excerpt {
 				line-height: f.f-line-height(16, 22);
-				color: #413a3c;
+				color: f.f-gray-color('600');
 				font-size: f.f-rem(16);
 				letter-spacing: .35px;
 			}

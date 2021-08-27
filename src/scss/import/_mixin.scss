@@ -1,4 +1,5 @@
 @use "sass:math";
+@use 'color.scss' as colors;
 
 // Convert pixels to line-height
 // eg. When the font size is 18 px and the line feed is 28 px write f-line-height( 18, 28 )
@@ -24,4 +25,14 @@
 	$base: 16;
 
 	@return math.div( $pxval, $base ) * 1rem;
+}
+
+@function f-theme-color($key: "primary") {
+    @return map-get(colors.$theme-colors, $key);
+}
+@function f-primary-color($key: "default") {
+	@return map-get(colors.$primary-colors, $key);
+}
+@function f-gray-color($key: "default") {
+	@return map-get(colors.$gray-colors, $key);
 }

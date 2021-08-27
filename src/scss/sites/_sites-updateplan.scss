@@ -1,5 +1,7 @@
 @use "sass:math";
 @use "../import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
 
 .update-plan {
 	.update-plan-headding {
@@ -16,14 +18,14 @@
 				.nav-item {
 					a {
 						line-height: f.f-line-height(16, 22);
-						color: #892885;
+						color: f.f-primary-color('default');
 						background-color: #fff;
 						font-size: f.f-rem(16);
 						letter-spacing: 0.35px;
 						text-decoration: none;
 						&.active {
 							color: #fff;
-							background-color: #7b2478;
+							background-color: f.f-primary-color('600');
 						}
 					}
 				}
@@ -31,7 +33,7 @@
 			.plans-detail {
 				a {
 					line-height: f.f-line-height(14, 19.5);
-					color: #892885;
+					color: f.f-primary-color('default');
 					font-size: f.f-rem(14);
 					i {
 						svg {
@@ -51,7 +53,7 @@
 				letter-spacing: -1px;
 				i {
 					svg {
-						fill: #892885;
+						fill: f.f-primary-color('default');
 						width: f.f-rem(14);
 						height: f.f-rem(14);
 					}
@@ -65,28 +67,28 @@
 						& + .plan-list-label {
 							box-shadow: none;
 							border-color: transparent;
-							background-color: #f6f5f6;
+							background-color: f.f-gray-color('50');
 							&::before {
-								background-color: #edecec;
+								background-color: f.f-gray-color('100');
 							}
 							.plan-header {
 								.plan-name {
 									box-shadow: none;
-									color: #892885;
-									background-color: #edecec;
+									color: f.f-primary-color('default');
+									background-color: f.f-gray-color('100');
 								}
 							}
 						}
 					}
 					&:checked {
 						& + .plan-list-label {
-							box-shadow: 0px 0px 0px 2px #892885 inset;
+							box-shadow: 0px 0px 0px 2px f.f-primary-color('default') inset;
 							border-color: transparent;
 							background-color: #f9f4f9;
 							&::before {
 								content: '\f00c';
 								border-color: transparent;
-								color: #892885;
+								color: f.f-primary-color('default');
 								background-color: transparent;
 								font-family: 'Font Awesome 5 Pro';
 								font-weight: 900;
@@ -97,7 +99,7 @@
 								.plan-name {
 									box-shadow: none;
 									color: #fff;
-									background-color: #671e64;
+									background-color: f.f-primary-color('700');;
 								}
 							}
 						}
@@ -105,14 +107,14 @@
 				}
 				.plan-list-label {
 					box-shadow: 0px 1px 8px rgba(69, 29, 57, 0.1);
-					border: 1px solid #edecec;
+					border: 1px solid f.f-gray-color('100');
 					cursor: pointer;
 					&::before {
 						content: '';
 						border-radius: 100%;
 						width: 20px;
 						height: 20px;
-						border: 1px solid #413a3c;
+						border: 1px solid f.f-gray-color('600');
 						position: absolute;
 						top: 50%;
 						right: 20px;
@@ -122,10 +124,10 @@
 						}
 					}
 					&:hover {
-						box-shadow: 0px 0px 0px 2px #892885 inset;
+						box-shadow: 0px 0px 0px 2px f.f-primary-color('default') inset;
 						border-color: transparent;
 						&::before {
-							border-color: #892885;
+							border-color: f.f-primary-color('default');
 							background-color: #f9f4f9;
 						}
 						.plan-header {
@@ -145,13 +147,13 @@
 						box-shadow: 0px 1px 8px rgba(69, 29, 57, 0.1);
 						width: 9.25rem;
 						line-height: f.f-line-height(22, 33);
-						color: #892885;
+						color: f.f-primary-color('default');
 						font-size: f.f-rem(22);
 						letter-spacing: 0.25px;
 					}
 					.plan-price {
 						line-height: f.f-line-height(30, 37.5);
-						color: #363032;
+						color: f.f-gray-color('700');
 						font-size: f.f-rem(30);
 						letter-spacing: 1px;
 						.unit {
@@ -163,7 +165,7 @@
 				}
 				.plan-features {
 					line-height: f.f-line-height(16, 22);
-					color: #413a3c;
+					color: f.f-gray-color('600');
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					@media (min-width: 992px) {
@@ -195,7 +197,7 @@
 					letter-spacing: 0.35px;
 				}
 				.plan-versus-item-name {
-					color: #363032;
+					color: f.f-gray-color('700');
 					line-height: f.f-line-height(22, 33);
 					font-size: f.f-rem(22);
 					letter-spacing: 1px;
@@ -206,7 +208,7 @@
 					}
 					.plan-versus-item-plan {
 						line-height: f.f-line-height(12, 15);
-						color: #756b6e;
+						color: f.f-gray-color('500');
 						font-size: f.f-rem(12);
 						letter-spacing: 0.3px;
 						i {
@@ -219,18 +221,18 @@
 					}
 				}
 				&.current-plan {
-					background-color: #f6f5f6;
+					background-color: f.f-gray-color('50');
 					.plan-versus-item-name {
 						.plan-versus-item-plan {
 						}
 					}
 				}
 				&.selected-plan {
-					border-color: #892885;
+					border-color: f.f-primary-color('default');
 					background-color: #f9f4f9;
 					.plan-versus-item-name {
 						.plan-versus-item-plan {
-							color: #892885;
+							color: f.f-primary-color('default');
 						}
 					}
 				}
@@ -243,7 +245,7 @@
 					right: 0;
 					left: 0;
 					height: 1px;
-					background-color: #d1cfd0;
+					background-color: f.f-gray-color('200');
 					@media (min-width: 992px) {
 						top: 0;
 						right: auto;
@@ -255,7 +257,7 @@
 				}
 				& > span {
 					line-height: 1;
-					color: #756b6e;
+					color: f.f-gray-color('500');
 					background-color: #fff;
 					z-index: 2;
 				}
@@ -273,7 +275,7 @@
 				&.btn-colored {
 				}
 				&.btn-bordered {
-					border: 2px solid #edecec;
+					border: 2px solid f.f-gray-color('100');
 				}
 			}
 		}
