@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import { PropsWithChildren } from 'react';
 import { FaWordpressSimple } from 'react-icons/fa';
+import { Button } from '../Buttons/Button';
 import { Link } from '../../routings/Link/Link';
 
 export type SiteCardSettingsProps = PropsWithChildren<{
@@ -30,7 +31,15 @@ export const SiteCardSettings: FC<SiteCardSettingsProps> = ({
         </div>
       ) : null}
       <div className="ml-4 font-weight-bold site-manage">
-        <Link className="btn btn-bordered py-1 btn-smaller" href={href}>{buttonText}</Link>
+        <Button
+          tag={Link}
+          className="py-2 font-weight-bold"
+          href={href}
+          bordered
+          outline
+          size="small"
+          style={{height: "auto"}}
+        >{buttonText}</Button>
       </div>
       {children}
     </div>
