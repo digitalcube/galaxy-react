@@ -169,7 +169,7 @@ exports[`SignUpVerification to match snapshot (failure) 1`] = `
             </small>
           </div>
           <button
-            class="mt-4 btn-colored font-weight-bold btn btn-secondary btn-block disabled"
+            class="mt-4 btn-colored font-weight-bold btn btn-primary btn-block disabled"
             disabled=""
             type="submit"
           >
@@ -335,7 +335,7 @@ exports[`SignUpVerification to match snapshot(default) 1`] = `
             </small>
           </div>
           <button
-            class="mt-4 btn-colored font-weight-bold btn btn-secondary btn-block disabled"
+            class="mt-4 btn-colored font-weight-bold btn btn-primary btn-block disabled"
             disabled=""
             type="submit"
           >

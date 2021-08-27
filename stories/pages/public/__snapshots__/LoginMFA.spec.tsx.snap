@@ -155,7 +155,7 @@ exports[`LoginMFA to match snapshot (failure) 1`] = `
               </div>
             </div>
             <button
-              class="mt-4 btn-colored font-weight-bold btn btn-secondary btn-block disabled"
+              class="mt-4 btn-colored font-weight-bold btn btn-primary btn-block disabled"
               disabled=""
               type="submit"
             >
@@ -351,7 +351,7 @@ exports[`LoginMFA to match snapshot (inprogress) 1`] = `
               </div>
             </div>
             <button
-              class="mt-4 btn-colored font-weight-bold btn btn-secondary btn-block disabled"
+              class="mt-4 btn-colored font-weight-bold btn btn-primary btn-block disabled"
               disabled=""
               type="submit"
             >
@@ -544,7 +544,7 @@ exports[`LoginMFA to match snapshot(default) 1`] = `
               </div>
             </div>
             <button
-              class="mt-4 btn-colored font-weight-bold btn btn-secondary btn-block disabled"
+              class="mt-4 btn-colored font-weight-bold btn btn-primary btn-block disabled"
               disabled=""
               type="submit"
             >

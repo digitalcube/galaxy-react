@@ -19,7 +19,7 @@ exports[`SettingCard to match snapshot(button) 1`] = `
       class="setting-card-button"
     >
       <button
-        class="btn-colored btn btn-secondary"
+        class="btn-colored btn btn-primary"
       >
         Button 1
       </button>

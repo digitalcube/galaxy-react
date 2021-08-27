@@ -1,10 +1,15 @@
 import React, { FC } from 'react';
-import { FaPlay, FaPlus, FaStop } from 'react-icons/fa';
+import { FaPlay, FaPlus, FaStop, FaAngleDown } from 'react-icons/fa';
 import { Meta, Story } from '@storybook/react';
+import {
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledButtonDropdown,
+} from 'reactstrap';
 import { TopNavigation } from '../../layouts/TopNavigation.stories';
 import {
   AdminLayoutContainer,
-  Button,
   Footer,
   Layouts,
   SiteCard,
@@ -45,18 +50,26 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
             </select>
           </div>
           <div className="ml-auto list-add">
-            <Button
-              type="button"
-              className="px-3 py-0 d-flex align-items-center"
-              rounded
-              fontWeight="bold"
-              smaller
-            >
+
+          <UncontrolledButtonDropdown>
+            <DropdownToggle className="px-3 py-0 d-flex align-items-center font-weight-bold rounded btn-smaller" color="primary">
               <i className="mr-2" aria-hidden="true">
-                <FaPlus className="d-block" />
+                <FaPlus className="d-inline-block" />
               </i>
               Create a new site
-            </Button>
+              <i className="ml-2" aria-hidden="true">
+                <FaAngleDown className="d-inline-block" />
+              </i>
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem to="/sites/create/static" tag={Link}>
+                Shifter Static
+              </DropdownItem>
+              <DropdownItem to="/sites/create/headless" tag={Link}>
+                Shifter Headless
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledButtonDropdown>
           </div>
         </header>
         <section className="d-flex flex-column site-list-body">

@@ -3,7 +3,7 @@
 exports[`Button to match snapshot 1`] = `
 <DocumentFragment>
   <button
-    class="btn-colored btn btn-secondary btn-block"
+    class="btn-colored btn btn-primary btn-block"
   >
     Button name
   </button>

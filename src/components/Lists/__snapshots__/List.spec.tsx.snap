@@ -57,7 +57,7 @@ exports[`List to match snapshot(default) 1`] = `
         test 
       </div>
       <button
-        class="btn-colored btn-smaller btn btn-secondary"
+        class="btn-colored btn-smaller btn btn-primary"
       >
         Button
       </button>
