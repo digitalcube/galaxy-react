@@ -38,8 +38,10 @@ export const SiteCardSettings: FC<SiteCardSettingsProps> = ({
           bordered
           outline
           size="small"
-          style={{height: "auto"}}
-        >{buttonText}</Button>
+          style={{ height: 'auto' }}
+        >
+          {buttonText}
+        </Button>
       </div>
       {children}
     </div>

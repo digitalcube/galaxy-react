@@ -7,8 +7,9 @@ import React, {
   useCallback,
   CSSProperties,
 } from 'react';
+import { createPortal } from 'react-dom';
 import { ModalBody } from './ModalBody';
-import { ModalContext } from './ModalContext';
+import { ModalContext, useModal } from './ModalContext';
 import { ModalHeader } from './ModalHeader';
 
 export type ModalProps = PropsWithChildren<{
@@ -23,52 +24,37 @@ export type ModalProps = PropsWithChildren<{
   setOpen?: (flag: boolean) => void;
   style?: CSSProperties;
   noPadding?: boolean;
+  targetElement?: Element;
 }>;
-export const Modal: FC<ModalProps> = ({
+
+export const ModalRow: FC<
+  Omit<ModalProps, 'targetElement' | 'dismiss' | 'setOpen' | 'open'>
+> = ({
   id,
   className,
-  open,
   children,
   size,
   rounded,
   title,
-  dismiss = false,
   onSubmit,
-  setOpen,
   style,
   noPadding = false,
 }) => {
-  const [_isOpen, _setIsOpen] = useState(open || false);
-
-  const setIsOpen = setOpen || _setIsOpen;
-  const isOpen = typeof open === undefined ? _isOpen : open;
-
-  const isOpenHandler = useCallback(
-    (flag: boolean, force?: boolean) => {
-      if (!dismiss && !force) return;
-      setIsOpen(flag);
-    },
-    [dismiss, setIsOpen]
-  );
+  const { open, isOpen: isOpenHandler, dismiss } = useModal();
 
   const modalClassName = useMemo(() => {
     const items = ['modal', className];
-    if (isOpen) {
+    if (open) {
       items.push('show');
       items.push('d-block');
     }
     if (size === 'small') items.push('smaller');
     return items.filter(Boolean).join(' ');
-  }, [className, isOpen, size]);
-  if (!isOpen) return null;
+  }, [className, open, size]);
+  if (!open) return null;
+
   return (
-    <ModalContext.Provider
-      value={{
-        open: isOpen,
-        isOpen: isOpenHandler,
-        dismiss,
-      }}
-    >
+    <>
       <div className={open ? 'modal-open' : ''}>
         <div
           className={modalClassName}
@@ -88,16 +74,69 @@ export const Modal: FC<ModalProps> = ({
           >
             <div className={`modal-content ${rounded ? ' rounded' : ''}`}>
               {title ? (
-                <ModalHeader closeIcon={dismiss} noPadding={noPadding}>{title}</ModalHeader>
+                <ModalHeader closeIcon={dismiss} noPadding={noPadding}>
+                  {title}
+                </ModalHeader>
               ) : null}
               {children ? (
-                <ModalBody onSubmit={onSubmit} noPadding={noPadding}>{children}</ModalBody>
+                <ModalBody onSubmit={onSubmit} noPadding={noPadding}>
+                  {children}
+                </ModalBody>
               ) : null}
             </div>
           </div>
         </div>
       </div>
       <div className="modal-backdrop show"></div>
+    </>
+  );
+};
+
+export const Modal: FC<ModalProps> = ({
+  open,
+  dismiss = false,
+  setOpen,
+  targetElement,
+  ...props
+}) => {
+  const [_isOpen, _setIsOpen] = useState(open || false);
+
+  const setIsOpen = setOpen || _setIsOpen;
+  const isOpen = typeof open === undefined ? _isOpen : open;
+
+  const isOpenHandler = useCallback(
+    (flag: boolean, force?: boolean) => {
+      if (!dismiss && !force) return;
+      setIsOpen(flag);
+    },
+    [dismiss, setIsOpen]
+  );
+  if (!isOpen) return null;
+
+  if (targetElement) {
+    return createPortal(
+      <ModalContext.Provider
+        value={{
+          open: isOpen,
+          isOpen: isOpenHandler,
+          dismiss,
+        }}
+      >
+        <ModalRow {...props} />
+      </ModalContext.Provider>,
+      targetElement
+    );
+  }
+
+  return (
+    <ModalContext.Provider
+      value={{
+        open: isOpen,
+        isOpen: isOpenHandler,
+        dismiss,
+      }}
+    >
+      <ModalRow {...props} />
     </ModalContext.Provider>
   );
 };
