@@ -16,6 +16,13 @@
 		padding-left: 60px;
 		width: 100%;
 		max-width: 304px;
+		*:first-child {
+			&.sidebar-nav {
+				&::before {
+					display: none;
+				}
+			}
+		}
 	}
 	.return2sites {
 		a {
