@@ -60,10 +60,10 @@ export const Button: FC<ButtonProps> = ({
    * By default, will the button as a primary
    */
   const btnColor = useMemo(() => {
-    if (color) return color
-    if (caution) return 'danger'
-    return 'primary'
-  },[caution,color])
+    if (color) return color;
+    if (caution) return 'danger';
+    return 'primary';
+  }, [caution, color]);
 
   const className = classNames.filter(Boolean).join(' ');
 

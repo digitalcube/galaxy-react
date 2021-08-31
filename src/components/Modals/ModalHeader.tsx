@@ -9,12 +9,16 @@ export type ModalHeaderProps = PropsWithChildren<{
 
 export const ModalHeader: FC<ModalHeaderProps> = ({
   children,
-  noPadding  = false,
+  noPadding = false,
   closeIcon = false,
 }) => {
   const { isOpen, dismiss } = useModal();
   return (
-    <div className={`modal-header border-bottom-0 justify-content-center pb-0${noPadding ? '': ' px-4 pt-4'}`}>
+    <div
+      className={`modal-header border-bottom-0 justify-content-center pb-0${
+        noPadding ? '' : ' px-4 pt-4'
+      }`}
+    >
       <div className="modal-title font-weight-bold colored" id="modal-label">
         {children}
       </div>
