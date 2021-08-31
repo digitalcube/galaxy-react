@@ -39,10 +39,12 @@
 				margin-top: 3rem;
 				.col-auto {
 					&.first {
+						max-width: 50%;
 						.form-control {
 							border-right: 0;
 							border-top-right-radius: 0;
 							border-bottom-right-radius: 0;
+							text-overflow: ellipsis
 						}
 					}
 					&.last {
