@@ -88,10 +88,14 @@ export const Modal: FC<ModalProps> = ({
           >
             <div className={`modal-content ${rounded ? ' rounded' : ''}`}>
               {title ? (
-                <ModalHeader closeIcon={dismiss} noPadding={noPadding}>{title}</ModalHeader>
+                <ModalHeader closeIcon={dismiss} noPadding={noPadding}>
+                  {title}
+                </ModalHeader>
               ) : null}
               {children ? (
-                <ModalBody onSubmit={onSubmit} noPadding={noPadding}>{children}</ModalBody>
+                <ModalBody onSubmit={onSubmit} noPadding={noPadding}>
+                  {children}
+                </ModalBody>
               ) : null}
             </div>
           </div>
