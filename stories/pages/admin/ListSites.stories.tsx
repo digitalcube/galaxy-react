@@ -79,9 +79,10 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
               {...{
                 src: 'https://getshifter.io',
                 alt: 'Site',
+                href: '#',
               }}
             />
-            <SiteCardData name="site name">
+            <SiteCardData name="site name" href="#" >
               <span className="d-inline-block align-middle site-url">
                 <Link href={`https://getfhiter.io`}>getshifter.io</Link>
               </span>
@@ -114,10 +115,11 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
               {...{
                 src: 'https://getshifter.io',
                 alt: 'Site',
+                href: '#',
               }}
             />
             <SiteCardData
-              name="site name"
+              name="site name" href="#"
               tips={
                 <StatusBadge className="ml-2 d-inline-block" status="danger">
                   Trial
