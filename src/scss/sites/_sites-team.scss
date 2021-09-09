@@ -5,19 +5,19 @@
 
 .team-headding {
 	line-height: f.f-line-height(30, 37.5);
-	color: f.f-gray-color('800');
+	color: var(--gray-800);
 	font-size: f.f-rem(30);
 	letter-spacing: 1px;
 }
 
 .team-content {
 	margin-top: 3rem;
-	border: 2px solid f.f-gray-color('100');
+	border: 2px solid var(--gray-100);
 	.team-content-header {
 	}
 	.team-content-heading {
 		line-height: f.f-line-height(22, 33);
-		color: f.f-gray-color('800');
+		color: var(--gray-800);
 		font-size: f.f-rem(22);
 	}
 	.team-content-misc {
@@ -32,7 +32,7 @@
 	thead {
 		th {
 			line-height: f.f-line-height(12, 15);
-			color: f.f-primary-color('700');;
+			color: var(--primary-700);
 			font-size: f.f-rem(12);
 			&.member-table-name {
 				padding-left: 3.75rem;
@@ -42,26 +42,26 @@
 			&.member-table-role {
 			}
 			&.member-table-action {
-
 			}
 		}
 	}
 	tbody {
 		tr {
 			& > *:first-child {
-				border-left: 1px solid f.f-gray-color('100');
+				border-left: 1px solid var(--gray-100);
 			}
 			& > *:last-child {
-				border-right: 1px solid f.f-gray-color('100');
+				border-right: 1px solid var(--gray-100);
 			}
 		}
-		th, td {
-			border-top: 1px solid f.f-gray-color('100');
-			border-bottom: 1px solid f.f-gray-color('100');
+		th,
+		td {
+			border-top: 1px solid var(--gray-100);
+			border-bottom: 1px solid var(--gray-100);
 		}
 		.member-name {
 			line-height: f.f-line-height(14, 19.5);
-			color: f.f-gray-color('800');
+			color: var(--gray-800);
 			font-size: f.f-rem(14);
 			.usericon {
 				width: 1.25rem;
@@ -71,8 +71,8 @@
 					width: 1.25rem;
 					height: 1.25rem;
 					line-height: 1.25rem;
-					color: f.f-primary-color('700');;
-					background-color: f.f-primary-color('200');
+					color: var(--primary-700);
+					background-color: var(--primary-200);
 					font-size: f.f-rem(12);
 					letter-spacing: 0.3px;
 				}
@@ -82,18 +82,17 @@
 		}
 		.member-role {
 			line-height: f.f-line-height(14, 19.5);
-			color: f.f-gray-color('700');
+			color: var(--gray-700);
 			font-size: f.f-rem(14);
 		}
 		.member-action {
 			i {
 				svg {
-					fill: f.f-primary-color('default');
+					fill: var(--primary-default);
 					width: f.f-rem(11);
 					height: f.f-rem(11);
 				}
 			}
 		}
 	}
-
 }

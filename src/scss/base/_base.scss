@@ -11,7 +11,6 @@ body {
 .shifter-dashboard {
 }
 
-
 .navbar {
 	padding: 1.125rem 1.5rem;
 	& > .navbar-brand {
@@ -35,9 +34,9 @@ body {
 			.nav-link {
 				padding: 0.625rem 1rem;
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('800');
+				color: var(--primary-800);
 				font-size: f.f-rem(16);
-				letter-spacing: .35px;
+				letter-spacing: 0.35px;
 				&.dropdown-toggle {
 					margin-right: 1.25rem;
 					margin-left: 1.5rem;
@@ -71,7 +70,6 @@ body {
 	}
 }
 
-
 .form-search {
 	&.form-inline {
 		z-index: 1;
@@ -84,7 +82,7 @@ body {
 			border-radius: 0;
 			&:focus {
 				box-shadow: none;
-				border-bottom-color: f.f-primary-color('default');
+				border-bottom-color: var(--primary-default);
 				outline: 0;
 			}
 			&::-webkit-search-cancel-button {
@@ -99,7 +97,7 @@ body {
 			svg {
 				width: f.f-rem(15);
 				height: f.f-rem(15);
-				fill: f.f-primary-color('default');
+				fill: var(--primary-default);
 			}
 		}
 	}
@@ -114,14 +112,15 @@ body {
 		.suggest-list-item {
 			a {
 				text-decoration: none;
-				&:hover, &:active {
+				&:hover,
+				&:active {
 					background-color: #f3eaf3;
 					.icon {
-						background-color: f.f-primary-color('200');
+						background-color: var(--primary-200);
 					}
 					.suggest-list-external-icon {
 						svg {
-							fill: f.f-primary-color('default');
+							fill: var(--primary-default);
 						}
 					}
 				}
@@ -132,13 +131,13 @@ body {
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 				.colored {
-					color: f.f-primary-color('default');
+					color: var(--primary-default);
 				}
 				.divider {
 					svg {
 						width: f.f-rem(14);
 						height: f.f-rem(14);
-						fill: f.f-primary-color('default');
+						fill: var(--primary-default);
 					}
 				}
 			}
@@ -149,7 +148,7 @@ body {
 				svg {
 					width: f.f-rem(9);
 					height: f.f-rem(9);
-					fill: f.f-primary-color('default');
+					fill: var(--primary-default);
 					&.larger {
 						width: f.f-rem(11);
 						height: f.f-rem(11);
@@ -162,7 +161,7 @@ body {
 				svg {
 					width: f.f-rem(11);
 					height: f.f-rem(11);
-					fill: f.f-gray-color('300');
+					fill: var(--gray-300);
 				}
 			}
 			.category {
@@ -176,10 +175,9 @@ body {
 	}
 }
 
-
 .common-footer-copyright {
 	padding-bottom: 44px;
-	color: f.f-gray-color('400');
+	color: var(--gray-400);
 	font-size: f.f-rem(14);
 	small {
 		font-size: 100%;

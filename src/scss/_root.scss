@@ -1,0 +1,66 @@
+@use 'color';
+
+:root {
+	// Custom variable values only support SassScript inside `#{}`.
+	@each $color, $value in $colors {
+		--#{$color}: #{$value};
+	}
+
+	@each $color, $value in $theme-colors {
+		--#{$color}: #{$value};
+		--#{$color}-hover: #{darken($value, 7.5%)};
+		--#{$color}-border-hover: #{darken($value, 10%)};
+		--#{$color}-active: #{darken($value, 10%)};
+		--#{$color}-border-active: #{darken($value, 12.5%)};
+		--#{$color}-mix: #{rgba(mix(color-yiq($value), $value, 15%), 0.5)};
+		--#{$color}-yiq: #{color-yiq($value)};
+		--#{$color}-hover-yiq: #{color-yiq(darken($value, 7.5%))};
+		--#{$color}-active-yiq: #{color-yiq(darken($value, 10%))};
+		--#{$color}-rgba: #{rgba($value, 0.5)};
+	}
+
+	@each $color, $value in $gray-colors {
+		--gray-#{$color}: #{$value};
+	}
+
+	@each $bp, $value in $grid-breakpoints {
+		--breakpoint-#{$bp}: #{$value};
+	}
+
+	// Use `inspect` for lists so that quoted items keep the quotes.
+	// See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+	--font-family-sans-serif: #{inspect($font-family-sans-serif)};
+	--font-family-monospace: #{inspect($font-family-monospace)};
+}
+html.shifter {
+	--primary: #{$shifter};
+	--primary-hover: #{darken($shifter, 7.5%)};
+	--primary-border-hover: #{darken($shifter, 10%)};
+	--primary-active: #{darken($shifter, 10%)};
+	--primary-border-active: #{darken($shifter, 12.5%)};
+	--primary-mix: #{rgba(mix(color-yiq($amimoto), $shifter, 15%), 0.5)};
+	--primary-yiq: #{color-yiq($shifter)};
+	--primary-hover-yiq: #{color-yiq(darken($shifter, 7.5%))};
+	--primary-active-yiq: #{color-yiq(darken($shifter, 10%))};
+	--primary-rgba: #{rgba($shifter, 0.5)};
+
+	@each $color, $value in $shifter-colors {
+		--primary-#{$color}: #{$value};
+	}
+}
+html.amimoto {
+	--primary: #{$amimoto};
+	--primary-hover: #{darken($amimoto, 7.5%)};
+	--primary-border-hover: #{darken($amimoto, 10%)};
+	--primary-active: #{darken($amimoto, 10%)};
+	--primary-border-active: #{darken($amimoto, 12.5%)};
+	--primary-mix: #{rgba(mix(color-yiq($amimoto), $amimoto, 15%), 0.5)};
+	--primary-yiq: #{color-yiq($amimoto)};
+	--primary-hover-yiq: #{color-yiq(darken($amimoto, 7.5%))};
+	--primary-active-yiq: #{color-yiq(darken($amimoto, 10%))};
+	--primary-rgba: #{rgba($amimoto, 0.5)};
+
+	@each $color, $value in $amimoto-colors {
+		--primary-#{$color}: #{$value};
+	}
+}

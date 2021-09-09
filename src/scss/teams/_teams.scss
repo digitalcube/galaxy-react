@@ -5,7 +5,7 @@
 @use 'color.scss' as colors;
 
 .teams {
-	border-top: 1px solid f.f-gray-color('200');
+	border-top: 1px solid var(--gray-200);
 	.teams-title {
 		line-height: f.f-line-height(30, 37.5);
 		font-size: f.f-rem(30);
@@ -18,7 +18,8 @@
 			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
 		}
 		tbody {
-			th, td {
+			th,
+			td {
 				padding-top: 28px;
 				padding-bottom: 28px;
 			}
@@ -26,7 +27,7 @@
 		.team-name {
 			width: 38.21362799%;
 			line-height: f.f-line-height(16, 22);
-			color: f.f-gray-color('700');
+			color: var(--gray-700);
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
@@ -37,7 +38,7 @@
 		.members {
 			.member-icons {
 				& > * {
-					margin-right: .5rem;
+					margin-right: 0.5rem;
 					&:last-child {
 						margin-right: 0;
 					}
@@ -47,7 +48,7 @@
 				border: 2px solid transparent;
 				overflow: hidden;
 				&.colored-border {
-					border-color: f.f-primary-color('200');
+					border-color: var(--primary-200);
 				}
 				img {
 					display: block;
@@ -58,7 +59,7 @@
 			}
 			.member-more {
 				line-height: f.f-line-height(12, 15);
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 				font-size: f.f-rem(12);
 				letter-spacing: 0.3px;
 			}
@@ -74,24 +75,23 @@
 	}
 }
 
-
 .no-teams {
 	padding-top: 6rem;
-	border-top: 1px solid f.f-gray-color('200');
+	border-top: 1px solid var(--gray-200);
 	.no-teams-header {
 	}
 	.no-teams-header-icon {
 	}
 	.no-teams-title {
 		line-height: f.f-line-height(22, 33);
-		color: f.f-primary-color('600');
+		color: var(--primary-600);
 		font-size: f.f-rem(22);
 	}
 	.no-teams-body {
 	}
 	a {
 		line-height: f.f-line-height(14, 19.5);
-		color: f.f-primary-color('600');
+		color: var(--primary-600);
 		font-size: f.f-rem(14);
 	}
 }

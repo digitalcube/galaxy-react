@@ -1,10 +1,14 @@
 @charset "utf-8";
 
-@forward 'color.scss';
-@forward 'base/_index.scss';
-@forward 'signup-login/_index.scss';
-@forward 'modal/_index.scss';
-@forward 'account/_index.scss';
-@forward 'guides/_index.scss';
-@forward 'sites/_index.scss';
-@forward 'teams/_index.scss';
+// bootstrap
+@forward "bootstrap-set";
+
+/* original */
+@forward 'base/_index';
+@forward 'signup-login/_index';
+@forward 'modal/_index';
+@forward 'buttons/_index';
+@forward 'account/_index';
+@forward 'guides/_index';
+@forward 'sites/_index';
+@forward 'teams/_index';
