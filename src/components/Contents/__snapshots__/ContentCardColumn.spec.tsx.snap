@@ -47,7 +47,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -96,7 +96,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -145,7 +145,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -194,7 +194,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -243,7 +243,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -309,7 +309,7 @@ exports[`ContentCardColumn to match snapshot [column 1 | item 1] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -375,7 +375,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -424,7 +424,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -473,7 +473,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -522,7 +522,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -571,7 +571,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -620,7 +620,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -669,7 +669,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -718,7 +718,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -767,7 +767,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -816,7 +816,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -865,7 +865,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -914,7 +914,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -980,7 +980,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1029,7 +1029,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1078,7 +1078,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1127,7 +1127,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1176,7 +1176,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1225,7 +1225,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1274,7 +1274,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1323,7 +1323,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1372,7 +1372,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1421,7 +1421,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1470,7 +1470,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1519,7 +1519,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1585,7 +1585,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1634,7 +1634,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1683,7 +1683,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1732,7 +1732,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1781,7 +1781,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1830,7 +1830,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1879,7 +1879,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1928,7 +1928,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -1977,7 +1977,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -2026,7 +2026,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -2075,7 +2075,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
@@ -2124,7 +2124,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
               class="position-absolute guide-list-anchor"
             >
               <a
-                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-secondary"
+                class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
                 href="https://getshifter.io"
                 rel="noopener"
                 target="_blank"
