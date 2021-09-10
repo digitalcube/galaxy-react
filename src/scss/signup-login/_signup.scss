@@ -4,7 +4,7 @@
 @use 'color.scss' as colors;
 
 .shifter-dashboard-signup {
-	background-image: url('../assets/images/background/bg-signup.svg');
+	background-image: url("../assets/images/background/bg-signup.svg");
 	background-size: cover;
 }
 
@@ -26,7 +26,7 @@
 			background-color: #fdf5ff;
 			i {
 				svg {
-					fill: f.f-primary-color('default');
+					fill: var(--primary-default);
 					width: f.f-rem(48);
 					height: f.f-rem(48);
 				}
@@ -34,14 +34,14 @@
 		}
 		.signup-title {
 			line-height: f.f-line-height(22, 33);
-			color: f.f-primary-color('600');
+			color: var(--primary-600);
 			font-size: f.f-rem(22);
 		}
 		.signup-switch-way {
 			line-height: f.f-line-height(14, 19.5);
 			font-size: f.f-rem(14);
 			a {
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 			}
 		}
 		.send-email {
@@ -49,16 +49,14 @@
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 			b {
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 			}
 		}
 		.enter-code {
 			line-height: f.f-line-height(16, 22);
-			color: f.f-gray-color('700');
+			color: var(--gray-700);
 			font-size: f.f-rem(16);
 			letter-spacing: 0.35px;
 		}
 	}
 }
-
-

@@ -10,26 +10,25 @@
 	.create-site-steps {
 		margin-bottom: 0.75rem;
 		line-height: f.f-line-height(14, 19.5);
-		color: f.f-gray-color('400');
+		color: var(--gray-400);
 		font-size: f.f-rem(14);
 	}
 	.create-site-title {
 		line-height: f.f-line-height(30, 37.5);
-		color: f.f-primary-color('700');;
+		color: var(--primary-700);
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
 	.create-site-description {
 		margin-top: 1.25rem;
 		line-height: f.f-line-height(16, 22);
-		color: f.f-gray-color('700');
+		color: var(--gray-700);
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 	}
 
 	.create-site-body {
 	}
-
 
 	&.step1 {
 		margin-top: 5.3125rem;
@@ -57,7 +56,7 @@
 				}
 				label {
 					line-height: f.f-line-height(16, 22);
-					color: f.f-primary-color('800');
+					color: var(--primary-800);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
@@ -65,16 +64,16 @@
 		}
 	}
 
-
 	&.step2 {
 		margin-top: 3.25rem;
 		padding-bottom: 9.75rem;
 		max-width: 1084px;
 		.btn {
 			&.btn-bordered {
-				&:hover, &:active {
+				&:hover,
+				&:active {
 					color: #fff;
-					background-color: var.$purple-500;
+					background-color: var(--primary-500);
 				}
 			}
 		}
@@ -85,9 +84,9 @@
 				.nav-item {
 				}
 				.nav-link {
-					color: f.f-primary-color('800');
+					color: var(--primary-800);
 					&.active {
-						background-color: f.f-primary-color("100");
+						background-color: var(--primary-100);
 					}
 				}
 			}
@@ -100,7 +99,7 @@
 						padding-right: 12px;
 						padding-left: 12px;
 						& > .col-inner {
-							border: 1px solid f.f-gray-color('200');
+							border: 1px solid var(--gray-200);
 						}
 					}
 				}
@@ -109,12 +108,12 @@
 			}
 			.plan-name {
 				line-height: f.f-line-height(22, 33);
-				color: f.f-primary-color('800');
+				color: var(--primary-800);
 				font-size: f.f-rem(22);
 			}
 			.plan-description {
 				p {
-					min-height: f.f-line-height(12, 15 * 4) + 'rem';
+					min-height: f.f-line-height(12, 15 * 4) + "rem";
 					line-height: f.f-line-height(12, 15);
 					font-size: f.f-rem(12);
 					letter-spacing: 0.25px;
@@ -122,7 +121,7 @@
 			}
 			.plan-price {
 				line-height: f.f-line-height(50, 62.5);
-				color: f.f-primary-color('800');
+				color: var(--primary-800);
 				font-size: f.f-rem(50);
 				.per-unit {
 					line-height: f.f-line-height(12, 15);
@@ -143,7 +142,7 @@
 			.view-all-features {
 				a {
 					line-height: f.f-line-height(14, 36);
-					color: var.$purple-500;
+					color: var(--primary-500);
 					font-size: f.f-rem(14);
 					svg {
 						fill: currentColor;
@@ -153,11 +152,10 @@
 				}
 			}
 
-
 			.static-plan-compare {
 				.btn {
 					&.btn-compare-toggle {
-						color: var.$purple-500;
+						color: var(--primary-500);
 						background-color: #fff;
 						i {
 							svg {
@@ -174,7 +172,7 @@
 					}
 				}
 				.static-plan-compare-inner {
-					border: 1px solid f.f-gray-color('200');
+					border: 1px solid var(--gray-200);
 				}
 			}
 		}
@@ -183,13 +181,13 @@
 			margin-top: 4.5rem;
 			.headless-plan-header {
 				.headless-plan-title {
-					color: f.f-primary-color('700');;
+					color: var(--primary-700);
 					line-height: f.f-line-height(22, 33);
 					font-size: f.f-rem(22);
 				}
 				.btn {
 					&.btn-headless-toggle {
-						border: 2px solid var.$purple-500;
+						border: 2px solid var(--primary-500);
 						i {
 							svg {
 								width: f.f-rem(14);
@@ -203,8 +201,9 @@
 								}
 							}
 						}
-						&:hover, &:active {
-							color: var.$purple-500;
+						&:hover,
+						&:active {
+							color: var(--primary-500);
 							background-color: #fff;
 						}
 					}
@@ -218,7 +217,7 @@
 					padding-top: 0.625rem;
 					padding-bottom: 0.625rem;
 					line-height: f.f-line-height(18, 27);
-					color: f.f-primary-color('700');;
+					color: var(--primary-700);
 					font-size: f.f-rem(18);
 					&.plan-table-name {
 						line-height: f.f-line-height(22, 33);
@@ -234,21 +233,22 @@
 				}
 			}
 			tbody {
-				th, td {
+				th,
+				td {
 					padding-top: 0.625rem;
 					padding-bottom: 0.625rem;
-					border-top: 1px solid f.f-gray-color('200');
+					border-top: 1px solid var(--gray-200);
 					line-height: f.f-line-height(16, 22);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
 				th {
-					color: f.f-primary-color('700');;
+					color: var(--primary-700);
 				}
 				td {
-					color: f.f-gray-color('600');
+					color: var(--gray-600);
 					svg {
-						fill: var.$purple-500;
+						fill: var(--primary-500);
 						width: f.f-rem(14);
 						height: f.f-rem(14);
 					}
@@ -256,7 +256,6 @@
 			}
 		}
 	}
-
 
 	&.step3 {
 		margin-top: 1.1875rem;
@@ -275,14 +274,15 @@
 			}
 			.payment-info-title {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('700');;
+				color: var(--primary-700);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			label {
 				height: auto;
 			}
-			input, select {
+			input,
+			select {
 			}
 			input {
 				max-width: 100%;
@@ -306,7 +306,7 @@
 					}
 					i {
 						right: 1rem;
-						color: f.f-gray-color('300');
+						color: var(--gray-300);
 					}
 				}
 			}
@@ -323,65 +323,62 @@
 			}
 			.btn {
 				&.btn-apply {
-					border: 2px solid f.f-gray-color('100');
+					border: 2px solid var(--gray-100);
 				}
 			}
 		}
 
-
-
 		.payment-summary {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 			@media (min-width: 768px) {
 				width: 40.49382716%;
 			}
 			.payment-summary-title {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('700');;
+				color: var(--primary-700);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 
 			.site-name {
 				line-height: f.f-line-height(16, 22);
-				color: var.$purple-500;
+				color: var(--primary-500);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			.plan-name {
 				line-height: f.f-line-height(22, 33);
-				color: f.f-primary-color('700');;
+				color: var(--primary-700);
 				font-size: f.f-rem(22);
 			}
 			.subtotal {
 				.plan-type {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-gray-color('600');
+					color: var(--gray-600);
 					font-size: f.f-rem(14);
 				}
 				.plan-price {
 					line-height: f.f-line-height(16, 22);
-					color: f.f-primary-color('700');;
+					color: var(--primary-700);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 				}
 			}
 			.total {
-				border-top: 1px solid f.f-gray-color('200');
+				border-top: 1px solid var(--gray-200);
 				.total-name {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-gray-color('600');
+					color: var(--gray-600);
 					font-size: f.f-rem(14);
 				}
 				.total-price {
 					line-height: f.f-line-height(30, 37.5);
-					color: var.$purple-500;
+					color: var(--primary-500);
 					font-size: f.f-rem(30);
 					letter-spacing: 1px;
 				}
 			}
 		}
-
 
 		&.step3-2 {
 			max-width: 984px;
@@ -394,9 +391,9 @@
 					width: 51.81623932%;
 				}
 				.card-info {
-					border: 1px solid f.f-gray-color('200');
+					border: 1px solid var(--gray-200);
 					line-height: f.f-line-height(16, 22);
-					color: f.f-gray-color('700');
+					color: var(--gray-700);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					.card-icon {
@@ -409,7 +406,7 @@
 						.update-card {
 							a {
 								line-height: f.f-line-height(14, 19.5);
-								color: var.$purple-500;
+								color: var(--primary-500);
 								font-size: f.f-rem(14);
 							}
 						}
@@ -420,7 +417,7 @@
 					.coupon-code-input {
 						label {
 							line-height: f.f-line-height(16, 22);
-							color: f.f-gray-color('800');
+							color: var(--gray-800);
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -428,7 +425,7 @@
 					.coupon-code-apply {
 						.btn {
 							&.btn-apply {
-								border: 2px solid f.f-gray-color('100');
+								border: 2px solid var(--gray-100);
 							}
 						}
 					}
@@ -438,7 +435,7 @@
 					margin-top: 3rem;
 					.coupon-info-title {
 						line-height: f.f-line-height(16, 22);
-						color: f.f-primary-color('800');
+						color: var(--primary-800);
 						font-size: f.f-rem(16);
 						letter-spacing: 0.35px;
 					}
@@ -447,14 +444,14 @@
 						.name {
 							padding: 0.75rem;
 							line-height: f.f-line-height(12, 15);
-							color: f.f-gray-color('700');
+							color: var(--gray-700);
 							font-size: f.f-rem(12);
 							letter-spacing: 0.3px;
 						}
 						.data {
 							padding: 0.75rem;
 							line-height: f.f-line-height(16, 22);
-							color: f.f-gray-color('800');
+							color: var(--gray-800);
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -462,25 +459,25 @@
 						.code {
 							width: 38.1443299%;
 							.data {
-								border: 1px solid f.f-gray-color('100');
+								border: 1px solid var(--gray-100);
 								border-right: 0;
-								border-top-left-radius: .25rem;
-								border-bottom-left-radius: .25rem;
+								border-top-left-radius: 0.25rem;
+								border-bottom-left-radius: 0.25rem;
 							}
 						}
 						.discount {
 							width: 38.1443299%;
 							.data {
-								border-top: 1px solid f.f-gray-color('100');
-								border-bottom: 1px solid f.f-gray-color('100');
+								border-top: 1px solid var(--gray-100);
+								border-bottom: 1px solid var(--gray-100);
 							}
 						}
 						.expiration {
 							.data {
-								border: 1px solid f.f-gray-color('100');
+								border: 1px solid var(--gray-100);
 								border-left: 0;
-								border-top-right-radius: .25rem;
-								border-bottom-right-radius: .25rem;
+								border-top-right-radius: 0.25rem;
+								border-bottom-right-radius: 0.25rem;
 							}
 						}
 					}
@@ -488,7 +485,7 @@
 					.coupon-edit {
 						a {
 							line-height: f.f-line-height(16, 22);
-							color: var.$purple-500;
+							color: var(--primary-500);
 							font-size: f.f-rem(16);
 							letter-spacing: 0.35px;
 						}
@@ -504,7 +501,6 @@
 		}
 	}
 
-
 	&.step4 {
 		.create-site-created {
 			max-width: 348px;
@@ -512,13 +508,13 @@
 			}
 			.create-site-created-title {
 				line-height: f.f-line-height(38, 47.5);
-				color: var.$purple-500;
+				color: var(--primary-500);
 				font-size: f.f-rem(38);
 				letter-spacing: 1px;
 			}
 			.create-site-created-state {
 				line-height: f.f-line-height(18, 27);
-				color: var.$purple-500;
+				color: var(--primary-500);
 				font-size: f.f-rem(18);
 			}
 			.create-site-created-buttons {

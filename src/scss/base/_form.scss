@@ -4,10 +4,10 @@
 @use 'color.scss' as colors;
 
 .form-control {
-	border-color: f.f-gray-color('300');
+	border-color: var(--gray-300);
 	height: 3rem;
 	line-height: f.f-line-height(16, 22);
-	color: f.f-primary-color('900');
+	color: var(--primary-900);
 	font-size: f.f-rem(16);
 	&:focus {
 		box-shadow: none;
@@ -24,7 +24,7 @@
 
 .form-control.is-valid,
 .was-validated .form-control:valid {
-	border-color: f.f-gray-color('300');
+	border-color: var(--gray-300);
 	background-image: none;
 }
 
@@ -33,9 +33,9 @@
 	border: 2px solid var.$red-primary;
 	background-image: none;
 }
-.form-check-input.is-valid~.form-check-label,
-.was-validated .form-check-input:valid~.form-check-label {
-	color: f.f-gray-color('600');
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+	color: var(--gray-600);
 }
 .invalid-feedback {
 	line-height: f.f-line-height(14, 19.5);
@@ -48,7 +48,7 @@
 		max-width: 440px;
 		&.no-icon {
 			.form-control {
-				padding-left: .75rem;
+				padding-left: 0.75rem;
 			}
 		}
 		.form-group-inner {
@@ -56,15 +56,15 @@
 		.form-control {
 			padding-left: 2.4375rem;
 			background-color: transparent;
-			color: f.f-primary-color('default');
+			color: var(--primary-default);
 			z-index: 2;
 			&:read-only {
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 				background-color: #f9f4f9;
 				& ~ .copy {
 					i {
 						svg {
-							fill: f.f-gray-color('300');
+							fill: var(--gray-300);
 							width: f.f-rem(12);
 							height: f.f-rem(12);
 						}
@@ -73,14 +73,14 @@
 			}
 		}
 		.icon {
-			top:50%;
+			top: 50%;
 			left: 1rem;
 			z-index: 1;
 			transform: translateY(-50%);
 			width: 1.4375rem;
 			i {
 				svg {
-					fill: f.f-gray-color('300');
+					fill: var(--gray-300);
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -99,7 +99,7 @@
 			cursor: pointer;
 			i {
 				svg {
-					fill: f.f-primary-color('default');
+					fill: var(--primary-default);
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
@@ -109,16 +109,15 @@
 		.form-text {
 			&.text-muted {
 				line-height: f.f-line-height(12, 15);
-				color: f.f-gray-color('400');
+				color: var(--gray-400);
 				font-size: f.f-rem(12);
 				letter-spacing: 0.25px;
 			}
 		}
-
 	}
 	label {
 		line-height: f.f-line-height(16, 22);
-		color: f.f-primary-color('900');
+		color: var(--primary-900);
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 	}
@@ -137,7 +136,7 @@
 		}
 		i {
 			svg {
-				fill: f.f-gray-color('300');
+				fill: var(--gray-300);
 				width: f.f-rem(14);
 				height: f.f-rem(14);
 			}
@@ -196,19 +195,18 @@
 	}
 }
 
-
 .verification-code {
 	.col-2 {
 		.form-control {
 			width: 2.458125rem;
 			height: 3.875rem;
-			color: f.f-gray-color('700');
+			color: var(--gray-700);
 			line-height: f.f-line-height(30, 37.5);
 			font-size: f.f-rem(30);
 			.was-validated & {
 				&.is-valid,
 				&:valid {
-					border-color: f.f-primary-color('default');
+					border-color: var(--primary-default);
 				}
 				&.is-invalid,
 				&:invalid {
@@ -216,12 +214,12 @@
 				}
 			}
 		}
-		&:nth-child(-n+3) {
+		&:nth-child(-n + 3) {
 			.form-control {
 				margin-right: 0.75rem;
 			}
 		}
-		&:nth-child(n+4) {
+		&:nth-child(n + 4) {
 			.form-control {
 				margin-left: 0.75rem;
 			}
@@ -230,21 +228,20 @@
 	.form-text {
 		a {
 			line-height: f.f-line-height(14, 19.5);
-			color: f.f-primary-color('default');
+			color: var(--primary-default);
 			font-size: f.f-rem(14);
 			letter-spacing: 0.35px;
 		}
 	}
 }
 
-
 .list-sorter {
 	.bootstrap-select {
 		.dropdown-toggle {
 			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
 			padding: 0 1rem;
-			border: 1px solid f.f-primary-color('default');
-			color: f.f-primary-color('900');
+			border: 1px solid var(--primary-default);
+			color: var(--primary-900);
 			background-color: #fff;
 			width: auto;
 			&::after {
@@ -254,7 +251,7 @@
 				display: flex;
 				align-items: center;
 				&::after {
-					content: '';
+					content: "";
 					margin-left: 0.625rem;
 					width: 0.875rem;
 					height: 0.875rem;
@@ -266,10 +263,10 @@
 				.filter-option-inner {
 				}
 				.filter-option-inner-inner {
-					color: f.f-primary-color('900');
+					color: var(--primary-900);
 					.option-item {
 						&::before {
-							content: '';
+							content: "";
 							margin-right: 0.625rem;
 							display: inline-block;
 							width: 1rem;
@@ -287,7 +284,7 @@
 			padding: 0;
 			box-shadow: 0px 8px 15px rgba(69, 29, 57, 0.2), 0px 8px 20px 4px rgba(69, 29, 57, 0.15);
 			&.show {
-				border: 2px solid f.f-primary-color('default');
+				border: 2px solid var(--primary-default);
 			}
 			&.inner {
 				padding: 0.5rem 0;
@@ -305,7 +302,8 @@
 						min-height: 3rem;
 						&.active {
 							background-color: #fff;
-							&:hover, &:focus {
+							&:hover,
+							&:focus {
 								background-color: #f8f9fa;
 							}
 						}
@@ -316,7 +314,7 @@
 							right: 1rem;
 							transform: translateY(-50%);
 							&::after {
-								content: '';
+								content: "";
 								border: 0;
 								width: 0.6875rem;
 								height: 0.6875rem;
@@ -328,14 +326,13 @@
 						}
 					}
 					.text {
-						color: f.f-primary-color('700');;
+						color: var(--primary-700);
 					}
 				}
 			}
 		}
 	}
 }
-
 
 .colored-check {
 	padding-left: 1.625rem;
@@ -355,8 +352,8 @@
 		&:checked {
 			& + label {
 				&::before {
-					border-color: f.f-primary-color('default');
-					background-color: f.f-primary-color('default');
+					border-color: var(--primary-default);
+					background-color: var(--primary-default);
 				}
 				&::after {
 					color: #fff;
@@ -367,19 +364,20 @@
 	.form-check-label {
 		line-height: f.f-line-height(16, 22);
 		font-size: f.f-rem(16);
-		&::before, &::after {
+		&::before,
+		&::after {
 			position: absolute;
 			top: 6px;
 		}
 		&::before {
-			content: '';
+			content: "";
 			left: 0;
 			border: 2px solid #9e9699;
 			width: 0.875rem;
 			height: 0.875rem;
 		}
 		&::after {
-			content: '';
+			content: "";
 			left: 0;
 			margin: 0 2px;
 			width: 0.625rem;
@@ -391,7 +389,6 @@
 	}
 }
 
-
 .select-wrapper {
 	z-index: 1;
 	select {
@@ -399,7 +396,7 @@
 		padding-right: 2rem;
 		min-width: 264px;
 		background-color: transparent;
-			z-index: 2;
+		z-index: 2;
 		&::-ms-expand {
 			display: none;
 		}
@@ -411,7 +408,7 @@
 		transform: translateY(-50%);
 		width: 1em;
 		svg {
-			fill: f.f-primary-color('default');
+			fill: var(--primary-default);
 			width: f.f-rem(14);
 			height: f.f-rem(14);
 		}

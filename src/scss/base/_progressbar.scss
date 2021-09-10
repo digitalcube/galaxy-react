@@ -3,62 +3,62 @@
 @use "../import/mixin" as f;
 
 .progress {
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
-    left: 1.5rem;
-    z-index: 1;
-    height: 0.25rem;
-    background-color: f.f-gray-color('200');
-    .progress-bar {
-        height: 0.25rem;
-        background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 102.17%);
-    }
+	position: absolute;
+	top: 0;
+	right: 1.5rem;
+	left: 1.5rem;
+	z-index: 1;
+	height: 0.25rem;
+	background-color: var(--gray-200);
+	.progress-bar {
+		height: 0.25rem;
+		background: linear-gradient(90deg, var(--primary-default) 0%, #f80a5b 102.17%);
+	}
 }
 .sites-list {
-    .progress {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 2;
-        border-radius: 0.25rem 0.25rem 0 0;
-        height: 0.25rem;
-        .progress-bar {
-            height: 0.25rem;
-            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 100%);
-        }
-    }
+	.progress {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 2;
+		border-radius: 0.25rem 0.25rem 0 0;
+		height: 0.25rem;
+		.progress-bar {
+			height: 0.25rem;
+			background: linear-gradient(90deg, var(--primary-default) 0%, #f80a5b 100%);
+		}
+	}
 }
 .shifter-dashboard-main {
-    position: relative;
-    z-index: 1;
-    .progress {
-        position: absolute;
-        top: 0;
-        right: 1.5rem;
-        left: 1.5rem;
-        z-index: 1;
-        height: 0.25rem;
-        background-color: f.f-gray-color('200');
-        .progress-bar {
-            height: 0.25rem;
-            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 102.17%);
-        }
-    }
+	position: relative;
+	z-index: 1;
+	.progress {
+		position: absolute;
+		top: 0;
+		right: 1.5rem;
+		left: 1.5rem;
+		z-index: 1;
+		height: 0.25rem;
+		background-color: var(--gray-200);
+		.progress-bar {
+			height: 0.25rem;
+			background: linear-gradient(90deg, var(--primary-default) 0%, #f80a5b 102.17%);
+		}
+	}
 }
 .deploy-history-item {
-    .progress {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        border-radius: 0.25rem 0.25rem 0 0;
-        height: 0.25rem;
-        background-color: f.f-gray-color('200');
-        .progress-bar {
-            height: 0.25rem;
-            background: linear-gradient(90deg, f.f-primary-color('default') 0%, #F80A5B 100%);
-        }
-    }
+	.progress {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		border-radius: 0.25rem 0.25rem 0 0;
+		height: 0.25rem;
+		background-color: var(--gray-200);
+		.progress-bar {
+			height: 0.25rem;
+			background: linear-gradient(90deg, var(--primary-default) 0%, #f80a5b 100%);
+		}
+	}
 }

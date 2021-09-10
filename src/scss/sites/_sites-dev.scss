@@ -5,24 +5,24 @@
 
 .dev {
 	.container-info-nav {
-		border-bottom: 1px solid f.f-gray-color('200');
+		border-bottom: 1px solid var(--gray-200);
 		.action-buttons {
 		}
 		.wordpress-status {
 			i {
 				svg {
-					fill: f.f-primary-color('default');
+					fill: var(--primary-default);
 					width: f.f-rem(14);
 					height: f.f-rem(14);
 				}
 			}
 			.site-status {
 				&::before {
-					content: '';
+					content: "";
 					margin-right: 0.75rem;
 					width: 2px;
 					height: 2rem;
-					background-color: f.f-gray-color('200');
+					background-color: var(--gray-200);
 				}
 			}
 		}
@@ -41,16 +41,15 @@
 		}
 	}
 
-
 	.mediacdn-setting-section {
 		max-width: 550px;
 		.mediacdn-description {
 			line-height: f.f-line-height(16, 22);
-			color: f.f-gray-color('700');
+			color: var(--gray-700);
 			font-size: f.f-rem(16);
 			a {
 				line-height: f.f-line-height(14, 19.5);
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 				font-size: f.f-rem(14);
 				i {
 					svg {
@@ -62,24 +61,23 @@
 			}
 		}
 		.mediacdn-setting {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 		}
 		.mediacdn-setting-status {
 		}
 	}
 
-
 	.webhooks-section {
 		.webhooks-section-header {
 			.webhooks-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(16);
 			}
 			.webhooks-section-note {
 				a {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-primary-color('default');
+					color: var(--primary-default);
 					font-size: f.f-rem(14);
 					i {
 						svg {
@@ -95,34 +93,34 @@
 		}
 
 		.no-webhook {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 			.no-webhook-icon {
 			}
 			.no-webhook-state {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			.no-webhook-description {
 				line-height: f.f-line-height(14, 19.5);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(14);
 			}
 		}
 
 		.webhook-items {
 			.webhook-item {
-				border: 1px solid f.f-gray-color('200');
+				border: 1px solid var(--gray-200);
 				line-height: f.f-line-height(14, 19.5);
-				color: f.f-gray-color('600');
+				color: var(--gray-600);
 				font-size: f.f-rem(14);
 			}
 		}
 		.webhook-item-data {
 			.webhook-item-name {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('default');
+				color: var(--primary-default);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
@@ -141,7 +139,7 @@
 					}
 					i {
 						svg {
-							fill: f.f-primary-color('default');
+							fill: var(--primary-default);
 							width: f.f-rem(21);
 							height: f.f-rem(21);
 						}
@@ -151,7 +149,7 @@
 					box-shadow: 0 0 10px rgba(69, 29, 57, 0.2);
 				}
 				.dropdown-menu {
-					border-color: f.f-gray-color('200');
+					border-color: var(--gray-200);
 				}
 				.dropdown-item {
 					line-height: f.f-line-height(16, 22);
@@ -179,19 +177,17 @@
 		}
 	}
 
-
 	.access-log-section {
-
 		.access-log-section-header {
 			.access-log-description {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(16);
 			}
 			.access-log-note {
 				a {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-primary-color('default');
+					color: var(--primary-default);
 					font-size: f.f-rem(14);
 					i {
 						svg {
@@ -206,34 +202,32 @@
 
 		.form-group {
 			label {
-				color: f.f-gray-color('800');
+				color: var(--gray-800);
 			}
 			.form-control {
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 			}
 		}
 	}
-
-
 
 	.emergency-section {
 		.emergency-section-header {
 			.emergency-section-title {
 				line-height: f.f-line-height(30, 37.5);
-				color: f.f-primary-color('600');
+				color: var(--primary-600);
 				font-size: f.f-rem(30);
 				letter-spacing: 1px;
 			}
 			.emergency-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('600');
+				color: var(--primary-600);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			.emergency-section-note {
 				a {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-primary-color('600');
+					color: var(--primary-600);
 					font-size: f.f-rem(14);
 					i {
 						svg {
@@ -249,38 +243,36 @@
 		.emergencyuser {
 		}
 
-
 		.safemode {
 			.c-toggle-switch {
 				.custom-control-label {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-gray-color('700');
+					color: var(--gray-700);
 					font-size: f.f-rem(14);
 				}
 			}
 		}
 	}
 
-
 	.basic-auth-section {
 		.basic-auth-section-header {
 			max-width: 550px;
 			.basic-auth-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('600');
+				color: var(--primary-600);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 			}
 			.basic-auth-section-note {
 				a {
 					line-height: f.f-line-height(14, 19.5);
-					color: f.f-primary-color('600');
+					color: var(--primary-600);
 					font-size: f.f-rem(14);
 					i {
 						svg {
 							fill: currentColor;
-							width: f.f-rem(11);;
-							height: f.f-rem(11);;
+							width: f.f-rem(11);
+							height: f.f-rem(11);
 						}
 					}
 				}
@@ -289,23 +281,23 @@
 
 		.basic-auth-setting {
 			.basic-auth-setting-item {
-				border: 1px solid f.f-gray-color('200');
+				border: 1px solid var(--gray-200);
 				line-height: f.f-line-height(16, 22);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(16);
 			}
 		}
 
 		.basic-auth-info {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 			overflow: hidden;
 			.basic-auth-info-title {
 				line-height: f.f-line-height(22, 33);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(22);
 				i {
 					svg {
-						fill: f.f-primary-color('default');
+						fill: var(--primary-default);
 						width: f.f-rem(12);
 						height: f.f-rem(12);
 					}
@@ -319,15 +311,15 @@
 					padding-right: 2rem;
 					padding-left: 2.4375rem;
 					background-color: transparent;
-					color: f.f-primary-color('default');
+					color: var(--primary-default);
 					z-index: 2;
 					&:read-only {
-						color: f.f-primary-color('default');
+						color: var(--primary-default);
 						background-color: #f9f4f9;
 						& ~ .copy {
 							i {
 								svg {
-									fill: f.f-gray-color('300');
+									fill: var(--gray-300);
 									width: f.f-rem(12);
 									height: f.f-rem(12);
 								}
@@ -343,7 +335,7 @@
 					width: 1.4375rem;
 					i {
 						svg {
-							fill: f.f-gray-color('300');
+							fill: var(--gray-300);
 							width: f.f-rem(14);
 							height: f.f-rem(14);
 						}
@@ -357,19 +349,18 @@
 					cursor: pointer;
 					i {
 						line-height: f.f-line-height(14, 19.5);
-						color: f.f-primary-color('default');
+						color: var(--primary-default);
 						font-size: f.f-rem(14);
 					}
 				}
-
 			}
 		}
 
 		.auth-events {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 			.auth-events-title {
 				line-height: f.f-line-height(22, 33);
-				color: f.f-gray-color('700');
+				color: var(--gray-700);
 				font-size: f.f-rem(22);
 			}
 
@@ -378,9 +369,10 @@
 					border-collapse: separate;
 					border-spacing: 0 0.5rem;
 				}
-				th, td {
+				th,
+				td {
 					line-height: f.f-line-height(12, 15);
-					color: f.f-gray-color('700');
+					color: var(--gray-700);
 					font-size: f.f-rem(12);
 				}
 				thead {
@@ -389,13 +381,13 @@
 				}
 				tbody {
 					td {
-						border-top: 1px solid f.f-gray-color('200');
-						border-bottom: 1px solid f.f-gray-color('200');
+						border-top: 1px solid var(--gray-200);
+						border-bottom: 1px solid var(--gray-200);
 						&:first-child {
-							border-left: 1px solid f.f-gray-color('200');
+							border-left: 1px solid var(--gray-200);
 						}
 						&:last-child {
-							border-right: 1px solid f.f-gray-color('200');
+							border-right: 1px solid var(--gray-200);
 						}
 						&.with-icon {
 							padding-top: 0.375rem;
@@ -424,13 +416,12 @@
 		}
 	}
 
-
 	.errors-section {
 		.errors-section-header {
 			padding-top: 0.625rem;
 			.errors-section-title {
 				line-height: f.f-line-height(30, 37.5);
-				color: f.f-primary-color('600');
+				color: var(--primary-600);
 				font-size: f.f-rem(30);
 				letter-spacing: 1px;
 			}
