@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 module.exports = {
   stories: [
+    '../stories/pages/admin/ListSites.stories.tsx',
     '../src/components/**/*.stories.@(ts|tsx|js|jsx)',
     '../src/routings/**/*.stories.@(ts|tsx|js|jsx)',
     '../stories/**/*.stories.@(ts|tsx|js|jsx)'

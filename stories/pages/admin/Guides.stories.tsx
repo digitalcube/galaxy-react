@@ -12,6 +12,7 @@ import {
   Layouts,
   AdminLayoutContainer,
 } from '../../../src';
+import { Button } from 'reactstrap';
 
 const MockGuidesPage: FC = () => {
   return (
@@ -106,15 +107,19 @@ const MockArticles: FC = () => {
           Our team is happy to help
         </div>
         <div className="mt-4 question-anchor">
-          <a
+          <Button
             href="#"
-            className="px-3 py-0 rounded btn btn-bordered btn-smaller border-0 d-inline-flex align-items-center font-weight-bold"
+            tag="a"
+            outline
+            color="primary"
+            className="px-3 py-0 rounded btn-smaller d-inline-flex align-items-center font-weight-bold"
+            style={{background: "#fff"}}
           >
             Contact Support
             <i className="pl-2 larger-icon" aria-hidden="true">
               <FaComment className="d-block" />
             </i>
-          </a>
+          </Button>
         </div>
       </div>
     </ContentCardColumn>

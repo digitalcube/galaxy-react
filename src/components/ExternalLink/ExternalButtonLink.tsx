@@ -8,6 +8,7 @@ export const ExternalButtonLink: FC<ExternalButtonLinkProps> = ({
   icon,
   children,
   role,
+  color = 'primary',
   ...buttonProps
 }) => {
   const className = [
@@ -26,6 +27,7 @@ export const ExternalButtonLink: FC<ExternalButtonLinkProps> = ({
   return (
     <Button
       {...buttonProps}
+      color={color}
       className={className}
       rel={rel}
       target="_blank"
