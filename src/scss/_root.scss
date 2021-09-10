@@ -8,6 +8,7 @@
 
 	@each $color, $value in $theme-colors {
 		--#{$color}: #{$value};
+		--#{$color}-link-hover: #{darken($value, 15%)};
 		--#{$color}-hover: #{darken($value, 7.5%)};
 		--#{$color}-border-hover: #{darken($value, 10%)};
 		--#{$color}-active: #{darken($value, 10%)};
@@ -34,6 +35,7 @@
 }
 html.shifter {
 	--primary: #{$shifter};
+	--primary-link-hover: #{darken($shifter, 15%)};
 	--primary-hover: #{darken($shifter, 7.5%)};
 	--primary-border-hover: #{darken($shifter, 10%)};
 	--primary-active: #{darken($shifter, 10%)};
@@ -50,6 +52,7 @@ html.shifter {
 }
 html.amimoto {
 	--primary: #{$amimoto};
+	--primary-link-hover: #{darken($amimoto, 15%)};
 	--primary-hover: #{darken($amimoto, 7.5%)};
 	--primary-border-hover: #{darken($amimoto, 10%)};
 	--primary-active: #{darken($amimoto, 10%)};

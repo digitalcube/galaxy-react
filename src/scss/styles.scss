@@ -3,11 +3,13 @@
 // bootstrap
 @forward "bootstrap-set";
 
+// bootstrap overrides
+@forward 'overrides/_index';
+
 /* original */
 @forward 'base/_index';
 @forward 'signup-login/_index';
 @forward 'modal/_index';
-@forward 'buttons/_index';
 @forward 'account/_index';
 @forward 'guides/_index';
 @forward 'sites/_index';
