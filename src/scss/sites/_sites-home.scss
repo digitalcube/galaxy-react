@@ -27,6 +27,9 @@
 		line-height: f.f-line-height(22, 33);
 		color: var(--gray-800);
 		font-size: f.f-rem(22);
+		a {
+			color: var(--gray-800);
+		}
 	}
 	.site-info {
 		margin-top: 1rem;

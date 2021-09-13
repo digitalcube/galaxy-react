@@ -7,13 +7,19 @@ type MockSiteCardProps = {
   name: string;
   domain: string;
   teamName: string;
+  href?: string;
 };
 
-const MockSiteCard: FC<MockSiteCardProps> = ({ name, domain, teamName }) => {
+const MockSiteCard: FC<MockSiteCardProps> = ({
+  name,
+  domain,
+  teamName,
+  href,
+}) => {
   return (
     <div className="sites-list">
       <section className="d-flex flex-column site-list-body">
-        <SiteCardData name={name}>
+        <SiteCardData name={name} href={href}>
           <span className="d-inline-block align-middle site-url">
             <Link href={`${domain}`}>{domain}</Link>
           </span>
@@ -48,4 +54,5 @@ Default.args = {
   name: 'Site',
   domain: 'getshifter.io',
   teamName: 'Team name',
+  href: '#',
 };

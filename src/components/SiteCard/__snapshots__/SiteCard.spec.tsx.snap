@@ -39,7 +39,12 @@ exports[`SiteCard to match snapshot [column %p | item %p] 1`] = `
           <h2
             class="mb-0 font-weight-bold site-name"
           >
-            Stable Value Investment Ltd.
+            <a
+              href="undefined"
+              to="undefined"
+            >
+              Stable Value Investment Ltd.
+            </a>
           </h2>
           <div
             class="mt-3 d-flex align-items-center site-info"
