@@ -11,12 +11,12 @@
 	.add-domain-steps {
 		margin-bottom: 0.75rem;
 		line-height: f.f-line-height(14, 19.5);
-		color: f.f-gray-color('400');
+		color: var(--gray-400);
 		font-size: f.f-rem(14);
 	}
 	.add-domain-title {
 		line-height: f.f-line-height(30, 37.5);
-		color: f.f-primary-color('700');;
+		color: var(--primary-700);
 		font-size: f.f-rem(30);
 		letter-spacing: 1px;
 	}
@@ -24,7 +24,7 @@
 		margin-top: 1.25rem;
 		max-width: 750px;
 		line-height: f.f-line-height(16, 22);
-		color: f.f-gray-color('700');
+		color: var(--gray-700);
 		font-size: f.f-rem(16);
 		letter-spacing: 0.35px;
 		&.smaller {
@@ -36,11 +36,11 @@
 
 	.add-domain-body {
 		.record-table {
-			border: 1px solid f.f-gray-color('200');
+			border: 1px solid var(--gray-200);
 			.record-table-title {
 				padding: 0.625rem 1rem;
 				line-height: f.f-line-height(16, 22);
-				color: f.f-primary-color('700');;
+				color: var(--primary-700);
 				font-size: f.f-rem(16);
 				letter-spacing: 0.35px;
 				i {
@@ -52,14 +52,15 @@
 				}
 			}
 			table {
-				th, td {
-					border-top: 1px solid f.f-gray-color('200');
+				th,
+				td {
+					border-top: 1px solid var(--gray-200);
 					line-height: f.f-line-height(14, 19.5);
 					font-size: f.f-rem(14);
 				}
 				thead {
 					th {
-						color: f.f-gray-color('600');
+						color: var(--gray-600);
 					}
 				}
 				tbody {
@@ -72,8 +73,8 @@
 							line-height: f.f-line-height(14, 19.5);
 							font-size: f.f-rem(14);
 							&:read-only {
-								color: f.f-primary-color('default');
-								background-color: f.f-gray-color('50');
+								color: var(--primary-default);
+								background-color: var(--gray-50);
 							}
 						}
 						&.data {
@@ -88,7 +89,7 @@
 			.form-note {
 				a {
 					line-height: f.f-line-height(16, 22);
-					color: f.f-primary-color('default');
+					color: var(--primary-default);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					svg {
@@ -101,7 +102,6 @@
 		}
 	}
 
-
 	&.added {
 		margin-top: 4.3125rem;
 		max-width: 348px;
@@ -110,7 +110,7 @@
 			}
 			.added-message-title {
 				line-height: f.f-line-height(38, 47.5);
-				color: f.f-primary-color('800');
+				color: var(--primary-800);
 				font-size: f.f-rem(38);
 				letter-spacing: 1px;
 			}
@@ -122,6 +122,5 @@
 			.added-message-button {
 			}
 		}
-
 	}
 }

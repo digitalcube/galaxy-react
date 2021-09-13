@@ -1,36 +1,61 @@
-
 $purple-50: #f9f4f9 !default;
-$purple-100: #F3EAF3 !default;
-$purple-200: #E2C9E1 !default;
-$purple-300: #D0A9CE !default;
-$purple-400: #AC69AA !default;
+$purple-100: #f3eaf3 !default;
+$purple-200: #e2c9e1 !default;
+$purple-300: #d0a9ce !default;
+$purple-400: #ac69aa !default;
 $purple-500: #892885 !default;
-$purple-600: #7B2478 !default;
-$purple-700: #671E64 !default;
+$purple-600: #7b2478 !default;
+$purple-700: #671e64 !default;
 $purple-800: #521850 !default;
 $purple-900: #431441 !default;
 
-$gray-50: #F6F5F6 !default;
-$gray-100: #EDECEC !default;
-$gray-200: #D1CFD0 !default;
-$gray-300: #B6B3B4 !default;
-$gray-400: #7F797B !default;
-$gray-500: #756B6E !default;
-$gray-600: #413A3C !default;
-$gray-700: #363032 !default;
-$gray-800: #2B2628 !default;
-$gray-900: #231F21 !default;
+// Shifter Primary color
+$shifter: #892885 !default;
+$shifter-50: #f9f4f9 !default;
+$shifter-100: #f3eaf3 !default;
+$shifter-200: #e2c9e1 !default;
+$shifter-300: #d0a9ce !default;
+$shifter-400: #ac69aa !default;
+$shifter-500: #892885 !default;
+$shifter-600: #7b2478 !default;
+$shifter-700: #671e64 !default;
+$shifter-800: #521850 !default;
+$shifter-900: #431441 !default;
 
-$green-dark: #055C2D !default;
-$green-primary: #23BA7B !default;
-$green-light: #D9FFE3 !default;
+// AMIMOTO Primary color
+$amimoto: #05f !default;
+$amimoto-50: lighten($amimoto, 50%) !default;
+$amimoto-100: lighten($amimoto, 40%) !default;
+$amimoto-200: lighten($amimoto, 30%) !default;
+$amimoto-300: lighten($amimoto, 20%) !default;
+$amimoto-400: lighten($amimoto, 10%) !default;
+$amimoto-500: $amimoto !default;
+$amimoto-600: darken($amimoto, 10%) !default;
+$amimoto-700: darken($amimoto, 20%) !default;
+$amimoto-800: darken($amimoto, 30%) !default;
+$amimoto-900: darken($amimoto, 40%) !default;
+
+$gray-50: #f6f5f6 !default;
+$gray-100: #edecec;
+$gray-200: #d1cfd0;
+$gray-300: #b6b3b4;
+$gray-400: #7f797b;
+$gray-500: #756b6e;
+$gray-600: #413a3c;
+$gray-700: #363032;
+$gray-800: #2b2628;
+$gray-900: #231f21;
+
+$green-dark: #055c2d !default;
+$green-primary: #23ba7b !default;
+$green-light: #d9ffe3 !default;
 
 $red-dark: #750505 !default;
-$red-primary: #CE1616 !default;
-$red-light: #FFE9E9 !default;
+$red-primary: #ce1616 !default;
+$red-light: #ffe9e9 !default;
 
-$yellow-dark: #BE6B09 !default;
-$yellow-primary: #FFA600 !default;
-$yellow-light: #FEF4D9 !default;
+$yellow-dark: #be6b09 !default;
+$yellow-primary: #ffa600 !default;
+$yellow-light: #fef4d9 !default;
 
-$accent: #F80A5B !default;
+$accent: #f80a5b !default;

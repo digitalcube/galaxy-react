@@ -1,0 +1,66 @@
+@use 'variable' as var;
+$primary-colors: (
+	"50": var.$purple-50,
+	"100": var.$purple-100,
+	"200": var.$purple-200,
+	"300": var.$purple-300,
+	"400": var.$purple-400,
+	"500": var.$purple-500,
+	"600": var.$purple-600,
+	"700": var.$purple-700,
+	"800": var.$purple-800,
+	"900": var.$purple-900,
+	"default": var.$purple-500,
+);
+
+$shifter-colors: (
+	"50": var.$shifter-50,
+	"100": var.$shifter-100,
+	"200": var.$shifter-200,
+	"300": var.$shifter-300,
+	"400": var.$shifter-400,
+	"500": var.$shifter-500,
+	"600": var.$shifter-600,
+	"700": var.$shifter-700,
+	"800": var.$shifter-800,
+	"900": var.$shifter-900,
+	"default": var.$shifter-500,
+);
+
+$amimoto-colors: (
+	"50": var.$amimoto-50,
+	"100": var.$amimoto-100,
+	"200": var.$amimoto-200,
+	"300": var.$amimoto-300,
+	"400": var.$amimoto-400,
+	"500": var.$amimoto-500,
+	"600": var.$amimoto-600,
+	"700": var.$amimoto-700,
+	"800": var.$amimoto-800,
+	"900": var.$amimoto-900,
+	"default": var.$amimoto-500,
+);
+
+$gray-colors: (
+	"50": var.$gray-50,
+	"100": var.$gray-100,
+	"200": var.$gray-200,
+	"300": var.$gray-300,
+	"400": var.$gray-400,
+	"500": var.$gray-500,
+	"600": var.$gray-600,
+	"700": var.$gray-700,
+	"800": var.$gray-800,
+	"900": var.$gray-900,
+	"default": var.$gray-500,
+);
+
+$theme-colors: (
+	"primary": var.$green-primary,
+	"secondary": map-get($gray-colors, "default"),
+	"success": var.$green-primary,
+	"warning": var.$yellow-primary,
+	"danger": var.$red-primary,
+	"light": var.$gray-100,
+	"dark": var.$gray-800,
+);
