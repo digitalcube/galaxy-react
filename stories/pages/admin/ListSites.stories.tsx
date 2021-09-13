@@ -152,6 +152,40 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
               </SiteCardDropdownMenu>
             </SiteCardSettings>
           </SiteCard>
+          <SiteCard>
+            <SiteCardThumbnail
+              {...{
+                src: 'https://getshifter.io',
+                alt: 'Site',
+                href: '#',
+              }}
+            />
+            <SiteCardData
+              name="site name" href="#"
+              tips={
+                <StatusBadge className="ml-2 d-inline-block" status="danger">
+                  Trial
+                </StatusBadge>
+              }
+            >
+              <div>
+              <p className="align-middle site-url">
+                <Link href={`https://getfhiter.io`}>getshifter.io</Link>
+              </p>
+              <p className="align-middle text-truncate site-description">
+                <span className="mr-2 d-inline-block rounded-circle font-weight-bold text-center site-initial">
+                  D
+                </span>
+                <span className="mb-0 d-inline site-description">
+                  Team member name
+                </span>
+              </p>
+              </div>
+            </SiteCardData>
+            <SiteCardSettings
+              href="#"
+            />
+          </SiteCard>
         </section>
       </AdminLayoutContainer>
     </Layouts>

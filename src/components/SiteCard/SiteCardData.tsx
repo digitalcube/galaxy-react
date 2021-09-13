@@ -19,7 +19,7 @@ export const SiteCardData: FC<SiteCardDataProps> = ({
         <Link href={`${href}`}>{name}</Link>
         {tips || null}
       </h2>
-      <div className="mt-3 d-flex align-items-center site-info">{children}</div>
+      <div className="mt-2 d-flex align-items-center site-info">{children}</div>
     </div>
   );
 };
