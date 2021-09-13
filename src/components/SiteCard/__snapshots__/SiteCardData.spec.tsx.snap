@@ -22,7 +22,7 @@ exports[`SiteCardData to match snapshot [column %p | item %p] 1`] = `
           </a>
         </h2>
         <div
-          class="mt-3 d-flex align-items-center site-info"
+          class="mt-2 d-flex align-items-center site-info"
         >
           <span
             class="d-inline-block align-middle site-url"
