@@ -14,7 +14,12 @@ exports[`SiteCardData to match snapshot [column %p | item %p] 1`] = `
         <h2
           class="mb-0 font-weight-bold site-name"
         >
-          Site
+          <a
+            href="#"
+            to="#"
+          >
+            Site
+          </a>
         </h2>
         <div
           class="mt-3 d-flex align-items-center site-info"
