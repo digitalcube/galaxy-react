@@ -668,7 +668,7 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
             </li>
             <li>
               <a
-                class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center"
+                class="px-3 py-2 rounded d-inline-flex align-items-center justify-content-center active"
                 href="#"
                 to="#"
               >
@@ -693,6 +693,19 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
                 </i>
                 Staging
               </a>
+              <ul
+                class="sub-menu"
+              >
+                <li>
+                  <a
+                    class=""
+                    href="#"
+                    to="#"
+                  >
+                    Sub
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a

@@ -86,6 +86,9 @@
 							}
 						}
 					}
+					&:hover {
+						background-color: #f3eaf3;
+					}
 					&.active {
 						font-weight: 800;
 						background-color: #f3eaf3;
@@ -104,6 +107,9 @@
 					color: #7f7679;
 					font-size: f.f-rem(16);
 					&.deactive {
+					}
+					&:hover {
+						color: var(--primary-default);
 					}
 					&.active {
 						font-weight: 800;

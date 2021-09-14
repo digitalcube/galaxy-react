@@ -309,7 +309,16 @@ const MockSiteSetting: FC = () => {
           <SidebarMenuItem to="#" icon={<FaBolt className="d-block" />}>
             Live
           </SidebarMenuItem>
-          <SidebarMenuItem to="#" icon={<FaCodeBranch className="d-block" />}>
+          <SidebarMenuItem
+            shouldShowSubmenus={true}
+            active
+            submenus={[
+              {
+                to: '#',
+                label: 'Sub',
+              },
+            ]}
+            to="#" icon={<FaCodeBranch className="d-block" />}>
             Staging
           </SidebarMenuItem>
           <SidebarMenuItem
