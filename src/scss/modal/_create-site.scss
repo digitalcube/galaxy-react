@@ -99,7 +99,7 @@
 						padding-right: 12px;
 						padding-left: 12px;
 						& > .col-inner {
-							border: 1px solid var(--gray-200);
+							border: 1px solid var(--gray-100);
 						}
 					}
 				}
@@ -172,7 +172,7 @@
 					}
 				}
 				.static-plan-compare-inner {
-					border: 1px solid var(--gray-200);
+					border: 1px solid var(--gray-100);
 				}
 			}
 		}
@@ -237,7 +237,7 @@
 				td {
 					padding-top: 0.625rem;
 					padding-bottom: 0.625rem;
-					border-top: 1px solid var(--gray-200);
+					border-top: 1px solid var(--gray-100);
 					line-height: f.f-line-height(16, 22);
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
@@ -329,7 +329,7 @@
 		}
 
 		.payment-summary {
-			border: 1px solid var(--gray-200);
+			border: 1px solid var(--gray-100);
 			@media (min-width: 768px) {
 				width: 40.49382716%;
 			}
@@ -365,7 +365,7 @@
 				}
 			}
 			.total {
-				border-top: 1px solid var(--gray-200);
+				border-top: 1px solid var(--gray-100);
 				.total-name {
 					line-height: f.f-line-height(14, 19.5);
 					color: var(--gray-600);
@@ -391,7 +391,7 @@
 					width: 51.81623932%;
 				}
 				.card-info {
-					border: 1px solid var(--gray-200);
+					border: 1px solid var(--gray-100);
 					line-height: f.f-line-height(16, 22);
 					color: var(--gray-700);
 					font-size: f.f-rem(16);

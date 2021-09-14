@@ -398,7 +398,7 @@
 
 		.team-list {
 			.team-list-title {
-				border-bottom: 1px solid var(--gray-200);
+				border-bottom: 1px solid var(--gray-100);
 				line-height: f.f-line-height(16, 22);
 				color: var(--primary-700);
 				font-size: f.f-rem(16);
@@ -409,7 +409,7 @@
 				overflow-y: auto;
 			}
 			.team-list-item {
-				border-bottom: 1px solid var(--gray-200);
+				border-bottom: 1px solid var(--gray-100);
 				&:last-child {
 					border-bottom: 0;
 				}

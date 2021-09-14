@@ -30,7 +30,7 @@
 	}
 
 	.deploy-list-header {
-		border-top: 1px solid var(--gray-200);
+		border-top: 1px solid var(--gray-100);
 		.deploy-list-heading {
 			line-height: f.f-line-height(18, 27);
 			color: var(--gray-700);
@@ -58,7 +58,7 @@
 
 	.deploy-list-body {
 		.deploy-list-item {
-			border: 1px solid var(--gray-200);
+			border: 1px solid var(--gray-100);
 			&:hover,
 			&.checked-item {
 				background-color: #f9f4f9;
@@ -67,7 +67,7 @@
 				margin-right: 2.375rem;
 				padding-left: 0;
 				label {
-					border: 1px solid var(--gray-200);
+					border: 1px solid var(--gray-100);
 					width: 2.125rem;
 					height: 2.125rem;
 					&::before,

@@ -13,7 +13,7 @@
 	}
 
 	.team-section {
-		border: 1px solid var(--gray-200);
+		border: 1px solid var(--gray-100);
 		&.site-managed {
 			padding-right: 1.125rem;
 			padding-left: 1.125rem;
@@ -68,7 +68,7 @@
 			.member-list-body-item {
 				padding-top: 0.4375rem;
 				padding-bottom: 0.4375rem;
-				border: 1px solid var(--gray-200);
+				border: 1px solid var(--gray-100);
 			}
 
 			.member-icon {

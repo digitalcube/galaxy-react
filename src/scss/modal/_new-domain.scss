@@ -36,7 +36,7 @@
 
 	.add-domain-body {
 		.record-table {
-			border: 1px solid var(--gray-200);
+			border: 1px solid var(--gray-100);
 			.record-table-title {
 				padding: 0.625rem 1rem;
 				line-height: f.f-line-height(16, 22);
@@ -54,7 +54,7 @@
 			table {
 				th,
 				td {
-					border-top: 1px solid var(--gray-200);
+					border-top: 1px solid var(--gray-100);
 					line-height: f.f-line-height(14, 19.5);
 					font-size: f.f-rem(14);
 				}

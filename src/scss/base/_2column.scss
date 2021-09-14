@@ -4,13 +4,13 @@
 @use 'color.scss' as colors;
 
 .shifter-dashboard-columns {
-	border-top: 1px solid var(--gray-200);
+	border-top: 1px solid var(--gray-100);
 	width: 100%;
 	&.no-border {
 		border-top: 0;
 	}
 	.shifter-dashboard-main {
-		border-left: 1px solid var(--gray-200);
+		border-left: 1px solid var(--gray-100);
 	}
 	.shifter-dashboard-sidebar {
 		padding-left: 60px;
@@ -55,7 +55,7 @@
 			left: -60px;
 			z-index: 1;
 			height: 1px;
-			background-color: var(--gray-200);
+			background-color: var(--gray-100);
 		}
 		ul {
 			margin: 0;

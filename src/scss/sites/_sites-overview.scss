@@ -17,7 +17,7 @@
 	}
 
 	.site-overview {
-		border: 1px solid var(--gray-200);
+		border: 1px solid var(--gray-100);
 		.site-overview-data {
 		}
 		.site-thunbnail {
@@ -64,7 +64,7 @@
 			}
 		}
 		.site-overview-footer {
-			border-top: 1px solid var(--gray-200);
+			border-top: 1px solid var(--gray-100);
 			.site-author {
 				line-height: f.f-line-height(14, 19.5);
 				color: var(--gray-800);
@@ -96,7 +96,7 @@
 	}
 
 	.deploy-history {
-		border: 1px solid var(--gray-200);
+		border: 1px solid var(--gray-100);
 		.deploy-actions {
 			.site-status {
 				.c-site-status {
@@ -142,7 +142,7 @@
 			}
 		}
 		.deploy-history-header {
-			border-top: 1px solid var(--gray-200);
+			border-top: 1px solid var(--gray-100);
 			.deploy-history-heading {
 				line-height: f.f-line-height(18, 27);
 				font-size: f.f-rem(18);
@@ -168,7 +168,7 @@
 			.deploy-history-item {
 				padding-top: 12px;
 				padding-bottom: 8px;
-				border: 1px solid var(--gray-200);
+				border: 1px solid var(--gray-100);
 				position: relative;
 				& + .deploy-history-item {
 					margin-top: 0.75rem;

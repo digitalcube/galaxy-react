@@ -12,7 +12,7 @@
 
 	.general-setting {
 		.general-setting-item {
-			border: 1px solid var(--gray-200);
+			border: 1px solid var(--gray-100);
 		}
 		.general-setting-item-header {
 		}
@@ -31,8 +31,8 @@
 	}
 
 	.notification-base-setting {
-		border-top: 1px solid var(--gray-200);
-		border-bottom: 1px solid var(--gray-200);
+		border-top: 1px solid var(--gray-100);
+		border-bottom: 1px solid var(--gray-100);
 		.notification-base-title {
 			line-height: f.f-line-height(16, 22);
 			color: var(--gray-600);
@@ -43,10 +43,10 @@
 	.notification-setting-list {
 		ul {
 			list-style: none;
-			border-bottom: 1px solid var(--gray-200);
+			border-bottom: 1px solid var(--gray-100);
 		}
 		li {
-			border-top: 1px solid var(--gray-200);
+			border-top: 1px solid var(--gray-100);
 		}
 	}
 }
