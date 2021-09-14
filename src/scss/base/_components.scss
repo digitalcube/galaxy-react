@@ -345,6 +345,9 @@
 }
 
 .btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	height: 3rem;
 	line-height: f.f-line-height(16, 16);
 	font-size: f.f-rem(16);
