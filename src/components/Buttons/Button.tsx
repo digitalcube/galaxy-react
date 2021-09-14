@@ -18,7 +18,7 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
 };
 
 export const Button: FC<ButtonProps> = ({
-  fontWeight,
+  fontWeight = 'bold',
   rounded,
   textAlign,
   smaller,
