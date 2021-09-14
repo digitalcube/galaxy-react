@@ -92,7 +92,7 @@ exports[`SiteCard to match snapshot [column %p | item %p] 1`] = `
             class="ml-4 font-weight-bold site-manage"
           >
             <a
-              class="py-2 font-weight-bold btn-bordered btn btn-outline-primary btn-small"
+              class="py-2 font-weight-bold btn-bordered font-weight-bold btn btn-outline-primary btn-small"
               href="/sites/xxx-xxx-xxx"
               style="height: auto;"
               to="/sites/xxx-xxx-xxx"
