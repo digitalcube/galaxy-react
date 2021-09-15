@@ -71,6 +71,7 @@
 					font-size: f.f-rem(16);
 					letter-spacing: 0.35px;
 					text-decoration: none;
+					transition: background-color .05s ease-in-out 0.05s;
 					i {
 						svg {
 							fill: var(--primary-default);
@@ -106,6 +107,7 @@
 					line-height: f.f-line-height(16, 22);
 					color: #7f7679;
 					font-size: f.f-rem(16);
+					transition: color .05s ease-in-out 0.05s;
 					&.deactive {
 					}
 					&:hover {
