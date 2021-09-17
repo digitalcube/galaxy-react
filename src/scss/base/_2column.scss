@@ -11,11 +11,15 @@
 	}
 	.shifter-dashboard-main {
 		border-left: 1px solid var(--gray-100);
+		@media (min-width: 768px) {
+			max-width: calc(100% - 304px);
+		}
 	}
 	.shifter-dashboard-sidebar {
 		padding-left: 60px;
 		width: 100%;
 		max-width: 304px;
+		flex-shrink: 0;
 		*:first-child {
 			&.sidebar-nav {
 				&::before {
