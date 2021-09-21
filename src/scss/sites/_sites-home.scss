@@ -12,10 +12,10 @@
 	}
 	.site-list-item {
 		box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
-		border: 1px solid var(--gray-100);
 		position: relative;
+		border: 2px solid var(--gray-100);
 		&:hover {
-			background-color: var(--primary-50);
+			border: 2px solid  var(--primary-default);
 		}
 	}
 	.site-thumbnail {
