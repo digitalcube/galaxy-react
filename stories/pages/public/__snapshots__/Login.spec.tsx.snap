@@ -292,8 +292,11 @@ exports[`Login to match snapshot (failure) 1`] = `
       </div>
     </div>
     <footer
-      class="text-center"
+      class="common-footer d-flex justify-content-between align-items-center"
     >
+      <div
+        class="d-flex"
+      />
       <p
         class="m-0 common-footer-copyright"
       >
@@ -315,6 +318,7 @@ exports[`Login to match snapshot (failure) 1`] = `
           </a>
         </small>
       </p>
+      <div />
     </footer>
   </div>
 </DocumentFragment>
@@ -566,8 +570,11 @@ exports[`Login to match snapshot (inprogress) 1`] = `
       </div>
     </div>
     <footer
-      class="text-center"
+      class="common-footer d-flex justify-content-between align-items-center"
     >
+      <div
+        class="d-flex"
+      />
       <p
         class="m-0 common-footer-copyright"
       >
@@ -589,6 +596,7 @@ exports[`Login to match snapshot (inprogress) 1`] = `
           </a>
         </small>
       </p>
+      <div />
     </footer>
   </div>
 </DocumentFragment>
@@ -840,8 +848,11 @@ exports[`Login to match snapshot(default) 1`] = `
       </div>
     </div>
     <footer
-      class="text-center"
+      class="common-footer d-flex justify-content-between align-items-center"
     >
+      <div
+        class="d-flex"
+      />
       <p
         class="m-0 common-footer-copyright"
       >
@@ -863,6 +874,7 @@ exports[`Login to match snapshot(default) 1`] = `
           </a>
         </small>
       </p>
+      <div />
     </footer>
   </div>
 </DocumentFragment>

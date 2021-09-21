@@ -767,8 +767,11 @@ exports[`ListSites to match snapshot(default) 1`] = `
       </section>
     </main>
     <footer
-      class="text-center"
+      class="common-footer d-flex justify-content-between align-items-center"
     >
+      <div
+        class="d-flex"
+      />
       <p
         class="m-0 common-footer-copyright"
       >
@@ -790,6 +793,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
           </a>
         </small>
       </p>
+      <div />
     </footer>
   </div>
 </DocumentFragment>

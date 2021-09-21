@@ -175,9 +175,22 @@ body {
 	}
 }
 
-.common-footer-copyright {
+.common-footer {
+	border-top: 1px solid var(--gray-100);
+	padding-top: 44px;
 	padding-bottom: 44px;
 	color: var(--gray-400);
+	font-size: f.f-rem(14);
+	> ul,p,div {
+		margin-top: 0;
+		margin-bottom: 0;	
+	}
+	li {
+		list-style-type: none;
+	}
+}
+
+.common-footer-copyright {
 	font-size: f.f-rem(14);
 	small {
 		font-size: 100%;

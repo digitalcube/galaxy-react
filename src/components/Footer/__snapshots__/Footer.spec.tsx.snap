@@ -3,8 +3,11 @@
 exports[`Footer to match snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="text-center"
+    class="common-footer d-flex justify-content-between align-items-center"
   >
+    <div
+      class="d-flex"
+    />
     <p
       class="m-0 common-footer-copyright"
     >
@@ -26,6 +29,7 @@ exports[`Footer to match snapshot 1`] = `
         </a>
       </small>
     </p>
+    <div />
   </footer>
 </DocumentFragment>
 `;

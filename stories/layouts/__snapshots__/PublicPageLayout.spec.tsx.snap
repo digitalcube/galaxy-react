@@ -208,8 +208,11 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
       </form>
     </div>
     <footer
-      class="text-center"
+      class="common-footer d-flex justify-content-between align-items-center"
     >
+      <div
+        class="d-flex"
+      />
       <p
         class="m-0 common-footer-copyright"
       >
@@ -231,6 +234,7 @@ exports[`Nav to match snapshot [OneColumns] 1`] = `
           </a>
         </small>
       </p>
+      <div />
     </footer>
   </div>
 </DocumentFragment>
