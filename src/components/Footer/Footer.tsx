@@ -9,14 +9,16 @@ export type FooterLink = {
 };
 export type FooterProps = PropsWithChildren<{
   serviceName: string;
+  className?: string;
   links?: Array<FooterLink>;
 }>;
 export const Footer: FC<FooterProps> = ({
   serviceName,
+  className = 'justify-content-around align-items-center',
   children = <div />,
   links,
 }) => (
-  <footer className="common-footer d-flex justify-content-between align-items-center">
+  <footer className={`common-footer d-flex ${className}`}>
     {links ? (
       <ul className="d-flex">
         {links.map((link) => (
@@ -26,9 +28,9 @@ export const Footer: FC<FooterProps> = ({
         ))}
       </ul>
     ) : (
-      <div className="d-flex" />
+      <>{Array.isArray(children) ? children[0] : <div className="d-flex" />}</>
     )}
     <Copyright serviceName={serviceName} />
-    {children}
+    {Array.isArray(children) ? children.filter((_d, i) => i !== 0) : children}
   </footer>
 );

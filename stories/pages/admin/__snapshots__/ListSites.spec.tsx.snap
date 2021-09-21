@@ -767,7 +767,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
       </section>
     </main>
     <footer
-      class="common-footer d-flex justify-content-between align-items-center"
+      class="common-footer d-flex justify-content-around align-items-center"
     >
       <div
         class="d-flex"

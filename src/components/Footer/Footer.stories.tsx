@@ -73,3 +73,22 @@ WithDropdownMenu.args = {
     </UncontrolledButtonDropdown>
   ),
 };
+
+const MultiChildrenTemplate: Story<FooterProps> = (args) => (
+  <Footer {...args}>
+    <p>item</p>
+    <UncontrolledButtonDropdown>
+      <DropdownToggle caret outline size="sm" color="primary">
+        Language
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem>japanese</DropdownItem>
+        <DropdownItem>English</DropdownItem>
+      </DropdownMenu>
+    </UncontrolledButtonDropdown>
+  </Footer>
+);
+export const MultiChildren = MultiChildrenTemplate.bind({});
+MultiChildren.args = {
+  serviceName: 'Shifter',
+};

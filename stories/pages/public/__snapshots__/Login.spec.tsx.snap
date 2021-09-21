@@ -292,7 +292,7 @@ exports[`Login to match snapshot (failure) 1`] = `
       </div>
     </div>
     <footer
-      class="common-footer d-flex justify-content-between align-items-center"
+      class="common-footer d-flex justify-content-around align-items-center"
     >
       <div
         class="d-flex"
@@ -570,7 +570,7 @@ exports[`Login to match snapshot (inprogress) 1`] = `
       </div>
     </div>
     <footer
-      class="common-footer d-flex justify-content-between align-items-center"
+      class="common-footer d-flex justify-content-around align-items-center"
     >
       <div
         class="d-flex"
@@ -848,7 +848,7 @@ exports[`Login to match snapshot(default) 1`] = `
       </div>
     </div>
     <footer
-      class="common-footer d-flex justify-content-between align-items-center"
+      class="common-footer d-flex justify-content-around align-items-center"
     >
       <div
         class="d-flex"
