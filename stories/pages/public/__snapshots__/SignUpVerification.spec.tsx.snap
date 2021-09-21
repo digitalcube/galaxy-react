@@ -47,7 +47,7 @@ exports[`SignUpVerification to match snapshot (failure) 1`] = `
             </div>
           </div>
           <div
-            class="alert alert-danger mb-4 p-0 border-0 d-flex c-alert"
+            class="mb-4 p-0 border-0 d-flex c-alert alert alert-danger fade"
             role="alert"
           >
             <div

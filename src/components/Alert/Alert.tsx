@@ -2,6 +2,7 @@ import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { CSSProperties } from 'react';
 import { useMemo } from 'react';
 import { FaExclamationTriangle, FaExclamationCircle } from 'react-icons/fa';
+import { Alert as RSAlert, AlertProps as RSAlertProps } from 'reactstrap';
 
 export type AlertType = 'info' | 'warning' | 'success' | 'danger';
 export type AlertProps = PropsWithChildren<{
@@ -11,7 +12,8 @@ export type AlertProps = PropsWithChildren<{
   title?: string;
   className?: string;
   style?: CSSProperties;
-}>;
+}> &
+  Omit<RSAlertProps, 'color' | 'className'>;
 
 const AlertIcon: FC<Pick<AlertProps, 'type' | 'icon'>> = ({ type, icon }) => {
   if (icon) return <>{icon}</>;
@@ -34,18 +36,21 @@ export const Alert: FC<AlertProps> = ({
   title,
   className,
   style,
+  ...alertProps
 }) => {
   const classNames = useMemo(() => {
-    const items = [
-      `alert ${`alert-${type}`} mb-4 p-0 border-0 d-flex c-alert`,
-      className,
-    ];
+    const items = [`mb-4 p-0 border-0 d-flex c-alert`, className];
     return items.filter(Boolean);
-  }, [type, className]);
+  }, [className]);
 
   if (!title && !children) return null;
   return (
-    <div className={classNames.join(' ')} role="alert" style={style}>
+    <RSAlert
+      {...alertProps}
+      color={type}
+      className={classNames.join(' ')}
+      style={style}
+    >
       {showIcon ? (
         <div className="alert-icon px-1 d-flex align-items-center">
           <i aria-hidden="true">
@@ -61,6 +66,6 @@ export const Alert: FC<AlertProps> = ({
           children
         )}
       </div>
-    </div>
+    </RSAlert>
   );
 };
