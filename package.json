@@ -98,6 +98,7 @@
   "dependencies": {
     "bootstrap": "4.*.*",
     "chart.js": "2",
+    "dayjs": "^1.10.7",
     "punycode": "^2.1.1",
     "react-chartjs-2": "2",
     "react-content-loader": "^6.0.3",

@@ -19,13 +19,7 @@ export class ChartJSDataBuilder {
   }
 
   public putXLabel(
-    label:
-      | string
-      | string[]
-      | number
-      | number[]
-      | Date
-      | Date[]
+    label: string | string[] | number | number[] | Date | Date[]
   ): this {
     this._xLabels.push(label);
     return this;

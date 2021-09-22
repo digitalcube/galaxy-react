@@ -47,7 +47,7 @@ export class ChartJSDatasetBuilder {
   }
 
   public putData(data: number) {
-    if (!this._dataset.data) this._dataset.data = [] 
+    if (!this._dataset.data) this._dataset.data = [];
     this._dataset.data.push(data);
     return this;
   }
