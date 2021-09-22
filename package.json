@@ -65,6 +65,7 @@
     "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
+    "@types/chart.js": "^2.9.34",
     "@types/node": "^15.12.5",
     "@types/punycode": "^2.1.0",
     "@types/react": "^17.0.11",
@@ -96,7 +97,9 @@
   },
   "dependencies": {
     "bootstrap": "4.*.*",
+    "chart.js": "2",
     "punycode": "^2.1.1",
+    "react-chartjs-2": "2",
     "react-content-loader": "^6.0.3",
     "react-gravatar": "^2.6.3",
     "react-icons": "^4.2.0",
