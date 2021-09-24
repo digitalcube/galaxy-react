@@ -10,6 +10,20 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  argTypes: {
+    primaryColor: {
+      options: ['#892885', '#05f'],
+      control: {
+        type: 'radio',
+      },
+    },
+    secondaryColor: {
+      options: ['#e2c9e1', '#99bbff'],
+      control: {
+        type: 'radio',
+      },
+    },
+  },
 };
 
 export default meta;
@@ -19,9 +33,9 @@ const Template: Story<UsageGraphProps> = (args) => {
   const amountTotalGBBuilder = dataBuilder.datasetBuilders[0].updateOption({
     label: 'Total usage (GB)',
     type: 'line',
-    borderColor: '#892885',
-    pointBackgroundColor: '#7b2478',
-    pointBorderColor: '#7b2478',
+    borderColor: args.primaryColor,
+    pointBackgroundColor: args.secondaryColor,
+    pointBorderColor: args.secondaryColor,
   });
   const items = [
     {
@@ -57,4 +71,6 @@ Default.args = {
   type: 'Transfer',
   usageAmountGB: 10,
   limitGB: 100,
+  primaryColor: '#892885',
+  secondaryColor: '#e2c9e1',
 };

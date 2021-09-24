@@ -76,6 +76,8 @@ export type UsageGraphProps = {
   limitGB: number;
   autoChargeTargetGB?: number;
   type: 'Transfer' | 'Storage';
+  primaryColor: string;
+  secondaryColor: string;
 };
 
 export const UsageGraph: FC<UsageGraphProps> = ({
@@ -84,6 +86,8 @@ export const UsageGraph: FC<UsageGraphProps> = ({
   limitGB,
   type,
   autoChargeTargetGB,
+  primaryColor,
+  secondaryColor,
 }) => {
   const {
     roundedUsageAmountGB,
@@ -113,8 +117,8 @@ export const UsageGraph: FC<UsageGraphProps> = ({
               {
                 data: [roundedUsageAmountGB, remainUsageGB],
                 backgroundColor: [
-                  remainUsageGB === 0 ? 'red' : '#e2c9e1',
-                  '#892885',
+                  remainUsageGB === 0 ? 'red' : secondaryColor,
+                  primaryColor,
                 ],
               },
             ],
