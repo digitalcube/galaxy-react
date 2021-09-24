@@ -102,10 +102,10 @@
 				.c-site-status {
 				}
 				.site-action {
-					&::before {
+					&::after {
 						content: "";
-						margin-right: 0.5rem;
-						margin-left: 12px;
+						margin-right: 1rem;
+						margin-left: 0.5rem;
 						width: 2px;
 						height: 2rem;
 						background-color: var(--gray-200);
