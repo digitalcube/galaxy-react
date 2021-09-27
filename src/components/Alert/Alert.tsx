@@ -9,7 +9,7 @@ export type AlertProps = PropsWithChildren<{
   type: AlertType;
   showIcon?: boolean;
   icon?: ReactNode;
-  title?: string;
+  title?: ReactNode;
   className?: string;
   style?: CSSProperties;
 }> &
