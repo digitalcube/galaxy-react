@@ -25,7 +25,7 @@ export const FeaturedCard: FC<FeaturedCardProps> = ({
         <i aria-hidden="true">{icon}</i>
       </div>
       ):null}
-      <h3 className="mt-4 font-weight-bold guide-list-title">{title}</h3>
+      <h3 className={`${icon ? "mt-4" :  "mt-0"} font-weight-bold guide-list-title`}>{title}</h3>
       {typeof excerpt === 'string' ? (
         <p className="mb-0 guide-list-excerpt">{excerpt}</p>
       ) : (
