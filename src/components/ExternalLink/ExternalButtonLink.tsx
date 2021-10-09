@@ -27,6 +27,7 @@ export const ExternalButtonLink: FC<ExternalButtonLinkProps> = ({
   return (
     <Button
       {...buttonProps}
+      outline
       color={color}
       className={className}
       rel={rel}
