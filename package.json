@@ -18,7 +18,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006 -s ./static",
-    "build-storybook": "build-storybook -s ./static"
+    "build-storybook": "build-storybook -s ./static",
+    "chromatic": "npx chromatic --project-token=580d0549d0ef"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -73,6 +74,7 @@
     "@types/react-gravatar": "^2.6.8",
     "@types/react-router-dom": "^5.1.7",
     "babel-loader": "^8.2.2",
+    "chromatic": "^5.10.2",
     "css-loader": "^6.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "fibers": "^5.0.0",
