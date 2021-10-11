@@ -240,7 +240,7 @@ exports[`Guides to match snapshot(default) 1`] = `
                   class="position-absolute guide-list-anchor"
                 >
                   <a
-                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
+                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-outline-primary"
                     href="https://getshifter.io"
                     rel="noopener"
                     target="_blank"
@@ -311,7 +311,7 @@ exports[`Guides to match snapshot(default) 1`] = `
                   class="position-absolute guide-list-anchor"
                 >
                   <a
-                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
+                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-outline-primary"
                     href="https://getshifter.io"
                     rel="noopener"
                     target="_blank"
@@ -382,7 +382,7 @@ exports[`Guides to match snapshot(default) 1`] = `
                   class="position-absolute guide-list-anchor"
                 >
                   <a
-                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-primary"
+                    class="px-3 py-0 rounded btn-bordered btn-smaller d-inline-flex align-items-center font-weight-bold btn btn-outline-primary"
                     href="https://getshifter.io"
                     rel="noopener"
                     target="_blank"

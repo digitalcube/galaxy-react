@@ -33,7 +33,7 @@ export const FeaturedCard: FC<FeaturedCardProps> = ({
       )}
       {linkText && href ? (
         <div className="position-absolute guide-list-anchor">
-          <ExternalButtonLink href={href} icon={linkIcon}>
+          <ExternalButtonLink href={href} icon={linkIcon} outline>
             {linkText}
           </ExternalButtonLink>
         </div>
