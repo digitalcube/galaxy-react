@@ -23,7 +23,7 @@ exports[`Guides to match snapshot(default) 1`] = `
         class="form-inline my-2 my-lg-0 flex-grow-1 d-flex position-relative form-search"
       >
         <div
-          class="input-group"
+          class="w-100 mr-5 input-group"
         >
           <svg
             class="fas fa-search form-search-icon position-absolute"
