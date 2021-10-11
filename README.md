@@ -74,6 +74,15 @@ $ git push [YOUR_ORIGIN] [feat|fix|chore|breaking-change]/[TOPIC]
 
 ### Publish to npm
 
+We're using `np` to publish the package.
+
+```bash
+$ yarn release
+```
+
+[Docs](https://github.com/sindresorhus/np)
+
+#### [Optional] Manually
 ```bah
 $ npm version [patch|minor|major]
 $ npm publish .

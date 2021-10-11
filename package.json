@@ -18,8 +18,14 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006 -s ./static",
-    "build-storybook": "build-storybook -s ./static"
+    "build-storybook": "build-storybook -s ./static",
+    "release": "np"
   },
+	"np": {
+		"yarn": false,
+    "branch": "main",
+		"contents": "dist"
+	},
   "peerDependencies": {
     "react": ">=16",
     "webpack": "*"
@@ -79,6 +85,7 @@
     "husky": "^7.0.0",
     "jest-svg-transformer": "^1.0.0",
     "jest-transform-stub": "^2.0.0",
+    "np": "^7.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
