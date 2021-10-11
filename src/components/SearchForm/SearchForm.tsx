@@ -23,7 +23,7 @@ export const SearchForm: FC<SearchFormProps> = ({
       onSubmit={onSubmit}
       className="form-inline my-2 my-lg-0 flex-grow-1 d-flex position-relative form-search"
     >
-      <InputGroup>
+      <InputGroup className="w-100 mr-5">
         <FaSearch className="fas fa-search form-search-icon position-absolute" />
         <Input
           aria-label="Search"
