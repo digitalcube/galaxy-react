@@ -21,11 +21,11 @@
     "build-storybook": "build-storybook -s ./static",
     "release": "np"
   },
-	"np": {
-		"yarn": false,
+  "np": {
+    "yarn": false,
     "branch": "main",
-		"contents": "dist"
-	},
+    "contents": "dist"
+  },
   "peerDependencies": {
     "react": ">=16",
     "webpack": "*"
