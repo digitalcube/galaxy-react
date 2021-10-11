@@ -24,8 +24,7 @@
   },
   "np": {
     "yarn": false,
-    "branch": "main",
-    "contents": "dist"
+    "branch": "main"
   },
   "peerDependencies": {
     "react": ">=16",
