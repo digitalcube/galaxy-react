@@ -23,7 +23,7 @@
     "np": "np"
   },
   "np": {
-    "yarn": false,
+    "yarn": true,
     "branch": "main"
   },
   "peerDependencies": {
@@ -36,6 +36,7 @@
     }
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "prettier": {
