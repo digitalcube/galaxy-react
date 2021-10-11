@@ -19,7 +19,8 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006 -s ./static",
     "build-storybook": "build-storybook -s ./static",
-    "release": "np"
+    "release": "npm run np",
+    "np": "np"
   },
   "np": {
     "yarn": false,
