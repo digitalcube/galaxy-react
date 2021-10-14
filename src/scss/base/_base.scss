@@ -13,8 +13,25 @@ body {
 
 .navbar {
 	padding: 1.125rem 1.5rem;
+	@media (max-width: 768px) {
+		& > .navbar-brand {
+			max-width: 10%!important;
+		}
+		& > .form-search {
+			max-width: 60%!important;
+			.input-group {
+				margin-right: 0.1%!important;
+			}
+		}
+		& > .navbar-toggler {
+			max-width: 20%!important;
+		}
+	}
 	& > .navbar-brand {
 		margin-right: 70px;
+		@media (max-width: 768px) {
+			margin-right: 20px;
+		}
 	}
 
 	.navbar-toggler {
