@@ -21,6 +21,7 @@ const Template: Story<SiteCardThumbnailProps> = (args) => {
 export const Default = Template.bind({});
 Default.args = {
   src: '/images/site-a.png',
+  width: 167,
 };
 
 export const Screenshot = Template.bind({});

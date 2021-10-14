@@ -1,26 +1,34 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import { Screenshot } from '../Screenshot/Screenshot';
 import { Link } from '../../routings/Link/Link';
+import { DEFAULT_THUMBNAIL_WIDTH, getThumbnailHeight } from '../../libs/image/thumbnailSize';
 
-export type SiteCardThumbnailProps = React.DetailedHTMLProps<
+export type SiteCardThumbnailProps = Omit<React.DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
-> & { href?: string };
+>, 'height'> & { href?: string };
 
 const SiteThumbnail: FC<SiteCardThumbnailProps> = ({ src, ...imageProps }) => {
+  const widthProps = imageProps.width || DEFAULT_THUMBNAIL_WIDTH
+  const {width, height} = useMemo(() => {
+    return {
+      width: String(widthProps),
+      height: String(getThumbnailHeight(Number(widthProps)))
+    }
+  }, [widthProps])
   if (!src) return null;
   if (/(png|jpg|jpeg|svg)$/.test(src)) {
     return (
       <img
         src={src}
-        {...imageProps}
-        width="167"
-        height="111"
+        width={width}
+        height={height}
         alt="site thumbnail"
+        {...imageProps}
       />
     );
   }
-  return <Screenshot url={src} {...imageProps} width="167" height="111" />;
+  return <Screenshot url={src} width={width} height={height} {...imageProps}  />;
 };
 
 export const SiteCardThumbnail: FC<SiteCardThumbnailProps> = ({

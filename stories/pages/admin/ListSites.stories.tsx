@@ -80,9 +80,10 @@ const MockListSites: FC<MockListSitesProps> = ({}) => {
                 src: 'https://getshifter.io',
                 alt: 'Site',
                 href: '#',
+                width: 300
               }}
             />
-            <SiteCardData name="site name" href="#" >
+            <SiteCardData name="Thumbnail size = 300px" href="#" >
               <span className="d-inline-block align-middle site-url">
                 <Link href={`https://getfhiter.io`}>getshifter.io</Link>
               </span>

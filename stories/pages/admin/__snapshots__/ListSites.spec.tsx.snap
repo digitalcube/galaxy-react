@@ -322,9 +322,9 @@ exports[`ListSites to match snapshot(default) 1`] = `
             >
               <img
                 alt="website screenshot Site"
-                height="111"
+                height="200"
                 src="//s.wordpress.com/mshots/v1/https://getshifter.io/?w=300"
-                width="167"
+                width="300"
               />
             </a>
           </div>
@@ -338,7 +338,7 @@ exports[`ListSites to match snapshot(default) 1`] = `
                 href="#"
                 to="#"
               >
-                site name
+                Thumbnail size = 300px
               </a>
             </h2>
             <div
