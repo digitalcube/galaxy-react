@@ -45,7 +45,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@galaxy/shifter",
+  "name": "@galaxy/react",
   "author": "Hidetaka Okamoto",
   "module": "dist/shifter.esm.js",
   "size-limit": [

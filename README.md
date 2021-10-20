@@ -1,15 +1,15 @@
-# [@galaxy/shifter] React Component for Shifter (beta)
+# [@galaxy/react] React Component for Shifter (beta)
 
 ## Getting started
 
 ### Install
 
 ```bash
-$ npm install @galaxy/shifter bootstrap@4
+$ npm install @galaxy/react bootstrap@4
 
 or
 
-$ yarn add @galaxy/shifter bootstrap@4
+$ yarn add @galaxy/react bootstrap@4
 ```
 
 ### Import css
@@ -18,7 +18,7 @@ $ yarn add @galaxy/shifter bootstrap@4
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@galaxy/shifter/dist/css/styles.css';
+import '@galaxy/react/dist/css/styles.css';
 
 import App from './app';
 
