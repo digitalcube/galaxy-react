@@ -9,12 +9,15 @@ import {
   NavbarDropdown,
   NavbarDropdownItem,
   Navbar,
+  BrandName,
 } from '../../src';
 
-export const TopNavigation: FC = () => {
+export const TopNavigation: FC<{
+  brandName?: BrandName
+}> = ({brandName = 'shifter'}) => {
   return (
     <Navbar>
-      <NavbarBrand href="/" name="shifter" />
+      <NavbarBrand href="/" name={brandName} />
       <SearchForm
         onChange={() => undefined}
         onSubmit={(e) => e.preventDefault()}
@@ -55,8 +58,12 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (args) => <TopNavigation {...args} />;
+const Template: Story<{
+  brandName?: BrandName
+}> = (args) => <TopNavigation {...args} />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
-export const Default = Template.bind({});
+export const Default = Template.bind({
+  brandName: 'shifter'
+});
