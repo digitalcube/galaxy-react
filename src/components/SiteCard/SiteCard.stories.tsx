@@ -40,12 +40,12 @@ const meta: Meta = {
   component: SiteCard,
   parameters: {
     controls: { expanded: true },
-  }
+  },
 };
 
 export default meta;
 
-const Template: Story<MockSiteCardProps> =  ({ progress }) => {
+const Template: Story<MockSiteCardProps> = ({ progress }) => {
   return (
     <div className="sites-list">
       <section className="d-flex flex-column site-list-body">
