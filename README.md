@@ -1,4 +1,8 @@
-# [@galaxy/react] React Component for Shifter (beta)
+# [@galaxy/react] React Component for Galaxy (beta)
+
+## Supported themes
+- AMIMOTO
+- Shifter
 
 ## Getting started
 
