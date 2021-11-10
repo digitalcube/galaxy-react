@@ -6,7 +6,8 @@ export type AuthFormHeaderProps = PropsWithChildren<{
   title: string;
   link?: string;
   linkText?: string;
-  variant: 'login' | 'signup';
+	variant: 'login' | 'signup';
+	conjunction?: string;
 }>;
 export const AuthFormHeader: FC<AuthFormHeaderProps> = ({
   logo,
@@ -14,7 +15,8 @@ export const AuthFormHeader: FC<AuthFormHeaderProps> = ({
   link,
   linkText,
   variant,
-  children,
+	children,
+	conjunction='or',
 }) => (
   <div className={`mb-4 pb-2 ${variant}-header`}>
     <div className={`mb-4 text-center ${variant}-icon`}>{logo}</div>
@@ -25,7 +27,7 @@ export const AuthFormHeader: FC<AuthFormHeaderProps> = ({
       <div
         className={`mt-2 font-weight-bold text-center ${variant}-switch-way`}
       >
-        or <Link href={link}>{linkText}</Link>
+				{ conjunction } <Link href={link}>{linkText}</Link>
       </div>
     ) : null}
     {children}
