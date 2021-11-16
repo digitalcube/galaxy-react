@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusBadgeOutline AddingIcon When the icon is attached 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-site-running site-status-outline-icon"
+  >
+    <i
+      aria-hidden="true"
+      class="ml-2"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        />
+      </svg>
+    </i>
+    Running AddingIcon
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline prefix prefix is "Domain" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Domain Ready
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline prefix prefix is "WordPress" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    WordPress Ready
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline prefix prefix is undefined 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Ready
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "attached" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-attached"
+  >
+    Attached
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "building" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-building"
+  >
+    Building
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "deployed" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-deployed"
+  >
+    Deployed
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "disabled" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-disabled"
+  >
+    Disabled
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "enabled" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-enabled"
+  >
+    Enabled
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "failed" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-failed"
+  >
+    Failed
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "onteam" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-onteam"
+  >
+    Onteam
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "pending" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-pending"
+  >
+    Pending
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "published" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-published"
+  >
+    Published
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "ready" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Ready
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "running" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-site-running"
+  >
+    Running
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "scheduled" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-scheduled"
+  >
+    Scheduled
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "starting" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-site-starting"
+  >
+    Starting
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "starting-static" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-site-starting-static"
+  >
+    Starting-static
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "stopped" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-site-stopped"
+  >
+    Stopped
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline snapshot testing per status status is "verified" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-is-verified"
+  >
+    Verified
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline suffix suffix is "Domain" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Ready Domain
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline suffix suffix is "WordPress" 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Ready WordPress
+  </div>
+</DocumentFragment>
+`;
+
+exports[`StatusBadgeOutline suffix suffix is undefined 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded font-weight-bold c-site-status c-site-status-outline c-ready"
+  >
+    Ready
+  </div>
+</DocumentFragment>
+`;
