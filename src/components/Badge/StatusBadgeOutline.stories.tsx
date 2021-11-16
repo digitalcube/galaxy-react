@@ -1,6 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { StatusBadgeOutline, StatusBadgeOutlineProps } from './StatusBadgeOutline';
+import {
+  StatusBadgeOutline,
+  StatusBadgeOutlineProps,
+} from './StatusBadgeOutline';
 
 const meta: Meta = {
   title: 'Components/Badge/StatusBadgeOutline',
@@ -12,11 +15,13 @@ const meta: Meta = {
   },
 };
 export default meta;
-const Template: Story<StatusBadgeOutlineProps> = (args) => <StatusBadgeOutline {...args} />;
+const Template: Story<StatusBadgeOutlineProps> = (args) => (
+  <StatusBadgeOutline {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
   status: 'ready',
   className: '',
-	labelPrefix: "WordPress"
+  labelPrefix: 'WordPress',
 };

@@ -41,11 +41,15 @@ describe('StatusBadgeOutline', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-	});
-	describe('AddingIcon', () => {
-    it('When the icon is attached',() => {
+  });
+  describe('AddingIcon', () => {
+    it('When the icon is attached', () => {
       const { asFragment } = render(
-				<StatusBadgeOutline status="running" labelSuffix="AddingIcon" withExternalLinkIcon={ true } />
+        <StatusBadgeOutline
+          status="running"
+          labelSuffix="AddingIcon"
+          withExternalLinkIcon={true}
+        />
       );
       expect(asFragment()).toMatchSnapshot();
     });

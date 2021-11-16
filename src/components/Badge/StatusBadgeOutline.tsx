@@ -9,11 +9,19 @@ export type StatusBadgeOutlineProps = PropsWithChildren<{
   status?: StatusLabelName | '';
   className?: string;
   labelPrefix?: string;
-	labelSuffix?: string;
-	withExternalLinkIcon?: boolean;
+  labelSuffix?: string;
+  withExternalLinkIcon?: boolean;
 }>;
 export const StatusBadgeOutline: FC<StatusBadgeOutlineProps> = memo(
-  ({ id, status, className, labelPrefix, labelSuffix, withExternalLinkIcon, children }) => {
+  ({
+    id,
+    status,
+    className,
+    labelPrefix,
+    labelSuffix,
+    withExternalLinkIcon,
+    children,
+  }) => {
     const statusClassName = useMemo(() => {
       switch (status) {
         case 'info':
@@ -66,16 +74,23 @@ export const StatusBadgeOutline: FC<StatusBadgeOutlineProps> = memo(
         status.charAt(0).toUpperCase() + status.slice(1),
         labelSuffix ? ` ${labelSuffix}` : '',
       ].filter(Boolean);
-		}, [status, labelPrefix, labelSuffix]);
+    }, [status, labelPrefix, labelSuffix]);
 
     if (!status) return null;
     return (
-			<div id={id} className={withExternalLinkIcon ? classNames.join(' ')+" site-status-outline-icon" : classNames.join(' ')} >
-				{withExternalLinkIcon ? (
-        <i className="ml-2" aria-hidden="true">
-          <FaCircle />
-        </i>
-      ) : null}
+      <div
+        id={id}
+        className={
+          withExternalLinkIcon
+            ? classNames.join(' ') + ' site-status-outline-icon'
+            : classNames.join(' ')
+        }
+      >
+        {withExternalLinkIcon ? (
+          <i className="ml-2" aria-hidden="true">
+            <FaCircle />
+          </i>
+        ) : null}
         {children || label}
       </div>
     );
