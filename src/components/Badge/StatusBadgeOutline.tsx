@@ -10,18 +10,10 @@ export type StatusBadgeOutlineProps = PropsWithChildren<{
   className?: string;
   labelPrefix?: string;
   labelSuffix?: string;
-  withExternalLinkIcon?: boolean;
+  withIcon?: boolean;
 }>;
 export const StatusBadgeOutline: FC<StatusBadgeOutlineProps> = memo(
-  ({
-    id,
-    status,
-    className,
-    labelPrefix,
-    labelSuffix,
-    withExternalLinkIcon,
-    children,
-  }) => {
+  ({ id, status, className, labelPrefix, labelSuffix, withIcon, children }) => {
     const statusClassName = useMemo(() => {
       switch (status) {
         case 'info':
@@ -81,12 +73,12 @@ export const StatusBadgeOutline: FC<StatusBadgeOutlineProps> = memo(
       <div
         id={id}
         className={
-          withExternalLinkIcon
+          withIcon
             ? classNames.join(' ') + ' site-status-outline-icon'
             : classNames.join(' ')
         }
       >
-        {withExternalLinkIcon ? (
+        {withIcon ? (
           <i className="ml-2" aria-hidden="true">
             <FaCircle />
           </i>

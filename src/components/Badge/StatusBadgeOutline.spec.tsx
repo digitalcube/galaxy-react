@@ -48,7 +48,7 @@ describe('StatusBadgeOutline', () => {
         <StatusBadgeOutline
           status="running"
           labelSuffix="AddingIcon"
-          withExternalLinkIcon={true}
+          withIcon={true}
         />
       );
       expect(asFragment()).toMatchSnapshot();
