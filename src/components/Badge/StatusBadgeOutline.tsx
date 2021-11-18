@@ -13,15 +13,7 @@ export type StatusBadgeOutlineProps = PropsWithChildren<{
   withIcon?: boolean;
 }>;
 export const StatusBadgeOutline: FC<StatusBadgeOutlineProps> = memo(
-  ({
-    id,
-    status,
-    className,
-    labelPrefix,
-    labelSuffix,
-    withIcon,
-    children,
-  }) => {
+  ({ id, status, className, labelPrefix, labelSuffix, withIcon, children }) => {
     const statusClassName = useMemo(() => {
       switch (status) {
         case 'info':
