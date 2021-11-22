@@ -351,6 +351,118 @@
 	}
 }
 
+.c-toast {
+	border: solid 2px var(--purple-400) !important;
+	.toast-icon {
+		padding-left: 0.7rem !important;
+		svg {
+			fill: #fff;
+			width: f.f-rem(19);
+			height: f.f-rem(19);
+		}
+	}
+	.toast-body {
+		.toast-heading {
+			padding-right: 0.5rem;
+			font-weight: bold;
+			color: var(--gray-800) !important;
+			text-transform: capitalize;
+		}
+		p {
+			line-height: f.f-line-height(14, 19.5);
+			color: var(--gray-800);
+			font-size: f.f-rem(14);
+			a {
+				color: var(--primary-default);
+			}
+		}
+	}
+	&.alert-info {
+		border: solid 2px var(--primary) !important;
+		.toast-icon {
+			background-color: var(--primary-100);
+			svg {
+				fill: var(--primary);
+			}
+		}
+		.toast-body {
+			background-color: var(--primary-100);
+		}
+		button.close {
+			border-left: solid 2px var(--primary) !important;
+		}
+	}
+	&.alert-success {
+		border: solid 2px var(--success) !important;
+		.toast-icon {
+			background-color: var.$green-light;
+			svg {
+				fill: var(--success);
+			}
+		}
+		.toast-body {
+			background-color: var.$green-light;
+		}
+		button.close {
+			border-left: solid 2px var(--success) !important;
+		}
+	}
+	&.alert-danger {
+		border: solid 2px var(--danger) !important;
+		.toast-icon {
+			background-color: var.$red-light;
+			svg {
+				fill: var(--danger);
+			}
+		}
+		.toast-body {
+			background-color: var.$red-light;
+		}
+		button.close {
+			border-left: solid 2px var(--danger) !important;
+		}
+	}
+	&.alert-warning {
+		border: solid 2px var(--warning) !important;
+		.toast-icon {
+			background-color: var.$yellow-light;
+			svg {
+				fill: var(--warning);
+			}
+		}
+		.toast-body {
+			background-color: var.$yellow-light;
+		}
+		button.close {
+			border-left: solid 2px var(--warning) !important;
+		}
+	}
+	button.close {
+		top:-2px;
+		right: -2px;
+		bottom: -2px;
+		padding: 0 1rem;
+		color: #000;
+		font-size: 1.4rem;
+		font-weight: 500;
+		opacity: 1;
+		border-left: solid 2px var(--primary) !important;
+		&:focus,
+		&:hover,
+		&:active {
+			color: var(--dark-hover-yiq);
+			background-color: #000;
+			border-left: solid 2px #000 !important;
+			border-radius: 0 0.25rem 0.25rem 0;
+		}
+	}
+	&.alert-dismissible{
+		.toast-body {
+			padding-right: 3rem!important;
+		}
+	}
+}
+
 .c-copy-toast {
 	top: 0;
 	right: 0;

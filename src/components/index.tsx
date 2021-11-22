@@ -1,5 +1,6 @@
 export * from './AdminLayouts';
 export * from './Alert/Alert';
+export * from './Toast/Toast';
 export * from './AuthForm';
 export * from './Avatar/Avatar';
 export * from './Badge';
