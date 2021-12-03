@@ -20,7 +20,7 @@ export const Accordion: FC<AccordionProps> = ({
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="accordion border rounded px-3 py-2" style={style}>
+    <div  className={'accordion border rounded px-3 py-2 '+ (isOpen ? 'accordion-close' : 'accordion-open')} style={style}>
       <Button
         id={id}
         onClick={toggle}
@@ -32,7 +32,7 @@ export const Accordion: FC<AccordionProps> = ({
         </span>
         <span
           className="h4 mb-0"
-          style={{ color: 'Var(--primary-link-hover)' }}
+          style={{ color: 'Var(--primary)' }}
         >
           {!isOpen ? (
             <FaAngleDown className="d-block" />
