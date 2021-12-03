@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "import/mixin" as f;
+@use '_variable.scss' as var;
+@use 'color.scss' as colors;
+
+	.accordion {
+		Button{
+			width: 100%;
+			&:focus {box-shadow: none!important;}
+			&:hover {box-shadow: none!important;}
+			&:active{box-shadow: none!important;}
+		}
+	}
