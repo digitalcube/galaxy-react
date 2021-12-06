@@ -3,7 +3,7 @@ import { Collapse, Button } from 'reactstrap';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
 export type AccordionProps = PropsWithChildren<{
-  defaultOpen: boolean;
+  defaultOpen?: boolean;
   id: string;
   title: string;
   style?: CSSProperties;
@@ -22,7 +22,7 @@ export const Accordion: FC<AccordionProps> = ({
   return (
     <div
       className={
-        'accordion border rounded px-3 py-2 ' +
+        'accordion border rounded px-3 py-1 ' +
         (isOpen ? 'accordion-close' : 'accordion-open')
       }
       style={style}
