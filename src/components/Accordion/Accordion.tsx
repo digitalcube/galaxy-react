@@ -1,4 +1,10 @@
-import React, { FC, PropsWithChildren, useState, CSSProperties } from 'react';
+import React, {
+  FC,
+  PropsWithChildren,
+  useState,
+  CSSProperties,
+  useMemo,
+} from 'react';
 import { Collapse, Button } from 'reactstrap';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
@@ -7,6 +13,7 @@ export type AccordionProps = PropsWithChildren<{
   id: string;
   title: string;
   style?: CSSProperties;
+  className?: string;
 }>;
 
 export const Accordion: FC<AccordionProps> = ({
@@ -15,18 +22,24 @@ export const Accordion: FC<AccordionProps> = ({
   id,
   style,
   title,
+  className,
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const toggle = () => setIsOpen(!isOpen);
+  const classNames = useMemo(() => {
+    return [
+      'accordion',
+      'border',
+      'rounded',
+      'px-3',
+      'py-1',
+      isOpen ? 'accordion-close' : 'accordion-open',
+      className,
+    ].filter(Boolean);
+  }, [className, isOpen]);
 
   return (
-    <div
-      className={
-        'accordion border rounded px-3 py-1 ' +
-        (isOpen ? 'accordion-close' : 'accordion-open')
-      }
-      style={style}
-    >
+    <div style={style} className={classNames.join(' ')}>
       <Button
         id={id}
         onClick={toggle}
