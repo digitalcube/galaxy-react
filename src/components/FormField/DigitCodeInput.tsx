@@ -51,6 +51,27 @@ export const DigitCodeInput: FC<DigitCodeInputProps> = ({
     }
   };
 
+  const pasteInput = (e: React.ClipboardEvent<HTMLInputElement>) => {
+    //クリップボードの文字列を取得して配列に入れる
+    let numbers = Array.from(e.clipboardData.getData('text'));
+    //桁をチェックする
+    const valuesLetters = values.length;
+    const numbersLetters = numbers.length;
+    if (valuesLetters === numbersLetters) {
+      //inputを全て取得
+      const inputBoxes = document.getElementsByName('num');
+      for (let i = 0; i < inputBoxes.length; i++) {
+        let inputBox: HTMLInputElement = inputBoxes[i] as HTMLInputElement;
+        inputBox.value = String(numbers[i]);
+      }
+      let newCode = [...values];
+      newCode = numbers;
+      onChange(newCode);
+    } else {
+      alert('桁が違います');
+    }
+  };
+
   return (
     <div className="form-row mx-0 verification-code">
       {values.map((num, idx) => {
@@ -64,6 +85,7 @@ export const DigitCodeInput: FC<DigitCodeInputProps> = ({
               value={num}
               autoFocus={!values[0].length && idx === 0}
               readOnly={loading}
+              onPaste={(e) => pasteInput(e)}
               onChange={(e) => processInput(e, idx)}
               onKeyUp={(e) => onKeyUp(e, idx)}
               ref={(ref) => inputs.current.push(ref)}
