@@ -1,15 +1,15 @@
-# [@galaxy/shifter] React Component for Shifter (beta)
+# [@galaxy/react] React Component for Galaxy (beta)
+
+## Supported themes
+- AMIMOTO
+- Shifter
 
 ## Getting started
 
 ### Install
 
 ```bash
-$ npm install @galaxy/shifter bootstrap@4
-
-or
-
-$ yarn add @galaxy/shifter bootstrap@4
+$ npm install @galaxy/react bootstrap@4
 ```
 
 ### Import css
@@ -18,7 +18,7 @@ $ yarn add @galaxy/shifter bootstrap@4
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@galaxy/shifter/dist/css/styles.css';
+import '@galaxy/react/dist/css/styles.css';
 
 import App from './app';
 
@@ -39,26 +39,22 @@ $ git clone git@github.com:digitalcube/galaxy-react-shifter.git
 $ cd galaxy-react-shifter
 
 $ npm install
-
-or
-
-$ yarn
 ```
 
 ### Development commands
 
 ```bash
-# Preview Component by Stroybook [Recommended]
-$ yarn storybook
+# Preview Component by Storybook [Recommended]
+$ npm run storybook
 
 # Just watch and build files
-$ yarn start
+$ npm run start
 
 # Unit test by Jest
-$ yarn test
+$ npm run test
 
 # Build package
-$ yarn build
+$ npm run build
 ```
 
 ### Make a Pull Request
@@ -74,6 +70,15 @@ $ git push [YOUR_ORIGIN] [feat|fix|chore|breaking-change]/[TOPIC]
 
 ### Publish to npm
 
+We're using `np` to publish the package.
+
+```bash
+$ npm run release
+```
+
+[Docs](https://github.com/sindresorhus/np)
+
+#### [Optional] Manually
 ```bah
 $ npm version [patch|minor|major]
 $ npm publish .
@@ -94,7 +99,7 @@ TSDX scaffolds your new library inside `/src`, and also sets up a [Parcel-based]
 The recommended workflow is to run TSDX in one terminal:
 
 ```bash
-npm start # or yarn start
+npm run start
 ```
 
 This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
@@ -106,7 +111,7 @@ Then run either Storybook or the example playground:
 Run inside another terminal:
 
 ```bash
-yarn storybook
+npm run storybook
 ```
 
 This loads the stories from `./stories`.
@@ -119,15 +124,15 @@ Then run the example inside another:
 
 ```bash
 cd example
-npm i # or yarn to install dependencies
-npm start # or yarn start
+npm i
+npm run start
 ```
 
 The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**, we use [Parcel's aliasing](https://parceljs.org/module_resolution.html#aliases).
 
-To do a one-off build, use `npm run build` or `yarn build`.
+To do a one-off build, use `npm run build`.
 
-To run tests, use `npm test` or `yarn test`.
+To run tests, use `npm run test`.
 
 ## Configuration
 
@@ -135,11 +140,11 @@ Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adju
 
 ### Jest
 
-Jest tests are set up to run with `npm test` or `yarn test`.
+Jest tests are set up to run with `npm run test`.
 
 ### Bundle analysis
 
-Calculates the real cost of your library using [size-limit](https://github.com/ai/size-limit) with `npm run size` and visulize it with `npm run analyze`.
+Calculates the real cost of your library using [size-limit](https://github.com/ai/size-limit) with `npm run size` and visualize it with `npm run analyze`.
 
 #### Setup Files
 
@@ -223,7 +228,7 @@ Alternatively, if you already have a git repo connected, you can set up continuo
 
 ```bash
 netlify init
-# build command: yarn build && cd example && yarn && yarn build
+# build command: npm run build && cd example && npm && npm run build
 # directory to deploy: example/dist
 # pick yes for netlify.toml
 ```
@@ -241,22 +246,3 @@ For vanilla CSS, you can include it at the root directory and add it to the `fil
 ## Publishing to NPM
 
 We recommend using [np](https://github.com/sindresorhus/np).
-
-## Usage with Lerna
-
-When creating a new package with TSDX within a project set up with Lerna, you might encounter a `Cannot resolve dependency` error when trying to run the `example` project. To fix that you will need to make changes to the `package.json` file _inside the `example` directory_.
-
-The problem is that due to the nature of how dependencies are installed in Lerna projects, the aliases in the example project's `package.json` might not point to the right place, as those dependencies might have been installed in the root of your Lerna project.
-
-Change the `alias` to point to where those packages are actually installed. This depends on the directory structure of your Lerna project, so the actual path might be different from the diff below.
-
-```diff
-   "alias": {
--    "react": "../node_modules/react",
--    "react-dom": "../node_modules/react-dom"
-+    "react": "../../../node_modules/react",
-+    "react-dom": "../../../node_modules/react-dom"
-   },
-```
-
-An alternative to fixing this problem would be to remove aliases altogether and define the dependencies referenced as aliases as dev dependencies instead. [However, that might cause other problems.](https://github.com/palmerhq/tsdx/issues/64)

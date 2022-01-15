@@ -80,15 +80,6 @@ exports[`SiteCard to match snapshot [column %p | item %p] 1`] = `
           class="ml-auto pt-4 pr-3 d-flex align-items-center flex-shrink-0 site-setting"
         >
           <div
-            class="ml-4 site-status"
-          >
-            <div
-              class="rounded font-weight-bold c-site-status c-ready"
-            >
-              WordPress Ready
-            </div>
-          </div>
-          <div
             class="ml-4 font-weight-bold site-manage"
           >
             <a

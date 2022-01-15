@@ -21,11 +21,17 @@ export const FeaturedCard: FC<FeaturedCardProps> = ({
   return (
     <div className="pt-4 px-4 h-100 position-relative guide-list-item">
       {icon ? (
-      <div className="guides-list-icon">
-        <i aria-hidden="true">{icon}</i>
-      </div>
-      ):null}
-      <h3 className="mt-4 font-weight-bold guide-list-title">{title}</h3>
+        <div className="guides-list-icon">
+          <i aria-hidden="true">{icon}</i>
+        </div>
+      ) : null}
+      <h3
+        className={`${
+          icon ? 'mt-4' : 'mt-0'
+        } font-weight-bold guide-list-title`}
+      >
+        {title}
+      </h3>
       {typeof excerpt === 'string' ? (
         <p className="mb-0 guide-list-excerpt">{excerpt}</p>
       ) : (
@@ -33,7 +39,7 @@ export const FeaturedCard: FC<FeaturedCardProps> = ({
       )}
       {linkText && href ? (
         <div className="position-absolute guide-list-anchor">
-          <ExternalButtonLink href={href} icon={linkIcon}>
+          <ExternalButtonLink href={href} icon={linkIcon} outline>
             {linkText}
           </ExternalButtonLink>
         </div>

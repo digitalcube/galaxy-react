@@ -17,6 +17,7 @@ import {
   ImagePlanTier3,
   ImageSendEmail,
   ImageSuccessCreateTeam,
+  ImageAmimotoLogo,
 } from './index';
 import { ImageProps } from './interfaces';
 type ImageStory = Story<ImageProps>;
@@ -33,6 +34,7 @@ export default meta;
 const DefaultTemplate: ImageStory = (props) => (
   <>
     <ImageCreated {...props} />
+    <ImageAmimotoLogo {...props} />
     <ImageDigitalcubeLogo {...props} />
     <ImageShifterLogo {...props} />
     <ImageLoginInformation {...props} />

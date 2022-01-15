@@ -6,6 +6,47 @@
 .shifter-dashboard-columns {
 	border-top: 1px solid var(--gray-100);
 	width: 100%;
+
+	@media (max-width: 768px) {
+		flex-direction: column-reverse !important;
+		.shifter-dashboard-sidebar {
+			max-width: 100%!important;
+			text-align: center;
+			padding-left: 1.5rem!important;
+		}
+		.sidebar-sitename {
+			margin-top: 1rem!important;
+		}
+		.return2sites {
+			text-align: left;
+		}
+		.sidebar-nav {
+			&> ul {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				overflow: scroll;
+				position: relative;
+				padding-bottom: 80px!important;
+			}
+			li {
+				word-break: keep-all;
+			}
+			.sub-menu {
+				position: absolute;
+				display: flex;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				padding: 10px!important;
+				height: 80px;
+				li {
+					margin-top: 0!important;
+					padding: 5px;
+				}
+			}
+		}
+	}
 	&.no-border {
 		border-top: 0;
 	}

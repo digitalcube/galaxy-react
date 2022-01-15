@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { SiteCardThumbnail, SiteCardThumbnailProps } from './SiteCardThumbnail';
+import { Accordion, AccordionProps } from './Accordion';
 
 const meta: Meta = {
-  title: 'Components/SiteCard/SiteCardThumbnail',
-  component: SiteCardThumbnail,
+  title: 'Components/Accordion',
+  component: Accordion,
   parameters: {
     controls: { expanded: true },
   },
@@ -12,19 +12,14 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<SiteCardThumbnailProps> = (args) => {
-  return <SiteCardThumbnail {...args} />;
-};
+const Template: Story<AccordionProps> = (args) => (
+  <Accordion {...args}>ここに中身が入ります。</Accordion>
+);
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Default = Template.bind({});
 Default.args = {
-  src: '/images/site-a.png',
-  width: 167,
-};
-
-export const Screenshot = Template.bind({});
-Screenshot.args = {
-  src: 'getshifter.io',
+  defaultOpen: false,
+  title: 'ここにタイトルが入ります',
 };

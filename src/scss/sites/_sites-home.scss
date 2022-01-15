@@ -22,14 +22,28 @@
 		overflow: hidden;
 		position: relative;
 		z-index: 1;
+		@media (max-width: 768px) {
+		  img {
+			  width: 100%;
+			  height: auto;
+		  }
+		}
 	}
 	.site-data {
 		overflow: hidden;
+		@media (max-width: 768px) {
+			padding-left: 0 !important;
+			padding-bottom: 0 !important;
+		}
 	}
 	.site-name {
 		line-height: f.f-line-height(22, 33);
 		color: var(--gray-800);
-		font-size: f.f-rem(22);
+		font-size: f.f-rem(22); 
+		
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 		a {
 			color: var(--gray-800);
 		}
@@ -37,6 +51,9 @@
 	.site-info {
 		margin-top: 1rem;
 		font-size: f.f-rem(14);
+		@media (max-width: 768px) {
+			justify-content: center!important;
+		}
 		.site-url {
 			margin-right: 1.5rem;
 			a {
@@ -55,6 +72,11 @@
 		}
 	}
 	.site-setting {
+		@media (max-width: 768px) {
+			padding-bottom: 1.5rem;
+			display: flex!important;
+			justify-content: center!important;
+		}
 	}
 	.site-status {
 	}

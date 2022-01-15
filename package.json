@@ -1,5 +1,5 @@
 {
-  "version": "1.6.3",
+  "version": "1.14.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,13 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006 -s ./static",
     "build-storybook": "build-storybook -s ./static",
-    "chromatic": "npx chromatic --project-token=580d0549d0ef"
+    "release": "npm run np",
+    "np": "np",
+    "chromatic": "npx chromatic --project-token=cf012f960a6d"
+  },
+  "np": {
+    "yarn": false,
+    "branch": "main"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -31,6 +37,7 @@
     }
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "prettier": {
@@ -39,8 +46,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@galaxy/shifter",
-  "author": "Hidetaka Okamoto",
+  "name": "@galaxy/react",
+  "author": "DigitalCube",
   "module": "dist/shifter.esm.js",
   "size-limit": [
     {
@@ -56,14 +63,14 @@
     "@babel/core": "^7.15.0",
     "@rollup/plugin-image": "^2.0.6",
     "@size-limit/preset-small-lib": "^5.0.1",
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-actions": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/addons": "^6.3.7",
-    "@storybook/builder-webpack5": "^6.3.7",
-    "@storybook/manager-webpack5": "^6.3.7",
-    "@storybook/react": "^6.3.7",
+    "@storybook/addon-links": "^6.4.13",
+    "@storybook/addons": "^6.4.13",
+    "@storybook/builder-webpack5": "^6.4.13",
+    "@storybook/manager-webpack5": "^6.4.13",
+    "@storybook/react": "^6.4.13",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/chart.js": "^2.9.34",
@@ -81,6 +88,7 @@
     "husky": "^7.0.0",
     "jest-svg-transformer": "^1.0.0",
     "jest-transform-stub": "^2.0.0",
+    "np": "^7.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
@@ -107,6 +115,7 @@
     "react-gravatar": "^2.6.3",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "ts-md5": "^1.2.10"
   }
 }
