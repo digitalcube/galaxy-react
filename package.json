@@ -23,7 +23,7 @@
     "np": "np"
   },
   "np": {
-    "yarn": true,
+    "yarn": false,
     "branch": "main"
   },
   "peerDependencies": {
@@ -46,7 +46,7 @@
     "trailingComma": "es5"
   },
   "name": "@galaxy/react",
-  "author": "Hidetaka Okamoto",
+  "author": "DigitalCube",
   "module": "dist/shifter.esm.js",
   "size-limit": [
     {
