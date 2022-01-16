@@ -42,11 +42,11 @@ exports[`NavbarDropdown to match snapshot (in nav bar) 1`] = `
             role="button"
           >
             <img
-              alt="Gravatar for test@example.com"
+              alt="Gravatar for 55502f40dc8b7c769880b10874abc9d0"
               class="react-gravatar p-0 "
               height="32"
-              src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
-              srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
+              src="//www.gravatar.com/avatar/a0f4323e8c147271c5df78e905f9e09b?d=retro&r=g&s=32"
+              srcset="//www.gravatar.com/avatar/a0f4323e8c147271c5df78e905f9e09b?d=retro&r=g&s=64 2x"
               width="32"
             />
           </a>
@@ -77,11 +77,11 @@ exports[`NavbarDropdown to match snapshot 1`] = `
       role="button"
     >
       <img
-        alt="Gravatar for test@example.com"
+        alt="Gravatar for 55502f40dc8b7c769880b10874abc9d0"
         class="react-gravatar p-0  rounded-circle"
         height="32"
-        src="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=32"
-        srcset="//www.gravatar.com/avatar/55502f40dc8b7c769880b10874abc9d0?d=retro&r=g&s=64 2x"
+        src="//www.gravatar.com/avatar/a0f4323e8c147271c5df78e905f9e09b?d=retro&r=g&s=32"
+        srcset="//www.gravatar.com/avatar/a0f4323e8c147271c5df78e905f9e09b?d=retro&r=g&s=64 2x"
         width="32"
       />
     </a>
