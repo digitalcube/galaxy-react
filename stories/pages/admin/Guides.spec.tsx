@@ -5,6 +5,6 @@ import { Default as Guides } from './Guides.stories';
 describe('Guides', () => {
   it('to match snapshot(default)', () => {
     const { asFragment } = render(<Guides {...(Guides.args as any)} />);
-    expect(asFragment());
+    expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -5,6 +5,6 @@ import { Default as ListSites } from './ListSites.stories';
 describe('ListSites', () => {
   it('to match snapshot(default)', () => {
     const { asFragment } = render(<ListSites {...(ListSites.args as any)} />);
-    expect(asFragment());
+    expect(asFragment()).toMatchSnapshot();
   });
 });
