@@ -24,5 +24,5 @@ export const Default = Template.bind({});
 Default.args = {
   size: 32,
   rounded: true,
-  email: 'test@example.com',
+  email: 'emaildano@gmail.com',
 };

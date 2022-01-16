@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import Gravatar from 'react-gravatar';
-import { Md5 } from 'ts-md5/dist/md5';
 
 export type AvatarProps = {
   email?: string;
@@ -26,7 +25,7 @@ export const Avatar: FC<AvatarProps> = ({
   return (
     <Gravatar
       size={size}
-      email={Md5.hashStr(email)}
+      email={email}
       className={classNames.join(' ')}
     />
   );
