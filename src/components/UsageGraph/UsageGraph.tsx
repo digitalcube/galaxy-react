@@ -89,8 +89,11 @@ export const UsageGraph: FC<UsageGraphProps> = ({
   primaryColor,
   secondaryColor,
 }) => {
-  const { roundedUsageAmountGB, remainUsageGB, usagePercent } =
-    useUsageGraphHook({ limitGB, usageAmountGB });
+  const {
+    roundedUsageAmountGB,
+    remainUsageGB,
+    usagePercent,
+  } = useUsageGraphHook({ limitGB, usageAmountGB });
   return (
     <Row>
       <Col md="8">

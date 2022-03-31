@@ -581,7 +581,7 @@
 }
 
 .setting-card {
-	border: 1px solid var(--gray-100);
+	border: 1px solid var(--gray-200);
 	.setting-card-title {
 		line-height: f.f-line-height(22, 33);
 		color: var(--gray-700);
@@ -608,10 +608,11 @@
 }
 
 .base-notification-box {
-	border: 1px solid var(--gray-100);
+	border: 1px solid var(--gray-200);
+	background-color: #FFF;
 	.notification {
 		& + .notification {
-			border-top: 1px solid var(--gray-100);
+			border-top: 1px solid var(--gray-200);
 		}
 	}
 }

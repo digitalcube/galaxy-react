@@ -3,9 +3,9 @@ import React, { FC, PropsWithChildren } from 'react';
 export type WordPressContainerStatusBadgeProps = {
   status?: string;
 };
-export const WordPressContainerStatusBadge: FC<
-  WordPressContainerStatusBadgeProps
-> = ({ status }) => {
+export const WordPressContainerStatusBadge: FC<WordPressContainerStatusBadgeProps> = ({
+  status,
+}) => {
   if (!status) return null;
   return (
     <div className="ml-4 site-status">
@@ -21,7 +21,7 @@ export type SiteCardProps = PropsWithChildren<{
 }>;
 export const SiteCard: FC<SiteCardProps> = (props) => {
   const className = [
-    'mb-3 rounded d-md-flex align-items-start site-list-item',
+    'mb-3 rounded d-md-flex align-items-start site-list-item bg-white',
     props.className,
   ]
     .filter(Boolean)

@@ -31,7 +31,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -80,7 +80,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -129,7 +129,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -178,7 +178,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -227,7 +227,7 @@ exports[`ContentCardColumn to match snapshot [column 0 | item 5] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -293,7 +293,7 @@ exports[`ContentCardColumn to match snapshot [column 1 | item 1] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -359,7 +359,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -408,7 +408,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -457,7 +457,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -506,7 +506,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -555,7 +555,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -604,7 +604,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -653,7 +653,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -702,7 +702,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -751,7 +751,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -800,7 +800,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -849,7 +849,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -898,7 +898,7 @@ exports[`ContentCardColumn to match snapshot [column 12 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -964,7 +964,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1013,7 +1013,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1062,7 +1062,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1111,7 +1111,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1160,7 +1160,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1209,7 +1209,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1258,7 +1258,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1307,7 +1307,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1356,7 +1356,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1405,7 +1405,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1454,7 +1454,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1503,7 +1503,7 @@ exports[`ContentCardColumn to match snapshot [column 13 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1569,7 +1569,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1618,7 +1618,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1667,7 +1667,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1716,7 +1716,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1765,7 +1765,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1814,7 +1814,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1863,7 +1863,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1912,7 +1912,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -1961,7 +1961,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -2010,7 +2010,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -2059,7 +2059,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
@@ -2108,7 +2108,7 @@ exports[`ContentCardColumn to match snapshot [column 100 | item 12] 1`] = `
           class="col-md-1"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mb-2 guide-list-title font-weight-bold"
