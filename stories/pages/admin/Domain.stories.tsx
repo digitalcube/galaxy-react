@@ -95,7 +95,7 @@ const MockDomainLists: FC<MockDomainListsProps> = ({ status }) => {
             </div>
           </div>
         </DomainListItem>
-        <div className="domain-list-item mt-2 px-3 py-3 rounded d-flex align-items-center justify-content-between">
+        <div className="domain-list-item mt-2 px-3 py-4 rounded d-flex align-items-center justify-content-between">
           <div className="domain-name font-weight-bold">testdomaintwo.com</div>
           <div className="domain-misc d-flex align-items-center">
             <div className="domain-status">

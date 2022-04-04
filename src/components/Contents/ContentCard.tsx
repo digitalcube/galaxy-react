@@ -26,7 +26,7 @@ const ContentCardExcerpt: FC<Pick<ContentCardProps, 'children'>> = ({
 
 export const ContentCard: FC<ContentCardProps> = (props) => {
   return (
-    <div className="pt-4 px-4 h-100 position-relative guide-list-item">
+    <div className="pt-4 px-4 h-100 position-relative guide-list-item bg-white">
       <ContentCardCategories {...props} />
       <h3 className="mb-2 guide-list-title font-weight-bold">{props.title}</h3>
       <ContentCardExcerpt {...props} />

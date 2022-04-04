@@ -29,10 +29,10 @@ export const Accordion: FC<AccordionProps> = ({
   const classNames = useMemo(() => {
     return [
       'accordion',
-      'border',
       'rounded',
       'px-3',
       'py-1',
+      'bg-white',
       isOpen ? 'accordion-close' : 'accordion-open',
       className,
     ].filter(Boolean);

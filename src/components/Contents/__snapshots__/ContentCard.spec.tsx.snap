@@ -3,7 +3,7 @@
 exports[`ContentCard to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="pt-4 px-4 h-100 position-relative guide-list-item"
+    class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
   >
     <div
       class="mb-2 guide-list-genre"

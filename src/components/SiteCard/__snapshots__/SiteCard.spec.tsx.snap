@@ -9,7 +9,7 @@ exports[`SiteCard to match snapshot [column %p | item %p] 1`] = `
       class="d-flex flex-column site-list-body"
     >
       <div
-        class="mb-3 rounded d-md-flex align-items-start site-list-item"
+        class="mb-3 rounded d-md-flex align-items-start site-list-item bg-white"
       >
         <div
           class="progress d-block"

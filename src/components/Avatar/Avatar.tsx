@@ -23,10 +23,6 @@ export const Avatar: FC<AvatarProps> = ({
     classNames.push('rounded-circle');
   }
   return (
-    <Gravatar
-      size={size}
-      email={email}
-      className={classNames.join(' ')}
-    />
+    <Gravatar size={size} email={email} className={classNames.join(' ')} />
   );
 };

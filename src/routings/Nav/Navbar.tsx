@@ -17,7 +17,10 @@ export const Navbar: FC<NavbarProps> = ({ children, fixed }) => {
     : {};
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={style}>
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-white"
+      style={style}
+    >
       {children}
     </nav>
   );

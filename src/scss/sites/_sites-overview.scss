@@ -17,8 +17,9 @@
 	}
 
 	.site-overview {
-		border: 1px solid var(--gray-100);
+		border: 1px solid var(--gray-200);
 		.site-overview-data {
+			background-color: #FFF;
 		}
 		.site-thunbnail {
 		}
@@ -96,7 +97,8 @@
 	}
 
 	.deploy-history {
-		border: 1px solid var(--gray-100);
+		border: 1px solid var(--gray-200);
+		background-color: #FFF;
 		.deploy-actions {
 			.site-status {
 				.c-site-status {
