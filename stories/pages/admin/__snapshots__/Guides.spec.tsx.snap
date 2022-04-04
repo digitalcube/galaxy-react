@@ -6,7 +6,7 @@ exports[`Guides to match snapshot(default) 1`] = `
     class="d-flex flex-column min-vh-100 shifter-dashboard"
   >
     <nav
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light bg-white"
     >
       <a
         class="navbar-brand"
@@ -229,7 +229,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <h3
                   class="mt-0 font-weight-bold guide-list-title"
@@ -273,7 +273,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="guides-list-icon"
@@ -344,7 +344,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="guides-list-icon"
@@ -432,7 +432,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="mb-2 guide-list-genre"
@@ -486,7 +486,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="mb-2 guide-list-genre"
@@ -540,7 +540,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="mb-2 guide-list-genre"
@@ -594,7 +594,7 @@ exports[`Guides to match snapshot(default) 1`] = `
               class="col-md-4"
             >
               <div
-                class="pt-4 px-4 h-100 position-relative guide-list-item"
+                class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
               >
                 <div
                   class="mb-2 guide-list-genre"
@@ -708,7 +708,7 @@ exports[`Guides to match snapshot(default) 1`] = `
         <small
           class="d-flex align-items-center justify-content-center"
         >
-          ©2021 Shifter | A Product by 
+          ©2022 Shifter | A Product by 
           <a
             href="https://www.digitalcube.jp/"
             rel="nofollow noopener"

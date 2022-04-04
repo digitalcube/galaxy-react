@@ -19,7 +19,7 @@ export const FeaturedCard: FC<FeaturedCardProps> = ({
   linkText,
 }) => {
   return (
-    <div className="pt-4 px-4 h-100 position-relative guide-list-item">
+    <div className="pt-4 px-4 h-100 position-relative guide-list-item bg-white">
       {icon ? (
         <div className="guides-list-icon">
           <i aria-hidden="true">{icon}</i>

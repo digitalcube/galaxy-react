@@ -15,7 +15,7 @@ exports[`FeaturedCard to match snapshot [column %p | item %p] 1`] = `
           class="col-md-12"
         >
           <div
-            class="pt-4 px-4 h-100 position-relative guide-list-item"
+            class="pt-4 px-4 h-100 position-relative guide-list-item bg-white"
           >
             <h3
               class="mt-0 font-weight-bold guide-list-title"

@@ -14,6 +14,7 @@ export const List: FC<ListProps> = ({
   const classNames = useMemo(() => {
     return [
       'base-notification-box',
+      'bg-white',
       rounded ? 'rounded' : '',
       className,
     ].filter(Boolean);

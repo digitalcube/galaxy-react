@@ -21,7 +21,7 @@ export const Steps: FC<StepsProps> = ({
 }) => {
   return (
     <div
-      className={`px-3 py-3 rounded steps fade show${
+      className={`px-3 py-4 rounded steps fade show bg-white${
         className ? ` ${className}` : ''
       }`}
       role="alert"

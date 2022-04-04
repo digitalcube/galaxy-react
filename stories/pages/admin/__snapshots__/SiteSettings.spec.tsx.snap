@@ -6,7 +6,7 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
     class="d-flex flex-column min-vh-100 shifter-dashboard"
   >
     <nav
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light bg-white"
     >
       <a
         class="navbar-brand"
@@ -807,7 +807,7 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
         <small
           class="d-flex align-items-center justify-content-center"
         >
-          ©2021 Shifter | A Product by 
+          ©2022 Shifter | A Product by 
           <a
             href="https://www.digitalcube.jp/"
             rel="nofollow noopener"

@@ -3,7 +3,7 @@
 exports[`Steps to match snapshot (with error massage) 1`] = `
 <DocumentFragment>
   <div
-    class="px-3 py-3 rounded steps fade show"
+    class="px-3 py-4 rounded steps fade show bg-white"
     role="alert"
   >
     <header
@@ -92,7 +92,7 @@ exports[`Steps to match snapshot (with error massage) 1`] = `
 exports[`Steps to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="px-3 py-3 rounded steps fade show"
+    class="px-3 py-4 rounded steps fade show bg-white"
     role="alert"
   >
     <header

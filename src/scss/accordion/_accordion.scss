@@ -4,6 +4,7 @@
 @use 'color.scss' as colors;
 
 	.accordion {
+		border: 1px solid var(--gray-200);
 		&.accordion-open:hover,
 		&.accordion-open:focus{
 			border: solid 1px Var(--primary)!important;
