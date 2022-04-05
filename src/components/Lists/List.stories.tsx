@@ -22,7 +22,7 @@ const Template: Story<ListProps> = (args) => (
       justifyContent="between"
       alignItem="center"
       rounded
-      className="px-4 py-3"
+      className="px-3 py-4"
       status={{
         isActive: true,
         fontWeight: 'bold',
@@ -41,7 +41,7 @@ const Template: Story<ListProps> = (args) => (
       justifyContent="between"
       alignItem="center"
       rounded
-      className="px-4 py-3"
+      className="px-3 py-4"
     >
       <Button smaller>Button</Button>
     </ListItem>
@@ -50,14 +50,14 @@ const Template: Story<ListProps> = (args) => (
       justifyContent="between"
       alignItem="center"
       rounded
-      className="px-4 py-3"
+      className="px-3 py-4"
     ></ListItem>
     <ListItem
       title="test"
       justifyContent="between"
       alignItem="center"
       rounded
-      className="px-4 py-3"
+      className="px-3 py-4"
       status={{
         isActive: false,
         inactiveLabel: 'disabled',

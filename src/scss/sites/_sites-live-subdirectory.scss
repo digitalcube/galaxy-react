@@ -5,6 +5,7 @@
 
 .live-subdirectory {
 	.subdirectory-container {
+		background-color: #FFF;
 		border: 1px solid var(--gray-200);
 	}
 
@@ -23,7 +24,8 @@
 	}
 
 	.deploy-setting {
-		border: 1px solid var(--gray-100);
+		background-color: #FFF;
+		border: 1px solid var(--gray-200);
 		.deploy-setting-status {
 			line-height: f.f-line-height(16, 22);
 			color: var(--gray-700);

@@ -58,6 +58,7 @@
 
 	.deploy-list-body {
 		.deploy-list-item {
+			background-color: #FFF;
 			border: 1px solid var(--gray-200);
 			&:hover,
 			&.checked-item {
