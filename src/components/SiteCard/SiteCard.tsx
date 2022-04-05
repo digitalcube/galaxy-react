@@ -3,18 +3,17 @@ import React, { FC, PropsWithChildren } from 'react';
 export type WordPressContainerStatusBadgeProps = {
   status?: string;
 };
-export const WordPressContainerStatusBadge: FC<WordPressContainerStatusBadgeProps> = ({
-  status,
-}) => {
-  if (!status) return null;
-  return (
-    <div className="ml-4 site-status">
-      <div className="rounded font-weight-bold c-site-status c-is-site-running">
-        WordPress Running
+export const WordPressContainerStatusBadge: FC<WordPressContainerStatusBadgeProps> =
+  ({ status }) => {
+    if (!status) return null;
+    return (
+      <div className="ml-4 site-status">
+        <div className="rounded font-weight-bold c-site-status c-is-site-running">
+          WordPress Running
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 export type SiteCardProps = PropsWithChildren<{
   className?: string;
