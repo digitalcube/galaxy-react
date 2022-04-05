@@ -21,7 +21,7 @@ export type SiteCardProps = PropsWithChildren<{
 }>;
 export const SiteCard: FC<SiteCardProps> = (props) => {
   const className = [
-    'mb-3 rounded d-md-flex align-items-start site-list-item',
+    'mb-3 rounded d-md-flex align-items-start site-list-item bg-white',
     props.className,
   ]
     .filter(Boolean)
