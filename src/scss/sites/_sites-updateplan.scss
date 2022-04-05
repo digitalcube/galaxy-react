@@ -62,6 +62,7 @@
 			.plan-list {
 			}
 			.plan-list-item {
+				background-color: #FFF;
 				.plan-list-radio {
 					&[data-current="true"] {
 						& + .plan-list-label {

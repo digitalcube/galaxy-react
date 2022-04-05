@@ -65,7 +65,8 @@
 			}
 		}
 		.site-overview-footer {
-			border-top: 1px solid var(--gray-100);
+			background-color: #FFF;
+			border-top: 1px solid var(--gray-200);
 			.site-author {
 				line-height: f.f-line-height(14, 19.5);
 				color: var(--gray-800);
@@ -144,7 +145,7 @@
 			}
 		}
 		.deploy-history-header {
-			border-top: 1px solid var(--gray-100);
+			border-top: 1px solid var(--gray-200);
 			.deploy-history-heading {
 				line-height: f.f-line-height(18, 27);
 				font-size: f.f-rem(18);

@@ -55,7 +55,7 @@
 		}
 		.form-control {
 			padding-left: 2.4375rem;
-			background-color: transparent;
+			background-color: #FFF;
 			color: var(--primary-default);
 			z-index: 2;
 			&:read-only {
@@ -127,7 +127,7 @@
 			background-color: #FFF;
 		}
 		.form-control {
-			background-color: transparent;
+			background-color: #FFF;
 			position: relative;
 			z-index: 1;
 		}
