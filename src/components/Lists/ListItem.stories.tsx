@@ -24,6 +24,6 @@ const Template: Story<ListItemProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   title: 'Title',
-  className: 'px-4 py-3',
+  className: 'px-3 py-4',
   children: 'children',
 };

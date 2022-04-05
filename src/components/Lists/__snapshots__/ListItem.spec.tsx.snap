@@ -6,7 +6,7 @@ exports[`ListItem to match snapshot(default) 1`] = `
     class="base-notification-box bg-white rounded"
   >
     <div
-      class="notification d-flex flex-wrap px-4 py-3 align-items-center justify-content-between"
+      class="notification d-flex flex-wrap px-3 py-4 align-items-center justify-content-between"
     >
       <div
         class="notification-status"
