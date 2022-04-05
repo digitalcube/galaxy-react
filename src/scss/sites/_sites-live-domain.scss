@@ -89,7 +89,8 @@
 
 	.domain-list {
 		.domain-list-item {
-			border: 1px solid var(--gray-100);
+			background-color: #FFF;
+			border: 1px solid var(--gray-200);
 		}
 		.domain-name {
 			line-height: f.f-line-height(16, 22);
