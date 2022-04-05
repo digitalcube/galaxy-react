@@ -4,7 +4,7 @@ export type WordPressContainerStatusBadgeProps = {
   status?: string;
 };
 export const WordPressContainerStatusBadge: FC<
-	WordPressContainerStatusBadgeProps
+  WordPressContainerStatusBadgeProps
 > = ({ status }) => {
   if (!status) return null;
   return (
