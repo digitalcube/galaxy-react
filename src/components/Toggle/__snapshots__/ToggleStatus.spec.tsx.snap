@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleStatus to match snapshot(default) 1`] = `
+<DocumentFragment>
+  <div
+    class="toggle-status-box"
+  >
+    <div
+      class="custom-control custom-switch c-toggle-switch"
+    >
+      <input
+        checked=""
+        class="custom-control-input"
+        id="dummy-toggle"
+        type="checkbox"
+      />
+      <label
+        class="custom-control-label"
+        for="dummy-toggle"
+      >
+        <span
+          class="d-none"
+        >
+          dummy
+        </span>
+      </label>
+      <span
+        class="c-toggle-switch-status active font-weight-bold"
+      >
+        activeLabel
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
