@@ -23,3 +23,25 @@
 
 	@return math.div($pxval, $base) * 1rem;
 }
+
+// Base Shifter Text Style
+@mixin page-title {
+	font-size: f-rem(22)!important;
+	font-weight: bold!important;
+	color: var(--gray-800)!important;
+}
+@mixin page-text{
+	font-size: f-rem(16)!important;
+	font-weight: 400!important;
+	color: var(--gray-800)!important;
+}
+@mixin setting-title{
+	font-size: f-rem(18)!important;
+	font-weight: bold!important;
+	color: var(--gray-800)!important;
+}
+@mixin card-title{
+	font-size: f-rem(22)!important;
+	font-weight: 400!important;
+	color: var(--gray-500)!important;
+}

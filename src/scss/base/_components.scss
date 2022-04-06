@@ -294,6 +294,10 @@
 	}
 }
 
+.toggle-status-box .c-toggle-switch-status{
+	margin-left: 10px;
+}
+
 .c-caution-color {
 	color: var(--danger);
 }
@@ -603,6 +607,15 @@
 	.setting-card-button {
 	}
 }
+.shifter-dashboard {
+	.setting-card-title{
+		@include f.card-title;
+	}
+	.setting-card-description {
+		@include f.page-text;
+	}
+}
+
 
 .content-max-width {
 	max-width: 535px;
