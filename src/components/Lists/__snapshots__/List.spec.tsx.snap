@@ -42,7 +42,7 @@ exports[`List to match snapshot(default) 1`] = `
         class="mt-2 w-100"
       >
         <p
-          class="mb-0 small"
+          class="page-text mb-0"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis vero beatae sed maxime, commodi doloremque tempore aliquid dolor quidem iste nihil facilis eveniet temporibus, earum repellat odio numquam voluptatem quo!
         </p>

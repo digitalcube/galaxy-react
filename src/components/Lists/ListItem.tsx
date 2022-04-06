@@ -18,7 +18,7 @@ export const ListItemDescription: FC = ({ children }) => {
   return (
     <div className="mt-2 w-100">
       {typeof children === 'string' ? (
-        <p className="mb-0 small">{children}</p>
+        <p className="page-text mb-0">{children}</p>
       ) : (
         children
       )}

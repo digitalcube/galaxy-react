@@ -76,3 +76,12 @@
 		}
 	}
 }
+.shifter-dashboard {
+	.steps{
+		.steps-header {
+			.steps-title {
+				@include f.card-title;
+			}
+		}
+	}
+}
