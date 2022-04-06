@@ -42,10 +42,9 @@
 	}
 
 	.mediacdn-setting-section {
-		max-width: 550px;
 		.mediacdn-description {
 			line-height: f.f-line-height(16, 22);
-			color: var(--gray-700);
+			color: var(--gray-800);
 			font-size: f.f-rem(16);
 			a {
 				line-height: f.f-line-height(14, 19.5);
@@ -61,9 +60,10 @@
 			}
 		}
 		.mediacdn-setting {
-			border: 1px solid var(--gray-100);
+			border: 1px solid var(--gray-200);
 		}
 		.mediacdn-setting-status {
+			@include f.setting-title;
 		}
 	}
 
@@ -75,6 +75,7 @@
 				font-size: f.f-rem(16);
 			}
 			.webhooks-section-note {
+				@include f.page-text;
 				a {
 					line-height: f.f-line-height(14, 19.5);
 					color: var(--primary-default);
@@ -220,8 +221,7 @@
 			}
 			.emergency-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: var(--primary-600);
-				font-size: f.f-rem(16);
+				@include f.page-text;
 				letter-spacing: 0.35px;
 			}
 			.emergency-section-note {
@@ -256,11 +256,9 @@
 
 	.basic-auth-section {
 		.basic-auth-section-header {
-			max-width: 550px;
 			.basic-auth-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: var(--primary-600);
-				font-size: f.f-rem(16);
+				@include f.page-text;
 				letter-spacing: 0.35px;
 			}
 			.basic-auth-section-note {

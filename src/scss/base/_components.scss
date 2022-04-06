@@ -604,8 +604,7 @@
 	}
 	.setting-card-description {
 		line-height: f.f-line-height(14, 19.5);
-		color: var(--gray-700);
-		font-size: f.f-rem(14);
+		@include f.page-text;
 	}
 	.setting-card-button {
 	}
