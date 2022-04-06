@@ -26,6 +26,7 @@
 
 // Base Shifter Text Style
 @mixin page-title {
+	margin-bottom: 1.5rem!important;
 	font-size: f-rem(22)!important;
 	font-weight: bold!important;
 	color: var(--gray-800)!important;

@@ -296,6 +296,9 @@
 
 .toggle-status-box .c-toggle-switch-status{
 	margin-left: 10px;
+	&.inactive {
+		color: var(--gray-500);
+	}
 }
 
 .c-caution-color {

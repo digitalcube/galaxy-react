@@ -6,7 +6,8 @@ export type ListItemProps = PropsWithChildren<{
   title: ReactNode;
   status?: StatusLabelProps;
   className?: string;
-  rounded?: boolean;
+	rounded?: boolean;
+	column?: boolean;
   alignItem?: 'start' | 'center' | 'end' | 'baseline' | 'stretch';
   justifyContent?: 'start' | 'end' | 'center' | 'between' | 'around';
   description?: ReactNode;
@@ -29,7 +30,8 @@ export const ListItem: FC<ListItemProps> = ({
   children,
   title,
   status,
-  className,
+	className,
+	column,
   rounded,
   alignItem = 'center',
   justifyContent = 'between',
@@ -37,7 +39,8 @@ export const ListItem: FC<ListItemProps> = ({
 }) => {
   const classNames = useMemo(() => {
     const items = ['notification', 'd-flex', 'flex-wrap', className];
-    if (rounded) items.push('rounded');
+    if (column) items.push('flex-column');
+		if (rounded) items.push('rounded');
     if (alignItem) items.push(`align-items-${alignItem}`);
     if (justifyContent) items.push(`justify-content-${justifyContent}`);
     return items.filter(Boolean);
