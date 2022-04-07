@@ -47,13 +47,4 @@
 	}
 }
 
-.shifter-dashboard {
-	.subdirectory-heading {
-		@include f.card-title;
-	}
-	.subdirectory-description {
-		p {
-			@include f.page-text;
-		}
-	}
-}
+

@@ -1,0 +1,44 @@
+@use "sass:math";
+@use "import/mixin" as f;
+@use "_variable.scss" as var;
+@use "color.scss" as colors;
+
+/* shifter text style overrides */
+.shifter-dashboard {
+	.page-title {
+		@include f.page-title;
+	}
+	.page-text,
+	.card-text {
+		@include f.page-text;
+	}
+	.setting-title {
+		@include f.setting-title;
+	}
+	.card-title {
+		@include f.card-title;
+	}
+	.setting-card {
+		.setting-card-title {
+			@include f.card-title;
+		}
+		.setting-card-description {
+			@include f.page-text;
+		}
+	}
+	.steps {
+		.steps-header {
+			.steps-title {
+				@include f.card-title;
+			}
+		}
+	}
+	.subdirectory-heading {
+		@include f.card-title;
+	}
+	.subdirectory-description {
+		p {
+			@include f.page-text;
+		}
+	}
+}

@@ -8,22 +8,6 @@ body {
 	overflow-x: hidden;
 }
 
-.shifter-dashboard {
-	background-color: #F5F5F5;
-	.page-title{
-		@include f.page-title;
-	}
-	.page-text,.card-text{
-		@include f.page-text;
-	}
-	.setting-title{
-		@include f.setting-title;
-	}
-	.card-title{
-		@include f.card-title;
-	}
-}
-
 .navbar {
 	padding: 1.125rem 1.5rem;
 	border-bottom: 1px solid var(--gray-200);
