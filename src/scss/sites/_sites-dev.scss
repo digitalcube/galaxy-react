@@ -71,8 +71,7 @@
 		.webhooks-section-header {
 			.webhooks-section-description {
 				line-height: f.f-line-height(16, 22);
-				color: var(--gray-700);
-				font-size: f.f-rem(16);
+				@include f.page-text;
 			}
 			.webhooks-section-note {
 				@include f.page-text;
