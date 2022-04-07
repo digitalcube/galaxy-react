@@ -19,7 +19,7 @@ export const Logo: FC<LogoProps> = ({ name, width = 24 }) => {
       case 'shifter':
         return 32 / 24;
       case 'shifter-full':
-        return 99 / 32;
+        return 32 / 99;
       case 'amimoto':
         return 32 / 32;
       default:
