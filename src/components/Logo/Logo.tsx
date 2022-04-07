@@ -17,9 +17,9 @@ export const Logo: FC<LogoProps> = ({ name, width = 24 }) => {
       case 'digitalcube':
         return 15 / 77;
       case 'shifter':
-				return 32 / 24;
-			case 'shifter-full':
-					return 99 / 32;
+        return 32 / 24;
+      case 'shifter-full':
+        return 99 / 32;
       case 'amimoto':
         return 32 / 32;
       default:
@@ -33,8 +33,8 @@ export const Logo: FC<LogoProps> = ({ name, width = 24 }) => {
   }
   if (name === 'amimoto') {
     return <ImageAmimotoLogo width={width} height={height} />;
-	}
-	if (name === 'shifter-full') {
+  }
+  if (name === 'shifter-full') {
     return <ImageShifterLogoFull width={width} height={height} />;
   }
   return <ImageShifterLogo width={width} height={height} />;
