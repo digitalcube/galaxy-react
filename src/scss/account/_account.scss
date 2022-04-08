@@ -378,6 +378,13 @@
 				}
 				&.btn-gray-border {
 					border: 2px solid var(--gray-100);
+					&:hover,
+					&:focus,
+					&.focus {
+						color: var(--primary);
+						background-color: #f3eaf3;
+						border: 2px solid #f3eaf3;
+					}
 				}
 			}
 		}
