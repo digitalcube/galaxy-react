@@ -57,19 +57,6 @@
 		&.focus {
 			box-shadow: none;
 		}
-		&:not(:disabled):not(.disabled):active,
-		&:not(:disabled):not(.disabled).active,
-		.show > &.dropdown-toggle {
-			color: #FFF;
-			background-color: var(--gray-800);
-			border-color: var(--gray-800);
-			&:focus {
-				box-shadow:none;
-			}
-			i svg{
-				fill: #FFF;
-			}
-		}
 	}
 	.btn-outline-#{$color} {
 		color: var(--#{$color});
@@ -120,6 +107,19 @@
 			color: #FFF;
 			background-color: var(--gray-800);
 			border-color: var(--gray-800);
+		}
+	}
+	&:not(:disabled):not(.disabled):active,
+	&:not(:disabled):not(.disabled).active,
+	.show > &.dropdown-toggle {
+		color: #FFF;
+		background-color: var(--gray-800);
+		border-color: var(--gray-800);
+		&:focus {
+			box-shadow:none;
+		}
+		i svg{
+			fill: #FFF;
 		}
 	}
 }
