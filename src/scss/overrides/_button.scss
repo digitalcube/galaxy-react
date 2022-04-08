@@ -45,6 +45,15 @@
 			}
 		}
 	}
+	.btn-primary{
+		&:hover,
+		&:focus,
+		&.focus {
+			color: #FFF;
+			background-color: var(--gray-800);
+			border-color: var(--gray-800);
+		}
+	}
 	.btn-outline-#{$color} {
 		color: var(--#{$color});
 		border-color: var(--#{$color});
@@ -85,6 +94,15 @@
 				// 	box-shadow: 0 0 0 0.2rem var(--#{$color}-rgba);
 				// }
 			}
+		}
+	}
+	.btn-outline-primary{
+		&:hover,
+		&:focus,
+		&.focus {
+			color: #FFF;
+			background-color: var(--gray-800);
+			border-color: var(--gray-800);
 		}
 	}
 }
