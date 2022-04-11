@@ -10,8 +10,6 @@ body {
 
 .navbar {
 	padding: 1.125rem 1.5rem;
-	border-bottom: 1px solid var(--gray-200);
-	margin-bottom: 3px;
 	@media (max-width: 768px) {
 		& > .navbar-brand {
 			max-width: 10%!important;
