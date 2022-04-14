@@ -182,7 +182,7 @@ exports[`SiteSettings to match snapshot(default) 1`] = `
       class="d-flex flex-md-row-reverse flex-column flex-grow-1 shifter-dashboard-columns site-settings"
     >
       <main
-        class="mb-4 pt-3 px-4 flex-grow-1 shifter-dashboard-main"
+        class="mb-4 px-4 flex-grow-1 shifter-dashboard-main"
         role="main"
       >
         <h1
