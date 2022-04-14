@@ -11,7 +11,7 @@ export const AdminLayoutMain: FC<AdminLayoutMainProps> = ({
   return (
     <main
       role="main"
-      className={`mb-4 pt-3 px-4 flex-grow-1 shifter-dashboard-main${
+      className={`mb-4 px-4 flex-grow-1 shifter-dashboard-main${
         className ? ` ${className}` : ''
       }`}
     >

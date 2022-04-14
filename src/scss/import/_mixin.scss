@@ -46,3 +46,8 @@
 	font-weight: 400!important;
 	color: var(--gray-500)!important;
 }
+@mixin select-title{
+	font-size: f-rem(22)!important;
+	font-weight: 400!important;
+	color: var(--gray-800)!important;
+}

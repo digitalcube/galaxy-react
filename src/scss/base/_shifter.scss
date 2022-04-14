@@ -18,6 +18,9 @@
 	.card-title {
 		@include f.card-title;
 	}
+	.select-title {
+		@include f.select-title;
+	}
 	.setting-card {
 		.setting-card-title {
 			@include f.card-title;
