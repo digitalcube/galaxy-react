@@ -15,15 +15,18 @@
 		height: 100%;
 		&:hover{
 			color: #FFF;
-			background-color: var.$purple-500;
+			background-color: var(--primary-500);
 		}
 		&.previouslink,&.nextlink{
 			padding: 0.5rem 0.8rem;
-			border: solid 1px var.$gray-200;
+			border: solid 1px var(--gray-200);
 			border-radius: 4px;
 			position: relative;
+			svg path{
+				fill: var(--primary-500);
+			}
 			&:hover{
-				background-color: var.$gray-800;
+				background-color: var(--gray-800);
 				svg path{
 					fill: #FFF;
 				}
