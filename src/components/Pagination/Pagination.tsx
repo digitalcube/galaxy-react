@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Paginationlist } from './Paginationlist';
 
 export type PaginationProps = {
   num: number;
@@ -45,8 +44,13 @@ export const Pagination: FC<PaginationProps> = ({
                 </svg>
               </a>
             </li>
-            {[...Array(num)].map((_, i) => (
-              <Paginationlist num={i} handleClick={handleClick} />
+						{[...Array(num)].map((_, i) => (
+							<li className="page-item">
+							<a className="page-link" href={'#' + (i + 1)} onClick={() => handleClick()} >
+								{i + 1}
+							</a>
+						</li>
+              // <Paginationlist num={i} handleClick={handleClick} />
             ))}
             <li className="page-item">
               <a
