@@ -1,18 +1,16 @@
 import React, { FC } from 'react';
-import { Paginationlist } from './Paginationlist';
 
 export type PaginationProps = {
   num: number;
   className?: string;
   previousTitle?: string;
   nextTitle?: string;
-  handleClick: any;
   handlePrev: any;
   handleNext: any;
 };
 export const Pagination: FC<PaginationProps> = ({
   num,
-  handleClick,
+  children,
   handlePrev,
   handleNext,
   className,
@@ -45,9 +43,7 @@ export const Pagination: FC<PaginationProps> = ({
                 </svg>
               </a>
             </li>
-            {[...Array(num)].map((_, i) => (
-              <Paginationlist num={i} handleClick={handleClick} />
-            ))}
+            {children}
             <li className="page-item">
               <a
                 className="page-link nextlink"

@@ -32,3 +32,4 @@ export * from './StatusLabel';
 export * from './Toggle';
 export * from './Steps/Steps';
 export * from './Pagination/Pagination';
+export * from './Pagination/Paginationlist';

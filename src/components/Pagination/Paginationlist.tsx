@@ -8,15 +8,19 @@ export const Paginationlist: FC<PaginationlistProps> = ({
   num,
   handleClick,
 }) => {
-  return (
+	return (
+		<>
+		{[...Array(num)].map((_, i) => (
     <li className="page-item">
-      <a
-        className="page-link"
-        href={'#' + (num + 1)}
-        onClick={() => handleClick()}
-      >
-        {num + 1}
-      </a>
-    </li>
+		<a
+			className="page-link"
+			href={'#' + (i + 1)}
+			onClick={() => handleClick()}
+		>
+			{i + 1}
+		</a>
+	</li>
+))}
+		</>
   );
 };
