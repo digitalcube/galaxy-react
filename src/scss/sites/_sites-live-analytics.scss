@@ -16,16 +16,14 @@
 		border: 1px solid var(--gray-200);
 		.analytic-datas-title {
 			line-height: f.f-line-height(22, 33);
-			color: var(--primary-600);
-			font-size: f.f-rem(22);
+			@include f.card-title;
 		}
 		.analytic-item {
 			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
 		}
 		.analytic-item-title {
 			line-height: f.f-line-height(16, 22);
-			color: var(--primary-700);
-			font-size: f.f-rem(16);
+			@include f.setting-title;
 			letter-spacing: 0.35px;
 		}
 		.analytic-data {
