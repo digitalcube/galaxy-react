@@ -197,7 +197,10 @@ body {
 	font-size: f.f-rem(14);
 	> ul,p,div {
 		margin-top: 0;
-		margin-bottom: 0;	
+		margin-bottom: 0;
+	}
+	> ul {
+		padding-left: 0;
 	}
 	li {
 		list-style-type: none;
