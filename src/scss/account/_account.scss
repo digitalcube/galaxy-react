@@ -176,17 +176,11 @@
 	}
 
 	.authentication-method {
-		border: 1px solid var(--gray-100);
-		line-height: f.f-line-height(16, 22);
-		color: var(--gray-700);
-		font-size: f.f-rem(16);
-		letter-spacing: 0.35px;
 		.authentication-method-status {
 		}
 		.authentication-status {
 		}
 		.authentication-method-configured {
-			border-top: 1px solid var(--gray-100);
 		}
 		.authentication-method-update {
 		}
