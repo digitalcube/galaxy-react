@@ -430,9 +430,10 @@
 		left: 0.8rem;
 		z-index: 5;
 	}
-	select {
-		position: relative;
+	.form-group {
 		padding-left: 2rem;
-		z-index: 1;
 		}
+	.form-group{
+		margin-bottom: 0!important;
+	}
 }
