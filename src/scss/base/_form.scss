@@ -239,6 +239,10 @@
 }
 
 .list-sorter {
+	.form-control{
+		height: auto!important;
+		line-height: 1!important;
+	}
 	.bootstrap-select {
 		.dropdown-toggle {
 			box-shadow: 0 1px 8px rgba(69, 29, 57, 0.1);
@@ -416,4 +420,22 @@
 			height: f.f-rem(14);
 		}
 	}
+}
+
+.list-sorter.list-sorter-sort{
+	position: relative;
+	&::after{
+		position: absolute;
+		content: url("../assets/images/background/sort-amount-down.svg");
+		width: 13px;
+		height: 17px;
+		top: 5px;
+		left: 1rem;
+		z-index: 5;
+	}
+	select {
+		position: relative;
+		padding-left: 2rem;
+		z-index: 1;
+		}
 }

@@ -181,9 +181,7 @@ exports[`Guides to match snapshot(default) 1`] = `
     <main
       class="px-4 mx-auto w-100 shifter-guides"
     >
-      <div
-        class="shifter-guides"
-      >
+      <div>
         <h1
           class="guide-heading-1 font-weight-bold"
         >

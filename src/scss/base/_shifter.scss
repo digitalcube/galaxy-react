@@ -5,6 +5,9 @@
 
 /* shifter text style overrides */
 .shifter-dashboard {
+	.contents-title {
+		@include f.contents-title;
+	}
 	.page-title {
 		@include f.page-title;
 	}
