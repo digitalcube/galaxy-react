@@ -183,7 +183,7 @@ exports[`Guides to match snapshot(default) 1`] = `
     >
       <div>
         <h1
-          class="guide-heading-1 font-weight-bold"
+          class="guide-heading-1 contents-title"
         >
           Guides
         </h1>

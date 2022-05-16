@@ -18,7 +18,7 @@ export const ContentHeader: FC<ContentHeaderProps> = ({
 }) => {
   return (
     <div>
-      <h1 className="guide-heading-1 font-weight-bold">{title}</h1>
+      <h1 className="guide-heading-1 contents-title">{title}</h1>
       {src ? (
         <div className="mt-4 container-fluid">
           <div className="row">

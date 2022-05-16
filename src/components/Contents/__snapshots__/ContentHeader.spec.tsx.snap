@@ -4,7 +4,7 @@ exports[`ContentHeader to match snapshot [column %p | item %p] 1`] = `
 <DocumentFragment>
   <div>
     <h1
-      class="guide-heading-1 font-weight-bold"
+      class="guide-heading-1 contents-title"
     >
       Guides
     </h1>
