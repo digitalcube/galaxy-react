@@ -7,6 +7,7 @@
 .teams-detail {
 	width: 100%;
 	.teams-title {
+		@include f.contents-title;
 	}
 
 	.team-section {
