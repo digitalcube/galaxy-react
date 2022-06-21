@@ -91,6 +91,11 @@
 				color: var(--gray-800);
 				font-size: f.f-rem(14);
 				word-break: break-all;
+				.member-email {
+					color:var(--gray-500);
+					font-size: 12px;
+					font-weight: 400;
+				}
 			}
 			.member-status {
 				width: 15.79925651%;
