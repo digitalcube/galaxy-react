@@ -152,6 +152,7 @@
 				line-height: f.f-line-height(14, 19.5);
 				color: var(--primary-default);
 				font-size: f.f-rem(14);
+				word-break: break-all;
 			}
 		}
 		.site-misc {
