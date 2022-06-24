@@ -92,7 +92,7 @@
 				font-size: f.f-rem(14);
 				word-break: break-all;
 				.member-email {
-					color:var(--gray-500);
+					color:var(--gray-500)!important;
 					font-size: 12px;
 					font-weight: 400;
 				}
