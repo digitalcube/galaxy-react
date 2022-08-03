@@ -230,6 +230,12 @@ body {
 	.btn-group{
 		button.dropdown-toggle{
 			color: var(--gray-800);
+			&:hover{
+				color: var(--gray-100);
+			}
+			&:focus{
+				color: var(--gray-100);
+			}
 			&::after{
 				color: var(--primary);
 			}
