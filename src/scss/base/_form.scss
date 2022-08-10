@@ -170,7 +170,7 @@
 			}
 			.input-group-append {
 				left: 1rem;
-				z-index: 1;
+				z-index: 2;
 			}
 		}
 		.input-group-eye {
@@ -407,7 +407,7 @@
 	i {
 		top: 50%;
 		right: 16px;
-		z-index: 1;
+		z-index: 2;
 		transform: translateY(-50%);
 		width: 1em;
 		svg {

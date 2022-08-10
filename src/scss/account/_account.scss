@@ -242,7 +242,7 @@
 		}
 
 		.card-info {
-			border: 1px solid var(--gray-100);
+			border: 1px solid var(--gray-200);
 			line-height: f.f-line-height(16, 22);
 			color: var(--gray-700);
 			font-size: f.f-rem(16);
@@ -352,7 +352,7 @@
 	}
 
 	.subscriptions-item {
-		border: 1px solid var(--gray-100);
+		border: 1px solid var(--gray-200);
 		.subscriptions-header {
 			.subscriptions-name {
 				line-height: f.f-line-height(18, 27);
@@ -383,7 +383,7 @@
 			}
 		}
 		.subscriptions-data {
-			border-top: 1px solid var(--gray-100);
+			border-top: 1px solid var(--gray-200);
 			dl {
 				dt {
 					line-height: f.f-line-height(12, 15);
