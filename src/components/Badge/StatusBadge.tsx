@@ -47,7 +47,13 @@ export const StatusBadge: FC<StatusBadgeProps> = memo(
         case 'published':
         case 'onteam':
         case 'scheduled':
-        case 'ready':
+				case 'ready':
+				case 'Verification Pending':
+					return 'c-verification-pending';
+				case 'Timed Out':
+					return 'c-timed-out';
+				case 'Update Needed':
+					return 'c-update-needed';
         default:
           return `c-${status}`;
       }
