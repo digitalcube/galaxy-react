@@ -24,4 +24,7 @@ export type StatusLabelName =
   | 'info'
   | 'warning'
   | 'danger'
-  | 'success';
+	| 'success'
+	| 'Verification Pending'
+	| 'Timed Out'
+	| 'Update Needed';
