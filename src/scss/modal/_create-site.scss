@@ -329,7 +329,7 @@
 		}
 
 		.payment-summary {
-			border: 1px solid var(--gray-100);
+			border: 1px solid var(--gray-200);
 			@media (min-width: 768px) {
 				width: 40.49382716%;
 			}
@@ -365,7 +365,7 @@
 				}
 			}
 			.total {
-				border-top: 1px solid var(--gray-100);
+				border-top: 1px solid var(--gray-200);
 				.total-name {
 					line-height: f.f-line-height(14, 19.5);
 					color: var(--gray-600);

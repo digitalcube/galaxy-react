@@ -84,6 +84,7 @@
 			}
 			.list-item-data {
 				.list-item-name {
+					word-break: break-all;
 					line-height: f.f-line-height(16, 22);
 					color: #484043;
 					font-size: f.f-rem(16);
