@@ -45,12 +45,12 @@ exports[`Alert to match snapshot [type: "danger"] 1`] = `
       <h4
         class="toast-heading d-inline-block h6 mb-0"
       >
-        title:
+        title
       </h4>
       <p
         class="mb-0  d-inline-block"
       >
-        message
+         : message
       </p>
     </div>
   </div>
@@ -102,12 +102,12 @@ exports[`Alert to match snapshot [type: "info"] 1`] = `
       <h4
         class="toast-heading d-inline-block h6 mb-0"
       >
-        title:
+        title
       </h4>
       <p
         class="mb-0  d-inline-block"
       >
-        message
+         : message
       </p>
     </div>
   </div>
@@ -159,12 +159,12 @@ exports[`Alert to match snapshot [type: "success"] 1`] = `
       <h4
         class="toast-heading d-inline-block h6 mb-0"
       >
-        title:
+        title
       </h4>
       <p
         class="mb-0  d-inline-block"
       >
-        message
+         : message
       </p>
     </div>
   </div>
@@ -216,12 +216,12 @@ exports[`Alert to match snapshot [type: "warning"] 1`] = `
       <h4
         class="toast-heading d-inline-block h6 mb-0"
       >
-        title:
+        title
       </h4>
       <p
         class="mb-0  d-inline-block"
       >
-        message
+         : message
       </p>
     </div>
   </div>
