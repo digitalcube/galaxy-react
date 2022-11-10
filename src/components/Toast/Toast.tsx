@@ -70,11 +70,11 @@ export const Toast: FC<ToastProps> = ({
       <div className="toast-body px-3 py-2 flex-grow-1">
         {title ? (
           <h4 className="toast-heading d-inline-block h6 mb-0">
-            {title + ':'}
+            {title}
           </h4>
         ) : null}
         {typeof children === 'string' ? (
-          <p className="mb-0  d-inline-block">{children}</p>
+          <p className="mb-0  d-inline-block"> : {children}</p>
         ) : (
           children
         )}
