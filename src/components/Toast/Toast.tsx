@@ -72,7 +72,7 @@ export const Toast: FC<ToastProps> = ({
           <h4 className="toast-heading d-inline-block h6 mb-0">{title}</h4>
         ) : null}
         {typeof children === 'string' ? (
-          <p className="mb-0  d-inline-block"> : {children}</p>
+          <div className="d-inline-block">{children}</div>
         ) : (
           children
         )}

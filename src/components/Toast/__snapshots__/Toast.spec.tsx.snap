@@ -47,11 +47,11 @@ exports[`Alert to match snapshot [type: "danger"] 1`] = `
       >
         title
       </h4>
-      <p
-        class="mb-0  d-inline-block"
+      <div
+        class="d-inline-block"
       >
-         : message
-      </p>
+        message
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -104,11 +104,11 @@ exports[`Alert to match snapshot [type: "info"] 1`] = `
       >
         title
       </h4>
-      <p
-        class="mb-0  d-inline-block"
+      <div
+        class="d-inline-block"
       >
-         : message
-      </p>
+        message
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -161,11 +161,11 @@ exports[`Alert to match snapshot [type: "success"] 1`] = `
       >
         title
       </h4>
-      <p
-        class="mb-0  d-inline-block"
+      <div
+        class="d-inline-block"
       >
-         : message
-      </p>
+        message
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -218,11 +218,11 @@ exports[`Alert to match snapshot [type: "warning"] 1`] = `
       >
         title
       </h4>
-      <p
-        class="mb-0  d-inline-block"
+      <div
+        class="d-inline-block"
       >
-         : message
-      </p>
+        message
+      </div>
     </div>
   </div>
 </DocumentFragment>
