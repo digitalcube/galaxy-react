@@ -605,7 +605,8 @@
 			}
 			.close {
 				opacity: 1;
-				position: static;
+				position: absolute;
+				top: 0;
 				width: 1.5625rem;
 				height: 1.5625rem;
 				display: block;
