@@ -35,6 +35,7 @@
 			width: 1.5625rem;
 			height: 1.5625rem;
 			opacity: 1;
+			display: block;
 			svg {
 				fill: #fff;
 				width: 1rem;
@@ -608,6 +609,7 @@
 				position: static;
 				width: 1.5625rem;
 				height: 1.5625rem;
+				display: block;
 				svg {
 					fill: var(--primary-default);
 					width: 1.5625rem;
