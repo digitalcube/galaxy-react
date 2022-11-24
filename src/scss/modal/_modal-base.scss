@@ -7,13 +7,16 @@
 	.modal-dialog {
 		/* for mobile */
 		@media (max-width: 767.98px) {
-			margin-top: 2rem;
-			margin-bottom: 2rem;
+			margin: 2rem 1rem;
 		}
 	}
 	.modal-header {
 		position: relative;
 		z-index: 1;
+		@media (max-width: 767.98px) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 		.modal-title {
 			line-height: f.f-line-height(22, 33);
 			font-size: f.f-rem(22);
@@ -45,6 +48,10 @@
 	}
 
 	.modal-body {
+		@media (max-width: 767.98px) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 		.modal-description {
 			line-height: f.f-line-height(16, 22);
 			font-size: f.f-rem(16);
