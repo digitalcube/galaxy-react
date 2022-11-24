@@ -13,10 +13,6 @@
 	.modal-header {
 		position: relative;
 		z-index: 1;
-		@media (max-width: 767.98px) {
-			padding-left: 1rem!important;
-			padding-right: 1rem!important;
-		}
 		.modal-title {
 			line-height: f.f-line-height(22, 33);
 			font-size: f.f-rem(22);
@@ -48,10 +44,6 @@
 	}
 
 	.modal-body {
-		@media (max-width: 767.98px) {
-			padding-left: 1rem!important;
-			padding-right: 1rem!important;
-		}
 		.modal-description {
 			line-height: f.f-line-height(16, 22);
 			font-size: f.f-rem(16);
