@@ -1,5 +1,4 @@
 import React, { FC, PropsWithChildren } from 'react';
-import { FaTimes } from 'react-icons/fa';
 import { useModal } from './ModalContext';
 
 export type ModalHeaderProps = PropsWithChildren<{
@@ -30,9 +29,13 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
           aria-label="Close"
           onClick={() => isOpen(false)}
         >
-          <i aria-hidden="true">
-            <FaTimes className="d-block" />
-          </i>
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 25"
+          >
+            <path d="M25 22.5L14.8 12.4l10.1-9.9L22.7.4l-10 10L2.2 0 .1 2.1l10.5 10.3L0 22.9 2.1 25l10.6-10.5 10.2 10.1z" />
+          </svg>
         </button>
       ) : null}
     </div>
