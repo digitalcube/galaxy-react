@@ -28,14 +28,11 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
           data-dismiss="modal"
           aria-label="Close"
           onClick={() => isOpen(false)}
-        >
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 25 25"
-          >
-            <path d="M25 22.5L14.8 12.4l10.1-9.9L22.7.4l-10 10L2.2 0 .1 2.1l10.5 10.3L0 22.9 2.1 25l10.6-10.5 10.2 10.1z" />
-          </svg>
+				>
+					<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="3.97315" height="18.5414" transform="matrix(0.710644 -0.703551 0.710644 0.703551 0.500183 2.79541)" fill="white"/>
+					<rect width="3.97316" height="18.5414" transform="matrix(-0.710644 -0.703551 0.710644 -0.703552 3.32355 16)" fill="white"/>
+					</svg>
         </button>
       ) : null}
     </div>
