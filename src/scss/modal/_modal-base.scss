@@ -606,14 +606,18 @@
 			.close {
 				opacity: 1;
 				position: absolute;
-				top: 0;
+				top: 2rem;
+				right: 5rem;
 				width: 1.5625rem;
 				height: 1.5625rem;
 				display: block;
-				svg {
+				svg#close-pc {
 					fill: var(--primary-default);
 					width: 1.5625rem;
 					height: 1.5625rem;
+					rect{
+						fill: var(--primary-default);
+					}
 				}
 			}
 		}
