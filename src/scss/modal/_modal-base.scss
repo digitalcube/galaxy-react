@@ -612,6 +612,9 @@
 				height: 1.5625rem;
 				display: block;
 				svg#close-pc {
+					position: absolute;
+					top: 0;
+					left: 0;
 					fill: var(--primary-default);
 					width: 1.5625rem;
 					height: 1.5625rem;
