@@ -18,8 +18,8 @@ const Template: Story<SettingCardProps> = (args) => <SettingCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-	title: 'Title',
-	titleTag: 'h2',
+  title: 'Title',
+  titleTag: 'h2',
   description: 'Description',
   children: 'Content',
 };
