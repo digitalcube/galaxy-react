@@ -3,12 +3,14 @@ import { SettingCardDescription } from './SettingCardDescription';
 import { SettingCardTitle } from './SettingCardTitle';
 
 export type SettingCardProps = PropsWithChildren<{
-  title?: string;
+	title?: string;
+	titleTag?: | 'h2' | 'h3' | 'h4' | 'h5' | 'p';
   description?: string;
   className?: string;
 }>;
 export const SettingCard: FC<SettingCardProps> = ({
-  title,
+	title,
+	titleTag,
   children,
   description,
   className,
@@ -19,7 +21,7 @@ export const SettingCard: FC<SettingCardProps> = ({
         .filter(Boolean)
         .join(' ')}
     >
-      {title ? <SettingCardTitle>{title}</SettingCardTitle> : null}
+			{title ? <SettingCardTitle titleTag={ titleTag }>{title}</SettingCardTitle> : null}
       {description ? (
         <SettingCardDescription>{description}</SettingCardDescription>
       ) : null}

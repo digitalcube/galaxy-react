@@ -52,11 +52,11 @@ exports[`SettingCard to match snapshot(default) 1`] = `
   <div
     class="mt-3 px-3 py-4 rounded setting-card bg-white"
   >
-    <h1
+    <h2
       class="mb-0 font-weight-bold setting-card-title"
     >
       Title
-    </h1>
+    </h2>
     <p
       class="mb-0 pt-2 setting-card-description"
     >
