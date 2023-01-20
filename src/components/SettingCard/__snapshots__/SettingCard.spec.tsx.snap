@@ -3,7 +3,7 @@
 exports[`SettingCard to match snapshot(button) 1`] = `
 <DocumentFragment>
   <div
-    class="mt-3 px-3 py-4 rounded setting-card bg-white"
+    class="mt-4 px-3 py-4 rounded setting-card bg-white"
   >
     <h1
       class="mb-0 font-weight-bold setting-card-title"
@@ -31,7 +31,7 @@ exports[`SettingCard to match snapshot(button) 1`] = `
 exports[`SettingCard to match snapshot(buttons) 1`] = `
 <DocumentFragment>
   <div
-    class="mt-3 px-3 py-4 rounded setting-card bg-white"
+    class="mt-4 px-3 py-4 rounded setting-card bg-white"
   >
     <div
       class="setting-card-buttons d-flex justify-content-end"
@@ -50,7 +50,7 @@ exports[`SettingCard to match snapshot(buttons) 1`] = `
 exports[`SettingCard to match snapshot(default) 1`] = `
 <DocumentFragment>
   <div
-    class="mt-3 px-3 py-4 rounded setting-card bg-white"
+    class="mt-4 px-3 py-4 rounded setting-card bg-white"
   >
     <h2
       class="mb-0 font-weight-bold setting-card-title"

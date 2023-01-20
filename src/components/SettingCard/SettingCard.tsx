@@ -17,7 +17,7 @@ export const SettingCard: FC<SettingCardProps> = ({
 }) => {
   return (
     <div
-      className={['mt-3 px-3 py-4 rounded setting-card bg-white', className]
+      className={['mt-4 px-3 py-4 rounded setting-card bg-white', className]
         .filter(Boolean)
         .join(' ')}
     >
