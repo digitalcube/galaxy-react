@@ -31,7 +31,7 @@ export const Button: FC<ButtonProps> = ({
   color,
   ...props
 }) => {
-	const classNames = [props.className];
+  const classNames = [props.className];
   if (outline) {
     if (bordered) {
       classNames.push('btn-bordered');
