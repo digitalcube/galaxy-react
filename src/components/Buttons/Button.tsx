@@ -10,7 +10,7 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
   fontWeight?: 'bold' | 'normal' | 'light';
   textAlign?: 'left' | 'center' | 'right';
   rounded?: boolean;
-  smaller?: boolean;
+  smaller?: true;
   caution?: boolean;
   outline?: boolean;
   bordered?: boolean;
@@ -21,7 +21,7 @@ export const Button: FC<ButtonProps> = ({
   fontWeight = 'bold',
   rounded,
   textAlign,
-  smaller = true,
+  smaller,
   caution,
   outline,
   bordered,
@@ -31,7 +31,7 @@ export const Button: FC<ButtonProps> = ({
   color,
   ...props
 }) => {
-  const classNames = [props.className];
+	const classNames = [props.className];
   if (outline) {
     if (bordered) {
       classNames.push('btn-bordered');
