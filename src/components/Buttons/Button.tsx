@@ -21,7 +21,7 @@ export const Button: FC<ButtonProps> = ({
   fontWeight = 'bold',
   rounded,
   textAlign,
-  smaller,
+  smaller = true,
   caution,
   outline,
   bordered,
