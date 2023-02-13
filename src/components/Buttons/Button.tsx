@@ -10,7 +10,7 @@ export type ButtonProps = Omit<ReactstrapButtonProps, 'size'> & {
   fontWeight?: 'bold' | 'normal' | 'light';
   textAlign?: 'left' | 'center' | 'right';
   rounded?: boolean;
-  smaller?: true;
+  smaller?: boolean;
   caution?: boolean;
   outline?: boolean;
   bordered?: boolean;
