@@ -39,7 +39,7 @@
 }
 .invalid-feedback {
 	line-height: f.f-line-height(14, 19.5);
-	color: var.$red-primary;
+	color: var.$red-primary!important;
 	font-size: f.f-rem(14);
 }
 
