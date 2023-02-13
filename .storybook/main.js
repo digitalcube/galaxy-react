@@ -16,7 +16,8 @@ module.exports = {
   ],
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
-    check: true, // type-check stories during Storybook build
+		check: true, // type-check stories during Storybook build
+		reactDocgen: 'none',
   },
   webpackFinal: async(config) => {
     config.module.rules.push({
