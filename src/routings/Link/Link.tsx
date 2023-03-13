@@ -16,7 +16,7 @@ export type LinkProps = PropsWithChildren<{
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }>;
 
-export const Link: FC<LinkProps> = (props) => {
+export const Link: FC<LinkProps> = ({ withExternalLinkIcon, ...props }) => {
   const { tag } = useLinkTag();
   const as = props.tagOverwrite ? props.tagOverwrite : tag;
   /**
@@ -27,7 +27,7 @@ export const Link: FC<LinkProps> = (props) => {
     return (
       <a target="_blank" rel="noopener noreferrer" {...props}>
         {props.children}
-        {props.withExternalLinkIcon ? (
+        {withExternalLinkIcon ? (
           <i className="ml-2" aria-hidden="true">
             <FaExternalLinkAlt />
           </i>
