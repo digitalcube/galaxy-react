@@ -6,7 +6,8 @@ export type FormSelectProps = {
   options: React.OptionHTMLAttributes<HTMLOptionElement>[];
   id: string;
   label?: string;
-  icon?: ReactNode;
+	icon?: ReactNode;
+	defaultValue?: string;
   value: string;
   required?: boolean;
   readOnly?: boolean;
@@ -28,7 +29,8 @@ export type FormSelectProps = {
 };
 export const FormSelect: FC<FormSelectProps> = ({
   id,
-  options,
+	options,
+	defaultValue,
   value,
   label,
   onChange,
@@ -65,7 +67,7 @@ export const FormSelect: FC<FormSelectProps> = ({
         </Label>
       ) : null}
       <InputGroup className="position-relative select-wrapper">
-        <Input {...inputProps}>
+				<Input defaultValue={ defaultValue } {...inputProps}>
           {options.map((optionProps, i) => (
             <option key={`${id}-option-${i}`} {...optionProps} />
           ))}
