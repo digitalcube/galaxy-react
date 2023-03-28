@@ -25,8 +25,8 @@ export const Default = Template.bind({});
 Default.args = {
   icon: <FaUser className="d-block" />,
   id: 'password',
-	label: 'Password',
-	defaultValue:'en',
+  label: 'Password',
+  defaultValue: 'en',
   onChange: () => undefined,
   errorMessage: '',
   options: [
@@ -36,7 +36,7 @@ Default.args = {
     },
     {
       children: 'English',
-			value: 'en',
+      value: 'en',
     },
   ],
 };
