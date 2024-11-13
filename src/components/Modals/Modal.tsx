@@ -25,6 +25,7 @@ export type ModalProps = PropsWithChildren<{
   style?: CSSProperties;
   noPadding?: boolean;
   targetElement?: Element;
+  backdropDismiss?: boolean; // モーダルの背景をクリックして閉じるかどうか
 }>;
 
 export const ModalRow: FC<
@@ -39,6 +40,7 @@ export const ModalRow: FC<
   onSubmit,
   style,
   noPadding = false,
+  backdropDismiss,
 }) => {
   const { open, isOpen: isOpenHandler, dismiss } = useModal();
 
@@ -64,7 +66,7 @@ export const ModalRow: FC<
           aria-labelledby="modal-label"
           aria-hidden="false"
           aria-modal="true"
-          onClick={() => isOpenHandler(false)}
+          onClick={() => backdropDismiss && isOpenHandler(false)}
           style={style}
         >
           <div
@@ -97,6 +99,7 @@ export const Modal: FC<ModalProps> = ({
   dismiss = false,
   setOpen,
   targetElement,
+  backdropDismiss = true, // デフォルト値をtrueに設定
   ...props
 }) => {
   const [_isOpen, _setIsOpen] = useState(open || false);
@@ -122,7 +125,7 @@ export const Modal: FC<ModalProps> = ({
           dismiss,
         }}
       >
-        <ModalRow {...props} />
+        <ModalRow {...props} backdropDismiss={backdropDismiss} />
       </ModalContext.Provider>,
       targetElement
     );
@@ -136,7 +139,7 @@ export const Modal: FC<ModalProps> = ({
         dismiss,
       }}
     >
-      <ModalRow {...props} />
+      <ModalRow {...props} backdropDismiss={backdropDismiss} />
     </ModalContext.Provider>
   );
 };
