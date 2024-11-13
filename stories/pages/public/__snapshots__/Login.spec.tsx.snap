@@ -303,7 +303,7 @@ exports[`Login to match snapshot (failure) 1`] = `
         <small
           class="d-flex align-items-center justify-content-center"
         >
-          ©2023 Shifter | A Product by 
+          ©2024 Shifter | A Product by 
           <a
             href="https://www.digitalcube.jp/"
             rel="nofollow noopener"
@@ -581,7 +581,7 @@ exports[`Login to match snapshot (inprogress) 1`] = `
         <small
           class="d-flex align-items-center justify-content-center"
         >
-          ©2023 Shifter | A Product by 
+          ©2024 Shifter | A Product by 
           <a
             href="https://www.digitalcube.jp/"
             rel="nofollow noopener"
@@ -859,7 +859,7 @@ exports[`Login to match snapshot(default) 1`] = `
         <small
           class="d-flex align-items-center justify-content-center"
         >
-          ©2023 Shifter | A Product by 
+          ©2024 Shifter | A Product by 
           <a
             href="https://www.digitalcube.jp/"
             rel="nofollow noopener"
