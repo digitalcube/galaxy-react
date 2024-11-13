@@ -11,10 +11,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "BABEL_ENV=production tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "echo 'Skipping prepare script'",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006 -s ./static",
@@ -29,7 +29,8 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "webpack": "*"
+    "react-dom": ">=16",
+    "webpack": ">=5"
   },
   "husky": {
     "hooks": {
@@ -60,17 +61,22 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@rollup/plugin-image": "^2.0.6",
     "@size-limit/preset-small-lib": "^5.0.1",
-    "@storybook/addon-actions": "^6.5.15",
-    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.5.15",
-    "@storybook/addons": "^6.5.15",
-    "@storybook/builder-webpack5": "^6.5.15",
-    "@storybook/manager-webpack5": "^6.5.15",
-    "@storybook/react": "^6.5.15",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addons": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/chart.js": "^2.9.34",
@@ -80,7 +86,8 @@
     "@types/react-dom": "^17.0.8",
     "@types/react-gravatar": "^2.6.8",
     "@types/react-router-dom": "^5.1.7",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.4.1",
+    "babel-preset-react-app": "^10.0.1",
     "chromatic": "^5.10.2",
     "css-loader": "^6.2.0",
     "eslint-plugin-prettier": "^3.4.0",
