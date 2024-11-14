@@ -5,22 +5,23 @@ const scss = require('rollup-plugin-scss')
 
 module.exports = {
     rollup(config, options) {
-        return {
-            ...config,
-            plugins: [
-                ...config.plugins,
-                image(),
-                css(),
-                copy({
-                    assets: [
-                        "src/assets"
-                    ]
-                }),
-                scss({
-                    output: 'dist/css/styles.css',
-                    sass: require('sass')
-                })
-            ]
-        };
+        config.plugins.unshift(image());
+        config.plugins.push(css())
+        config.plugins.push(
+            copy({
+                assets: [
+                  // You can include directories
+                  "src/assets"
+                ],
+            })
+        )
+        config.plugins.push(
+            scss({
+                output: 'dist/css/styles.css',
+                sass: require('sass')
+            })
+        )
+        return config;
+
     }
-};
+}
