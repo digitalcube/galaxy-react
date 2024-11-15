@@ -2,32 +2,39 @@ const image = require('@rollup/plugin-image')
 const css = require('rollup-plugin-import-css')
 const copy = require('rollup-plugin-copy-assets')
 const scss = require('rollup-plugin-scss')
-const svg = require('@svgr/rollup')  // 追加：SVG用プラグイン
 
 module.exports = {
     rollup(config, options) {
-        const plugins = [
-            svg(),  // SVGをReactコンポーネントとしてインポート
-            image(),
-            css(),
+        // Babel の設定を修正
+        config.plugins = config.plugins.map(plugin => {
+            if (plugin && plugin.name === 'babel') {
+                return {
+                    ...plugin,
+                    options: {
+                        ...plugin.options,
+                        babelHelpers: 'runtime'  // 'bundled' から 'runtime' に変更
+                    }
+                };
+            }
+            return plugin;
+        });
+
+        // 他のプラグインを追加
+        config.plugins.unshift(image());
+        config.plugins.push(css())
+        config.plugins.push(
             copy({
                 assets: [
                     "src/assets"
                 ],
-            }),
+            })
+        )
+        config.plugins.push(
             scss({
                 output: 'dist/css/styles.css',
                 sass: require('sass')
             })
-        ];
-
-        const existingPlugins = Array.isArray(config.plugins) 
-            ? config.plugins.filter(p => p && typeof p === 'object')
-            : [];
-
-        return {
-            ...config,
-            plugins: [...existingPlugins, ...plugins]
-        };
+        )
+        return config;
     }
-};
+}
